@@ -1,0 +1,159 @@
+{
+  "main": {
+    "id": "4161e948603bb529",
+    "type": "split",
+    "children": [
+      {
+        "id": "c05d5bca477a6d9b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "1308b30807bcfd08",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Obsidian使用技巧/Obsidian双链.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "46d3900360b84a45",
+    "type": "split",
+    "children": [
+      {
+        "id": "9308322bbf0a0e91",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "acc8a543b49b417b",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "8e7d5471f804cedf",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "40640125cde55d10",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "ce3c70764b480d67",
+    "type": "split",
+    "children": [
+      {
+        "id": "156981b091b3bfcb",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "5df3e06b672a18d4",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Obsidian使用技巧/Obsidian双链.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "61acfc6c4b314444",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Obsidian使用技巧/Obsidian双链.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "0bfaa77db3a33790",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "f94472823ddc9c1a",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Obsidian使用技巧/Obsidian双链.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false,
+      "audio-recorder:开始/结束录音": false,
+      "workspaces:管理工作区布局": false
+    }
+  },
+  "active": "1308b30807bcfd08",
+  "lastOpenFiles": [
+    "Obsidian使用技巧/Obsidian双链.md",
+    "Obsidian使用技巧",
+    "00Inbox/未命名 1.md",
+    "未命名/未命名 2.md",
+    "attachment",
+    "00Inbox"
+  ]
+}

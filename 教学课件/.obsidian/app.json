@@ -1,0 +1,8 @@
+{
+  "strictLineBreaks": true,
+  "showLineNumber": true,
+  "trashOption": "local",
+  "newFileLocation": "folder",
+  "newFileFolderPath": "00Inbox",
+  "attachmentFolderPath": "./attachments"
+}
