@@ -18,21 +18,8 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "97cd804929e0a42d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Obsidian使用技巧/Obsidian插件.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -158,8 +145,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "horizontal",
@@ -179,16 +165,16 @@
       "obsidian-memos:Memos": false
     }
   },
-  "active": "97cd804929e0a42d",
+  "active": "92897a7b4e3c33f4",
   "lastOpenFiles": [
-    "00Inbox/未命名.md",
+    "Obsidian使用技巧/搜索技巧.md",
     "Obsidian使用技巧/Obsidian插件.md",
+    "Obsidian使用技巧/attachments/dataview.png",
+    "00Inbox/未命名.md",
     "Obsidian使用技巧/attachments/YAML_yufa.png",
     "Obsidian使用技巧/attachments/Yaml_template.png",
     "Obsidian使用技巧/attachments/YAML.png",
-    "Obsidian使用技巧/attachments/dataview.png",
     "Obsidian使用技巧/attachments/Pasted image 20230417215904.png",
-    "Obsidian使用技巧/搜索技巧.md",
     "Obsidian使用技巧/Obsidian双链.md",
     "Obsidian使用技巧/attachments/search_query_result.png",
     "Obsidian使用技巧/attachments/search_query.png",

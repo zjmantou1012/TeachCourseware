@@ -1,6 +1,6 @@
 ### 推荐插件
 - File Explorer Note Count：显示笔记的数量
-![[setting_note_count.png]]
+![](https://zjmantou-drawingbed.oss-cn-hangzhou.aliyuncs.com/picture/setting_note_count.png)
 - Recent File：显示最近访问的文件
 - Pandoc：转换成word格式（通过命令面板搜索doc）
 - Minimal Theme Setting：主题
@@ -51,16 +51,16 @@
 管理任务，例如提醒事项（不太推荐）
 
 #### Obsidian memos
-![[memos.png]]
+![](https://zjmantou-drawingbed.oss-cn-hangzhou.aliyuncs.com/picture/memos.png)
 
-![[Memos2.png]]
+![](https://zjmantou-drawingbed.oss-cn-hangzhou.aliyuncs.com/picture/Memos2.png)
 类似Flomo功能插件
 
 #### Excalidraw
 
 在Obsidian中绘制流程图
 
-![[Excalidraw.png]]
+![](https://zjmantou-drawingbed.oss-cn-hangzhou.aliyuncs.com/picture/Excalidraw.png)
 
 #### Quick Explorer
 快速导航栏
@@ -74,7 +74,7 @@
 ![[搜索技巧]]
 ##### DataView
 
-![[dataview.png]]
+![](https://zjmantou-drawingbed.oss-cn-hangzhou.aliyuncs.com/picture/dataview.png)
 
 - 定义：Obsidian资料库的查询工具/插件
 	- 查询对象：Obsidian数据库
@@ -89,8 +89,8 @@
 	- YAML
 		- 位于Markdown文件开头
 		- 首尾三个 ‘-’
-		- ![[YAML.png]]
-		- Obsidian支持的YAML字段（可以用模板来创建Yaml语句）![[Yaml_template.png]]
+		- ![](https://zjmantou-drawingbed.oss-cn-hangzhou.aliyuncs.com/picture/YAML.png)
+		- Obsidian支持的YAML字段（可以用模板来创建Yaml语句）![[](https://zjmantou-drawingbed.oss-cn-hangzhou.aliyuncs.com/picture/Yaml_template.png)
 			- tags
 			- publish
 			- cssclass
@@ -138,7 +138,7 @@
 		- List
 		- Table
 		- Task
-	-  完整语法![[YAML_yufa.png]]
+	-  完整语法![](https://zjmantou-drawingbed.oss-cn-hangzhou.aliyuncs.com/picture/YAML_yufa.png)
 		- dataview
 		- list|table|task
 		- from
