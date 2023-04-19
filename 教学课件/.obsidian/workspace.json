@@ -64,6 +64,14 @@
               "type": "starred",
               "state": {}
             }
+          },
+          {
+            "id": "4a1d1231d26f212f",
+            "type": "leaf",
+            "state": {
+              "type": "recent-files",
+              "state": {}
+            }
           }
         ]
       }
@@ -128,6 +136,14 @@
                 "file": "Obsidian使用技巧/Obsidian插件.md"
               }
             }
+          },
+          {
+            "id": "3cb038c6a1ae5f29",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {}
+            }
           }
         ],
         "currentTab": 3
@@ -148,7 +164,7 @@
       "workspaces:管理工作区布局": false
     }
   },
-  "active": "92897a7b4e3c33f4",
+  "active": "acc8a543b49b417b",
   "lastOpenFiles": [
     "Obsidian使用技巧/attachments/YAML_yufa.png",
     "Obsidian使用技巧/attachments/Yaml_template.png",
