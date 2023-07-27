@@ -1,5 +1,6 @@
 {
-  "accentColor": "",
-  "interfaceFontFamily": "",
-  "translucency": true
+  "accentColor": "#6b81ef",
+  "theme": "moonstone",
+  "cssTheme": "Minimal",
+  "baseFontSize": 11
 }

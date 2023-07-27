@@ -1,1 +1,16 @@
-{}
+{
+  "strictLineBreaks": true,
+  "showLineNumber": true,
+  "trashOption": "local",
+  "newFileLocation": "folder",
+  "newFileFolderPath": "00Inbox",
+  "attachmentFolderPath": "01日记",
+  "alwaysUpdateLinks": true,
+  "pdfExportSettings": {
+    "includeName": true,
+    "pageSize": "Letter",
+    "landscape": true,
+    "margin": "0",
+    "downscalePercent": 57
+  }
+}
