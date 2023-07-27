@@ -4,7 +4,6 @@
   "trashOption": "local",
   "newFileLocation": "folder",
   "newFileFolderPath": "00Inbox",
-  "attachmentFolderPath": "01日记",
-  "alwaysUpdateLinks": true,
-  "promptDelete": false
+  "attachmentFolderPath": "./attachments",
+  "alwaysUpdateLinks": true
 }
