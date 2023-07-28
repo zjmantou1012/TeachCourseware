@@ -4,7 +4,7 @@
   "trashOption": "local",
   "newFileLocation": "folder",
   "newFileFolderPath": "00Inbox",
-  "attachmentFolderPath": "01日记",
+  "attachmentFolderPath": "02附件",
   "alwaysUpdateLinks": true,
   "pdfExportSettings": {
     "includeName": true,
@@ -12,5 +12,6 @@
     "landscape": true,
     "margin": "0",
     "downscalePercent": 57
-  }
+  },
+  "showFrontmatter": true
 }

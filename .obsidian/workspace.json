@@ -4,18 +4,35 @@
     "type": "split",
     "children": [
       {
-        "id": "e4053a7075e75aea",
+        "id": "94b46614d9ca629e",
         "type": "tabs",
         "children": [
           {
-            "id": "6fd6d355736811f4",
+            "id": "11cf002d472953d6",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "00templates/template_metainfo_yaml.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "66a439ed44c883f8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Obsidian使用手册/基础设置.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -97,6 +114,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Obsidian使用手册/基础设置.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,6 +131,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Obsidian使用手册/基础设置.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -134,7 +153,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Obsidian使用手册/基础设置.md"
+              }
             }
           },
           {
@@ -146,7 +167,7 @@
             }
           },
           {
-            "id": "8ce983b1ca9ae20d",
+            "id": "6fdbbe10d23ba9d8",
             "type": "leaf",
             "state": {
               "type": "mermaid-toolbar-view",
@@ -154,7 +175,7 @@
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -162,29 +183,52 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "audio-recorder:开始/结束录音": false,
-      "workspaces:管理工作区布局": false,
+      "obsidian-excalidraw-plugin:新建 Excalidraw 绘图": false,
       "switcher:打开快速切换": false,
       "graph:查看关系图谱": false,
       "canvas:新建白板": false,
       "daily-notes:打开/创建今天的日记": false,
       "templates:插入模板": false,
       "command-palette:打开命令面板": false,
-      "obsidian-excalidraw-plugin:新建 Excalidraw 绘图": false,
+      "audio-recorder:开始/结束录音": false,
+      "workspaces:管理工作区布局": false,
       "mermaid-tools:Open Mermaid Toolbar": false,
       "obsidian-memos:Memos": false
     }
   },
-  "active": "8ce983b1ca9ae20d",
+  "active": "66a439ed44c883f8",
   "lastOpenFiles": [
+    "Obsidian使用手册/MindMap.md",
+    "Obsidian使用手册/基础设置.md",
+    "00templates/template_metainfo_yaml.md",
+    "Obsidian使用手册/temp/DateView练习.md",
+    "教学课件/Compose/01Compose主题与控件.md",
+    "Obsidian使用手册/temp/链接样式.md",
+    "00templates/周记模板.md",
+    "Excalidraw/Drawing 2023-07-28 18.04.54.excalidraw.md",
+    "Excalidraw",
+    "01日记/2023-07-28,Fri.md",
+    "01日记/周复盘/2023-W28.md",
+    "01日记/周复盘",
+    "01日记/2023-07-20,Thu.md",
+    "README.md",
+    "未命名.canvas",
+    "Obsidian使用手册/temp/会议样式.md",
+    "00templates/会议模板.md",
+    "00templates/日记模板.md",
+    "01日记/2023-07-28,周五.md",
+    "Obsidian使用手册/temp",
+    "00templates/日记模板",
+    "未命名",
+    "00templates",
+    "02附件",
+    "Obsidian使用手册",
     "画图/布局加载原理.md",
     "markdown练习/画图.md",
     "画图",
     "未命名.md",
     "markdown练习/未命名 1.md",
     "markdown练习",
-    "00templates/日记模板.md",
-    "00templates/会议记录模板.md",
-    "00templates"
+    "00templates/会议记录模板.md"
   ]
 }
