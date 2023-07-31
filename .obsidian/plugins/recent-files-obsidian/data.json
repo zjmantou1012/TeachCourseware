@@ -1,6 +1,14 @@
 {
   "recentFiles": [
     {
+      "basename": "DateView练习",
+      "path": "Obsidian使用手册/temp/DateView练习.md"
+    },
+    {
+      "basename": "链接样式",
+      "path": "Obsidian使用手册/temp/链接样式.md"
+    },
+    {
       "basename": "基础设置",
       "path": "Obsidian使用手册/基础设置.md"
     },
@@ -13,16 +21,8 @@
       "path": "00templates/template_metainfo_yaml.md"
     },
     {
-      "basename": "DateView练习",
-      "path": "Obsidian使用手册/temp/DateView练习.md"
-    },
-    {
       "basename": "01Compose主题与控件",
       "path": "教学课件/Compose/01Compose主题与控件.md"
-    },
-    {
-      "basename": "链接样式",
-      "path": "Obsidian使用手册/temp/链接样式.md"
     },
     {
       "basename": "周记模板",

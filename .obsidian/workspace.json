@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Obsidian使用手册/基础设置.md",
+                "file": "Obsidian使用手册/temp/DateView练习.md",
                 "mode": "source",
                 "source": false
               }
@@ -114,7 +114,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Obsidian使用手册/基础设置.md",
+                "file": "Obsidian使用手册/temp/DateView练习.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -131,7 +131,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Obsidian使用手册/基础设置.md",
+                "file": "Obsidian使用手册/temp/DateView练习.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -154,7 +154,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Obsidian使用手册/基础设置.md"
+                "file": "Obsidian使用手册/temp/DateView练习.md"
               }
             }
           },
@@ -183,6 +183,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
       "obsidian-excalidraw-plugin:新建 Excalidraw 绘图": false,
       "switcher:打开快速切换": false,
       "graph:查看关系图谱": false,
@@ -198,12 +199,12 @@
   },
   "active": "66a439ed44c883f8",
   "lastOpenFiles": [
-    "Obsidian使用手册/MindMap.md",
+    "Obsidian使用手册/temp/链接样式.md",
     "Obsidian使用手册/基础设置.md",
+    "Obsidian使用手册/MindMap.md",
     "00templates/template_metainfo_yaml.md",
     "Obsidian使用手册/temp/DateView练习.md",
     "教学课件/Compose/01Compose主题与控件.md",
-    "Obsidian使用手册/temp/链接样式.md",
     "00templates/周记模板.md",
     "Excalidraw/Drawing 2023-07-28 18.04.54.excalidraw.md",
     "Excalidraw",
