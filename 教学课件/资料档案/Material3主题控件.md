@@ -1,0 +1,6 @@
+# 基础控件
+| 名称     | 效果                                                                                                       | 代码示例                                                                                           |
+| -------- | ---------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------- |
+| Button   | ![image.png](https://zjmantou-drawingbed.oss-cn-hangzhou.aliyuncs.com/picture/202308041757794button.png)   | ![image.png](https://zjmantou-drawingbed.oss-cn-hangzhou.aliyuncs.com/picture/202308041759818.png) |
+| CheckBox | ![image.png](https://zjmantou-drawingbed.oss-cn-hangzhou.aliyuncs.com/picture/202308041805607checkbox.png) | ![image.png](https://zjmantou-drawingbed.oss-cn-hangzhou.aliyuncs.com/picture/202308041805958.png) |
+|          |                                                                                                            |                                                                                                    |
