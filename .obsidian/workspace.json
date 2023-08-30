@@ -13,13 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Obsidian使用手册/基础设置.md",
+                "file": "Obsidian使用手册/temp/DateView练习.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "69f6705cce478a7e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "00Inbox/个人简历-0829.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -101,7 +114,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Obsidian使用手册/基础设置.md",
+                "file": "00Inbox/个人简历-0829.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -118,7 +131,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Obsidian使用手册/基础设置.md",
+                "file": "00Inbox/个人简历-0829.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -141,7 +154,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Obsidian使用手册/基础设置.md"
+                "file": "00Inbox/个人简历-0829.md"
               }
             }
           },
@@ -192,18 +205,22 @@
       "obsidian-memos:Memos": false
     }
   },
-  "active": "a249affd2aff050e",
+  "active": "69f6705cce478a7e",
   "lastOpenFiles": [
-    "Obsidian使用手册/MindMap.md",
     "Obsidian使用手册/temp/DateView练习.md",
+    "00Inbox/个人简历-0829.md",
+    "03简历",
+    "00templates/template_metainfo_yaml.md",
+    "00templates/周记模板.md",
+    "01日记/周复盘/2023-W34.md",
+    "教学课件/资料档案/Uri与真实路径转换File-全适配.md",
     "教学课件/Compose/Material3主题控件.md",
     "Obsidian使用手册/基础设置.md",
-    "00templates/template_metainfo_yaml.md",
+    "Obsidian使用手册/MindMap.md",
     "教学课件/Compose/01Compose主题与控件.md",
     "Obsidian使用手册/temp/会议样式.md",
     "Obsidian使用手册/temp/链接样式.md",
     "Excalidraw/Drawing 2023-07-28 18.04.54.excalidraw.md",
-    "00templates/周记模板.md",
     "Excalidraw",
     "01日记/2023-07-28,Fri.md",
     "01日记/周复盘/2023-W28.md",
@@ -216,7 +233,6 @@
     "01日记/2023-07-28,周五.md",
     "Obsidian使用手册/temp",
     "00templates/日记模板",
-    "未命名",
     "00templates",
     "02附件",
     "Obsidian使用手册",
