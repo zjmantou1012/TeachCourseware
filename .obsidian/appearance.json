@@ -1,7 +1,8 @@
 {
   "accentColor": "#47c27c",
-  "theme": "moonstone",
-  "cssTheme": "Minimal",
+  "theme": "obsidian",
+  "cssTheme": "Everforest",
   "baseFontSize": 16,
-  "translucency": true
+  "translucency": true,
+  "interfaceFontFamily": "Apple Braille"
 }

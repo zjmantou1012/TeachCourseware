@@ -4,35 +4,18 @@
     "type": "split",
     "children": [
       {
-        "id": "e205d88bb7c22e72",
+        "id": "b8216214fb1fe448",
         "type": "tabs",
         "children": [
           {
-            "id": "2e81fa9a5b7f033c",
+            "id": "d05cecd5a077e51b",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Obsidian使用手册/temp/DateView练习.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "69f6705cce478a7e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "00Inbox/个人简历-0829.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "graph",
+              "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -114,7 +97,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "00Inbox/个人简历-0829.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -131,9 +113,8 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "00Inbox/个人简历-0829.md",
                 "linksCollapsed": false,
-                "unlinkedCollapsed": true
+                "unlinkedCollapsed": false
               }
             }
           },
@@ -153,9 +134,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "00Inbox/个人简历-0829.md"
-              }
+              "state": {}
             }
           },
           {
@@ -183,7 +162,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -205,16 +184,25 @@
       "obsidian-memos:Memos": false
     }
   },
-  "active": "69f6705cce478a7e",
+  "active": "d05cecd5a077e51b",
   "lastOpenFiles": [
+    "笔记/物联网Iot.md",
+    "Obsidian使用手册/Obsidian使用技巧/Obsidian双链.md",
+    "资料/物联网IoT终端设备如何选择接入协议.md",
+    "03简历/个人简历-0829.md",
+    "资料/你要知道的11项物联网(IoT)协议.md",
+    "未命名.canvas",
+    "笔记",
+    "教学课件/Compose/Compose与View的互操作性.md",
+    "教学课件/Compose/Material3主题控件.md",
+    "资料",
+    "00Inbox/未命名 1.md",
     "Obsidian使用手册/temp/DateView练习.md",
-    "00Inbox/个人简历-0829.md",
     "03简历",
     "00templates/template_metainfo_yaml.md",
     "00templates/周记模板.md",
     "01日记/周复盘/2023-W34.md",
     "教学课件/资料档案/Uri与真实路径转换File-全适配.md",
-    "教学课件/Compose/Material3主题控件.md",
     "Obsidian使用手册/基础设置.md",
     "Obsidian使用手册/MindMap.md",
     "教学课件/Compose/01Compose主题与控件.md",
@@ -227,7 +215,6 @@
     "01日记/周复盘",
     "01日记/2023-07-20,Thu.md",
     "README.md",
-    "未命名.canvas",
     "00templates/会议模板.md",
     "00templates/日记模板.md",
     "01日记/2023-07-28,周五.md",
@@ -235,13 +222,6 @@
     "00templates/日记模板",
     "00templates",
     "02附件",
-    "Obsidian使用手册",
-    "画图/布局加载原理.md",
-    "markdown练习/画图.md",
-    "画图",
-    "未命名.md",
-    "markdown练习/未命名 1.md",
-    "markdown练习",
-    "00templates/会议记录模板.md"
+    "Obsidian使用手册"
   ]
 }

@@ -2,14 +2,14 @@
   "strictLineBreaks": true,
   "showLineNumber": true,
   "trashOption": "local",
-  "newFileLocation": "folder",
+  "newFileLocation": "current",
   "newFileFolderPath": "00Inbox",
   "attachmentFolderPath": "02附件",
   "alwaysUpdateLinks": true,
   "pdfExportSettings": {
     "includeName": true,
     "pageSize": "Letter",
-    "landscape": true,
+    "landscape": false,
     "margin": "0",
     "downscalePercent": 57
   },
