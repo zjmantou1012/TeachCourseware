@@ -5,6 +5,10 @@
       "path": "笔记/物联网Iot.md"
     },
     {
+      "basename": "README",
+      "path": "README.md"
+    },
+    {
       "basename": "Obsidian双链",
       "path": "Obsidian使用手册/Obsidian使用技巧/Obsidian双链.md"
     },
@@ -19,10 +23,6 @@
     {
       "basename": "你要知道的11项物联网(IoT)协议",
       "path": "资料/你要知道的11项物联网(IoT)协议.md"
-    },
-    {
-      "basename": "未命名",
-      "path": "未命名.canvas"
     },
     {
       "basename": "Compose与View的互操作性",
@@ -75,10 +75,6 @@
     {
       "basename": "2023-W28",
       "path": "01日记/周复盘/2023-W28.md"
-    },
-    {
-      "basename": "README",
-      "path": "README.md"
     },
     {
       "basename": "会议模板",

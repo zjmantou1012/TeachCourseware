@@ -4,15 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "b8216214fb1fe448",
+        "id": "ce02763dc2c7b193",
         "type": "tabs",
         "children": [
           {
-            "id": "d05cecd5a077e51b",
+            "id": "88dd5d4554399531",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "笔记/物联网Iot.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -97,6 +101,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "笔记/物联网Iot.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,6 +118,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "笔记/物联网Iot.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -134,7 +140,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "笔记/物联网Iot.md"
+              }
             }
           },
           {
@@ -170,8 +178,6 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "table-editor-obsidian:Advanced Tables Toolbar": false,
-      "obsidian-excalidraw-plugin:新建 Excalidraw 绘图": false,
       "switcher:打开快速切换": false,
       "graph:查看关系图谱": false,
       "canvas:新建白板": false,
@@ -180,18 +186,20 @@
       "command-palette:打开命令面板": false,
       "audio-recorder:开始/结束录音": false,
       "workspaces:管理工作区布局": false,
+      "obsidian-memos:Memos": false,
+      "obsidian-excalidraw-plugin:新建 Excalidraw 绘图": false,
       "mermaid-tools:Open Mermaid Toolbar": false,
-      "obsidian-memos:Memos": false
+      "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "d05cecd5a077e51b",
+  "active": "88dd5d4554399531",
   "lastOpenFiles": [
+    "未命名.canvas",
     "笔记/物联网Iot.md",
     "Obsidian使用手册/Obsidian使用技巧/Obsidian双链.md",
     "资料/物联网IoT终端设备如何选择接入协议.md",
     "03简历/个人简历-0829.md",
     "资料/你要知道的11项物联网(IoT)协议.md",
-    "未命名.canvas",
     "笔记",
     "教学课件/Compose/Compose与View的互操作性.md",
     "教学课件/Compose/Material3主题控件.md",
@@ -217,7 +225,6 @@
     "README.md",
     "00templates/会议模板.md",
     "00templates/日记模板.md",
-    "01日记/2023-07-28,周五.md",
     "Obsidian使用手册/temp",
     "00templates/日记模板",
     "00templates",
