@@ -1,8 +1,56 @@
 {
   "recentFiles": [
     {
+      "basename": "2023-09-04,周一",
+      "path": "01日记/2023-09-04,周一.md"
+    },
+    {
+      "basename": "蓝牙mesh基础知识",
+      "path": "技术/网络协议/蓝牙mesh基础知识.md"
+    },
+    {
+      "basename": "蓝牙协议",
+      "path": "技术/网络协议/蓝牙协议.md"
+    },
+    {
+      "basename": "AI+IoT（人工智能+物联网）常用的专业名词解释",
+      "path": "资料/AI+IoT（人工智能+物联网）常用的专业名词解释.md"
+    },
+    {
+      "basename": "MQTT协议",
+      "path": "技术/网络协议/MQTT协议.md"
+    },
+    {
+      "basename": "物联网IoT终端设备如何选择接入协议",
+      "path": "资料/物联网IoT终端设备如何选择接入协议.md"
+    },
+    {
+      "basename": "主流物联网协议选择：MQTT、CoAP 还是 LwM2M？",
+      "path": "资料/主流物联网协议选择：MQTT、CoAP 还是 LwM2M？.md"
+    },
+    {
+      "basename": "你要知道的11项物联网(IoT)协议",
+      "path": "资料/你要知道的11项物联网(IoT)协议.md"
+    },
+    {
+      "basename": "物联网协议对比（HTTP、websocket、XMPP、COAP、MQTT和DDS协议）",
+      "path": "资料/物联网协议对比（HTTP、websocket、XMPP、COAP、MQTT和DDS协议）.md"
+    },
+    {
+      "basename": "物联网学习笔记",
+      "path": "资料/物联网学习笔记.md"
+    },
+    {
       "basename": "物联网Iot",
       "path": "笔记/物联网Iot.md"
+    },
+    {
+      "basename": "Core_v5.3",
+      "path": "00files/Core_v5.3.pdf"
+    },
+    {
+      "basename": "Uri与真实路径转换File-全适配",
+      "path": "教学课件/资料档案/Uri与真实路径转换File-全适配.md"
     },
     {
       "basename": "README",
@@ -13,16 +61,8 @@
       "path": "Obsidian使用手册/Obsidian使用技巧/Obsidian双链.md"
     },
     {
-      "basename": "物联网IoT终端设备如何选择接入协议",
-      "path": "资料/物联网IoT终端设备如何选择接入协议.md"
-    },
-    {
       "basename": "个人简历-0829",
       "path": "03简历/个人简历-0829.md"
-    },
-    {
-      "basename": "你要知道的11项物联网(IoT)协议",
-      "path": "资料/你要知道的11项物联网(IoT)协议.md"
     },
     {
       "basename": "Compose与View的互操作性",
@@ -47,10 +87,6 @@
     {
       "basename": "2023-W34",
       "path": "01日记/周复盘/2023-W34.md"
-    },
-    {
-      "basename": "Uri与真实路径转换File-全适配",
-      "path": "教学课件/资料档案/Uri与真实路径转换File-全适配.md"
     },
     {
       "basename": "基础设置",
