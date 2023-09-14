@@ -4,52 +4,35 @@
     "type": "split",
     "children": [
       {
-        "id": "ce02763dc2c7b193",
+        "id": "8c286944c3178d7a",
         "type": "tabs",
         "children": [
           {
-            "id": "88dd5d4554399531",
+            "id": "594fb938e8b74443",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "技术/网络协议/蓝牙mesh基础知识.md",
+                "file": "笔记/Android 面试题参考.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "0af61015d926b68c",
+            "id": "20adf36c99d8feb1",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "技术/网络协议/蓝牙协议.md",
+                "file": "技术/网络协议/MQTT协议.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
-      },
-      {
-        "id": "cc3ad84e2b707e00",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "bb9d10afb408e208",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "01日记/2023-09-04,周一.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -115,8 +98,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "71b8b9bce465f640",
@@ -132,7 +114,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "01日记/2023-09-04,周一.md",
+                "file": "技术/网络协议/MQTT协议.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -149,7 +131,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "01日记/2023-09-04,周一.md",
+                "file": "技术/网络协议/MQTT协议.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -172,7 +154,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "01日记/2023-09-04,周一.md"
+                "file": "技术/网络协议/MQTT协议.md"
               }
             }
           },
@@ -205,8 +187,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -224,20 +205,28 @@
       "obsidian-memos:Memos": false
     }
   },
-  "active": "bb9d10afb408e208",
+  "active": "20adf36c99d8feb1",
   "lastOpenFiles": [
-    "技术/网络协议/蓝牙mesh基础知识.md",
-    "技术/网络协议/蓝牙协议.md",
+    "笔记/未命名思维导图.md",
+    "技术/网络协议/MQTT协议.md",
+    "笔记/Android 面试题参考.md",
+    "笔记/物联网Iot.md",
+    "01日记/未命名思维导图.md",
+    "01日记/未命名思维导图 1.md",
+    "01日记/2023-09-05,周二.md",
     "01日记/2023-09-04,周一.md",
+    "00templates/template_metainfo_yaml.md",
+    "01日记/2023-07-28,周五.md",
+    "01日记/2023-07-28,Fri.md",
+    "技术/网络协议/蓝牙协议.md",
+    "技术/网络协议/蓝牙mesh基础知识.md",
     "技术/网络协议/未命名.md",
     "资料/AI+IoT（人工智能+物联网）常用的专业名词解释.md",
-    "技术/网络协议/MQTT协议.md",
     "资料/物联网IoT终端设备如何选择接入协议.md",
     "资料/主流物联网协议选择：MQTT、CoAP 还是 LwM2M？.md",
     "资料/你要知道的11项物联网(IoT)协议.md",
     "资料/物联网协议对比（HTTP、websocket、XMPP、COAP、MQTT和DDS协议）.md",
     "资料/物联网学习笔记.md",
-    "笔记/物联网Iot.md",
     "资料/().md",
     "00files/Core_v5.3.pdf",
     "00files",
@@ -250,16 +239,8 @@
     "03简历/个人简历-0829.md",
     "笔记",
     "教学课件/Compose/Compose与View的互操作性.md",
-    "教学课件/Compose/Material3主题控件.md",
     "资料",
-    "00Inbox/未命名 1.md",
-    "Obsidian使用手册/temp/DateView练习.md",
     "03简历",
-    "00templates/template_metainfo_yaml.md",
-    "00templates/周记模板.md",
-    "01日记/周复盘/2023-W34.md",
-    "Obsidian使用手册/基础设置.md",
-    "Obsidian使用手册/MindMap.md",
     "Excalidraw",
     "01日记/周复盘",
     "Obsidian使用手册/temp"

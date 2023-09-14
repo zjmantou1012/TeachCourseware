@@ -10,6 +10,7 @@ tags:
   - MQTT
 ---
 
+最大负载量：128KB
 
 MQTT全称Message Queuing Telemetry Transport，直译过来是消息队列遥测传输的意思
 
@@ -24,7 +25,7 @@ MQTT(消息队列遥测传输)是ISO 标准(ISO/IEC PRF 20922)下基于发布/�
 
 #### **缺点**：	
 - 发布者、接收者必须订阅相同的主题，	
-- 发布者并不确定接收者是否接受到了推送2、客户端和服务器的角色和职责
+- 发布者并不确定接收者是否接受到了推送
 
 #### 客户端服务端职责
 ![image.png](https://zjmantou-drawingbed.oss-cn-hangzhou.aliyuncs.com/picture/202309031430423.png)
@@ -62,6 +63,12 @@ MQTT(消息队列遥测传输)是ISO 标准(ISO/IEC PRF 20922)下基于发布/�
 ![image.png](https://zjmantou-drawingbed.oss-cn-hangzhou.aliyuncs.com/picture/202309031453114.png)
 
 不同消息类型有不同的格式
+- 协议名（Protocol Name）
+- 协议级别（Protocol Level）
+- 连接标志（Connect Flags）
+- 保持连接（Keep Alive）
+![image.png](https://zjmantou-drawingbed.oss-cn-hangzhou.aliyuncs.com/picture/202309051454260.png)
+
 
 ### 负载（Payload）
 

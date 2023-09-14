@@ -1,24 +1,40 @@
 {
   "recentFiles": [
     {
+      "basename": "MQTT协议",
+      "path": "技术/网络协议/MQTT协议.md"
+    },
+    {
+      "basename": "Android 面试题参考",
+      "path": "笔记/Android 面试题参考.md"
+    },
+    {
+      "basename": "物联网Iot",
+      "path": "笔记/物联网Iot.md"
+    },
+    {
+      "basename": "2023-09-05,周二",
+      "path": "01日记/2023-09-05,周二.md"
+    },
+    {
       "basename": "2023-09-04,周一",
       "path": "01日记/2023-09-04,周一.md"
     },
     {
-      "basename": "蓝牙mesh基础知识",
-      "path": "技术/网络协议/蓝牙mesh基础知识.md"
+      "basename": "template_metainfo_yaml",
+      "path": "00templates/template_metainfo_yaml.md"
     },
     {
       "basename": "蓝牙协议",
       "path": "技术/网络协议/蓝牙协议.md"
     },
     {
-      "basename": "AI+IoT（人工智能+物联网）常用的专业名词解释",
-      "path": "资料/AI+IoT（人工智能+物联网）常用的专业名词解释.md"
+      "basename": "蓝牙mesh基础知识",
+      "path": "技术/网络协议/蓝牙mesh基础知识.md"
     },
     {
-      "basename": "MQTT协议",
-      "path": "技术/网络协议/MQTT协议.md"
+      "basename": "AI+IoT（人工智能+物联网）常用的专业名词解释",
+      "path": "资料/AI+IoT（人工智能+物联网）常用的专业名词解释.md"
     },
     {
       "basename": "物联网IoT终端设备如何选择接入协议",
@@ -39,10 +55,6 @@
     {
       "basename": "物联网学习笔记",
       "path": "资料/物联网学习笔记.md"
-    },
-    {
-      "basename": "物联网Iot",
-      "path": "笔记/物联网Iot.md"
     },
     {
       "basename": "Core_v5.3",
@@ -75,10 +87,6 @@
     {
       "basename": "DateView练习",
       "path": "Obsidian使用手册/temp/DateView练习.md"
-    },
-    {
-      "basename": "template_metainfo_yaml",
-      "path": "00templates/template_metainfo_yaml.md"
     },
     {
       "basename": "周记模板",
@@ -119,10 +127,6 @@
     {
       "basename": "日记模板",
       "path": "00templates/日记模板.md"
-    },
-    {
-      "basename": "2023-07-28,周五",
-      "path": "01日记/2023-07-28,周五.md"
     },
     {
       "basename": "画图",
