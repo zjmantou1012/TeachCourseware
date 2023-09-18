@@ -1,16 +1,128 @@
 {
   "recentFiles": [
     {
+      "basename": "跟我一起写 Makefile（完整版）",
+      "path": "资料/跟我一起写 Makefile（完整版）.md"
+    },
+    {
+      "basename": "一文全面了解Android单元测试",
+      "path": "技术/Android/一文全面了解Android单元测试.md"
+    },
+    {
+      "basename": "Android Automotive及IVI概述",
+      "path": "技术/Android/Android Automotive及IVI概述.md"
+    },
+    {
+      "basename": "Android.bp入门教程",
+      "path": "技术/Android/Android.bp入门教程.md"
+    },
+    {
+      "basename": "Android.mk上手指南",
+      "path": "技术/Android/Android.mk上手指南.md"
+    },
+    {
+      "basename": "（13）- 系统设置-蓝牙设置",
+      "path": "技术/Android/Android车载/（13）- 系统设置-蓝牙设置.md"
+    },
+    {
+      "basename": "（12） - SystemUI （一）",
+      "path": "技术/Android/Android车载/（12） - SystemUI （一）.md"
+    },
+    {
+      "basename": "（11）- 车载Android应用开发入门指南",
+      "path": "技术/Android/Android车载/（11）- 车载Android应用开发入门指南.md"
+    },
+    {
+      "basename": "（10）- 车载空调系统（HVAC）",
+      "path": "技术/Android/Android车载/（10）- 车载空调系统（HVAC）.md"
+    },
+    {
+      "basename": "（9）- 车载多媒体（四）- 原生音乐播放器（下）",
+      "path": "技术/Android/Android车载/（9）- 车载多媒体（四）- 原生音乐播放器（下）.md"
+    },
+    {
+      "basename": "（8）- 车载多媒体（三）- 原生音乐播放器（上）",
+      "path": "技术/Android/Android车载/（8）- 车载多媒体（三）- 原生音乐播放器（上）.md"
+    },
+    {
+      "basename": "（7）- 车载多媒体（二）- 多媒体应用架构与MediaSession框架",
+      "path": "技术/Android/Android车载/（7）- 车载多媒体（二）- 多媒体应用架构与MediaSession框架.md"
+    },
+    {
+      "basename": "（6）- 车载多媒体（一）- 音视频基础知识与MediaPlayer",
+      "path": "技术/Android/Android车载/（6）- 车载多媒体（一）- 音视频基础知识与MediaPlayer.md"
+    },
+    {
+      "basename": "（5） - CarLauncher",
+      "path": "技术/Android/Android车载/（5） - CarLauncher.md"
+    },
+    {
+      "basename": "（4）- 编写基于AIDL 的 SDK",
+      "path": "技术/Android/Android车载/（4）- 编写基于AIDL 的 SDK.md"
+    },
+    {
+      "basename": "（3）- 构建 MVVM 架构(Java版)",
+      "path": "技术/Android/Android车载/（3）- 构建 MVVM 架构(Java版).md"
+    },
+    {
+      "basename": "（2）- 集成第三方APK",
+      "path": "技术/Android/Android车载/（2）- 集成第三方APK.md"
+    },
+    {
+      "basename": "（1）- Android Automotive概述与编译",
+      "path": "技术/Android/Android车载/（1）- Android Automotive概述与编译.md"
+    },
+    {
+      "basename": "蓝牙mesh基础知识",
+      "path": "技术/网络协议/蓝牙mesh基础知识.md"
+    },
+    {
+      "basename": "WebSockets",
+      "path": "技术/网络协议/WebSockets.md"
+    },
+    {
+      "basename": "物联网Iot",
+      "path": "笔记/物联网Iot.md"
+    },
+    {
+      "basename": "TCP与UDP",
+      "path": "技术/网络协议/TCP与UDP.md"
+    },
+    {
       "basename": "MQTT协议",
       "path": "技术/网络协议/MQTT协议.md"
+    },
+    {
+      "basename": "Socket",
+      "path": "技术/网络协议/Socket.md"
+    },
+    {
+      "basename": "HTTP协议",
+      "path": "技术/网络协议/HTTP协议.md"
+    },
+    {
+      "basename": "蓝牙协议",
+      "path": "技术/网络协议/蓝牙协议.md"
+    },
+    {
+      "basename": "Flutter与React Native表",
+      "path": "笔记/跨平台/Flutter与React Native表.md"
     },
     {
       "basename": "Android 面试题参考",
       "path": "笔记/Android 面试题参考.md"
     },
     {
-      "basename": "物联网Iot",
-      "path": "笔记/物联网Iot.md"
+      "basename": "你要知道的11项物联网(IoT)协议",
+      "path": "资料/你要知道的11项物联网(IoT)协议.md"
+    },
+    {
+      "basename": "主流物联网协议选择：MQTT、CoAP 还是 LwM2M？",
+      "path": "资料/主流物联网协议选择：MQTT、CoAP 还是 LwM2M？.md"
+    },
+    {
+      "basename": "Kotlin协程",
+      "path": "笔记/kotlin/Kotlin协程.md"
     },
     {
       "basename": "2023-09-05,周二",
@@ -25,28 +137,12 @@
       "path": "00templates/template_metainfo_yaml.md"
     },
     {
-      "basename": "蓝牙协议",
-      "path": "技术/网络协议/蓝牙协议.md"
-    },
-    {
-      "basename": "蓝牙mesh基础知识",
-      "path": "技术/网络协议/蓝牙mesh基础知识.md"
-    },
-    {
       "basename": "AI+IoT（人工智能+物联网）常用的专业名词解释",
       "path": "资料/AI+IoT（人工智能+物联网）常用的专业名词解释.md"
     },
     {
       "basename": "物联网IoT终端设备如何选择接入协议",
       "path": "资料/物联网IoT终端设备如何选择接入协议.md"
-    },
-    {
-      "basename": "主流物联网协议选择：MQTT、CoAP 还是 LwM2M？",
-      "path": "资料/主流物联网协议选择：MQTT、CoAP 还是 LwM2M？.md"
-    },
-    {
-      "basename": "你要知道的11项物联网(IoT)协议",
-      "path": "资料/你要知道的11项物联网(IoT)协议.md"
     },
     {
       "basename": "物联网协议对比（HTTP、websocket、XMPP、COAP、MQTT和DDS协议）",
@@ -103,66 +199,6 @@
     {
       "basename": "MindMap",
       "path": "Obsidian使用手册/MindMap.md"
-    },
-    {
-      "basename": "会议样式",
-      "path": "Obsidian使用手册/temp/会议样式.md"
-    },
-    {
-      "basename": "链接样式",
-      "path": "Obsidian使用手册/temp/链接样式.md"
-    },
-    {
-      "basename": "Drawing 2023-07-28 18.04.54.excalidraw",
-      "path": "Excalidraw/Drawing 2023-07-28 18.04.54.excalidraw.md"
-    },
-    {
-      "basename": "2023-W28",
-      "path": "01日记/周复盘/2023-W28.md"
-    },
-    {
-      "basename": "会议模板",
-      "path": "00templates/会议模板.md"
-    },
-    {
-      "basename": "日记模板",
-      "path": "00templates/日记模板.md"
-    },
-    {
-      "basename": "画图",
-      "path": "markdown练习/画图.md"
-    },
-    {
-      "basename": "布局加载原理",
-      "path": "画图/布局加载原理.md"
-    },
-    {
-      "basename": "readme",
-      "path": "readme.md"
-    },
-    {
-      "basename": "Obsidian插件",
-      "path": "Obsidian使用技巧/Obsidian插件.md"
-    },
-    {
-      "basename": "日记模板",
-      "path": "00templates/日记模板.md"
-    },
-    {
-      "basename": "Obsidian——元技能",
-      "path": "Obsidian使用技巧/Obsidian——元技能.md"
-    },
-    {
-      "basename": "会议记录模板",
-      "path": "00templates/会议记录模板.md"
-    },
-    {
-      "basename": "Obsidian双链",
-      "path": "Obsidian使用技巧/Obsidian双链.md"
-    },
-    {
-      "basename": "搜索技巧",
-      "path": "Obsidian使用技巧/搜索技巧.md"
     }
   ],
   "omittedPaths": [],

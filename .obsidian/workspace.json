@@ -4,35 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "8c286944c3178d7a",
+        "id": "585d4257004413b9",
         "type": "tabs",
         "children": [
           {
-            "id": "594fb938e8b74443",
+            "id": "bfba4d71c42f6fdc",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "笔记/Android 面试题参考.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "20adf36c99d8feb1",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "技术/网络协议/MQTT协议.md",
+                "file": "资料/跟我一起写 Makefile（完整版）.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -61,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#网络协议",
+                "query": "TLS",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -114,7 +101,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "技术/网络协议/MQTT协议.md",
+                "file": "资料/跟我一起写 Makefile（完整版）.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -131,7 +118,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "技术/网络协议/MQTT协议.md",
+                "file": "资料/跟我一起写 Makefile（完整版）.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -154,7 +141,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "技术/网络协议/MQTT协议.md"
+                "file": "资料/跟我一起写 Makefile（完整版）.md"
               }
             }
           },
@@ -205,44 +192,44 @@
       "obsidian-memos:Memos": false
     }
   },
-  "active": "20adf36c99d8feb1",
+  "active": "bfba4d71c42f6fdc",
   "lastOpenFiles": [
-    "笔记/未命名思维导图.md",
-    "技术/网络协议/MQTT协议.md",
-    "笔记/Android 面试题参考.md",
-    "笔记/物联网Iot.md",
-    "01日记/未命名思维导图.md",
-    "01日记/未命名思维导图 1.md",
-    "01日记/2023-09-05,周二.md",
-    "01日记/2023-09-04,周一.md",
-    "00templates/template_metainfo_yaml.md",
-    "01日记/2023-07-28,周五.md",
-    "01日记/2023-07-28,Fri.md",
-    "技术/网络协议/蓝牙协议.md",
+    "技术/Android/一文全面了解Android单元测试.md",
+    "资料/跟我一起写 Makefile（完整版）.md",
+    "技术/Android/Android Automotive及IVI概述.md",
+    "技术/Android/Android.bp入门教程.md",
+    "技术/Android/Android.mk上手指南.md",
+    "技术/Android/Android车载/（13）- 系统设置-蓝牙设置.md",
+    "技术/Android",
+    "技术/未命名.md",
+    "技术/Android/Android车载/（12） - SystemUI （一）.md",
+    "技术/Android/Android车载/（11）- 车载Android应用开发入门指南.md",
+    "技术/Android/Android车载/（10）- 车载空调系统（HVAC）.md",
+    "技术/Android/Android车载/（9）- 车载多媒体（四）- 原生音乐播放器（下）.md",
+    "技术/Android/Android车载/（8）- 车载多媒体（三）- 原生音乐播放器（上）.md",
+    "技术/Android/Android车载/（7）- 车载多媒体（二）- 多媒体应用架构与MediaSession框架.md",
+    "技术/Android/Android车载/（6）- 车载多媒体（一）- 音视频基础知识与MediaPlayer.md",
+    "技术/Android/Android车载/（5） - CarLauncher.md",
+    "技术/Android/Android车载/（4）- 编写基于AIDL 的 SDK.md",
+    "技术/Android/Android车载/（3）- 构建 MVVM 架构(Java版).md",
+    "技术/Android/Android车载/（2）- 集成第三方APK.md",
+    "技术/Android/Android车载/（1）- Android Automotive概述与编译.md",
     "技术/网络协议/蓝牙mesh基础知识.md",
-    "技术/网络协议/未命名.md",
-    "资料/AI+IoT（人工智能+物联网）常用的专业名词解释.md",
-    "资料/物联网IoT终端设备如何选择接入协议.md",
-    "资料/主流物联网协议选择：MQTT、CoAP 还是 LwM2M？.md",
-    "资料/你要知道的11项物联网(IoT)协议.md",
-    "资料/物联网协议对比（HTTP、websocket、XMPP、COAP、MQTT和DDS协议）.md",
-    "资料/物联网学习笔记.md",
-    "资料/().md",
+    "技术/Android/Android车载",
+    "技术/网络协议/WebSockets.md",
+    "笔记/物联网Iot.md",
+    "技术/网络协议/TCP与UDP.md",
+    "技术/网络协议/MQTT协议.md",
+    "技术/网络协议/Socket.md",
+    "技术/网络协议/HTTP协议.md",
+    "笔记/跨平台",
+    "笔记/kotlin",
     "00files/Core_v5.3.pdf",
     "00files",
-    "技术/网络协议/().md",
-    "教学课件/资料档案/Uri与真实路径转换File-全适配.md",
     "技术/网络协议",
     "技术",
     "未命名.canvas",
-    "Obsidian使用手册/Obsidian使用技巧/Obsidian双链.md",
-    "03简历/个人简历-0829.md",
     "笔记",
-    "教学课件/Compose/Compose与View的互操作性.md",
-    "资料",
-    "03简历",
-    "Excalidraw",
-    "01日记/周复盘",
-    "Obsidian使用手册/temp"
+    "资料"
   ]
 }
