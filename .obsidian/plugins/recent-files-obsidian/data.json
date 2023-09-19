@@ -1,6 +1,38 @@
 {
   "recentFiles": [
     {
+      "basename": "（7）Android Studio 4.0.+NDK开发.cpp文件",
+      "path": "技术/Android/ndk/jni开发系列文章/（7）Android Studio 4.0.+NDK开发.cpp文件.md"
+    },
+    {
+      "basename": "（6）Android JNI开发深度学习",
+      "path": "技术/Android/ndk/jni开发系列文章/（6）Android JNI开发深度学习.md"
+    },
+    {
+      "basename": "（5）Android Studio 4.0.+NDK .so库生成打包",
+      "path": "技术/Android/ndk/jni开发系列文章/（5）Android Studio 4.0.+NDK .so库生成打包.md"
+    },
+    {
+      "basename": "（4）Android NDK与JNI的区别有何不同？",
+      "path": "技术/Android/ndk/jni开发系列文章/（4）Android NDK与JNI的区别有何不同？.md"
+    },
+    {
+      "basename": "（3）Android Studio 4.0.+NDK项目开发详细教学",
+      "path": "技术/Android/ndk/jni开发系列文章/（3）Android Studio 4.0.+NDK项目开发详细教学.md"
+    },
+    {
+      "basename": "（2）JNI开发必学C-C++使用实践",
+      "path": "技术/Android/ndk/jni开发系列文章/（2）JNI开发必学C-C++使用实践.md"
+    },
+    {
+      "basename": "（1）JNI开发必学C-C++基础",
+      "path": "技术/Android/ndk/jni开发系列文章/（1）JNI开发必学C-C++基础.md"
+    },
+    {
+      "basename": "跟我一起写 Makefile（完整版）",
+      "path": "技术/Android/跟我一起写 Makefile（完整版）.md"
+    },
+    {
       "basename": "Android NDK 开发基础",
       "path": "技术/Android/Android NDK 开发基础.md"
     },
@@ -11,10 +43,6 @@
     {
       "basename": "Android 面试题参考",
       "path": "笔记/Android 面试题参考.md"
-    },
-    {
-      "basename": "跟我一起写 Makefile（完整版）",
-      "path": "资料/跟我一起写 Makefile（完整版）.md"
     },
     {
       "basename": "Android Automotive及IVI概述",
@@ -171,34 +199,6 @@
     {
       "basename": "Obsidian双链",
       "path": "Obsidian使用手册/Obsidian使用技巧/Obsidian双链.md"
-    },
-    {
-      "basename": "个人简历-0829",
-      "path": "03简历/个人简历-0829.md"
-    },
-    {
-      "basename": "Compose与View的互操作性",
-      "path": "教学课件/Compose/Compose与View的互操作性.md"
-    },
-    {
-      "basename": "Material3主题控件",
-      "path": "教学课件/Compose/Material3主题控件.md"
-    },
-    {
-      "basename": "DateView练习",
-      "path": "Obsidian使用手册/temp/DateView练习.md"
-    },
-    {
-      "basename": "周记模板",
-      "path": "00templates/周记模板.md"
-    },
-    {
-      "basename": "2023-W34",
-      "path": "01日记/周复盘/2023-W34.md"
-    },
-    {
-      "basename": "基础设置",
-      "path": "Obsidian使用手册/基础设置.md"
     }
   ],
   "omittedPaths": [],
