@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "资料/跟我一起写 Makefile（完整版）.md",
+                "file": "技术/Android/Android NDK 开发基础.md",
                 "mode": "source",
                 "source": false
               }
@@ -101,7 +101,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "资料/跟我一起写 Makefile（完整版）.md",
+                "file": "技术/Android/Android NDK 开发基础.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -118,7 +118,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "资料/跟我一起写 Makefile（完整版）.md",
+                "file": "技术/Android/Android NDK 开发基础.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -141,7 +141,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "资料/跟我一起写 Makefile（完整版）.md"
+                "file": "技术/Android/Android NDK 开发基础.md"
               }
             }
           },
@@ -195,6 +195,8 @@
   "active": "bfba4d71c42f6fdc",
   "lastOpenFiles": [
     "技术/Android/一文全面了解Android单元测试.md",
+    "技术/Android/Android NDK 开发基础.md",
+    "笔记/Android 面试题参考.md",
     "资料/跟我一起写 Makefile（完整版）.md",
     "技术/Android/Android Automotive及IVI概述.md",
     "技术/Android/Android.bp入门教程.md",
@@ -220,8 +222,6 @@
     "笔记/物联网Iot.md",
     "技术/网络协议/TCP与UDP.md",
     "技术/网络协议/MQTT协议.md",
-    "技术/网络协议/Socket.md",
-    "技术/网络协议/HTTP协议.md",
     "笔记/跨平台",
     "笔记/kotlin",
     "00files/Core_v5.3.pdf",

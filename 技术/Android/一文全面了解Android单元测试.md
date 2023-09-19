@@ -1,3 +1,13 @@
+---
+author: zjmantou
+title: 一文全面了解Android单元测试
+time: 2023-09-19 周二
+tags:
+  - Android
+  - 单元测试
+---
+
+
 ## 前言
 
 成为一名优秀的Android开发，需要一份完备的[知识体系](https://github.com/JsonChao/Awesome-Android-Exercise)，在这里，让我们一起成长为自己所想的那样~。
@@ -84,7 +94,7 @@ assertEquals(expected, actual, tolerance) tolerance 偏差值
 
 ##### 4.自定义Junit Rule——实现TestRule接口并重写apply方法
 
-```
+```Java
 public class JsonChaoRule implements TestRule {
 
     @Override
@@ -167,7 +177,7 @@ Person mPerson = mock(Person.class);
 
 ##### 3.验证方法的调用，指定方法的返回值，或者执行特定的动作
 
-```
+```Java
 when(iMathUtils.sum(1, 1)).thenReturn(2); 
 doReturn(3).when(iMathUtils).sum(1,1);   
 //给方法设置桩可以设置多次，只会返回最后一次设置的值
@@ -288,7 +298,7 @@ public PowerMockRule mPowerMockRule = new PowerMockRule();
 
 **通过注解@Parameterized.parameters提供一系列数据给构造器中的构造参数**或给**被注解@Parameterized.parameter注解的public全局变量**
 
-```
+```Java
 RunWith(Parameterized.class)
 public class ParameterizedTest {
 
@@ -350,7 +360,7 @@ Robolectric通过**一套能运行在JVM上的Android代码**，解决了在Java
 
 ##### 1.在build.gradle里面添加Robolectric的依赖
 
-```
+```Java
 //Robolectric核心
 testImplementation "org.robolectric:robolectric:3.8"
 //支持support-v4
@@ -363,7 +373,7 @@ testImplementation "org.robolectric:shadows-multidex:3.+"
 
 首先给指定的测试类上面进行配置
 
-```
+```Java
 @RunWith(RobolectricTestRunner.class)
 //目前Robolectric最高支持sdk版本为23。
 @Config(constants = BuildConfig.class, sdk = 23)
@@ -371,7 +381,7 @@ testImplementation "org.robolectric:shadows-multidex:3.+"
 
 下面是一些常用用法
 
-```
+```Java
 //当Robolectric.setupActivity()方法返回的时候，
 //默认会调用Activity的onCreate()、onStart()、onResume()
 mTestActivity = Robolectric.setupActivity(TestActivity.class);
@@ -405,7 +415,7 @@ Assert.assertNotNull(application.hasReceiverForIntent(intent));
 
 自定义Shadow类
 
-```
+```Java
 @Implements(Person.class)
 public class ShadowPerson {
 
@@ -459,7 +469,7 @@ Jacoco的全称为Java Code Coverage（Java代码覆盖率），可以**生成ja
 在应用Module下加入jacoco.gradle自定义脚本，app.gradle apply from它，同步，即可看到在app的Task下生成了Report目录，Report目录  
 下生成了JacocoTestReport任务。
 
-```
+```Java
 apply plugin: 'jacoco'
 
 jacoco {

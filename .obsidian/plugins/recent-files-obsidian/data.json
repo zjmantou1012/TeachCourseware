@@ -1,12 +1,20 @@
 {
   "recentFiles": [
     {
-      "basename": "跟我一起写 Makefile（完整版）",
-      "path": "资料/跟我一起写 Makefile（完整版）.md"
+      "basename": "Android NDK 开发基础",
+      "path": "技术/Android/Android NDK 开发基础.md"
     },
     {
       "basename": "一文全面了解Android单元测试",
       "path": "技术/Android/一文全面了解Android单元测试.md"
+    },
+    {
+      "basename": "Android 面试题参考",
+      "path": "笔记/Android 面试题参考.md"
+    },
+    {
+      "basename": "跟我一起写 Makefile（完整版）",
+      "path": "资料/跟我一起写 Makefile（完整版）.md"
     },
     {
       "basename": "Android Automotive及IVI概述",
@@ -109,10 +117,6 @@
       "path": "笔记/跨平台/Flutter与React Native表.md"
     },
     {
-      "basename": "Android 面试题参考",
-      "path": "笔记/Android 面试题参考.md"
-    },
-    {
       "basename": "你要知道的11项物联网(IoT)协议",
       "path": "资料/你要知道的11项物联网(IoT)协议.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "基础设置",
       "path": "Obsidian使用手册/基础设置.md"
-    },
-    {
-      "basename": "MindMap",
-      "path": "Obsidian使用手册/MindMap.md"
     }
   ],
   "omittedPaths": [],
