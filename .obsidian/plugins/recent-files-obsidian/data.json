@@ -1,10 +1,6 @@
 {
   "recentFiles": [
     {
-      "basename": "（7）Android Studio 4.0.+NDK开发.cpp文件",
-      "path": "技术/Android/ndk/jni开发系列文章/（7）Android Studio 4.0.+NDK开发.cpp文件.md"
-    },
-    {
       "basename": "（6）Android JNI开发深度学习",
       "path": "技术/Android/ndk/jni开发系列文章/（6）Android JNI开发深度学习.md"
     },
@@ -13,12 +9,16 @@
       "path": "技术/Android/ndk/jni开发系列文章/（5）Android Studio 4.0.+NDK .so库生成打包.md"
     },
     {
-      "basename": "（4）Android NDK与JNI的区别有何不同？",
-      "path": "技术/Android/ndk/jni开发系列文章/（4）Android NDK与JNI的区别有何不同？.md"
+      "basename": "（7）Android Studio 4.0.+NDK开发.cpp文件",
+      "path": "技术/Android/ndk/jni开发系列文章/（7）Android Studio 4.0.+NDK开发.cpp文件.md"
     },
     {
       "basename": "（3）Android Studio 4.0.+NDK项目开发详细教学",
       "path": "技术/Android/ndk/jni开发系列文章/（3）Android Studio 4.0.+NDK项目开发详细教学.md"
+    },
+    {
+      "basename": "（4）Android NDK与JNI的区别有何不同？",
+      "path": "技术/Android/ndk/jni开发系列文章/（4）Android NDK与JNI的区别有何不同？.md"
     },
     {
       "basename": "（2）JNI开发必学C-C++使用实践",
