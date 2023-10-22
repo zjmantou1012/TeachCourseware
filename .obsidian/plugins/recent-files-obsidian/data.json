@@ -1,8 +1,40 @@
 {
   "recentFiles": [
     {
+      "basename": "一文全面了解Android单元测试",
+      "path": "技术/Android/一文全面了解Android单元测试.md"
+    },
+    {
       "basename": "Android 插件化",
       "path": "技术/Android/Android 插件化.md"
+    },
+    {
+      "basename": "Android 反射",
+      "path": "技术/Android/Android 反射.md"
+    },
+    {
+      "basename": "Android 面试题参考",
+      "path": "技术/Android/Android 面试题参考.md"
+    },
+    {
+      "basename": "Android 一些重要知识点解析整理",
+      "path": "技术/Android/Android 一些重要知识点解析整理.md"
+    },
+    {
+      "basename": "Map",
+      "path": "技术/Android/Map.md"
+    },
+    {
+      "basename": "Java类加载机制",
+      "path": "技术/Android/Java类加载机制.md"
+    },
+    {
+      "basename": "Handler机制",
+      "path": "技术/Android/Handler机制.md"
+    },
+    {
+      "basename": "Binder机制",
+      "path": "技术/Android/Binder机制.md"
     },
     {
       "basename": "动态字节码技术",
@@ -11,14 +43,6 @@
     {
       "basename": "Android Hook",
       "path": "技术/Android/Android Hook.md"
-    },
-    {
-      "basename": "Android 反射",
-      "path": "技术/Android/Android 反射.md"
-    },
-    {
-      "basename": "Java类加载机制",
-      "path": "技术/Android/Java类加载机制.md"
     },
     {
       "basename": "物联网Iot",
@@ -33,32 +57,12 @@
       "path": "技术/Android/设备导入HTTPS证书（不抓取HTTPS数据可跳过此步骤）.md"
     },
     {
-      "basename": "Map",
-      "path": "技术/Android/Map.md"
-    },
-    {
-      "basename": "Binder机制",
-      "path": "技术/Android/Binder机制.md"
-    },
-    {
       "basename": "Synchronize原理",
       "path": "技术/Android/Synchronize原理.md"
     },
     {
-      "basename": "Android 一些重要知识点解析整理",
-      "path": "技术/Android/Android 一些重要知识点解析整理.md"
-    },
-    {
       "basename": "AndroidStudio 优秀插件推荐",
       "path": "技术/Android/AndroidStudio 优秀插件推荐.md"
-    },
-    {
-      "basename": "Handler机制",
-      "path": "技术/Android/Handler机制.md"
-    },
-    {
-      "basename": "Android 面试题参考",
-      "path": "技术/Android/Android 面试题参考.md"
     },
     {
       "basename": "CPrimerPlus（第6版）",
@@ -127,10 +131,6 @@
     {
       "basename": "跟我一起写 Makefile（完整版）",
       "path": "技术/Android/跟我一起写 Makefile（完整版）.md"
-    },
-    {
-      "basename": "一文全面了解Android单元测试",
-      "path": "技术/Android/一文全面了解Android单元测试.md"
     },
     {
       "basename": "Android Automotive及IVI概述",

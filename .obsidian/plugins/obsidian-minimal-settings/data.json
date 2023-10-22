@@ -1,9 +1,9 @@
 {
   "theme": "moonstone",
   "lightStyle": "minimal-light-tonal",
-  "darkStyle": "minimal-dark",
+  "darkStyle": "minimal-dark-tonal",
   "lightScheme": "minimal-atom-light",
-  "darkScheme": "minimal-things-dark",
+  "darkScheme": "minimal-atom-dark",
   "editorFont": "",
   "lineHeight": 1.5,
   "lineWidth": 40,
