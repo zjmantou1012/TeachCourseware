@@ -13,27 +13,19 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "技术/Android/ndk/jni开发系列文章/（6）Android JNI开发深度学习.md",
+                "file": "技术/Android/Android 插件化.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "914748bbf7b1e347",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {}
-            }
-          },
-          {
-            "id": "f912d429fe084de3",
+            "id": "bb246d0e15ac6be4",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "技术/Android/ndk/jni开发系列文章/（3）Android Studio 4.0.+NDK项目开发详细教学.md",
+                "file": "技术/Android/Android Hook.md",
                 "mode": "source",
                 "source": false
               }
@@ -121,7 +113,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "技术/Android/ndk/jni开发系列文章/（6）Android JNI开发深度学习.md",
+                "file": "技术/Android/Android 插件化.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -138,7 +130,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "技术/Android/ndk/jni开发系列文章/（6）Android JNI开发深度学习.md",
+                "file": "技术/Android/Android 插件化.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -161,7 +153,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "技术/Android/ndk/jni开发系列文章/（6）Android JNI开发深度学习.md"
+                "file": "技术/Android/Android 插件化.md"
               }
             }
           },
@@ -222,43 +214,44 @@
       "obsidian-memos:Memos": false
     }
   },
-  "active": "89077a8723661cff",
+  "active": "bfba4d71c42f6fdc",
   "lastOpenFiles": [
-    "技术/Android/ndk/jni开发系列文章/（5）Android Studio 4.0.+NDK .so库生成打包.md",
-    "02附件/cn_com_javaproject_ndk_JNIUtils.h",
-    "技术/Android/ndk/jni开发系列文章/（7）Android Studio 4.0.+NDK开发.cpp文件.md",
+    "技术/Android/动态字节码技术.md",
+    "技术/Android/Android 插件化.md",
+    "技术/Android/Android Hook.md",
+    "技术/Android/Android 反射.md",
+    "技术/Android/Java类加载机制.md",
+    "技术/物联网Iot.md",
+    "技术/Android/多渠道打包上传maven仓库.md",
+    "技术/Android/插件化",
+    "技术/Android/设备导入HTTPS证书（不抓取HTTPS数据可跳过此步骤）.md",
+    "技术/Android/Map.md",
+    "技术/Android/Binder机制.md",
+    "技术/Android/Synchronize原理.md",
+    "技术/Android/Android 一些重要知识点解析整理.md",
+    "技术/Android/AndroidStudio 优秀插件推荐.md",
+    "技术/Android/Handler机制.md",
+    "技术/Android/Android 面试题参考.md",
+    "笔记/Android",
+    "技术/C与C++/CPrimerPlus/CPrimerPlus（第6版）.md",
+    "技术/C与C++/CPrimerPlus/习题.md",
+    "技术/C与C++/C语言基础.md",
+    "技术/C与C++/CPrimerPlus",
+    "技术/Android/NDK学习笔记.md",
+    "技术/C与C++",
+    "技术/Android/Android NDK 开发基础.md",
     "技术/Android/ndk/jni开发系列文章/（3）Android Studio 4.0.+NDK项目开发详细教学.md",
-    "技术/Android/ndk/jni开发系列文章/（4）Android NDK与JNI的区别有何不同？.md",
-    "技术/Android/ndk/jni开发系列文章/（2）JNI开发必学C-C++使用实践.md",
-    "技术/Android/ndk/jni开发系列文章/（1）JNI开发必学C-C++基础.md",
+    "技术/Android/Web容器.md",
+    "教学课件/Compose/Material3主题控件.md",
+    "教学课件/Compose/Compose与View的互操作性.md",
+    "教学课件/资料档案/Uri与真实路径转换File-全适配.md",
     "技术/Android/ndk/jni开发系列文章/（6）Android JNI开发深度学习.md",
-    "技术/Android/跟我一起写 Makefile（完整版）.md",
+    "02附件/cn_com_javaproject_ndk_JNIUtils.h",
     "技术/Android/ndk/jni开发系列文章",
     "技术/Android/ndk",
-    "技术/Android/Android NDK 开发基础.md",
-    "技术/Android/一文全面了解Android单元测试.md",
-    "笔记/Android 面试题参考.md",
-    "技术/Android/Android Automotive及IVI概述.md",
-    "技术/Android/Android.bp入门教程.md",
-    "技术/Android/Android.mk上手指南.md",
-    "技术/Android/Android车载/（13）- 系统设置-蓝牙设置.md",
     "技术/Android",
-    "技术/未命名.md",
-    "技术/Android/Android车载/（12） - SystemUI （一）.md",
-    "技术/Android/Android车载/（11）- 车载Android应用开发入门指南.md",
-    "技术/Android/Android车载/（10）- 车载空调系统（HVAC）.md",
-    "技术/Android/Android车载/（9）- 车载多媒体（四）- 原生音乐播放器（下）.md",
-    "技术/Android/Android车载/（8）- 车载多媒体（三）- 原生音乐播放器（上）.md",
-    "技术/Android/Android车载/（7）- 车载多媒体（二）- 多媒体应用架构与MediaSession框架.md",
-    "技术/Android/Android车载/（6）- 车载多媒体（一）- 音视频基础知识与MediaPlayer.md",
-    "技术/Android/Android车载/（5） - CarLauncher.md",
-    "技术/Android/Android车载/（4）- 编写基于AIDL 的 SDK.md",
     "技术/Android/Android车载",
-    "笔记/跨平台",
-    "笔记/kotlin",
-    "00files/Core_v5.3.pdf",
-    "00files",
-    "技术/网络协议",
+    "技术/跨平台",
     "未命名.canvas"
   ]
 }

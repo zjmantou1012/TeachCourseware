@@ -1,8 +1,116 @@
 {
   "recentFiles": [
     {
+      "basename": "Android 插件化",
+      "path": "技术/Android/Android 插件化.md"
+    },
+    {
+      "basename": "动态字节码技术",
+      "path": "技术/Android/动态字节码技术.md"
+    },
+    {
+      "basename": "Android Hook",
+      "path": "技术/Android/Android Hook.md"
+    },
+    {
+      "basename": "Android 反射",
+      "path": "技术/Android/Android 反射.md"
+    },
+    {
+      "basename": "Java类加载机制",
+      "path": "技术/Android/Java类加载机制.md"
+    },
+    {
+      "basename": "物联网Iot",
+      "path": "技术/物联网Iot.md"
+    },
+    {
+      "basename": "多渠道打包上传maven仓库",
+      "path": "技术/Android/多渠道打包上传maven仓库.md"
+    },
+    {
+      "basename": "设备导入HTTPS证书（不抓取HTTPS数据可跳过此步骤）",
+      "path": "技术/Android/设备导入HTTPS证书（不抓取HTTPS数据可跳过此步骤）.md"
+    },
+    {
+      "basename": "Map",
+      "path": "技术/Android/Map.md"
+    },
+    {
+      "basename": "Binder机制",
+      "path": "技术/Android/Binder机制.md"
+    },
+    {
+      "basename": "Synchronize原理",
+      "path": "技术/Android/Synchronize原理.md"
+    },
+    {
+      "basename": "Android 一些重要知识点解析整理",
+      "path": "技术/Android/Android 一些重要知识点解析整理.md"
+    },
+    {
+      "basename": "AndroidStudio 优秀插件推荐",
+      "path": "技术/Android/AndroidStudio 优秀插件推荐.md"
+    },
+    {
+      "basename": "Handler机制",
+      "path": "技术/Android/Handler机制.md"
+    },
+    {
+      "basename": "Android 面试题参考",
+      "path": "技术/Android/Android 面试题参考.md"
+    },
+    {
+      "basename": "CPrimerPlus（第6版）",
+      "path": "技术/C与C++/CPrimerPlus/CPrimerPlus（第6版）.md"
+    },
+    {
+      "basename": "习题",
+      "path": "技术/C与C++/CPrimerPlus/习题.md"
+    },
+    {
+      "basename": "C语言基础",
+      "path": "技术/C与C++/C语言基础.md"
+    },
+    {
+      "basename": "NDK学习笔记",
+      "path": "技术/Android/NDK学习笔记.md"
+    },
+    {
+      "basename": "Android NDK 开发基础",
+      "path": "技术/Android/Android NDK 开发基础.md"
+    },
+    {
+      "basename": "（3）Android Studio 4.0.+NDK项目开发详细教学",
+      "path": "技术/Android/ndk/jni开发系列文章/（3）Android Studio 4.0.+NDK项目开发详细教学.md"
+    },
+    {
+      "basename": "Web容器",
+      "path": "技术/Android/Web容器.md"
+    },
+    {
+      "basename": "Material3主题控件",
+      "path": "教学课件/Compose/Material3主题控件.md"
+    },
+    {
+      "basename": "Compose与View的互操作性",
+      "path": "教学课件/Compose/Compose与View的互操作性.md"
+    },
+    {
+      "basename": "Uri与真实路径转换File-全适配",
+      "path": "教学课件/资料档案/Uri与真实路径转换File-全适配.md"
+    },
+    {
       "basename": "（6）Android JNI开发深度学习",
       "path": "技术/Android/ndk/jni开发系列文章/（6）Android JNI开发深度学习.md"
+    },
+    {
+      "basename": "（1）JNI开发必学C-C++基础",
+      "path": "技术/Android/ndk/jni开发系列文章/（1）JNI开发必学C-C++基础.md"
+    },
+    {
+      "basename": "（2）JNI开发必学C-C++使用实践",
+      "path": "技术/Android/ndk/jni开发系列文章/（2）JNI开发必学C-C++使用实践.md"
     },
     {
       "basename": "（5）Android Studio 4.0.+NDK .so库生成打包",
@@ -13,36 +121,16 @@
       "path": "技术/Android/ndk/jni开发系列文章/（7）Android Studio 4.0.+NDK开发.cpp文件.md"
     },
     {
-      "basename": "（3）Android Studio 4.0.+NDK项目开发详细教学",
-      "path": "技术/Android/ndk/jni开发系列文章/（3）Android Studio 4.0.+NDK项目开发详细教学.md"
-    },
-    {
       "basename": "（4）Android NDK与JNI的区别有何不同？",
       "path": "技术/Android/ndk/jni开发系列文章/（4）Android NDK与JNI的区别有何不同？.md"
-    },
-    {
-      "basename": "（2）JNI开发必学C-C++使用实践",
-      "path": "技术/Android/ndk/jni开发系列文章/（2）JNI开发必学C-C++使用实践.md"
-    },
-    {
-      "basename": "（1）JNI开发必学C-C++基础",
-      "path": "技术/Android/ndk/jni开发系列文章/（1）JNI开发必学C-C++基础.md"
     },
     {
       "basename": "跟我一起写 Makefile（完整版）",
       "path": "技术/Android/跟我一起写 Makefile（完整版）.md"
     },
     {
-      "basename": "Android NDK 开发基础",
-      "path": "技术/Android/Android NDK 开发基础.md"
-    },
-    {
       "basename": "一文全面了解Android单元测试",
       "path": "技术/Android/一文全面了解Android单元测试.md"
-    },
-    {
-      "basename": "Android 面试题参考",
-      "path": "笔记/Android 面试题参考.md"
     },
     {
       "basename": "Android Automotive及IVI概述",
@@ -111,94 +199,6 @@
     {
       "basename": "蓝牙mesh基础知识",
       "path": "技术/网络协议/蓝牙mesh基础知识.md"
-    },
-    {
-      "basename": "WebSockets",
-      "path": "技术/网络协议/WebSockets.md"
-    },
-    {
-      "basename": "物联网Iot",
-      "path": "笔记/物联网Iot.md"
-    },
-    {
-      "basename": "TCP与UDP",
-      "path": "技术/网络协议/TCP与UDP.md"
-    },
-    {
-      "basename": "MQTT协议",
-      "path": "技术/网络协议/MQTT协议.md"
-    },
-    {
-      "basename": "Socket",
-      "path": "技术/网络协议/Socket.md"
-    },
-    {
-      "basename": "HTTP协议",
-      "path": "技术/网络协议/HTTP协议.md"
-    },
-    {
-      "basename": "蓝牙协议",
-      "path": "技术/网络协议/蓝牙协议.md"
-    },
-    {
-      "basename": "Flutter与React Native表",
-      "path": "笔记/跨平台/Flutter与React Native表.md"
-    },
-    {
-      "basename": "你要知道的11项物联网(IoT)协议",
-      "path": "资料/你要知道的11项物联网(IoT)协议.md"
-    },
-    {
-      "basename": "主流物联网协议选择：MQTT、CoAP 还是 LwM2M？",
-      "path": "资料/主流物联网协议选择：MQTT、CoAP 还是 LwM2M？.md"
-    },
-    {
-      "basename": "Kotlin协程",
-      "path": "笔记/kotlin/Kotlin协程.md"
-    },
-    {
-      "basename": "2023-09-05,周二",
-      "path": "01日记/2023-09-05,周二.md"
-    },
-    {
-      "basename": "2023-09-04,周一",
-      "path": "01日记/2023-09-04,周一.md"
-    },
-    {
-      "basename": "template_metainfo_yaml",
-      "path": "00templates/template_metainfo_yaml.md"
-    },
-    {
-      "basename": "AI+IoT（人工智能+物联网）常用的专业名词解释",
-      "path": "资料/AI+IoT（人工智能+物联网）常用的专业名词解释.md"
-    },
-    {
-      "basename": "物联网IoT终端设备如何选择接入协议",
-      "path": "资料/物联网IoT终端设备如何选择接入协议.md"
-    },
-    {
-      "basename": "物联网协议对比（HTTP、websocket、XMPP、COAP、MQTT和DDS协议）",
-      "path": "资料/物联网协议对比（HTTP、websocket、XMPP、COAP、MQTT和DDS协议）.md"
-    },
-    {
-      "basename": "物联网学习笔记",
-      "path": "资料/物联网学习笔记.md"
-    },
-    {
-      "basename": "Core_v5.3",
-      "path": "00files/Core_v5.3.pdf"
-    },
-    {
-      "basename": "Uri与真实路径转换File-全适配",
-      "path": "教学课件/资料档案/Uri与真实路径转换File-全适配.md"
-    },
-    {
-      "basename": "README",
-      "path": "README.md"
-    },
-    {
-      "basename": "Obsidian双链",
-      "path": "Obsidian使用手册/Obsidian使用技巧/Obsidian双链.md"
     }
   ],
   "omittedPaths": [],

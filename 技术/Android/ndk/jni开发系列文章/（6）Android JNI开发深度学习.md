@@ -231,7 +231,7 @@ JNIEnv代表一个JNI环境接口，jclass上面也说了代表Java层中的"类
 
 `1.局部引用(Local Reference)`
 
-局部引用，也称本地引用，通常是在函数中创建并使用。会阻止GC回收所有引用对象。在函数中产生的局部引用，都会在函数返回的时候自动释放(freed)，也可以使用DeleteLocalRef函数手动释放该应用。
+局部引用，也称本地引用，通常是在函数中创建并使用。会阻止GC回收所有引用对象。在函数中产生的局部引用，都会在函数返回的时候自动释放(freed)，也可以使用DeleteLocalRef函数手动释放该引用。
 
 `2.全局引用(Global Reference)`
 
@@ -261,7 +261,7 @@ JNIEnv代表一个JNI环境接口，jclass上面也说了代表Java层中的"类
 
 通过RegisterNatives方法把C/C++中的方法映射到Java中的native方法，而无需遵循特定的方法命名格式，这样书写起来会省事很多。
 
-当我们使用System.loadLibarary()方法加载so库的时候，Java虚拟机就会找到这个JNI_OnLoad函数兵调用该函数，这个函数的作用是告诉Dalvik虚拟机此C库使用的是哪一个JNI版本，如果你的库里面没有写明JNI_OnLoad()函数，VM会默认该库使用最老的JNI 1.1版本。
+当我们使用System.loadLibarary()方法加载so库的时候，Java虚拟机就会找到这个JNI_OnLoad函数并调用该函数，这个函数的作用是告诉Dalvik虚拟机此C库使用的是哪一个JNI版本，如果你的库里面没有写明JNI_OnLoad()函数，VM会默认该库使用最老的JNI 1.1版本。
 
 由于最新版本的JNI做了很多扩充，也优化了一些内容，如果需要使用JNI新版本的功能，就必须在JNI_OnLoad()函数声明JNI的版本。同时也可以在该函数中做一些初始化的动作，其实这个函数有点类似于Android中的Activity中的onCreate()方法。
 
