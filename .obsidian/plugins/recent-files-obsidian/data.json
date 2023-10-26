@@ -1,24 +1,112 @@
 {
   "recentFiles": [
     {
-      "basename": "一文全面了解Android单元测试",
-      "path": "技术/Android/一文全面了解Android单元测试.md"
+      "basename": "Android 面试题参考",
+      "path": "技术/Android/面试题/Android 面试题参考.md"
+    },
+    {
+      "basename": "图片压缩方案",
+      "path": "技术/Android/性能优化/图片压缩方案.md"
+    },
+    {
+      "basename": "启动流程",
+      "path": "技术/Android/Android源码框架解析/启动流程.md"
+    },
+    {
+      "basename": "可能是最详细的Android图片压缩原理分析（三）—— 底层哈夫曼压缩讲解",
+      "path": "资料/可能是最详细的Android图片压缩原理分析（三）—— 底层哈夫曼压缩讲解.md"
+    },
+    {
+      "basename": "可能是最详细的Android图片压缩原理分析（二）—— 鲁班压缩算法解析",
+      "path": "资料/可能是最详细的Android图片压缩原理分析（二）—— 鲁班压缩算法解析.md"
+    },
+    {
+      "basename": "可能是最详细的Android图片压缩原理分析（一）—— Android图片压缩必备基础知识",
+      "path": "资料/可能是最详细的Android图片压缩原理分析（一）—— Android图片压缩必备基础知识.md"
+    },
+    {
+      "basename": "SurfaceView与TextureView",
+      "path": "技术/Android/SurfaceView与TextureView.md"
+    },
+    {
+      "basename": "字节跳动面试官：一张图片占据的内存大小是如何计算",
+      "path": "技术/Android/面试题/字节跳动面试官：一张图片占据的内存大小是如何计算.md"
+    },
+    {
+      "basename": "Android中图片压缩分析（上）",
+      "path": "资料/Android中图片压缩分析（上）.md"
+    },
+    {
+      "basename": "Android中图片压缩分析（下）",
+      "path": "资料/Android中图片压缩分析（下）.md"
+    },
+    {
+      "basename": "Android mmap",
+      "path": "技术/Android/Android源码框架解析/Android mmap.md"
+    },
+    {
+      "basename": "Android MappedByteBuffer原理",
+      "path": "技术/Android/Android源码框架解析/Android MappedByteBuffer原理.md"
+    },
+    {
+      "basename": "Android IO读写",
+      "path": "技术/Android/Android源码框架解析/Android IO读写.md"
+    },
+    {
+      "basename": "2023-10-25,SHEIN2面",
+      "path": "01日记/2023-10-25,SHEIN2面.md"
+    },
+    {
+      "basename": "设备导入HTTPS证书（不抓取HTTPS数据可跳过此步骤）",
+      "path": "技术/Android/设备导入HTTPS证书（不抓取HTTPS数据可跳过此步骤）.md"
     },
     {
       "basename": "Android 插件化",
       "path": "技术/Android/Android 插件化.md"
     },
     {
-      "basename": "Android 反射",
-      "path": "技术/Android/Android 反射.md"
+      "basename": "网络框架Okhttp与retrofit",
+      "path": "技术/Android/Android源码框架解析/网络框架Okhttp与retrofit.md"
     },
     {
-      "basename": "Android 面试题参考",
-      "path": "技术/Android/Android 面试题参考.md"
+      "basename": "序列化-Serializable和Parcelable",
+      "path": "技术/Android/序列化-Serializable和Parcelable.md"
     },
     {
       "basename": "Android 一些重要知识点解析整理",
-      "path": "技术/Android/Android 一些重要知识点解析整理.md"
+      "path": "技术/Android/Android源码框架解析/Android 一些重要知识点解析整理.md"
+    },
+    {
+      "basename": "AnsycTask源码解析",
+      "path": "技术/Android/Android源码框架解析/AnsycTask源码解析.md"
+    },
+    {
+      "basename": "Android Hook",
+      "path": "技术/Android/Android Hook.md"
+    },
+    {
+      "basename": "2023-10-23,周一，SHEIN面试",
+      "path": "01日记/2023-10-23,周一，SHEIN面试.md"
+    },
+    {
+      "basename": "LeakCanary原理分析",
+      "path": "技术/Android/Android源码框架解析/LeakCanary原理分析.md"
+    },
+    {
+      "basename": "内存优化",
+      "path": "技术/Android/性能优化/内存优化.md"
+    },
+    {
+      "basename": "崩溃优化",
+      "path": "技术/Android/性能优化/崩溃优化.md"
+    },
+    {
+      "basename": "一文全面了解Android单元测试",
+      "path": "技术/Android/一文全面了解Android单元测试.md"
+    },
+    {
+      "basename": "Android 反射",
+      "path": "技术/Android/Android 反射.md"
     },
     {
       "basename": "Map",
@@ -41,20 +129,12 @@
       "path": "技术/Android/动态字节码技术.md"
     },
     {
-      "basename": "Android Hook",
-      "path": "技术/Android/Android Hook.md"
-    },
-    {
       "basename": "物联网Iot",
       "path": "技术/物联网Iot.md"
     },
     {
       "basename": "多渠道打包上传maven仓库",
       "path": "技术/Android/多渠道打包上传maven仓库.md"
-    },
-    {
-      "basename": "设备导入HTTPS证书（不抓取HTTPS数据可跳过此步骤）",
-      "path": "技术/Android/设备导入HTTPS证书（不抓取HTTPS数据可跳过此步骤）.md"
     },
     {
       "basename": "Synchronize原理",
@@ -82,7 +162,7 @@
     },
     {
       "basename": "Android NDK 开发基础",
-      "path": "技术/Android/Android NDK 开发基础.md"
+      "path": "技术/Android/ndk/Android NDK 开发基础.md"
     },
     {
       "basename": "（3）Android Studio 4.0.+NDK项目开发详细教学",
@@ -119,86 +199,6 @@
     {
       "basename": "（5）Android Studio 4.0.+NDK .so库生成打包",
       "path": "技术/Android/ndk/jni开发系列文章/（5）Android Studio 4.0.+NDK .so库生成打包.md"
-    },
-    {
-      "basename": "（7）Android Studio 4.0.+NDK开发.cpp文件",
-      "path": "技术/Android/ndk/jni开发系列文章/（7）Android Studio 4.0.+NDK开发.cpp文件.md"
-    },
-    {
-      "basename": "（4）Android NDK与JNI的区别有何不同？",
-      "path": "技术/Android/ndk/jni开发系列文章/（4）Android NDK与JNI的区别有何不同？.md"
-    },
-    {
-      "basename": "跟我一起写 Makefile（完整版）",
-      "path": "技术/Android/跟我一起写 Makefile（完整版）.md"
-    },
-    {
-      "basename": "Android Automotive及IVI概述",
-      "path": "技术/Android/Android Automotive及IVI概述.md"
-    },
-    {
-      "basename": "Android.bp入门教程",
-      "path": "技术/Android/Android.bp入门教程.md"
-    },
-    {
-      "basename": "Android.mk上手指南",
-      "path": "技术/Android/Android.mk上手指南.md"
-    },
-    {
-      "basename": "（13）- 系统设置-蓝牙设置",
-      "path": "技术/Android/Android车载/（13）- 系统设置-蓝牙设置.md"
-    },
-    {
-      "basename": "（12） - SystemUI （一）",
-      "path": "技术/Android/Android车载/（12） - SystemUI （一）.md"
-    },
-    {
-      "basename": "（11）- 车载Android应用开发入门指南",
-      "path": "技术/Android/Android车载/（11）- 车载Android应用开发入门指南.md"
-    },
-    {
-      "basename": "（10）- 车载空调系统（HVAC）",
-      "path": "技术/Android/Android车载/（10）- 车载空调系统（HVAC）.md"
-    },
-    {
-      "basename": "（9）- 车载多媒体（四）- 原生音乐播放器（下）",
-      "path": "技术/Android/Android车载/（9）- 车载多媒体（四）- 原生音乐播放器（下）.md"
-    },
-    {
-      "basename": "（8）- 车载多媒体（三）- 原生音乐播放器（上）",
-      "path": "技术/Android/Android车载/（8）- 车载多媒体（三）- 原生音乐播放器（上）.md"
-    },
-    {
-      "basename": "（7）- 车载多媒体（二）- 多媒体应用架构与MediaSession框架",
-      "path": "技术/Android/Android车载/（7）- 车载多媒体（二）- 多媒体应用架构与MediaSession框架.md"
-    },
-    {
-      "basename": "（6）- 车载多媒体（一）- 音视频基础知识与MediaPlayer",
-      "path": "技术/Android/Android车载/（6）- 车载多媒体（一）- 音视频基础知识与MediaPlayer.md"
-    },
-    {
-      "basename": "（5） - CarLauncher",
-      "path": "技术/Android/Android车载/（5） - CarLauncher.md"
-    },
-    {
-      "basename": "（4）- 编写基于AIDL 的 SDK",
-      "path": "技术/Android/Android车载/（4）- 编写基于AIDL 的 SDK.md"
-    },
-    {
-      "basename": "（3）- 构建 MVVM 架构(Java版)",
-      "path": "技术/Android/Android车载/（3）- 构建 MVVM 架构(Java版).md"
-    },
-    {
-      "basename": "（2）- 集成第三方APK",
-      "path": "技术/Android/Android车载/（2）- 集成第三方APK.md"
-    },
-    {
-      "basename": "（1）- Android Automotive概述与编译",
-      "path": "技术/Android/Android车载/（1）- Android Automotive概述与编译.md"
-    },
-    {
-      "basename": "蓝牙mesh基础知识",
-      "path": "技术/网络协议/蓝牙mesh基础知识.md"
     }
   ],
   "omittedPaths": [],

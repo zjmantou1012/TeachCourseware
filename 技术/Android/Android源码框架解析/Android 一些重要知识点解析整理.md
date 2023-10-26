@@ -25,7 +25,8 @@ tags:
 
 ## Android Intent
 
-- [Android中Intent传递对象的两种方法(Serializable,Parcelable)](http://blog.csdn.net/android_tutor/article/details/5740845)_评论 29,85,96__序列化：_ [Serializable与Parcelable传递对象详解(activity间传递对象方式)](http://blog.csdn.net/hudan2714/article/details/7856130)
+- [Android中Intent传递对象的两种方法(Serializable,Parcelable)](http://blog.csdn.net/android_tutor/article/details/5740845)
+- 序列化：_ [Serializable与Parcelable传递对象详解(activity间传递对象方式)](http://blog.csdn.net/hudan2714/article/details/7856130)
 - [Intent匹配规则以及解析框架深入分析](http://blog.csdn.net/qinjuning/article/details/7384906)
 - [基础总结篇之九：Intent应用详解](http://blog.csdn.net/liuhe688/article/details/7162988)
 - [android Intent机制详解](http://blog.csdn.net/t12x3456/article/details/7688154)
