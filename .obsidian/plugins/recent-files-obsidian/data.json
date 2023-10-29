@@ -5,6 +5,10 @@
       "path": "技术/Android/Android源码框架解析/Synchronize原理.md"
     },
     {
+      "basename": "启动流程",
+      "path": "技术/Android/Android源码框架解析/启动流程.md"
+    },
+    {
       "basename": "2023-10-27,传化面试",
       "path": "01日记/2023-10-27,传化面试.md"
     },
@@ -39,10 +43,6 @@
     {
       "basename": "图片压缩方案",
       "path": "技术/Android/性能优化/图片压缩方案.md"
-    },
-    {
-      "basename": "启动流程",
-      "path": "技术/Android/Android源码框架解析/启动流程.md"
     },
     {
       "basename": "可能是最详细的Android图片压缩原理分析（三）—— 底层哈夫曼压缩讲解",

@@ -130,7 +130,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -253,6 +254,7 @@
   },
   "active": "72558dcbee9a5b17",
   "lastOpenFiles": [
+    "技术/Android/Android源码框架解析/启动流程.md",
     "01日记/2023-10-27,传化面试.md",
     "技术/Android/Android源码框架解析/Map.md",
     "技术/Android/面试题/Android 面试题参考.md",
@@ -262,7 +264,6 @@
     "技术/Android/性能优化/崩溃优化.md",
     "01日记/2023-10-25,SHEIN2面.md",
     "技术/Android/性能优化/图片压缩方案.md",
-    "技术/Android/Android源码框架解析/启动流程.md",
     "资料/可能是最详细的Android图片压缩原理分析（三）—— 底层哈夫曼压缩讲解.md",
     "资料/可能是最详细的Android图片压缩原理分析（二）—— 鲁班压缩算法解析.md",
     "资料/可能是最详细的Android图片压缩原理分析（一）—— Android图片压缩必备基础知识.md",
