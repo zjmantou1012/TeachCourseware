@@ -24,7 +24,7 @@ threshold是HashMap所能容纳的最大数据量的节点（Node）个数，在
 
 **HashMap**是使用**链地址法**来解决**哈希冲突**的**（数组与列表的结合）**
 
-首先调用**key**的**hashCode**方法得到**哈希值，**然后再通过**哈希算法**的**后两步运算（高位运算、取模运算）来定位该键值对**对应的**存储位置，**如果**两个key定位到相同的存储位置**，表示发生了**哈希碰撞**，**哈希算法**的计算结果**越分散均匀**，**哈希碰撞**的几率就**越低**，**Map**的**存取效率**就**越高**。
+首先调用**key**的**hashCode**方法得到**哈希值**，然后再通过**哈希算法**的**后两步运算（高位运算、取模运算）来定位该键值对**对应的**存储位置**，如果**两个key定位到相同的存储位置**，表示发生了**哈希碰撞**，**哈希算法**的计算结果**越分散均匀**，**哈希碰撞**的几率就**越低**，**Map**的**存取效率**就**越高**。
 
 **tableSizeFor方法，返回给定目标的2的幂**
 
@@ -45,7 +45,7 @@ static final int tableSizeFor(int cap) {
 ## 添加单个元素
 
 1. 判断table是否已经初始化，如果没有初始化就调用resize方法初始化；
-2. 根据key计算出来的哈希值进行计算，得到要插入元素的索引，并且判断该元素的值是否为空，如果是空就创建一个节点，并把数据传禁区，然后执行步骤6；
+2. 根据key计算出来的哈希值进行计算，得到要插入元素的索引，并且判断该元素的值是否为空，如果是空就创建一个节点，并把数据传进去，然后执行步骤6；
 3. 判断该索引所在的元素的数据结构是否是树，如果是，就调用putTreeVal方法，使用红黑树插入数据，然后执行步骤5；
 4. 如果该索引所在的元素的数据结果是链表，就执行循环，判断链表是否存在要插入的元素，如果不存在，就创建一个节点，并且插入到链表里面，然后判断是否要将链表转化为红黑树，条件是链表长度是否大于等于8；如果存在，就跳出循环最后执行步骤5；
 5. 判断该元素的值是否为空，如果是空就把值赋给它，并返回旧值；
@@ -98,6 +98,14 @@ static final int tableSizeFor(int cap) {
 
 **ConcurrentHashMap**是**线程安全**的**HashMap**，在**JDK 1.8**之前，**ConcurrentHashMap**引入了**分段锁**，**分段锁**的原理是**将数据分成一段一段存储**，**然后给每一段数据配一把锁**，**当一个线程访问其中一段数据的时候就会占用那把锁**，**但是不影响其他线程访问其他段的数据**，**从而提高效率**；注意点是：1.7的时候get没有加锁，因为HashEntry和里面定义的value和next都用了volatile，可以保证其在多线程之间的可见性，因此可以被多个线程同时读；
 
+>默认情况下，一个 ConcurrentHashMap 会被分成 16 个段，每个段都是一个独立的锁。
+>
+>这种分段锁的设计使得在多线程环境下，不同的线程可以同时修改不同的数据段，从而减少了锁的竞争。当线程需要修改某个数据段时，只需要获取对应数据段的锁即可，而不需要获取整个 ConcurrentHashMap 的锁。
+>
+>每个段的长度（Segment size）可以通过构造函数中的 float concurrencyFactor 参数来设置。当 concurrencyFactor 的值越大时，每个段的长度就越小，但同时也会增加更多的段。因此，如果预计的并发访问量较大，可以适当增加 concurrencyFactor 的值，以增加并发性能。
+>
+>需要注意的是，虽然分段锁减少了锁的竞争，但在某些情况下仍然可能产生死锁。例如，当两个线程需要修改不同的数据段时，如果它们按照相同的顺序获取锁，就可能导致死锁。因此，在使用 ConcurrentHashMap 时，也需要避免产生死锁的情况。
+
 #### size：
 
 先采用不加锁的方式，连续计算元素的个数，最多计算3次：
@@ -110,9 +118,17 @@ static final int tableSizeFor(int cap) {
 
 在**JDK 1.8**之后，抛弃了**分段锁**，加入了红黑树，利用**内置锁synchronized**和**CAS（Compare And Swap）来保证线程安全**。
 
+分段锁：ConcurrentHashMap 内部将数据分成很多段(Segment)，默认情况下，一个ConcurrentHashMap 会被分成16个段。每个段都是一个独立的锁，这样就可以实现并发修改不同的数据段，减少锁竞争。当线程需要修改某个数据段时，只需要获取对应数据段的锁即可，而不需要获取整个ConcurrentHashMap 的锁。
+CAS操作：CAS（Compare and Swap）是一种无锁算法，可以避免长时间等待锁的释放。ConcurrentHashMap 使用CAS操作来保证数据的安全性。CAS操作包含三个操作数：一个内存位置V、预期原值A和新值B。如果内存位置V的值与预期原值A相匹配，则将内存位置的值更新为B，否则不进行任何操作。在并发环境中，如果多个线程尝试更新同一个位置的值，CAS操作可以确保只有一个线程可以成功更新该位置的值。
+ConcurrentHashMap 1.8 的数据结构主要由数组+链表/红黑二树构成。在低并发情况下，数据会以链表的形式存储；而在高并发情况下，数据会以红黑树的形式存储。这是因为链表在查找时具有较好的性能，而红黑树在插入和删除时具有较好的性能。
+
 #### Size：
 
 volatile类型的变量baseCount记录元素的个数，当插入新数据或则删除数据时，会通过addCount()方法更新baseCount
+
+### 优缺点
+
+好处是在保证合理的同步前提下，效率很高。坏处是严格来说读取操作不能保证反映最近的更新。例如线程A调用putAll写入大量数据，期间线程B调用get，则只能get到目前为止已经顺利插入的部分数据。
 
 ### 区别
 
@@ -124,7 +140,29 @@ volatile类型的变量baseCount记录元素的个数，当插入新数据或则
 
 4、jdk1.8使用了红黑树来优化链表、当阈值大于8链表转换为红黑树、红黑树遍历效率高于链表
 
-#### JDK1.8为什么使用内置锁synchronized来代替重入锁ReentrantLock？？
+### 面试题
+
+#### **1. ConcurrentHashMap中变量使用final和volatile修饰有什么用呢？**  
+Final域使得确保初始化安全性（initialization safety）成为可能，初始化安全性让不可变形对象不需要同步就能自由地被访问和共享。  
+使用volatile来保证某个变量内存的改变对其他线程即时可见，在配合CAS可以实现不加锁对并发操作的支持。get操作可以无锁是由于Node的元素val和指针next是用volatile修饰的，在多线程环境下线程A修改结点的val或者新增节点的时候是对线程B可见的。  
+  
+#### **2.我们可以使用CocurrentHashMap来代替Hashtable吗？**  
+我们知道Hashtable是synchronized的，但是ConcurrentHashMap同步性能更好，因为它仅仅根据同步级别对map的一部分进行上锁。ConcurrentHashMap当然可以代替HashTable，但是HashTable提供更强的线程安全性。它们都可以用于多线程的环境，但是当Hashtable的大小增加到一定的时候，性能会急剧下降，因为迭代时需要被锁定很长的时间。因为ConcurrentHashMap引入了分割(segmentation)，不论它变得多么大，仅仅需要锁定map的某个部分，而其它的线程不需要等到迭代完成才能访问map。简而言之，在迭代的过程中，ConcurrentHashMap仅仅锁定map的某个部分，而Hashtable则会锁定整个map。
+
+#### **3. ConcurrentHashMap有什么缺陷吗？**  
+ConcurrentHashMap 是设计为非阻塞的。在更新时会局部锁住某部分数据，但不会把整个表都锁住。同步读取操作则是完全非阻塞的。好处是在保证合理的同步前提下，效率很高。**坏处是严格来说读取操作不能保证反映最近的更新**。例如线程A调用putAll写入大量数据，期间线程B调用get，则只能get到目前为止已经顺利插入的部分数据。  
+  
+#### **4. ConcurrentHashMap在JDK 7和8之间的区别**
+
+- JDK1.8的实现降低锁的粒度，JDK1.7版本锁的粒度是基于Segment的，包含多个HashEntry，而JDK1.8锁的粒度就是HashEntry（首节点）
+- JDK1.8版本的数据结构变得更加简单，使得操作也更加清晰流畅，因为已经使用synchronized来进行同步，所以不需要分段锁的概念，也就不需要Segment这种数据结构了，由于粒度的降低，实现的复杂度也增加了
+- JDK1.8使用红黑树来优化链表，基于长度很长的链表的遍历是一个很漫长的过程，而红黑树的遍历效率是很快的，代替一定阈值的链表，这样形成一个最佳拍档
+
+#### 5、为什么容量都是2的次幂？
+- 保证计算hash时的值能够充分离散，减少hash碰撞，因为计算方式是(n-1)&hash,n是容量
+- 扩容是2倍是能够使得已经离散的数据计算保持一致。
+
+#### 6、JDK1.8为什么使用内置锁synchronized来代替重入锁ReentrantLock？？
 
 1、因为粒度降低了，在相对而言的低粒度加锁方式，synchronized并不比ReentrantLock差，在粗粒度加锁中ReentrantLock可能通过Condition来控制各个低粒度的边界，更加的灵活，而在低粒度中，Condition的优势就没有了
 
@@ -132,9 +170,10 @@ volatile类型的变量baseCount记录元素的个数，当插入新数据或则
 
 针对 synchronized 获取锁的方式，JVM 使用了锁升级的优化方式，就是先使用偏向锁优先同一线程然后再次获取锁，如果失败，就升级为 CAS 轻量级锁，如果失败就会短暂自旋，防止线程被系统挂起。最后如果以上都失败就升级为重量级锁。
 
-所以是一步步升级上去的，最初也是通过很多轻量级的方式锁定的。具体参考Synchronize原理篇
+所以是一步步升级上去的，最初也是通过很多轻量级的方式锁定的。具体参考Synchronize原理篇[[Synchronize原理]]
 
-————————————————
+---
+
 
 版权声明：本文为CSDN博主「零食爱好者a」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。
 
@@ -191,11 +230,33 @@ volatile类型的变量baseCount记录元素的个数，当插入新数据或则
 这个一定要去看源码！看源码！看源码！实在看不下去的可以上网看别人的分析。简单总结有几点：
 
 1. HashMap 支持 null Key 和 null Value；Hashtable 不允许。这是因为 HashMap 对 null 进行了特殊处理，将 null 的 hashCode 值定为了 0，从而将其存放在哈希表的第 0 个 bucket。
-2. HashMap 是非线程安全，HashMap 实现线程安全方法为 Map map = Collections.synchronziedMap(new HashMap())；Hashtable 是线程安全
+2. HashMap 是非线程安全，HashMap 实现线程安全方法为 Map map = Collections.synchronziedMap(new HashMap())；HashTable 是线程安全
 3. HashMap 默认长度是 16，扩容是原先的 2 倍；Hashtable 默认长度是 11，扩容是原先的 2n+1
-4. HashMap 继承 AbstractMap；Hashtable 继承了 Dictionary
+4. HashMap 继承 AbstractMap；HashTable 继承了 Dictionary
 
 扩展，HashMap 对比 ConcurrentHashMap ，HashMap 对比 SparseArray，LinkedArray 对比 ArrayList，ArrayList 对比 Vector
+
+# SparseArray
+
+SparseArray构造方法中，创建了两个数组mKeys、mValues分别存放int与Object，其默认长度为10
+
+## put
+
+- 因为key为int,不存在hash冲突
+- mKeys为有序列表，通过二分查找，找到要插入的key对应mKeys数组中的index (这里相对于查找hash表应该算是费时间吧，但节省了内存，所以是 时间换取了空间)
+- 通过key对应mKeys数组中的index，将Value插入到mValues数组的index对应位置  
+    插入数据过程中：  
+    1、如果mValues数组index位置的数据已经删除，则直接插入；  
+    2、如果mValues数组index位置存在有效数据，或者数组长度不足了，则需要查看`GrowingArrayUtils.insert`代码了. 
+`GrowingArrayUtils.insert`:
+- 如果mValues数组index位置存在有效数据，而且数组长度够。则将mValues数组index位置后的元素都向后移动一位，index位置存入对应的element
+- 如果长度不够，则扩容到原长度的两倍，并将其他数据复制到新数组中
+
+## get
+
+每次调用get，则需经过一次mKeys数组的二分查找，因此mKeys数组越大则二分查找的时间就越长，因此SparseArray在大量数据，千以上时，会效率较低
+
+
 
 # 红黑树
 
@@ -421,11 +482,13 @@ factorial(k)). The first values are:
 
 # ArrayMap
 
+构造方法中初始化了两个数组mHashes、mArray，其中mHashes为key的Hash值对应的数组
+
 线程不安全
 
-开放地址法处理hash碰撞
+**开放地址法**处理hash碰撞
 
-二分查找法搜索元素，时间复杂度是0（log N），比HashMap慢，而且数据规模越大，慢的越多；
+**二分查找法**搜索元素，时间复杂度是0（log N），比HashMap慢，而且数据规模越大，慢的越多；
 
 优点：
 
@@ -436,9 +499,12 @@ factorial(k)). The first values are:
 查找速度慢；
 
 不能跨平台；  
-  
 
-#### 红黑树参考：
+采用缓存机制来解决put和remove时的扩容和减少容量带来的内存回收压力。
+
+ArrayMap 在内存利用率上比 HashMap 更高，因为不用创建额外的 Node 数据结构，同时具有缓存机制，避免频繁创建对象而分配内存与 GC 操作。此外，在数据条目小于容量 1/3 时会触发内存收缩至原理的 0.5 倍。因此，当数据量不大（小于1000）时更推荐使用 ArrayMap。更详细的对比
+
+# 红黑树参考：
 
 作者：_晨曦_
 

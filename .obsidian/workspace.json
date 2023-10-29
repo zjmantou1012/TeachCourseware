@@ -8,18 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "d5ade8346aef79df",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "技术/Android/Android 插件化.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "4731510c6bb95c3c",
             "type": "leaf",
             "state": {
@@ -37,19 +25,43 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "技术/Android/面试题/Android 面试题参考.md",
+                "file": "技术/Android/面试题/序列化-Serializable和Parcelable.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "f50b1346dcac6ae8",
+            "id": "72558dcbee9a5b17",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "技术/Android/性能优化/图片压缩方案.md",
+                "file": "技术/Android/Android源码框架解析/Synchronize原理.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "b20e3d600157bcc9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "技术/Android/Android源码框架解析/Map.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "44d4b6d60f5a0437",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "技术/Android/面试题/Android 面试题参考.md",
                 "mode": "source",
                 "source": false
               }
@@ -138,7 +150,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "技术/Android/面试题/Android 面试题参考.md",
+                "file": "技术/Android/Android源码框架解析/Synchronize原理.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -155,7 +167,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "技术/Android/面试题/Android 面试题参考.md",
+                "file": "技术/Android/Android源码框架解析/Synchronize原理.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -178,7 +190,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "技术/Android/面试题/Android 面试题参考.md"
+                "file": "技术/Android/Android源码框架解析/Synchronize原理.md"
               }
             }
           },
@@ -239,10 +251,17 @@
       "obsidian-memos:Memos": false
     }
   },
-  "active": "7b578c617e38e982",
+  "active": "72558dcbee9a5b17",
   "lastOpenFiles": [
-    "技术/Android/性能优化/图片压缩方案.md",
+    "01日记/2023-10-27,传化面试.md",
+    "技术/Android/Android源码框架解析/Map.md",
     "技术/Android/面试题/Android 面试题参考.md",
+    "技术/Android/面试题/序列化-Serializable和Parcelable.md",
+    "技术/Android/性能优化/网络优化.md",
+    "技术/Android/性能优化/内存优化.md",
+    "技术/Android/性能优化/崩溃优化.md",
+    "01日记/2023-10-25,SHEIN2面.md",
+    "技术/Android/性能优化/图片压缩方案.md",
     "技术/Android/Android源码框架解析/启动流程.md",
     "资料/可能是最详细的Android图片压缩原理分析（三）—— 底层哈夫曼压缩讲解.md",
     "资料/可能是最详细的Android图片压缩原理分析（二）—— 鲁班压缩算法解析.md",
@@ -255,20 +274,13 @@
     "技术/Android/Android源码框架解析/Android MappedByteBuffer原理.md",
     "技术/Android/Android源码框架解析/Android IO读写.md",
     "技术/Android/面试题",
-    "01日记/2023-10-25,SHEIN2面.md",
     "技术/Android/设备导入HTTPS证书（不抓取HTTPS数据可跳过此步骤）.md",
     "技术/Android/Android 插件化.md",
     "技术/Android/Android源码框架解析/网络框架Okhttp与retrofit.md",
-    "技术/Android/序列化-Serializable和Parcelable.md",
     "技术/Android/Android源码框架解析/Android 一些重要知识点解析整理.md",
     "技术/Android/Android源码框架解析/AnsycTask源码解析.md",
     "技术/Android/Android Hook.md",
-    "01日记/2023-10-23,周一，SHEIN面试.md",
-    "技术/Android/Android源码框架解析/LeakCanary原理分析.md",
-    "技术/Android/性能优化/内存优化.md",
-    "技术/Android/性能优化/崩溃优化.md",
     "技术/Android/性能优化",
-    "Excalidraw/Drawing 2023-10-22 21.31.48.excalidraw.md",
     "技术/Android/Android源码框架解析",
     "技术/Android/插件化",
     "笔记/Android",

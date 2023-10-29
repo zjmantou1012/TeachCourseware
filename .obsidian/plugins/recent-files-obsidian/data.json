@@ -1,8 +1,40 @@
 {
   "recentFiles": [
     {
+      "basename": "Synchronize原理",
+      "path": "技术/Android/Android源码框架解析/Synchronize原理.md"
+    },
+    {
+      "basename": "2023-10-27,传化面试",
+      "path": "01日记/2023-10-27,传化面试.md"
+    },
+    {
+      "basename": "Map",
+      "path": "技术/Android/Android源码框架解析/Map.md"
+    },
+    {
       "basename": "Android 面试题参考",
       "path": "技术/Android/面试题/Android 面试题参考.md"
+    },
+    {
+      "basename": "序列化-Serializable和Parcelable",
+      "path": "技术/Android/面试题/序列化-Serializable和Parcelable.md"
+    },
+    {
+      "basename": "网络优化",
+      "path": "技术/Android/性能优化/网络优化.md"
+    },
+    {
+      "basename": "内存优化",
+      "path": "技术/Android/性能优化/内存优化.md"
+    },
+    {
+      "basename": "崩溃优化",
+      "path": "技术/Android/性能优化/崩溃优化.md"
+    },
+    {
+      "basename": "2023-10-25,SHEIN2面",
+      "path": "01日记/2023-10-25,SHEIN2面.md"
     },
     {
       "basename": "图片压缩方案",
@@ -53,10 +85,6 @@
       "path": "技术/Android/Android源码框架解析/Android IO读写.md"
     },
     {
-      "basename": "2023-10-25,SHEIN2面",
-      "path": "01日记/2023-10-25,SHEIN2面.md"
-    },
-    {
       "basename": "设备导入HTTPS证书（不抓取HTTPS数据可跳过此步骤）",
       "path": "技术/Android/设备导入HTTPS证书（不抓取HTTPS数据可跳过此步骤）.md"
     },
@@ -67,10 +95,6 @@
     {
       "basename": "网络框架Okhttp与retrofit",
       "path": "技术/Android/Android源码框架解析/网络框架Okhttp与retrofit.md"
-    },
-    {
-      "basename": "序列化-Serializable和Parcelable",
-      "path": "技术/Android/序列化-Serializable和Parcelable.md"
     },
     {
       "basename": "Android 一些重要知识点解析整理",
@@ -93,14 +117,6 @@
       "path": "技术/Android/Android源码框架解析/LeakCanary原理分析.md"
     },
     {
-      "basename": "内存优化",
-      "path": "技术/Android/性能优化/内存优化.md"
-    },
-    {
-      "basename": "崩溃优化",
-      "path": "技术/Android/性能优化/崩溃优化.md"
-    },
-    {
       "basename": "一文全面了解Android单元测试",
       "path": "技术/Android/一文全面了解Android单元测试.md"
     },
@@ -109,20 +125,16 @@
       "path": "技术/Android/Android 反射.md"
     },
     {
-      "basename": "Map",
-      "path": "技术/Android/Map.md"
-    },
-    {
       "basename": "Java类加载机制",
       "path": "技术/Android/Java类加载机制.md"
     },
     {
       "basename": "Handler机制",
-      "path": "技术/Android/Handler机制.md"
+      "path": "技术/Android/Android源码框架解析/Handler机制.md"
     },
     {
       "basename": "Binder机制",
-      "path": "技术/Android/Binder机制.md"
+      "path": "技术/Android/Android源码框架解析/Binder机制.md"
     },
     {
       "basename": "动态字节码技术",
@@ -135,10 +147,6 @@
     {
       "basename": "多渠道打包上传maven仓库",
       "path": "技术/Android/多渠道打包上传maven仓库.md"
-    },
-    {
-      "basename": "Synchronize原理",
-      "path": "技术/Android/Synchronize原理.md"
     },
     {
       "basename": "AndroidStudio 优秀插件推荐",
@@ -191,14 +199,6 @@
     {
       "basename": "（1）JNI开发必学C-C++基础",
       "path": "技术/Android/ndk/jni开发系列文章/（1）JNI开发必学C-C++基础.md"
-    },
-    {
-      "basename": "（2）JNI开发必学C-C++使用实践",
-      "path": "技术/Android/ndk/jni开发系列文章/（2）JNI开发必学C-C++使用实践.md"
-    },
-    {
-      "basename": "（5）Android Studio 4.0.+NDK .so库生成打包",
-      "path": "技术/Android/ndk/jni开发系列文章/（5）Android Studio 4.0.+NDK .so库生成打包.md"
     }
   ],
   "omittedPaths": [],

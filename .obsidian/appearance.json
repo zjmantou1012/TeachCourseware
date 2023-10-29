@@ -2,7 +2,7 @@
   "accentColor": "#47c27c",
   "theme": "moonstone",
   "cssTheme": "Minimal",
-  "baseFontSize": 16,
+  "baseFontSize": 15,
   "translucency": true,
   "interfaceFontFamily": "Apple Braille"
 }
