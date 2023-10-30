@@ -1,6 +1,22 @@
 {
   "recentFiles": [
     {
+      "basename": "00优化指南",
+      "path": "技术/Android/性能优化/00优化指南.md"
+    },
+    {
+      "basename": "面试集锦汇总",
+      "path": "技术/Android/面试题/面试集锦汇总.md"
+    },
+    {
+      "basename": "必知必会-Android 性能优化的方面方面都在这儿",
+      "path": "资料/必知必会-Android 性能优化的方面方面都在这儿.md"
+    },
+    {
+      "basename": "可能是最详细的Android图片压缩原理分析（二）—— 鲁班压缩算法解析",
+      "path": "资料/可能是最详细的Android图片压缩原理分析（二）—— 鲁班压缩算法解析.md"
+    },
+    {
       "basename": "Synchronize原理",
       "path": "技术/Android/Android源码框架解析/Synchronize原理.md"
     },
@@ -47,10 +63,6 @@
     {
       "basename": "可能是最详细的Android图片压缩原理分析（三）—— 底层哈夫曼压缩讲解",
       "path": "资料/可能是最详细的Android图片压缩原理分析（三）—— 底层哈夫曼压缩讲解.md"
-    },
-    {
-      "basename": "可能是最详细的Android图片压缩原理分析（二）—— 鲁班压缩算法解析",
-      "path": "资料/可能是最详细的Android图片压缩原理分析（二）—— 鲁班压缩算法解析.md"
     },
     {
       "basename": "可能是最详细的Android图片压缩原理分析（一）—— Android图片压缩必备基础知识",
@@ -183,22 +195,6 @@
     {
       "basename": "Material3主题控件",
       "path": "教学课件/Compose/Material3主题控件.md"
-    },
-    {
-      "basename": "Compose与View的互操作性",
-      "path": "教学课件/Compose/Compose与View的互操作性.md"
-    },
-    {
-      "basename": "Uri与真实路径转换File-全适配",
-      "path": "教学课件/资料档案/Uri与真实路径转换File-全适配.md"
-    },
-    {
-      "basename": "（6）Android JNI开发深度学习",
-      "path": "技术/Android/ndk/jni开发系列文章/（6）Android JNI开发深度学习.md"
-    },
-    {
-      "basename": "（1）JNI开发必学C-C++基础",
-      "path": "技术/Android/ndk/jni开发系列文章/（1）JNI开发必学C-C++基础.md"
     }
   ],
   "omittedPaths": [],
