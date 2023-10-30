@@ -1,12 +1,16 @@
 {
   "recentFiles": [
     {
-      "basename": "00优化指南",
-      "path": "技术/Android/性能优化/00优化指南.md"
+      "basename": "02自动内存管理机制",
+      "path": "笔记/深入理解Java虚拟机（第二版）/02自动内存管理机制.md"
     },
     {
-      "basename": "面试集锦汇总",
-      "path": "技术/Android/面试题/面试集锦汇总.md"
+      "basename": "00面试集锦汇总",
+      "path": "技术/Android/面试题/00面试集锦汇总.md"
+    },
+    {
+      "basename": "00优化指南",
+      "path": "技术/Android/性能优化/00优化指南.md"
     },
     {
       "basename": "必知必会-Android 性能优化的方面方面都在这儿",
