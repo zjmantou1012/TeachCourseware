@@ -62,3 +62,18 @@ tags:
 ## 应用场景
 实时应用（IP电话、实时视频会议、多人在线游戏）
 
+## 如何保证UDP传输可靠性
+
+参照TCP的可靠性传输
+
+- 添加seq/ack机制，确保数据发送到对端。
+- 添加发送和接收缓冲区，主要是用户超时重传。
+- 添加超时重传机制。
+
+目前有如下开源程序利用udp实现了可靠的数据传输。分别为RUDP、RTP、UDT:
+### 1、RUDP（Reliable User Datagram Protocol）
+RUDP 提供一组数据服务质量增强机制，如拥塞控制的改进、重发机制及淡化服务器算法等。
+### 2、RTP（Real Time Protocol）
+RTP为数据提供了具有实时特征的端对端传送服务，如在组播或单播网络服务下的交互式视频音频或模拟数据。
+### 3、UDT（UDP-based Data Transfer Protocol）
+UDT的主要目的是支持高速广域网上的海量数据传输。

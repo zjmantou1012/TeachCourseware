@@ -8,18 +8,43 @@
         "type": "tabs",
         "children": [
           {
-            "id": "72558dcbee9a5b17",
+            "id": "f65b9c8e0e25dd6f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "笔记/深入理解Java虚拟机（第二版）/02自动内存管理机制.md",
+                "file": "技术/Android/面试题/性能优化/App安全优化.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "b6b28fa63bbb2ebe",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "技术/Android/面试题/00面试集锦汇总.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "e81b3ed456d5dc27",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "技术/Android/面试题/00Android 面试题参考.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -48,7 +73,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "app启动",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -101,7 +126,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "笔记/深入理解Java虚拟机（第二版）/02自动内存管理机制.md",
+                "file": "技术/Android/面试题/00Android 面试题参考.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -118,7 +143,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "笔记/深入理解Java虚拟机（第二版）/02自动内存管理机制.md",
+                "file": "技术/Android/面试题/00Android 面试题参考.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -141,7 +166,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "笔记/深入理解Java虚拟机（第二版）/02自动内存管理机制.md"
+                "file": "技术/Android/面试题/00Android 面试题参考.md"
               }
             }
           },
@@ -202,36 +227,36 @@
       "obsidian-memos:Memos": false
     }
   },
-  "active": "72558dcbee9a5b17",
+  "active": "e81b3ed456d5dc27",
   "lastOpenFiles": [
+    "技术/Android/面试题/性能优化/App瘦身.md",
+    "技术/Android/面试题/00Android 面试题参考.md",
+    "技术/Android/面试题/性能优化/App安全优化.md",
     "技术/Android/面试题/00面试集锦汇总.md",
+    "技术/Android/面试题/性能优化",
+    "技术/Android/面试题/性能优化/App电量优化.md",
+    "技术/Android/面试题/性能优化/App网络优化.md",
+    "技术/Android/面试题/性能优化/App绘制优化.md",
+    "技术/Android/面试题/性能优化/App内存优化.md",
+    "01日记/2023-11-03,周五.md",
+    "技术/Android/面试题/性能优化/App启动速度优化.md",
+    "技术/Android/面试题/性能优化/App稳定性优化.md",
+    "技术/Android/性能优化/内存优化.md",
+    "技术/Android/性能优化/00优化指南.md",
+    "01日记/2023-11-02,周四.md",
+    "技术/Android/性能优化/图片压缩方案.md",
+    "技术/Android/Android各大版本新特性.md",
+    "技术/Android/Android源码框架解析/Synchronize原理.md",
+    "01日记/2023-10-27,传化面试.md",
+    "技术/Android/Android Hook.md",
     "笔记/深入理解Java虚拟机（第二版）/02自动内存管理机制.md",
+    "技术/Android/类加载机制.md",
+    "资料/必知必会-Android 性能优化的方面方面都在这儿.md",
+    "技术/Android/Android源码框架解析/ReenTrantLock原理.md",
+    "技术/Android/Android源码框架解析/Java并发包基石——AQS.md",
+    "技术/Android/Android源码框架解析/Java线程池.md",
     "笔记/深入理解Java虚拟机（第二版）",
     "笔记",
-    "技术/Android/性能优化/00优化指南.md",
-    "资料/Android面试题集锦--上 - 掘金.md",
-    "资料/必知必会-Android 性能优化的方面方面都在这儿.md",
-    "资料/可能是最详细的Android图片压缩原理分析（二）—— 鲁班压缩算法解析.md",
-    "技术/Android/Android源码框架解析/Synchronize原理.md",
-    "技术/Android/面试题/保时捷面试.md",
-    "技术/Android/Android源码框架解析/启动流程.md",
-    "01日记/2023-10-27,传化面试.md",
-    "技术/Android/Android源码框架解析/Map.md",
-    "技术/Android/面试题/Android 面试题参考.md",
-    "技术/Android/面试题/序列化-Serializable和Parcelable.md",
-    "技术/Android/性能优化/网络优化.md",
-    "技术/Android/性能优化/内存优化.md",
-    "技术/Android/性能优化/崩溃优化.md",
-    "01日记/2023-10-25,SHEIN2面.md",
-    "技术/Android/性能优化/图片压缩方案.md",
-    "资料/可能是最详细的Android图片压缩原理分析（三）—— 底层哈夫曼压缩讲解.md",
-    "资料/可能是最详细的Android图片压缩原理分析（一）—— Android图片压缩必备基础知识.md",
-    "技术/Android/SurfaceView与TextureView.md",
-    "技术/Android/面试题/字节跳动面试官：一张图片占据的内存大小是如何计算.md",
-    "资料/Android中图片压缩分析（上）.md",
-    "资料/Android中图片压缩分析（下）.md",
-    "技术/Android/Android源码框架解析/Android mmap.md",
-    "技术/Android/Android源码框架解析/Android MappedByteBuffer原理.md",
     "技术/Android/面试题",
     "技术/Android/性能优化",
     "技术/Android/Android源码框架解析",
@@ -239,7 +264,6 @@
     "笔记/Android",
     "技术/C与C++/CPrimerPlus",
     "技术/C与C++",
-    "02附件/cn_com_javaproject_ndk_JNIUtils.h",
     "未命名.canvas"
   ]
 }

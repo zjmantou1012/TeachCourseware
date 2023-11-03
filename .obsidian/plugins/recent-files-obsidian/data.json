@@ -1,56 +1,164 @@
 {
   "recentFiles": [
     {
-      "basename": "02自动内存管理机制",
-      "path": "笔记/深入理解Java虚拟机（第二版）/02自动内存管理机制.md"
+      "basename": "00Android 面试题参考",
+      "path": "技术/Android/面试题/00Android 面试题参考.md"
+    },
+    {
+      "basename": "App瘦身",
+      "path": "技术/Android/面试题/性能优化/App瘦身.md"
+    },
+    {
+      "basename": "App安全优化",
+      "path": "技术/Android/面试题/性能优化/App安全优化.md"
     },
     {
       "basename": "00面试集锦汇总",
       "path": "技术/Android/面试题/00面试集锦汇总.md"
     },
     {
+      "basename": "App电量优化",
+      "path": "技术/Android/面试题/性能优化/App电量优化.md"
+    },
+    {
+      "basename": "App网络优化",
+      "path": "技术/Android/面试题/性能优化/App网络优化.md"
+    },
+    {
+      "basename": "App绘制优化",
+      "path": "技术/Android/面试题/性能优化/App绘制优化.md"
+    },
+    {
+      "basename": "App内存优化",
+      "path": "技术/Android/面试题/性能优化/App内存优化.md"
+    },
+    {
+      "basename": "2023-11-03,周五",
+      "path": "01日记/2023-11-03,周五.md"
+    },
+    {
+      "basename": "App启动速度优化",
+      "path": "技术/Android/面试题/性能优化/App启动速度优化.md"
+    },
+    {
+      "basename": "App稳定性优化",
+      "path": "技术/Android/面试题/性能优化/App稳定性优化.md"
+    },
+    {
+      "basename": "内存优化",
+      "path": "技术/Android/性能优化/内存优化.md"
+    },
+    {
       "basename": "00优化指南",
       "path": "技术/Android/性能优化/00优化指南.md"
     },
     {
-      "basename": "必知必会-Android 性能优化的方面方面都在这儿",
-      "path": "资料/必知必会-Android 性能优化的方面方面都在这儿.md"
+      "basename": "2023-11-02,周四",
+      "path": "01日记/2023-11-02,周四.md"
     },
     {
-      "basename": "可能是最详细的Android图片压缩原理分析（二）—— 鲁班压缩算法解析",
-      "path": "资料/可能是最详细的Android图片压缩原理分析（二）—— 鲁班压缩算法解析.md"
+      "basename": "图片压缩方案",
+      "path": "技术/Android/性能优化/图片压缩方案.md"
+    },
+    {
+      "basename": "Android各大版本新特性",
+      "path": "技术/Android/Android各大版本新特性.md"
     },
     {
       "basename": "Synchronize原理",
       "path": "技术/Android/Android源码框架解析/Synchronize原理.md"
     },
     {
-      "basename": "启动流程",
-      "path": "技术/Android/Android源码框架解析/启动流程.md"
-    },
-    {
       "basename": "2023-10-27,传化面试",
       "path": "01日记/2023-10-27,传化面试.md"
     },
     {
-      "basename": "Map",
-      "path": "技术/Android/Android源码框架解析/Map.md"
+      "basename": "Android Hook",
+      "path": "技术/Android/Android Hook.md"
     },
     {
-      "basename": "Android 面试题参考",
-      "path": "技术/Android/面试题/Android 面试题参考.md"
+      "basename": "02自动内存管理机制",
+      "path": "笔记/深入理解Java虚拟机（第二版）/02自动内存管理机制.md"
+    },
+    {
+      "basename": "类加载机制",
+      "path": "技术/Android/类加载机制.md"
+    },
+    {
+      "basename": "必知必会-Android 性能优化的方面方面都在这儿",
+      "path": "资料/必知必会-Android 性能优化的方面方面都在这儿.md"
+    },
+    {
+      "basename": "ReenTrantLock原理",
+      "path": "技术/Android/Android源码框架解析/ReenTrantLock原理.md"
+    },
+    {
+      "basename": "Java并发包基石——AQS",
+      "path": "技术/Android/Android源码框架解析/Java并发包基石——AQS.md"
+    },
+    {
+      "basename": "Java线程池",
+      "path": "技术/Android/Android源码框架解析/Java线程池.md"
+    },
+    {
+      "basename": "Android开发者必须掌握的设计模式",
+      "path": "技术/Android/Android开发者必须掌握的设计模式.md"
+    },
+    {
+      "basename": "Java类加载机制",
+      "path": "技术/Android/面试题/Java类加载机制.md"
+    },
+    {
+      "basename": "2023-10-31,周二",
+      "path": "01日记/2023-10-31,周二.md"
     },
     {
       "basename": "序列化-Serializable和Parcelable",
       "path": "技术/Android/面试题/序列化-Serializable和Parcelable.md"
     },
     {
-      "basename": "网络优化",
-      "path": "技术/Android/性能优化/网络优化.md"
+      "basename": "Java集合",
+      "path": "技术/Android/面试题/Java集合.md"
     },
     {
-      "basename": "内存优化",
-      "path": "技术/Android/性能优化/内存优化.md"
+      "basename": "HandlerThread",
+      "path": "技术/Android/HandlerThread.md"
+    },
+    {
+      "basename": "数据库",
+      "path": "技术/Android/面试题/数据库.md"
+    },
+    {
+      "basename": "操作系统面试题",
+      "path": "技术/Android/面试题/操作系统面试题.md"
+    },
+    {
+      "basename": "Http",
+      "path": "技术/Android/面试题/Http.md"
+    },
+    {
+      "basename": "Socket",
+      "path": "技术/网络协议/Socket.md"
+    },
+    {
+      "basename": "TCP与UDP",
+      "path": "技术/网络协议/TCP与UDP.md"
+    },
+    {
+      "basename": "可能是最详细的Android图片压缩原理分析（二）—— 鲁班压缩算法解析",
+      "path": "资料/可能是最详细的Android图片压缩原理分析（二）—— 鲁班压缩算法解析.md"
+    },
+    {
+      "basename": "启动流程",
+      "path": "技术/Android/Android源码框架解析/启动流程.md"
+    },
+    {
+      "basename": "Map",
+      "path": "技术/Android/Android源码框架解析/Map.md"
+    },
+    {
+      "basename": "网络优化",
+      "path": "技术/Android/性能优化/网络优化.md"
     },
     {
       "basename": "崩溃优化",
@@ -59,10 +167,6 @@
     {
       "basename": "2023-10-25,SHEIN2面",
       "path": "01日记/2023-10-25,SHEIN2面.md"
-    },
-    {
-      "basename": "图片压缩方案",
-      "path": "技术/Android/性能优化/图片压缩方案.md"
     },
     {
       "basename": "可能是最详细的Android图片压缩原理分析（三）—— 底层哈夫曼压缩讲解",
@@ -95,110 +199,6 @@
     {
       "basename": "Android MappedByteBuffer原理",
       "path": "技术/Android/Android源码框架解析/Android MappedByteBuffer原理.md"
-    },
-    {
-      "basename": "Android IO读写",
-      "path": "技术/Android/Android源码框架解析/Android IO读写.md"
-    },
-    {
-      "basename": "设备导入HTTPS证书（不抓取HTTPS数据可跳过此步骤）",
-      "path": "技术/Android/设备导入HTTPS证书（不抓取HTTPS数据可跳过此步骤）.md"
-    },
-    {
-      "basename": "Android 插件化",
-      "path": "技术/Android/Android 插件化.md"
-    },
-    {
-      "basename": "网络框架Okhttp与retrofit",
-      "path": "技术/Android/Android源码框架解析/网络框架Okhttp与retrofit.md"
-    },
-    {
-      "basename": "Android 一些重要知识点解析整理",
-      "path": "技术/Android/Android源码框架解析/Android 一些重要知识点解析整理.md"
-    },
-    {
-      "basename": "AnsycTask源码解析",
-      "path": "技术/Android/Android源码框架解析/AnsycTask源码解析.md"
-    },
-    {
-      "basename": "Android Hook",
-      "path": "技术/Android/Android Hook.md"
-    },
-    {
-      "basename": "2023-10-23,周一，SHEIN面试",
-      "path": "01日记/2023-10-23,周一，SHEIN面试.md"
-    },
-    {
-      "basename": "LeakCanary原理分析",
-      "path": "技术/Android/Android源码框架解析/LeakCanary原理分析.md"
-    },
-    {
-      "basename": "一文全面了解Android单元测试",
-      "path": "技术/Android/一文全面了解Android单元测试.md"
-    },
-    {
-      "basename": "Android 反射",
-      "path": "技术/Android/Android 反射.md"
-    },
-    {
-      "basename": "Java类加载机制",
-      "path": "技术/Android/Java类加载机制.md"
-    },
-    {
-      "basename": "Handler机制",
-      "path": "技术/Android/Android源码框架解析/Handler机制.md"
-    },
-    {
-      "basename": "Binder机制",
-      "path": "技术/Android/Android源码框架解析/Binder机制.md"
-    },
-    {
-      "basename": "动态字节码技术",
-      "path": "技术/Android/动态字节码技术.md"
-    },
-    {
-      "basename": "物联网Iot",
-      "path": "技术/物联网Iot.md"
-    },
-    {
-      "basename": "多渠道打包上传maven仓库",
-      "path": "技术/Android/多渠道打包上传maven仓库.md"
-    },
-    {
-      "basename": "AndroidStudio 优秀插件推荐",
-      "path": "技术/Android/AndroidStudio 优秀插件推荐.md"
-    },
-    {
-      "basename": "CPrimerPlus（第6版）",
-      "path": "技术/C与C++/CPrimerPlus/CPrimerPlus（第6版）.md"
-    },
-    {
-      "basename": "习题",
-      "path": "技术/C与C++/CPrimerPlus/习题.md"
-    },
-    {
-      "basename": "C语言基础",
-      "path": "技术/C与C++/C语言基础.md"
-    },
-    {
-      "basename": "NDK学习笔记",
-      "path": "技术/Android/NDK学习笔记.md"
-    },
-    {
-      "basename": "Android NDK 开发基础",
-      "path": "技术/Android/ndk/Android NDK 开发基础.md"
-    },
-    {
-      "basename": "（3）Android Studio 4.0.+NDK项目开发详细教学",
-      "path": "技术/Android/ndk/jni开发系列文章/（3）Android Studio 4.0.+NDK项目开发详细教学.md"
-    },
-    {
-      "basename": "Web容器",
-      "path": "技术/Android/Web容器.md"
-    },
-    {
-      "basename": "Material3主题控件",
-      "path": "教学课件/Compose/Material3主题控件.md"
     }
   ],
   "omittedPaths": [],
