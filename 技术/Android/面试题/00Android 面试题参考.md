@@ -502,3 +502,154 @@ Looper.loop()方法中有个Logging对象，它会在每个message处理前后�
 ## 电量优化
 
 ![[App电量优化]]
+
+
+## 进程间通信会造成什么问题
+
+- 静态成员和单例模式完全失效：独立的虚拟机造成。
+- 线程同步机制完全失效：独立的虚拟机造成。
+- SharedPreferences的可靠性下降：这是因为Sp不支持两个进程并发进行读写，有一定几率导致数据丢失。
+- Application会多次创建：Android系统在创建新的进程时会分配独立的虚拟机，所以这个过程其实就是启动一个应用的过程，自然也会创建新的Application。
+
+## Android中IPC方式及优缺点
+
+![image.png](https://zjmantou-drawingbed.oss-cn-hangzhou.aliyuncs.com/picture/202311062121530.png)
+
+
+## 讲讲AIDL？如何优化多模块都使用AIDL的情况？
+
+AIDL(Android Interface Definition Language，Android接口定义语言)：如果在一个进程中要调用另一个进程中对象的方法，可使用AIDL生成可序列化的参数，AIDL会生成一个服务端对象的代理类，通过它客户端可以实现间接调用服务端对象的方法。
+
+AIDL的本质是系统提供了一套可快速实现Binder的工具。关键类和方法：
+
+- AIDL接口：继承IInterface。
+- Stub类：Binder的实现类，服务端通过这个类来提供服务。
+- Proxy类：服务端的本地代理，客户端通过这个类调用服务端的方法。
+- asInterface()：客户端调用，将服务端返回的Binder对象，转换成客户端所需要的AIDL接口类型的对象。如果客户端和服务端位于同一进程，则直接返回Stub对象本身，否则返回系统封装后的Stub.proxy对象。
+- asBinder()：根据当前调用情况返回代理Proxy的Binder对象。
+- onTransact()：运行在服务端的Binder线程池中，当客户端发起跨进程请求时，远程请求会通过系统底层封装后交由此方法来处理。
+- transact()：运行在客户端，当客户端发起远程请求的同时将当前线程挂起。之后调用服务端的onTransact()直到远程请求返回，当前线程才继续执行。
+
+当有多个业务模块都需要AIDL来进行IPC，此时需要为每个模块创建特定的aidl文件，那么相应的Service就会很多。必然会出现系统资源耗费严重、应用过度重量级的问题。解决办法是建立Binder连接池，即将每个业务模块的Binder请求统一转发到一个远程Service中去执行，从而避免重复创建Service。
+
+工作原理：每个业务模块创建自己的AIDL接口并实现此接口，然后向服务端提供自己的唯一标识和其对应的Binder对象。服务端只需要一个Service并提供一个queryBinder接口，它会根据业务模块的特征来返回相应的Binder对象，不同的业务模块拿到所需的Binder对象后就可以进行远程方法的调用了。
+
+[Binder连接池](https://codeleading.com/article/66891077957/)
+
+[Android跨进程通信：图文详解 Binder机制 原理](https://blog.csdn.net/carson_ho/article/details/73560642)
+
+
+### 跨进程传递大内存数据如何做？
+Binder映射的最大内存只有 1024-8K，可以采用 binder + 匿名共享内存的形式，像跨进程传递大的 bitmap 需要打开系统底层的 ashmem 机制。
+
+请按顺序仔细阅读下列文章提升对Binder机制的理解程度：
+
+[写给 Android 应用工程师的 Binder 原理剖析](https://juejin.im/post/6844903589635162126 "https://juejin.im/post/6844903589635162126")
+
+[Binder学习指南](https://link.juejin.cn/?target=http%3A%2F%2Fweishu.me%2F2016%2F01%2F12%2Fbinder-index-for-newer%2F "http://weishu.me/2016/01/12/binder-index-for-newer/")
+
+[Binder设计与实现](https://link.juejin.cn/?target=https%3A%2F%2Fblog.csdn.net%2Funiversus%2Farticle%2Fdetails%2F6211589 "https://blog.csdn.net/universus/article/details/6211589")
+
+[老罗Binder机制分析系列或Android系统源代码情景分析Binder章节](https://link.juejin.cn/?target=https%3A%2F%2Fblog.csdn.net%2Fluoshengyang%2Farticle%2Fdetails%2F6618363 "https://blog.csdn.net/luoshengyang/article/details/6618363")
+
+## 系统启动流程
+
+init进程 -> Zygote进程 –> SystemServer进程 –> 各种系统服务 –> 应用进程
+
+Android系统启动的核心流程如下：
+
+1. 启动电源以及系统启动：当电源按下时引导芯片从预定义的地方（固化在ROM）开始执行，加载引导程序BootLoader到RAM，然后执行。
+2. 引导程序BootLoader：BootLoader是在Android系统开始运行前的一个小程序，主要用于把系统OS拉起来并运行。
+3. Linux内核启动：当内核启动时，设置缓存、被保护存储器、计划列表、加载驱动。当其完成系统设置时，会先在系统文件中寻找init.rc文件，并启动init进程。
+4. init进程启动：初始化和启动属性服务，并且启动Zygote进程。
+5. Zygote进程启动：创建JVM并为其注册JNI方法，创建服务器端Socket，启动SystemServer进程。
+6. SystemServer进程启动：启动Binder线程池和SystemServiceManager，并且启动各种系统服务。
+7. Launcher启动：被SystemServer进程启动的AMS会启动Launcher，Launcher启动后会将已安装应用的快捷图标显示到系统桌面上。
+
+
+## 包安装过程
+
+[[APK打包与安装]]
+
+
+## [说下安卓虚拟机和java虚拟机的原理和不同点](https://link.juejin.cn/?target=https%3A%2F%2Fblog.csdn.net%2Fjason0539%2Farticle%2Fdetails%2F50440669 "https://blog.csdn.net/jason0539/article/details/50440669")?（JVM、Davilk、ART三者的原理和区别）
+
+JVM:.java -> javac -> .class -> jar -> .jar
+
+架构: 堆和栈的架构.
+
+DVM:.java -> javac -> .class -> dx.bat -> .dex
+
+架构: 寄存器(cpu上的一块高速缓存)
+
+### Android2个虚拟机的区别（一个5.0之前，一个5.0之后）
+
+Dalvik是JIT编译器
+
+ART是预编译字节码为机器语言，这一机制叫Ahead-Of-Time(AOT)编译，在安装的时候
+
+执行更有效率，启动更快  
+
+ART优点：
+
+- 系统性能的显著提升。
+- 应用启动更快、运行更快、体验更流畅、触感反馈更及时。
+- 更长的电池续航能力。
+- 支持更低的硬件。
+
+ART缺点：
+
+- 更大的存储空间占用，可能会增加10%-20%。
+- 更长的应用安装时间。
+
+## Jni方法互相调用
+
+### Java调用C++
+
+- Java中生命Native方法
+- 通过Javac生成class文件，然后通过javah生成并导出.h头文件
+- 实现头文件中的方法，编译成.so文件
+
+### C++调用Java
+
+- 查找ClassMethod这个类
+- 获取类的构造方法ID
+- 查找实例方法ID
+- 创建该类的实例
+- 调用对象的实例方法
+
+## Jni中注册native的方式
+### 静态注册
+
+弊端：
+1. 需要编译所有声明了native函数的Java类，每个所生成的class文件都得用javah命令生成一个头文件。
+2. javah生成的JNI层函数名特别长，书写起来很不方便
+3. 初次调用native函数时要根据函数名字搜索对应的JNI层函数来建立关联关系，这样会影响运行效率
+
+### 动态注册
+
+需要实现JNI_OnLoad方法
+
+### 区别
+
+静态注册
+优点: 理解和使用方式简单, 属于傻瓜式操作, 使用相关工具按流程操作就行, 出错率低
+缺点: 当需要更改类名,包名或者方法时, 需要按照之前方法重新生成头文件, 灵活性不高
+动态注册
+优点: 灵活性高, 更改类名,包名或方法时, 只需对更改模块进行少量修改, 效率高
+缺点: 对新手来说稍微有点难理解, 同时会由于搞错签名, 方法, 导致注册失败
+
+
+## Jni加载So方式
+
+静态加载：
+System.loadLibrary
+动态加载：
+System.load
+
+
+## so 的加载流程是怎样的，生命周期是怎样的？
+
+从 ClassLoader 的 PathList 中去找到目标路径加载的，同时 so 是通过 mmap 加载映射到虚拟空间的。生命周期加载库和卸载库时分别调用 JNI_OnLoad 和 JNI_OnUnload() 方法。
+
+

@@ -32,12 +32,48 @@
             }
           },
           {
-            "id": "e81b3ed456d5dc27",
+            "id": "62bee69b6bf332b5",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
                 "file": "技术/Android/面试题/00Android 面试题参考.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "7a2ff45910eda894",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "技术/Android/APK打包与安装.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "e81b3ed456d5dc27",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "01日记/2023-11-06,面试记录——相芯.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "c622749fb70f8a27",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "技术/Android/面试题/性能优化/App绘制优化.md",
                 "mode": "source",
                 "source": false
               }
@@ -73,7 +109,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "app启动",
+                "query": "协程原理",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -227,16 +263,19 @@
       "obsidian-memos:Memos": false
     }
   },
-  "active": "e81b3ed456d5dc27",
+  "active": "62bee69b6bf332b5",
   "lastOpenFiles": [
-    "技术/Android/面试题/性能优化/App瘦身.md",
+    "技术/Android/APK打包与安装.md",
     "技术/Android/面试题/00Android 面试题参考.md",
-    "技术/Android/面试题/性能优化/App安全优化.md",
+    "笔记/深入理解Java虚拟机（第二版）/02自动内存管理机制.md",
     "技术/Android/面试题/00面试集锦汇总.md",
+    "01日记/2023-11-06,面试记录——相芯.md",
+    "技术/Android/面试题/性能优化/App绘制优化.md",
+    "技术/Android/面试题/性能优化/App瘦身.md",
+    "技术/Android/面试题/性能优化/App安全优化.md",
     "技术/Android/面试题/性能优化",
     "技术/Android/面试题/性能优化/App电量优化.md",
     "技术/Android/面试题/性能优化/App网络优化.md",
-    "技术/Android/面试题/性能优化/App绘制优化.md",
     "技术/Android/面试题/性能优化/App内存优化.md",
     "01日记/2023-11-03,周五.md",
     "技术/Android/面试题/性能优化/App启动速度优化.md",
@@ -249,12 +288,10 @@
     "技术/Android/Android源码框架解析/Synchronize原理.md",
     "01日记/2023-10-27,传化面试.md",
     "技术/Android/Android Hook.md",
-    "笔记/深入理解Java虚拟机（第二版）/02自动内存管理机制.md",
     "技术/Android/类加载机制.md",
     "资料/必知必会-Android 性能优化的方面方面都在这儿.md",
     "技术/Android/Android源码框架解析/ReenTrantLock原理.md",
     "技术/Android/Android源码框架解析/Java并发包基石——AQS.md",
-    "技术/Android/Android源码框架解析/Java线程池.md",
     "笔记/深入理解Java虚拟机（第二版）",
     "笔记",
     "技术/Android/面试题",

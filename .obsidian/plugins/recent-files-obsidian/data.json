@@ -5,6 +5,26 @@
       "path": "技术/Android/面试题/00Android 面试题参考.md"
     },
     {
+      "basename": "APK打包与安装",
+      "path": "技术/Android/APK打包与安装.md"
+    },
+    {
+      "basename": "02自动内存管理机制",
+      "path": "笔记/深入理解Java虚拟机（第二版）/02自动内存管理机制.md"
+    },
+    {
+      "basename": "00面试集锦汇总",
+      "path": "技术/Android/面试题/00面试集锦汇总.md"
+    },
+    {
+      "basename": "2023-11-06,面试记录——相芯",
+      "path": "01日记/2023-11-06,面试记录——相芯.md"
+    },
+    {
+      "basename": "App绘制优化",
+      "path": "技术/Android/面试题/性能优化/App绘制优化.md"
+    },
+    {
       "basename": "App瘦身",
       "path": "技术/Android/面试题/性能优化/App瘦身.md"
     },
@@ -13,20 +33,12 @@
       "path": "技术/Android/面试题/性能优化/App安全优化.md"
     },
     {
-      "basename": "00面试集锦汇总",
-      "path": "技术/Android/面试题/00面试集锦汇总.md"
-    },
-    {
       "basename": "App电量优化",
       "path": "技术/Android/面试题/性能优化/App电量优化.md"
     },
     {
       "basename": "App网络优化",
       "path": "技术/Android/面试题/性能优化/App网络优化.md"
-    },
-    {
-      "basename": "App绘制优化",
-      "path": "技术/Android/面试题/性能优化/App绘制优化.md"
     },
     {
       "basename": "App内存优化",
@@ -75,10 +87,6 @@
     {
       "basename": "Android Hook",
       "path": "技术/Android/Android Hook.md"
-    },
-    {
-      "basename": "02自动内存管理机制",
-      "path": "笔记/深入理解Java虚拟机（第二版）/02自动内存管理机制.md"
     },
     {
       "basename": "类加载机制",
@@ -191,14 +199,6 @@
     {
       "basename": "Android中图片压缩分析（下）",
       "path": "资料/Android中图片压缩分析（下）.md"
-    },
-    {
-      "basename": "Android mmap",
-      "path": "技术/Android/Android源码框架解析/Android mmap.md"
-    },
-    {
-      "basename": "Android MappedByteBuffer原理",
-      "path": "技术/Android/Android源码框架解析/Android MappedByteBuffer原理.md"
     }
   ],
   "omittedPaths": [],
