@@ -301,3 +301,10 @@ bm = Bitmap.createBitmap(bitmap, 0, 0, bit.getWidth(), bit.getHeight(), matrix, 
 >      在 Android 中，前两种采样方法根据实际情况去选择即可，如果对时间要求不高，倾向于使用**双线性采样**去缩放图片。如果对图片质量要求很高，**双线性采样**也已经无法满足要求，则可以考虑引入另外几种算法去处理图片，但是同时需要注意的是后面两种算法使用的都是卷积核去计算生成像素，计算量会相对比较大，**Lanczos**的计算量则是最大，在**实际开发过程**中根据需求进行算法的选择即可，往往我们是**尺寸压缩**和**质量压缩**搭配来使用。
 
 >      下面我们要进入到实战中，**参考一个仿微信朋友圈压缩策略的Android图片压缩工具**——[Luban](https://link.juejin.cn/?target=https%3A%2F%2Fgithub.com%2FCurzibn%2FLuban "https://github.com/Curzibn/Luban")，进入我们的下一章节[鲁班压缩算法解析](https://juejin.cn/post/7036716428174557221 "https://juejin.cn/post/7036716428174557221")。
+
+
+# 参考链接
+
+[可能是最详细的Android图片压缩原理分析（一）—— Android图片压缩必备基础知识](https://blog.csdn.net/weixin_44005563/article/details/120823665)
+
+[Android高效加载大图、多图解决方案，有效避免程序OOM](https://blog.csdn.net/guolin_blog/article/details/9316683)

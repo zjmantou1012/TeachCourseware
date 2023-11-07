@@ -5,6 +5,114 @@
       "path": "技术/Android/面试题/00Android 面试题参考.md"
     },
     {
+      "basename": "Gradle",
+      "path": "技术/Android/Gradle.md"
+    },
+    {
+      "basename": "Android 插件化",
+      "path": "技术/Android/Android 插件化.md"
+    },
+    {
+      "basename": "类加载机制",
+      "path": "技术/Android/类加载机制.md"
+    },
+    {
+      "basename": "热修复技术",
+      "path": "技术/Android/热修复技术.md"
+    },
+    {
+      "basename": "GreenDao源码分析",
+      "path": "技术/Android/Android第三方框架解析/GreenDao源码分析.md"
+    },
+    {
+      "basename": "Dagger2源码分析",
+      "path": "技术/Android/Android第三方框架解析/Dagger2源码分析.md"
+    },
+    {
+      "basename": "2023-11-07,周二",
+      "path": "01日记/2023-11-07,周二.md"
+    },
+    {
+      "basename": "ButterKnife源码分析",
+      "path": "技术/Android/Android第三方框架解析/ButterKnife源码分析.md"
+    },
+    {
+      "basename": "LeakCanary原理分析",
+      "path": "技术/Android/Android第三方框架解析/LeakCanary原理分析.md"
+    },
+    {
+      "basename": "00面试集锦汇总",
+      "path": "技术/Android/面试题/00面试集锦汇总.md"
+    },
+    {
+      "basename": "2023-10-23,周一，SHEIN面试",
+      "path": "01日记/2023-10-23,周一，SHEIN面试.md"
+    },
+    {
+      "basename": "EventBus源码解析",
+      "path": "技术/Android/Android第三方框架解析/EventBus源码解析.md"
+    },
+    {
+      "basename": "可能是最详细的Android图片压缩原理分析",
+      "path": "资料/可能是最详细的Android图片压缩原理分析.md"
+    },
+    {
+      "basename": "Glide源码解析",
+      "path": "技术/Android/Android第三方框架解析/Glide源码解析.md"
+    },
+    {
+      "basename": "Kotlin协程",
+      "path": "技术/kotlin/Kotlin协程.md"
+    },
+    {
+      "basename": "App安全优化",
+      "path": "技术/Android/面试题/性能优化/App安全优化.md"
+    },
+    {
+      "basename": "Retrofit框架源码解析",
+      "path": "技术/Android/Android第三方框架解析/Retrofit框架源码解析.md"
+    },
+    {
+      "basename": "App绘制优化",
+      "path": "技术/Android/面试题/性能优化/App绘制优化.md"
+    },
+    {
+      "basename": "2023-11-06,面试记录——相芯",
+      "path": "01日记/2023-11-06,面试记录——相芯.md"
+    },
+    {
+      "basename": "Android开发者必须掌握的设计模式",
+      "path": "技术/Android/Android开发者必须掌握的设计模式.md"
+    },
+    {
+      "basename": "RxJava源码解析",
+      "path": "技术/Android/Android第三方框架解析/RxJava源码解析.md"
+    },
+    {
+      "basename": "ReenTrantLock原理",
+      "path": "技术/Android/Android源码框架解析/ReenTrantLock原理.md"
+    },
+    {
+      "basename": "Okhttp源码框架解析",
+      "path": "技术/Android/Android第三方框架解析/Okhttp源码框架解析.md"
+    },
+    {
+      "basename": "Http",
+      "path": "技术/Android/面试题/Http.md"
+    },
+    {
+      "basename": "00主流第三方库",
+      "path": "技术/Android/Android第三方框架解析/00主流第三方库.md"
+    },
+    {
+      "basename": "MQTT协议",
+      "path": "技术/网络协议/MQTT协议.md"
+    },
+    {
+      "basename": "WebSockets",
+      "path": "技术/网络协议/WebSockets.md"
+    },
+    {
       "basename": "APK打包与安装",
       "path": "技术/Android/APK打包与安装.md"
     },
@@ -13,24 +121,8 @@
       "path": "笔记/深入理解Java虚拟机（第二版）/02自动内存管理机制.md"
     },
     {
-      "basename": "00面试集锦汇总",
-      "path": "技术/Android/面试题/00面试集锦汇总.md"
-    },
-    {
-      "basename": "2023-11-06,面试记录——相芯",
-      "path": "01日记/2023-11-06,面试记录——相芯.md"
-    },
-    {
-      "basename": "App绘制优化",
-      "path": "技术/Android/面试题/性能优化/App绘制优化.md"
-    },
-    {
       "basename": "App瘦身",
       "path": "技术/Android/面试题/性能优化/App瘦身.md"
-    },
-    {
-      "basename": "App安全优化",
-      "path": "技术/Android/面试题/性能优化/App安全优化.md"
     },
     {
       "basename": "App电量优化",
@@ -89,16 +181,8 @@
       "path": "技术/Android/Android Hook.md"
     },
     {
-      "basename": "类加载机制",
-      "path": "技术/Android/类加载机制.md"
-    },
-    {
       "basename": "必知必会-Android 性能优化的方面方面都在这儿",
       "path": "资料/必知必会-Android 性能优化的方面方面都在这儿.md"
-    },
-    {
-      "basename": "ReenTrantLock原理",
-      "path": "技术/Android/Android源码框架解析/ReenTrantLock原理.md"
     },
     {
       "basename": "Java并发包基石——AQS",
@@ -109,96 +193,8 @@
       "path": "技术/Android/Android源码框架解析/Java线程池.md"
     },
     {
-      "basename": "Android开发者必须掌握的设计模式",
-      "path": "技术/Android/Android开发者必须掌握的设计模式.md"
-    },
-    {
       "basename": "Java类加载机制",
       "path": "技术/Android/面试题/Java类加载机制.md"
-    },
-    {
-      "basename": "2023-10-31,周二",
-      "path": "01日记/2023-10-31,周二.md"
-    },
-    {
-      "basename": "序列化-Serializable和Parcelable",
-      "path": "技术/Android/面试题/序列化-Serializable和Parcelable.md"
-    },
-    {
-      "basename": "Java集合",
-      "path": "技术/Android/面试题/Java集合.md"
-    },
-    {
-      "basename": "HandlerThread",
-      "path": "技术/Android/HandlerThread.md"
-    },
-    {
-      "basename": "数据库",
-      "path": "技术/Android/面试题/数据库.md"
-    },
-    {
-      "basename": "操作系统面试题",
-      "path": "技术/Android/面试题/操作系统面试题.md"
-    },
-    {
-      "basename": "Http",
-      "path": "技术/Android/面试题/Http.md"
-    },
-    {
-      "basename": "Socket",
-      "path": "技术/网络协议/Socket.md"
-    },
-    {
-      "basename": "TCP与UDP",
-      "path": "技术/网络协议/TCP与UDP.md"
-    },
-    {
-      "basename": "可能是最详细的Android图片压缩原理分析（二）—— 鲁班压缩算法解析",
-      "path": "资料/可能是最详细的Android图片压缩原理分析（二）—— 鲁班压缩算法解析.md"
-    },
-    {
-      "basename": "启动流程",
-      "path": "技术/Android/Android源码框架解析/启动流程.md"
-    },
-    {
-      "basename": "Map",
-      "path": "技术/Android/Android源码框架解析/Map.md"
-    },
-    {
-      "basename": "网络优化",
-      "path": "技术/Android/性能优化/网络优化.md"
-    },
-    {
-      "basename": "崩溃优化",
-      "path": "技术/Android/性能优化/崩溃优化.md"
-    },
-    {
-      "basename": "2023-10-25,SHEIN2面",
-      "path": "01日记/2023-10-25,SHEIN2面.md"
-    },
-    {
-      "basename": "可能是最详细的Android图片压缩原理分析（三）—— 底层哈夫曼压缩讲解",
-      "path": "资料/可能是最详细的Android图片压缩原理分析（三）—— 底层哈夫曼压缩讲解.md"
-    },
-    {
-      "basename": "可能是最详细的Android图片压缩原理分析（一）—— Android图片压缩必备基础知识",
-      "path": "资料/可能是最详细的Android图片压缩原理分析（一）—— Android图片压缩必备基础知识.md"
-    },
-    {
-      "basename": "SurfaceView与TextureView",
-      "path": "技术/Android/SurfaceView与TextureView.md"
-    },
-    {
-      "basename": "字节跳动面试官：一张图片占据的内存大小是如何计算",
-      "path": "技术/Android/面试题/字节跳动面试官：一张图片占据的内存大小是如何计算.md"
-    },
-    {
-      "basename": "Android中图片压缩分析（上）",
-      "path": "资料/Android中图片压缩分析（上）.md"
-    },
-    {
-      "basename": "Android中图片压缩分析（下）",
-      "path": "资料/Android中图片压缩分析（下）.md"
     }
   ],
   "omittedPaths": [],

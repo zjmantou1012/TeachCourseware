@@ -8,18 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "f65b9c8e0e25dd6f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "技术/Android/面试题/性能优化/App安全优化.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "b6b28fa63bbb2ebe",
             "type": "leaf",
             "state": {
@@ -32,7 +20,7 @@
             }
           },
           {
-            "id": "62bee69b6bf332b5",
+            "id": "ebe02c24a3152489",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -44,43 +32,43 @@
             }
           },
           {
-            "id": "7a2ff45910eda894",
+            "id": "c79723b50fbecf1e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "技术/Android/APK打包与安装.md",
+                "file": "技术/Android/Gradle.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "e81b3ed456d5dc27",
+            "id": "28dbec05713378c2",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01日记/2023-11-06,面试记录——相芯.md",
+                "file": "技术/Android/Gradle.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "c622749fb70f8a27",
+            "id": "1e8529e29216cffd",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "技术/Android/面试题/性能优化/App绘制优化.md",
+                "file": "技术/Android/Android 插件化.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -109,7 +97,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "协程原理",
+                "query": "热修复",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -263,35 +251,36 @@
       "obsidian-memos:Memos": false
     }
   },
-  "active": "62bee69b6bf332b5",
+  "active": "ebe02c24a3152489",
   "lastOpenFiles": [
-    "技术/Android/APK打包与安装.md",
+    "未命名.canvas",
     "技术/Android/面试题/00Android 面试题参考.md",
-    "笔记/深入理解Java虚拟机（第二版）/02自动内存管理机制.md",
-    "技术/Android/面试题/00面试集锦汇总.md",
-    "01日记/2023-11-06,面试记录——相芯.md",
-    "技术/Android/面试题/性能优化/App绘制优化.md",
-    "技术/Android/面试题/性能优化/App瘦身.md",
-    "技术/Android/面试题/性能优化/App安全优化.md",
-    "技术/Android/面试题/性能优化",
-    "技术/Android/面试题/性能优化/App电量优化.md",
-    "技术/Android/面试题/性能优化/App网络优化.md",
-    "技术/Android/面试题/性能优化/App内存优化.md",
-    "01日记/2023-11-03,周五.md",
-    "技术/Android/面试题/性能优化/App启动速度优化.md",
-    "技术/Android/面试题/性能优化/App稳定性优化.md",
-    "技术/Android/性能优化/内存优化.md",
-    "技术/Android/性能优化/00优化指南.md",
-    "01日记/2023-11-02,周四.md",
-    "技术/Android/性能优化/图片压缩方案.md",
-    "技术/Android/Android各大版本新特性.md",
-    "技术/Android/Android源码框架解析/Synchronize原理.md",
-    "01日记/2023-10-27,传化面试.md",
-    "技术/Android/Android Hook.md",
+    "技术/Android/Gradle.md",
+    "技术/Android/Android 插件化.md",
     "技术/Android/类加载机制.md",
-    "资料/必知必会-Android 性能优化的方面方面都在这儿.md",
+    "技术/Android/热修复技术.md",
+    "技术/Android/Android第三方框架解析/GreenDao源码分析.md",
+    "技术/Android/Android第三方框架解析/Dagger2源码分析.md",
+    "01日记/2023-11-07,周二.md",
+    "技术/Android/Android第三方框架解析/ButterKnife源码分析.md",
+    "技术/Android/Android第三方框架解析/LeakCanary原理分析.md",
+    "技术/Android/面试题/00面试集锦汇总.md",
+    "01日记/2023-10-23,周一，SHEIN面试.md",
+    "技术/Android/Android第三方框架解析/EventBus源码解析.md",
+    "资料/可能是最详细的Android图片压缩原理分析.md",
+    "技术/Android/Android第三方框架解析/Glide源码解析.md",
+    "技术/kotlin/Kotlin协程.md",
+    "技术/Android/面试题/性能优化/App安全优化.md",
+    "技术/Android/Android第三方框架解析/Retrofit框架源码解析.md",
+    "技术/Android/面试题/性能优化/App绘制优化.md",
+    "01日记/2023-11-06,面试记录——相芯.md",
+    "技术/Android/Android开发者必须掌握的设计模式.md",
+    "技术/Android/Android第三方框架解析/RxJava源码解析.md",
     "技术/Android/Android源码框架解析/ReenTrantLock原理.md",
-    "技术/Android/Android源码框架解析/Java并发包基石——AQS.md",
+    "技术/Android/Android第三方框架解析/Okhttp源码框架解析.md",
+    "技术/Android/面试题/Http.md",
+    "技术/Android/Android第三方框架解析",
+    "技术/Android/面试题/性能优化",
     "笔记/深入理解Java虚拟机（第二版）",
     "笔记",
     "技术/Android/面试题",
@@ -299,8 +288,6 @@
     "技术/Android/Android源码框架解析",
     "技术/Android/插件化",
     "笔记/Android",
-    "技术/C与C++/CPrimerPlus",
-    "技术/C与C++",
-    "未命名.canvas"
+    "技术/C与C++/CPrimerPlus"
   ]
 }

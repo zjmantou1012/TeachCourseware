@@ -1018,4 +1018,6 @@ goods1为新创建的对象，后面的都是从对象池中取出的缓存对�
 - 一个被观察者卡顿，会影响整体的执行效率。采用异步机制可解决此类问题。
 
 
+#### 责任链模式
 
+[Java设计模式—责任链模式（Chin of Responsibility）](https://blog.csdn.net/m0_67840539/article/details/131172348)

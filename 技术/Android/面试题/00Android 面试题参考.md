@@ -369,6 +369,62 @@ Android 进程不死从3个层面入手：
 ### C. 依靠第三方
 根据终端不同，在小米手机（包括 MIUI）接入小米推送、华为手机接入华为推送；其他手机可以考虑接入腾讯信鸽或极光推送与小米推送做 A/B Test。
 
+[2018年Android的保活方案效果统计](https://www.jianshu.com/p/b5371df6d7cb)
+
+#### 保活方案
+
+1、AIDL方式单进程、双进程方式保活Service。（基于onStartCommand() return START_STICKY）
+
+START_STICKY 在运行onStartCommand后service进程被kill后，那将保留在开始状态，但是不保留那些传入的intent。不久后service就会再次尝试重新创建，因为保留在开始状态，在创建 service后将保证调用onstartCommand。如果没有传递任何开始命令给service，那将获取到null的intent。
+
+除了华为此方案无效以及未更改底层的厂商不起作用外（START_STICKY字段就可以保持Service不被杀）。此方案可以与其他方案混合使用
+
+2、降低oom_adj的值（提升service进程优先级）：
+
+Android中的进程是托管的，当系统进程空间紧张的时候，会依照优先级自动进行进程的回收。Android将进程分为6个等级,它们按优先级顺序由高到低依次是:
+
+- 1.前台进程 (Foreground process)
+- 2.可见进程 (Visible process)
+- 3.服务进程 (Service process)
+- 4.后台进程 (Background process)
+- 5.空进程 (Empty process)
+
+当service运行在低内存的环境时，将会kill掉一些存在的进程。因此进程的优先级将会很重要，可以使用startForeground 将service放到前台状态。这样在低内存时被kill的几率会低一些。
+
+- 常驻通知栏（可通过启动另外一个服务关闭Notification，不对oom_adj值有影响）。
+    
+- 使用”1像素“的Activity覆盖在getWindow()的view上。
+    
+
+此方案无效果
+
+- 循环播放无声音频（黑科技，7.0下杀不掉）。
+
+成功对华为手机保活。小米8下也成功突破20分钟
+
+- 3、监听锁屏广播：使Activity始终保持前台。
+- 4、使用自定义锁屏界面：覆盖了系统锁屏界面。
+- 5、通过android:process属性来为Service创建一个进程。
+- 6、跳转到系统白名单界面让用户自己添加app进入白名单。
+
+#### 复活方案
+
+1、onDestroy方法里重启service
+
+service + broadcast 方式，就是当service走onDestory的时候，发送一个自定义的广播，当收到广播的时候，重新启动service。
+
+2、JobScheduler：原理类似定时器，5.0,5.1,6.0作用很大，7.0时候有一定影响（可以在电源管理中给APP授权）。
+
+只对5.0，5.1、6.0起作用。
+
+3、推送互相唤醒复活：极光、友盟、以及各大厂商的推送。
+
+4、同派系APP广播互相唤醒：比如今日头条系、阿里系。
+
+此外还可以监听系统广播判断Service状态，通过系统的一些广播，比如：手机重启、界面唤醒、应用状态改变等等监听并捕获到，然后判断我们的Service是否还存活。
+
+#### 结论：高版本情况下可以使用弹出通知栏、双进程、无声音乐提高后台服务的保活概率。
+
 ## 反编译
 
 - apktools：反编译成原始目录，可以看到清单文件；
@@ -652,4 +708,555 @@ System.load
 
 从 ClassLoader 的 PathList 中去找到目标路径加载的，同时 so 是通过 mmap 加载映射到虚拟空间的。生命周期加载库和卸载库时分别调用 JNI_OnLoad 和 JNI_OnUnload() 方法。
 
+
+## OkHttp
+[[Okhttp源码框架解析]]
+
+### 拦截器的作用
+![[Okhttp源码框架解析#拦截器]]
+
+## Retrofit
+
+[[Retrofit框架源码解析]]
+
+### 为什么要在项目中使用这个库？
+
+1、功能强大：
+
+- 支持同步、异步
+- 支持多种数据的解析 & 序列化格式
+- 支持RxJava
+
+2、简洁易用：
+
+- 通过注解配置网络请求参数
+- 采用大量设计模式简化使用
+
+3、可扩展性好：
+
+- 功能模块高度封装
+- 解耦彻底，如自定义Converters
+
+### 这个库都有哪些用法？对应什么样的使用场景？
+
+任何网络场景都应该优先选择，特别是后台API遵循Restful API设计风格 & 项目中使用到RxJava。
+
+### 这个库的优缺点是什么，跟同类型库的比较？
+
+- 优点：在上面
+- 缺点：扩展性差，高度封装所带来的必然后果，如果服务器不能给出统一的API形式，会很难处理。
+
+### 这个库的核心实现原理是什么？如果让你实现这个库的某些核心功能，你会考虑怎么去实现？
+
+Retrofit主要是在create方法中采用动态代理模式（通过访问代理对象的方式来间接访问目标对象）实现接口方法，这个过程构建了一个ServiceMethod对象，根据方法注解获取请求方式，参数类型和参数注解拼接请求的链接，当一切都准备好之后会把数据添加到Retrofit的RequestBuilder中。然后当我们主动发起网络请求的时候会调用okhttp发起网络请求，okhttp的配置包括请求方式，URL等在Retrofit的RequestBuilder的build()方法中实现，并发起真正的网络请求。
+
+### 你从这个库中学到什么有价值的或者说可借鉴的设计思想？
+
+内部使用了优秀的架构设计和大量的设计模式，在我分析过Retrofit最新版的源码和大量优秀的Retrofit源码分析文章后，我发现，要想真正理解Retrofit内部的核心源码流程和设计思想，首先，需要对它使用到的九大设计模式有一定的了解，下面我简单说一说：
+
+#### 1、创建Retrofit实例：
+
+- 使用建造者模式通过内部Builder类建立了一个Retroift实例。
+- 网络请求工厂使用了工厂方法模式。
+
+#### 2、创建网络请求接口的实例：
+
+- 首先，使用外观模式统一调用创建网络请求接口实例和网络请求参数配置的方法。
+- 然后，使用动态代理动态地去创建网络请求接口实例。
+- 接着，使用了建造者模式 & 单例模式创建了serviceMethod对象。
+- 再者，使用了策略模式对serviceMethod对象进行网络请求参数配置，即通过解析网络请求接口方法的参数、返回值和注解类型，从Retrofit对象中获取对应的网络的url地址、网络请求执行器、网络请求适配器和数据转换器。
+- 最后，使用了装饰者模式ExecuteCallBack为serviceMethod对象加入线程切换的操作，便于接受数据后通过Handler从子线程切换到主线程从而对返回数据结果进行处理。
+
+#### 3、发送网络请求：
+
+- 在异步请求时，通过静态delegate代理对网络请求接口的方法中的每个参数使用对应的ParameterHanlder进行解析。
+
+#### 4、解析数据
+
+#### 5、切换线程：
+
+- 使用了适配器模式通过检测不同的Platform使用不同的回调执行器，然后使用回调执行器切换线程，这里同样是使用了装饰模式。
+
+#### 6、处理结果
+
+
+## 协程
+
+![[Kotlin协程#协程与线程的区别]]
+
+  ![[Kotlin协程#协程线程池的原理]]
+
+## 图片库Glide
+
+[[Glide源码解析]]
+
+### 为什么要在项目中使用这个库？
+
+1. 多样化媒体加载：不仅可以进行图片缓存，还支持Gif、WebP、缩略图，甚至是Video。
+2. 通过设置绑定生命周期：可以使加载图片的生命周期动态管理起来。
+3. 高效的缓存策略：支持内存、Disk缓存，并且Picasso只会缓存原始尺寸的图片，内Glide缓存的是多种规格，也就是Glide会根据你ImageView的大小来缓存相应大小的图片尺寸。
+4. 内存开销小：默认的Bitmap格式是RGB_565格式，而Picasso默认的是ARGB_8888格式，内存开销小一半。
+
+### 这个库都有哪些用法？对应什么样的使用场景？
+
+1. 图片加载：Glide.with(this).load(imageUrl).override(800, 800).placeholder().error().animate().into()。
+2. 多样式媒体加载：asBitamp、asGif。
+3. 生命周期集成。
+4. 可以配置磁盘缓存策略ALL、NONE、SOURCE、RESULT。
+
+### 这个库的优缺点是什么，跟同类型库的比较？
+
+库比较大，源码实现复杂。
+
+### 这个库的核心实现原理是什么？如果让你实现这个库的某些核心功能，你会考虑怎么去实现？
+
+- Glide&with：
+
+1、初始化各式各样的配置信息（包括缓存，请求线程池，大小，图片格式等等）以及glide对象。
+
+2、将glide请求和application/SupportFragment/Fragment的生命周期绑定在一块。
+
+- Glide&load：
+
+设置请求url，并记录url已设置的状态。
+
+3、Glide&into：
+
+1、首先根据转码类transcodeClass类型返回不同的ImageViewTarget：BitmapImageViewTarget、DrawableImageViewTarget。
+
+2、递归建立缩略图请求，没有缩略图请求，则直接进行正常请求。
+
+3、如果没指定宽高，会根据ImageView的宽高计算出图片宽高，最终执行到onSizeReay()方法中的engine.load()方法。
+
+4、engine是一个负责加载和管理缓存资源的类
+
+- **常规三级缓存的流程：强引用->软引用->硬盘缓存**
+
+当我们的APP中想要加载某张图片时，先去LruCache中寻找图片，如果LruCache中有，则直接取出来使用，如果LruCache中没有，则去SoftReference中寻找（软引用适合当cache，当内存吃紧的时候才会被回收。而weakReference在每次system.gc（）就会被回收）（当LruCache存储紧张时，会把最近最少使用的数据放到SoftReference中），如果SoftReference中有，则从SoftReference中取出图片使用，同时将图片重新放回到LruCache中，如果SoftReference中也没有图片，则去硬盘缓存中中寻找，如果有则取出来使用，同时将图片添加到LruCache中，如果没有，则连接网络从网上下载图片。图片下载完成后，将图片保存到硬盘缓存中，然后放到LruCache中。
+
+- **Glide的三层缓存机制：**
+
+Glide缓存机制大致分为三层：**内存缓存、弱引用缓存、磁盘缓存**。
+
+取的顺序是：**内存、弱引用、磁盘**。
+
+存的顺序是：**弱引用、内存、磁盘**。
+
+三层存储的机制在Engine中实现的。先说下Engine是什么？Engine这一层负责加载时做管理内存缓存的逻辑。持有MemoryCache、`Map<Key, WeakReference<EngineResource<?>>>`。通过load（）来加载图片，加载前后会做内存存储的逻辑。如果内存缓存中没有，那么才会使用EngineJob这一层来进行异步获取硬盘资源或网络资源。EngineJob类似一个异步线程或observable。Engine是一个全局唯一的，通过Glide.getEngine()来获取。
+
+需要一个图片资源，如果Lrucache中有相应的资源图片，那么就返回，同时从Lrucache中清除，放到activeResources中。activeResources map是盛放正在使用的资源，以弱引用的形式存在。同时资源内部有被引用的记录。如果资源没有引用记录了，那么再放回Lrucache中，同时从activeResources中清除。如果Lrucache中没有，就从activeResources中找，找到后相应资源引用加1。如果Lrucache和activeResources中没有，那么进行资源异步请求（网络/diskLrucache），请求成功后，资源放到diskLrucache和activeResources中。
+
+### Glide源码机制的核心思想：
+
+使用一个弱引用map activeResources来盛放项目中正在使用的资源。Lrucache中不含有正在使用的资源。资源内部有个计数器来显示自己是不是还有被引用的情况，把正在使用的资源和没有被使用的资源分开有什么好处呢？？因为当Lrucache需要移除一个缓存时，会调用resource.recycle()方法。注意到该方法上面注释写着只有没有任何consumer引用该资源的时候才可以调用这个方法。那么为什么调用resource.recycle()方法需要保证该资源没有任何consumer引用呢？glide中resource定义的recycle（）要做的事情是把这个不用的资源（假设是bitmap或drawable）放到bitmapPool中。bitmapPool是一个bitmap回收再利用的库，在做transform的时候会从这个bitmapPool中拿一个bitmap进行再利用。这样就避免了重新创建bitmap，减少了内存的开支。而既然bitmapPool中的bitmap会被重复利用，那么肯定要保证回收该资源的时候（即调用资源的recycle（）时），要保证该资源真的没有外界引用了。这也是为什么glide花费那么多逻辑来保证Lrucache中的资源没有外界引用的原因。
+
+
+### 加载bitmap过程（怎样保证不产生内存溢出）
+
+由于Android对图片使用内存有限制，若是加载几兆的大图片便内存溢出。Bitmap会将图片的所有像素（即长x宽）加载到内存中，如果图片分辨率过大，会直接导致内存OOM，只有在BitmapFactory加载图片时使用BitmapFactory.Options对相关参数进行配置来减少加载的像素。
+
+BitmapFactory.Options相关参数详解：
+
+(1).Options.inPreferredConfig值来降低内存消耗。
+
+比如：默认值ARGB_8888改为RGB_565,节约一半内存。
+
+(2).设置Options.inSampleSize 缩放比例，对大图片进行压缩 。
+
+(3).设置Options.inPurgeable和inInputShareable：让系统能及时回收内存。
+
+```sql
+
+A：inPurgeable：设置为True时，表示系统内存不足时可以被回收，设置为False时，表示不能被回收。 B：inInputShareable：设置是否深拷贝，与inPurgeable结合使用，inPurgeable为false时，该参数无意义。
+
+```
+
+(4).使用decodeStream代替decodeResource等其他方法。
+
+## LeakCanary原理
+
+[[LeakCanary原理分析]]
+
+### 这个库都有哪些用法？对应什么样的使用场景？
+
+直接从application中拿到全局的 refWatcher 对象，在Fragment或其他组件的销毁回调中使用refWatcher.watch(this)检测是否发生内存泄漏。
+
+### 这个库的优缺点是什么，跟同类型库的比较？
+
+检测结果并不是特别的准确，因为内存的释放和对象的生命周期有关也和GC的调度有关。
+
+### 核心原理
+
+在一个Activity执行完onDestroy()之后，将它放入WeakReference中，然后将这个WeakReference类型的Activity对象与ReferenceQueque关联。这时再从ReferenceQueque中查看是否有该对象，如果没有，执行gc，再次查看，还是没有的话则判断发生内存泄露了。最后用HAHA这个开源库去分析dump之后的heap内存（主要就是创建一个HprofParser解析器去解析出对应的引用内存快照文件snapshot）。
+
+## BlockCanary原理：
+
+该组件利用了主线程的消息队列处理机制，应用发生卡顿，一定是在dispatchMessage中执行了耗时操作。我们通过给主线程的Looper设置一个Printer，打点统计dispatchMessage方法执行的时间，如果超出阀值，表示发生卡顿，则dump出各种信息，提供开发者分析性能瓶颈。
+
+
+## 热修复和插件化
+
+[[Android 插件化]]
+
+### Android中ClassLoader的种类&特点
+
+- BootClassLoader（Java的BootStrap ClassLoader）： 用于加载Android Framework层class文件。
+- PathClassLoader（Java的App ClassLoader）： 用于加载已经安装到系统中的apk中的class文件。
+- DexClassLoader（Java的Custom ClassLoader）： 用于加载指定目录中的class文件。
+- BaseDexClassLoader： 是PathClassLoader和DexClassLoader的父类。
+
+[[热修复技术]]
+
+## ARouter路由原理：
+
+ARouter维护了一个路由表Warehouse，其中保存着全部的模块跳转关系，ARouter路由跳转实际上还是调用了startActivity的跳转，使用了原生的Framework机制，只是通过apt注解的形式制造出跳转规则，并人为地拦截跳转和设置跳转条件。
+
+## 多模块开发资源去重？
+
+### 常用方案
+
+Gradle中增加resourcePrefix配置，使资源被lint工具检测，不会对编译过程造成影响
+
+```groovy
+
+android {
+	....
+	resourcePrefix "module_xxx"
+	....
+}
+
+
+```
+
+### 采用Python脚本（适合老项目）
+
+采用Python脚本，对项目相应资源进行扫描查重
+
+```Python
+# 用于扫描模块化项目-不同模块的资源文件是否重复
+import os
+from bs4 import BeautifulSoup
+from bs4.element import NavigableString
+# 重复类型
+# 模块命名
+# 包名结构
+# assets
+# res
+#     anim
+#     color
+#     drawable
+#     drawable-xxx
+#     mipmap
+#     mimap-xxx
+#     layout
+#
+#
+#     values
+#     values-xxx
+#     //解析内容
+#         attrs
+#         colors
+#         dimens
+#         ids
+#         strings
+#         styles
+src_path=r'src\main\res'
+base_path = r'xxx\xxxProject的根目录'
+
+# 可能重复的资源文件夹名称
+src_maybe_repeat_folders = ['anim', 'color', 'layout', 'xml','raw',
+                         'drawable', 'drawable-hdpi', 'drawable-xhdpi', 'drawable-xxhdpi', 'drawable-xxxhdpi','drawable-v21',
+                         'mipmap', 'mipmap-hdpi', 'mipmap-xhdpi', 'mipmap-xxhdpi', 'mipmap-xxxhdpi',  'mipmap-xxhdpi-2196x1080', 'mipmap-xxhdpi-2000x1080', ]
+
+
+# 特殊的资源文件目录
+special_src_paths = []
+
+# 所有模块目录
+all_module_paths = []
+# 所有模块src下的资源
+all_module_src_files = []
+# 所有模块src下重复的资源
+all_module_src_files_repeat = []
+
+
+# 可能内容重复的文件夹名称 string.xml
+# src_content_maybe_repeat_folders=['values','values-v19','values-v23']
+src_content_maybe_repeat_folders=['values']
+# 所有模块value下的资源
+all_module_src_contents= []
+# 所有模块value下重复的资源
+all_module_src_contents_repeat = []
+
+# 警告
+all_module_src_warning_contents= []
+# 所有模块value下重复的资源
+all_module_src_warning_contents_repeat = []
+
+def get_folders():
+    for child_dir in os.listdir(base_path):
+        if os.path.isdir(os.path.join(base_path, child_dir)):
+            if child_dir == 'app':
+                all_module_paths.append(os.path.join(base_path, child_dir))
+
+            elif child_dir == 'lib':
+                current_dir = os.path.join(base_path, child_dir)
+                for child_dir in os.listdir(current_dir):
+                    if os.path.isdir(os.path.join(current_dir, child_dir)):
+                        all_module_paths.append(os.path.join(current_dir, child_dir))
+            elif child_dir.startswith('md_'):
+                all_module_paths.append(os.path.join(base_path, child_dir))
+        else:
+            continue
+
+
+def scan_repeat_files():
+    for path in all_module_paths:
+        module_src_path = os.path.join(path, src_path)
+        # print('module_src_path',module_src_path)
+
+        # 扫描普通资源是否重复
+        for detail_path in src_maybe_repeat_folders:
+            next_path = os.path.join(module_src_path, detail_path)
+            if os.path.exists(next_path) and os.path.isdir(next_path):
+                for file_name in os.listdir(next_path):
+                    file_path = os.path.join(next_path, file_name)
+                    file_split = file_path.split('\\')
+                    file_path_t = file_split[-2] + '\\' + file_split[-1]
+                    # if all_module_src_files
+                    # print(file_path)
+                    # print(file_path_t)
+
+                    if file_path_t in all_module_src_files:
+                        print('【重复】', file_path)
+                        all_module_src_files_repeat.append(file_path)
+                    else:
+                        all_module_src_files.append(file_path_t)
+
+        # 扫描value下的资源内容是否重复,使用BeautifulSoup 解析xml
+        for detail_path in src_content_maybe_repeat_folders:
+            values_path = os.path.join(module_src_path, detail_path)
+            if os.path.exists(values_path) and os.path.isdir(values_path):
+                # print(values_path)
+                for value_path in os.listdir(values_path):
+                    value_detail_path=os.path.join(values_path,value_path)
+                    soup = BeautifulSoup(open(value_detail_path,encoding='utf-8'), 'lxml')
+                    # print(soup.children)
+                    resources_tag=soup.find('resources')
+                    if resources_tag is not None:
+                        contents=resources_tag.contents
+                        # print(contents)
+                        for content in contents:
+                            if not isinstance(content,NavigableString):
+                                type=content.name
+                                attrs=content.attrs
+
+                                folder_name=values_path.split(os.path.sep)[-1]
+                                warning_value=type+'/'+attrs['name']
+                                value=folder_name+'/'+type+'/'+attrs['name']
+                                if warning_value in all_module_src_warning_contents:
+                                    all_module_src_warning_contents_repeat.append(value_detail_path+'/'+warning_value)
+                                    print('【警告-可能重复】',warning_value)
+                                else:
+                                    all_module_src_warning_contents.append(warning_value)
+
+                                if value in all_module_src_contents:
+                                    all_module_src_contents_repeat.append(value_detail_path+'/'+value)
+                                    print('【重复】',value)
+                                else:
+                                    all_module_src_contents.append(value)
+
+        if os.path.exists(module_src_path):
+            for src_dir in os.listdir(module_src_path):
+                if (src_dir not in src_maybe_repeat_folders) and (src_dir not in src_content_maybe_repeat_folders):
+                    # special_src_paths.append(os.path.join(module_src_path,src_dir))
+                    special_src_paths.append(src_dir)
+
+
+
+
+def log(string):
+    print(string)
+    open('log.txt', 'a', encoding='utf-8').write(string + '\n')
+if __name__ == '__main__':
+    get_folders()
+    scan_repeat_files()
+
+    print('【模块目录】',all_module_paths)
+    print('【模块数量】',len(all_module_paths))
+
+    print('【src重复】数量：', len(all_module_src_files_repeat), all_module_src_files_repeat)
+    print('【src不重复】数量：', len(all_module_src_files))
+
+    print('【value重复】数量：', len(all_module_src_contents_repeat), all_module_src_contents_repeat)
+    print('【value不重复】数量：', len(all_module_src_contents))
+
+    print('【异常资源文件夹】数量：', len(special_src_paths),special_src_paths)
+    print('【警告可能重复value资源】数量：', len(all_module_src_warning_contents_repeat),all_module_src_warning_contents_repeat)
+
+
+```
+
+
+## Gradle
+
+[[Gradle]]
+
+### Gradle的Flavor能否配置sourceset？
+
+可以  
+```Groovy
+android {  
+    // 其他配置项...  
+  
+    // 配置source set  
+    sourceSets {  
+        main {  
+            java {  
+                srcDirs = ['src/main/java']  
+            }  
+            res {  
+                srcDirs = ['src/main/res']  
+            }  
+        }  
+        debug {  
+            java {  
+                srcDirs = ['src/debug/java']  
+            }  
+            res {  
+                srcDirs = ['src/debug/res']  
+            }  
+        }  
+    }  
+}
+```
+
+### Gradle生命周期
+
+Gradle的生命周期包括三个阶段：初始化、配置和执行。
+
+1. 初始化阶段：这个阶段会解析整个工程中所有的Project，构建所有的Project对应的Project对象。在初始化阶段和配置阶段之间的监听点是beforeEvaluate，配置阶段执行之前。
+2. 配置阶段：这个阶段会解析所有的projects对象中的task，构建好所有task的拓扑图。在配置阶段之后，执行阶段之前监听点是afterEvaluate。
+3. 执行阶段：这个阶段会执行具体的task及其依赖task。
+
+## AOP技术
+
+APT+动态代理
+
+## Android动画框架实现原理。
+
+Animation 框架定义了透明度，旋转，缩放和位移几种常见的动画，而且控制的是整个View。实现原理：
+
+每次绘制视图时，View 所在的 ViewGroup 中的 drawChild 函数获取该View 的 Animation 的 Transformation 值，然后调用canvas.concat(transformToApply.getMatrix())，通过矩阵运算完成动画帧，如果动画没有完成，继续调用 invalidate() 函数，启动下次绘制来驱动动画，动画过程中的帧之间间隙时间是绘制函数所消耗的时间，可能会导致动画消耗比较多的CPU资源，最重要的是，动画改变的只是显示，并不能响应事件。 
+
+
+### Activity-Window-View三者的差别？
+
+Activity像一个工匠（控制单元），Window像窗户（承载模型），View像窗花（显示视图） LayoutInflater像剪刀，Xml配置像窗花图纸。
+
+在Activity中调用attach，创建了一个Window， 创建的window是其子类PhoneWindow，在attach中创建PhoneWindow。 在Activity中调用setContentView(R.layout.xxx)， 其中实际上是调用的getWindow().setContentView()， 内部调用了PhoneWindow中的setContentView方法。
+
+创建ParentView：
+
+作为ViewGroup的子类，实际是创建的DecorView(作为FramLayout的子类）， 将指定的R.layout.xxx进行填充， 通过布局填充器进行填充【其中的parent指的就是DecorView】， 调用ViewGroup的removeAllView()，先将所有的view移除掉，添加新的view：addView()。
+
+[参考文章](https://link.juejin.cn/?target=https%3A%2F%2Fmp.weixin.qq.com%2Fs%2FoFVBrIAUwD0wnlSfm-95bQ "https://mp.weixin.qq.com/s/oFVBrIAUwD0wnlSfm-95bQ")
+  
+
+## ListView、RecyclerView区别？
+
+一、使用方面：
+
+ListView的基础使用：
+
+- 继承重写 BaseAdapter 类
+- 自定义 ViewHolder 和 convertView 一起完成复用优化工作
+
+RecyclerView 基础使用关键点同样有两点：
+
+- 继承重写 RecyclerView.Adapter 和 RecyclerView.ViewHolder
+- 设置布局管理器，控制布局效果
+
+RecyclerView 相比 ListView 在基础使用上的区别主要有如下几点：
+
+- ViewHolder 的编写规范化了
+- RecyclerView 复用 Item 的工作 Google 全帮你搞定，不再需要像 ListView 那样自己调用 setTag
+- RecyclerView 需要多出一步 LayoutManager 的设置工作
+
+二、布局方面：
+
+RecyclerView 支持 线性布局、网格布局、瀑布流布局 三种，而且同时还能够控制横向还是纵向滚动。
+
+三、API提供方面：
+
+ListView 提供了 setEmptyView ，addFooterView 、 addHeaderView.
+
+RecyclerView 供了 notifyItemChanged 用于更新单个 Item View 的刷新，我们可以省去自己写局部更新的工作。
+
+四、动画效果：
+
+RecyclerView 在做局部刷新的时候有一个渐变的动画效果。继承 RecyclerView.ItemAnimator 类，并实现相应的方法，再调用 RecyclerView的 setItemAnimator(RecyclerView.ItemAnimator animator) 方法设置完即可实现自定义的动画效果。
+
+五、监听 Item 的事件：
+
+ListView 提供了单击、长按、选中某个 Item 的监听设置。
+
+#### [RecyclerView与ListView缓存机制的不同](https://link.juejin.cn?target=https%3A%2F%2Fsegmentfault.com%2Fa%2F1190000007331249 "https://segmentfault.com/a/1190000007331249")
+
+  
+### 如何自己实现RecyclerView的侧滑删除
+
+重写OnTouchEvent，当用户手指按下时，计算出当前选中的是哪个Item，并获取到该Item对象；然后判断手指移动方向，若左移，则滑动（在滑动之前，先恢复上次的状态）；若右移，则恢复；当左移完成之后，“删除”按钮自然就“暴露”在屏幕上可点击的范围了。
+
+### RecyclerView的ItemTouchHelper的实现原理
+
+检测手指的动作，然后不断的重绘，最终就展现在我们面前，在长按上下拖拽时，按住的条目随着手指移动，左右滑动时，条目“飞”出屏幕。
+
+
+## SurfaceView和View的最本质的区别？
+
+SurfaceView是在一个新起的单独线程中可以重新绘制画面，而view必须在UI的主线程中更新画面。
+在UI的主线程中更新画面可能会引发问题，比如你更新的时间过长，那么你的主UI线程就会被你正在画的函数阻塞。那么将无法响应按键、触屏等消息。当使用SurfaceView由于是在新的线程中更新画面所以不会阻塞你的UI主线程。但这也带来了另外一个问题，就是事件同步。比如你触屏了一下，你需要在SurfaceView中的thread处理，一般就需要有一个event queue的设计来保存touchevent，这会稍稍复杂一点，因为涉及到线程安全。
+
+## 非UI线程可以更新UI吗?
+
+可以，当访问UI时，ViewRootImpl会调用checkThread方法去检查当前访问UI的线程是哪个，如果不是UI线程则会抛出异常。执行onCreate方法的那个时候ViewRootImpl还没创建，无法去检查当前线程.ViewRootImpl的创建在onResume方法回调之后。
+
+非UI线程是可以刷新UI的，前提是它要拥有自己的ViewRoot,即更新UI的线程和创建ViewRoot的线程是同一个，或者在执行checkThread()前更新UI。
+
+## 单元测试有没有做过，说说熟悉的单元测试框架？
+
+首先，Android测试主要分为三个方面：
+
+- 单元测试（Junit4、Mockito、PowerMockito、Robolectric）
+- UI测试（Espresso、UI Automator）
+- 压力测试（Monkey）
+
+WanAndroid项目和XXX项目中使用用到了单元测试和部分自动化UI测试，其中单元测试使用的是Junit4+Mockito+PowerMockito+Robolectric。下面我分别简单介绍下这些测试框架：
+
+1、Junit4：
+
+使用@Test注解指定一个方法为一个测试方法，除此之外，还有如下常用注解@BeforeClass->@Before->@Test->@After->@AfterClass以及@Ignore。
+
+Junit4的主要测试方法就是断言，即assertEquals()方法。然后，你可以通过实现TestRule接口的方式重写apply()方法去自定义Junit Rule，这样就可以在执行测试方法的前后做一些通用的初始化或释放资源等工作，接着在想要的测试类中使用@Rule注解声明使用JsonChaoRule即可。（注意被@Rule注解的变量必须是final的。最后，我们直接运行对应的单元测试方法或类，如果你想要一键运行项目中所有的单元测试类，直接点击运行Gradle Projects下的app/Tasks/verification/test即可，它会在module下的build/reports/tests/下生成对应的index.html报告。
+
+Junit4它的优点是速度快，支持代码覆盖率如jacoco等代码质量的检测工具。缺点就是无法单独对Android UI，一些类进行操作，与原生Java有一些差异。
+
+2、Mockito：
+
+可以使用mock()方法模拟各种各样的对象，以替代真正的对象做出希望的响应。除此之外，它还有很多验证方法调用的方式如Mockit.when(调用方法).thenReturn(验证的返回值)、verfiy(模拟对象).验证方法等等。
+
+这里有一点要补充下：简单的测试会使整体的代码更简洁，更可读、更可维护。如果你不能把测试写的很简单，那么请在测试时重构你的代码。
+
+最后，对于Mockito来说，它的优点是有各种各样的方式去验证"模仿对象"的互动或验证发生的某些行为。而它的缺点就是不支持mock匿名类、final类、static方法private方法。
+
+3、PowerMockito：
+
+因此，为了解决Mockito的缺陷，PoweMockito出现了，它扩展了Mockito，支持mock匿名类、final类、static方法、private方法。只要使用它提供的api如PowerMockito.mockStatic()去mock含静态方法或字段的类，PowerMockito.suppress(PowerMockito.method(类.class， 方法名)即可。
+
+4、Robolectric
+
+前面3种我们说的都是Java相关的单元测试方法，如果想在Java单元测试里面进行Android单元测试，还得使用Robolectric，它提供了一套能运行在JVM的Android代码。它提供了一系列类似ShadowToast.getLatestToast()、ShadowApplication.getInstance()这种方式来获取Android平台对应的对象。可以看到它的优点就是支持大部分Android平台依赖类的底层引用与模拟。缺点就是在异步测试的情况下有些问题，这是可以结合Mockito来将异步转为同步即可解决。
+
+最后，自动化UI测试项目中我使用的是Expresso，它提供了一系列类似onView().check().perform()的方式来实现点击、滑动、检测页面显示等自动化的UI测试效果，这里在我的WanAndroid项目下的BasePageTest基类里面封装了一系列通用的方法，有兴趣可以去看看。
 
