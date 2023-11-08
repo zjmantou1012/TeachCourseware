@@ -1,8 +1,44 @@
 {
   "recentFiles": [
     {
+      "basename": "Java集合",
+      "path": "技术/Android/面试题/Java集合.md"
+    },
+    {
       "basename": "00Android 面试题参考",
       "path": "技术/Android/面试题/00Android 面试题参考.md"
+    },
+    {
+      "basename": "图片压缩方案",
+      "path": "技术/Android/性能优化/图片压缩方案.md"
+    },
+    {
+      "basename": "2023-11-06,面试记录——相芯",
+      "path": "01日记/2023-11-06,面试记录——相芯.md"
+    },
+    {
+      "basename": "2023-10-25,SHEIN2面",
+      "path": "01日记/2023-10-25,SHEIN2面.md"
+    },
+    {
+      "basename": "2023-10-27,传化面试",
+      "path": "01日记/2023-10-27,传化面试.md"
+    },
+    {
+      "basename": "Synchronize原理",
+      "path": "技术/Android/Android源码框架解析/Synchronize原理.md"
+    },
+    {
+      "basename": "02自动内存管理机制",
+      "path": "笔记/深入理解Java虚拟机（第二版）/02自动内存管理机制.md"
+    },
+    {
+      "basename": "compose绘制流程",
+      "path": "技术/Android/compose/compose绘制流程.md"
+    },
+    {
+      "basename": "00面试集锦汇总",
+      "path": "技术/Android/面试题/00面试集锦汇总.md"
     },
     {
       "basename": "Gradle",
@@ -41,10 +77,6 @@
       "path": "技术/Android/Android第三方框架解析/LeakCanary原理分析.md"
     },
     {
-      "basename": "00面试集锦汇总",
-      "path": "技术/Android/面试题/00面试集锦汇总.md"
-    },
-    {
       "basename": "2023-10-23,周一，SHEIN面试",
       "path": "01日记/2023-10-23,周一，SHEIN面试.md"
     },
@@ -75,10 +107,6 @@
     {
       "basename": "App绘制优化",
       "path": "技术/Android/面试题/性能优化/App绘制优化.md"
-    },
-    {
-      "basename": "2023-11-06,面试记录——相芯",
-      "path": "01日记/2023-11-06,面试记录——相芯.md"
     },
     {
       "basename": "Android开发者必须掌握的设计模式",
@@ -115,10 +143,6 @@
     {
       "basename": "APK打包与安装",
       "path": "技术/Android/APK打包与安装.md"
-    },
-    {
-      "basename": "02自动内存管理机制",
-      "path": "笔记/深入理解Java虚拟机（第二版）/02自动内存管理机制.md"
     },
     {
       "basename": "App瘦身",
@@ -161,20 +185,8 @@
       "path": "01日记/2023-11-02,周四.md"
     },
     {
-      "basename": "图片压缩方案",
-      "path": "技术/Android/性能优化/图片压缩方案.md"
-    },
-    {
       "basename": "Android各大版本新特性",
       "path": "技术/Android/Android各大版本新特性.md"
-    },
-    {
-      "basename": "Synchronize原理",
-      "path": "技术/Android/Android源码框架解析/Synchronize原理.md"
-    },
-    {
-      "basename": "2023-10-27,传化面试",
-      "path": "01日记/2023-10-27,传化面试.md"
     },
     {
       "basename": "Android Hook",
@@ -187,14 +199,6 @@
     {
       "basename": "Java并发包基石——AQS",
       "path": "技术/Android/Android源码框架解析/Java并发包基石——AQS.md"
-    },
-    {
-      "basename": "Java线程池",
-      "path": "技术/Android/Android源码框架解析/Java线程池.md"
-    },
-    {
-      "basename": "Java类加载机制",
-      "path": "技术/Android/面试题/Java类加载机制.md"
     }
   ],
   "omittedPaths": [],
