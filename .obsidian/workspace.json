@@ -4,71 +4,18 @@
     "type": "split",
     "children": [
       {
-        "id": "bdbcb1b6e93301ff",
+        "id": "a3d3af8cec34faaf",
         "type": "tabs",
         "children": [
           {
-            "id": "ebe02c24a3152489",
+            "id": "c40949a57847e27a",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "技术/Android/面试题/00Android 面试题参考.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "80f0f9a8c81691a3",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "技术/Android/面试题/Java集合.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "dd57c8463caf7a4f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "技术/Android/性能优化/图片压缩方案.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "2eeafbf32e39f3b1",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "01日记/2023-11-06,面试记录——相芯.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "95e45f22874791d0",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "笔记/深入理解Java虚拟机（第二版）/02自动内存管理机制.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -97,7 +44,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "绘制",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -150,7 +97,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "技术/Android/面试题/Java集合.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -167,7 +113,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "技术/Android/面试题/Java集合.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -189,9 +134,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "技术/Android/面试题/Java集合.md"
-              }
+              "state": {}
             }
           },
           {
@@ -251,19 +194,24 @@
       "obsidian-memos:Memos": false
     }
   },
-  "active": "80f0f9a8c81691a3",
+  "active": "c40949a57847e27a",
   "lastOpenFiles": [
+    "技术/Android/面试题/字节跳动面试官：一张图片占据的内存大小是如何计算.md",
+    "未命名.canvas",
+    "01日记/2023-11-13,周一.md",
+    "笔记/深入理解Java虚拟机（第二版）/04虚拟机性能监控与故障处理工具.md",
+    "笔记/深入理解Java虚拟机（第二版）/02自动内存管理机制.md",
+    "笔记/深入理解Java虚拟机（第二版）/03垃圾收集器与内存分配策略.md",
+    "技术/Android/面试题/Java集合.md",
     "技术/Android/面试题/00Android 面试题参考.md",
     "技术/Android/性能优化/图片压缩方案.md",
     "01日记/2023-11-06,面试记录——相芯.md",
     "01日记/2023-10-25,SHEIN2面.md",
     "01日记/2023-10-27,传化面试.md",
     "技术/Android/Android源码框架解析/Synchronize原理.md",
-    "笔记/深入理解Java虚拟机（第二版）/02自动内存管理机制.md",
     "技术/Android/compose/compose绘制流程.md",
     "技术/Android/面试题/00面试集锦汇总.md",
     "技术/Android/compose",
-    "未命名.canvas",
     "技术/Android/Gradle.md",
     "技术/Android/Android 插件化.md",
     "技术/Android/类加载机制.md",
@@ -276,11 +224,6 @@
     "01日记/2023-10-23,周一，SHEIN面试.md",
     "技术/Android/Android第三方框架解析/EventBus源码解析.md",
     "资料/可能是最详细的Android图片压缩原理分析.md",
-    "技术/Android/Android第三方框架解析/Glide源码解析.md",
-    "技术/kotlin/Kotlin协程.md",
-    "技术/Android/面试题/性能优化/App安全优化.md",
-    "技术/Android/Android第三方框架解析/Retrofit框架源码解析.md",
-    "技术/Android/面试题/性能优化/App绘制优化.md",
     "技术/Android/Android第三方框架解析",
     "技术/Android/面试题/性能优化",
     "笔记/深入理解Java虚拟机（第二版）",

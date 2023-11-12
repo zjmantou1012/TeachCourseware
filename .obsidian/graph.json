@@ -1,30 +1,51 @@
 {
   "collapse-filter": true,
   "search": "",
-  "showTags": false,
-  "showAttachments": false,
-  "hideUnresolved": false,
+  "showTags": true,
+  "showAttachments": true,
+  "hideUnresolved": true,
   "showOrphans": true,
   "collapse-color-groups": true,
   "colorGroups": [
     {
-      "query": "物联网",
+      "query": "tag:#物联网  ",
       "color": {
         "a": 1,
         "rgb": 14701138
+      }
+    },
+    {
+      "query": "tag:#Android  ",
+      "color": {
+        "a": 1,
+        "rgb": 3201418
+      }
+    },
+    {
+      "query": "tag:#Java  ",
+      "color": {
+        "a": 1,
+        "rgb": 1324769
+      }
+    },
+    {
+      "query": "tag:#cpp  ",
+      "color": {
+        "a": 1,
+        "rgb": 14684339
       }
     }
   ],
   "collapse-display": true,
   "showArrow": true,
   "textFadeMultiplier": 0,
-  "nodeSizeMultiplier": 1.90659586588542,
-  "lineSizeMultiplier": 3.76961669921875,
+  "nodeSizeMultiplier": 1.97837320963542,
+  "lineSizeMultiplier": 2.90390218098958,
   "collapse-forces": true,
-  "centerStrength": 0.459269205729167,
-  "repelStrength": 10,
-  "linkStrength": 1,
-  "linkDistance": 273,
-  "scale": 0.5616650322157508,
+  "centerStrength": 0.51611328125,
+  "repelStrength": 10.6233723958333,
+  "linkStrength": 0.977254231770833,
+  "linkDistance": 242,
+  "scale": 0.1306482215902177,
   "close": true
 }

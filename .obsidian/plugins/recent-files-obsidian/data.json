@@ -1,6 +1,26 @@
 {
   "recentFiles": [
     {
+      "basename": "字节跳动面试官：一张图片占据的内存大小是如何计算",
+      "path": "技术/Android/面试题/字节跳动面试官：一张图片占据的内存大小是如何计算.md"
+    },
+    {
+      "basename": "2023-11-13,周一",
+      "path": "01日记/2023-11-13,周一.md"
+    },
+    {
+      "basename": "04虚拟机性能监控与故障处理工具",
+      "path": "笔记/深入理解Java虚拟机（第二版）/04虚拟机性能监控与故障处理工具.md"
+    },
+    {
+      "basename": "02自动内存管理机制",
+      "path": "笔记/深入理解Java虚拟机（第二版）/02自动内存管理机制.md"
+    },
+    {
+      "basename": "03垃圾收集器与内存分配策略",
+      "path": "笔记/深入理解Java虚拟机（第二版）/03垃圾收集器与内存分配策略.md"
+    },
+    {
       "basename": "Java集合",
       "path": "技术/Android/面试题/Java集合.md"
     },
@@ -27,10 +47,6 @@
     {
       "basename": "Synchronize原理",
       "path": "技术/Android/Android源码框架解析/Synchronize原理.md"
-    },
-    {
-      "basename": "02自动内存管理机制",
-      "path": "笔记/深入理解Java虚拟机（第二版）/02自动内存管理机制.md"
     },
     {
       "basename": "compose绘制流程",
@@ -183,22 +199,6 @@
     {
       "basename": "2023-11-02,周四",
       "path": "01日记/2023-11-02,周四.md"
-    },
-    {
-      "basename": "Android各大版本新特性",
-      "path": "技术/Android/Android各大版本新特性.md"
-    },
-    {
-      "basename": "Android Hook",
-      "path": "技术/Android/Android Hook.md"
-    },
-    {
-      "basename": "必知必会-Android 性能优化的方面方面都在这儿",
-      "path": "资料/必知必会-Android 性能优化的方面方面都在这儿.md"
-    },
-    {
-      "basename": "Java并发包基石——AQS",
-      "path": "技术/Android/Android源码框架解析/Java并发包基石——AQS.md"
     }
   ],
   "omittedPaths": [],
