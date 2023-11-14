@@ -11,8 +11,12 @@
             "id": "c40949a57847e27a",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "笔记/深入理解Java虚拟机（第二版）/06Class类文件的结构.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -97,6 +101,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "笔记/深入理解Java虚拟机（第二版）/06Class类文件的结构.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,6 +118,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "笔记/深入理解Java虚拟机（第二版）/06Class类文件的结构.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -134,7 +140,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "笔记/深入理解Java虚拟机（第二版）/06Class类文件的结构.md"
+              }
             }
           },
           {
@@ -194,12 +202,16 @@
       "obsidian-memos:Memos": false
     }
   },
-  "active": "c40949a57847e27a",
+  "active": "89077a8723661cff",
   "lastOpenFiles": [
+    "笔记/深入理解Java虚拟机（第二版）/附录B“虚拟机字节码指令表”.md",
+    "笔记/深入理解Java虚拟机（第二版）/06Class类文件的结构.md",
+    "Obsidian使用手册/Obsidian使用技巧/Obsidian双链.md",
+    "Obsidian使用手册/temp/链接样式.md",
+    "笔记/深入理解Java虚拟机（第二版）/04虚拟机性能监控与故障处理工具.md",
     "技术/Android/面试题/字节跳动面试官：一张图片占据的内存大小是如何计算.md",
     "未命名.canvas",
     "01日记/2023-11-13,周一.md",
-    "笔记/深入理解Java虚拟机（第二版）/04虚拟机性能监控与故障处理工具.md",
     "笔记/深入理解Java虚拟机（第二版）/02自动内存管理机制.md",
     "笔记/深入理解Java虚拟机（第二版）/03垃圾收集器与内存分配策略.md",
     "技术/Android/面试题/Java集合.md",
@@ -220,10 +232,6 @@
     "技术/Android/Android第三方框架解析/Dagger2源码分析.md",
     "01日记/2023-11-07,周二.md",
     "技术/Android/Android第三方框架解析/ButterKnife源码分析.md",
-    "技术/Android/Android第三方框架解析/LeakCanary原理分析.md",
-    "01日记/2023-10-23,周一，SHEIN面试.md",
-    "技术/Android/Android第三方框架解析/EventBus源码解析.md",
-    "资料/可能是最详细的Android图片压缩原理分析.md",
     "技术/Android/Android第三方框架解析",
     "技术/Android/面试题/性能优化",
     "笔记/深入理解Java虚拟机（第二版）",

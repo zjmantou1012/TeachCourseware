@@ -1,16 +1,32 @@
 {
   "recentFiles": [
     {
+      "basename": "06Class类文件的结构",
+      "path": "笔记/深入理解Java虚拟机（第二版）/06Class类文件的结构.md"
+    },
+    {
+      "basename": "附录B“虚拟机字节码指令表”",
+      "path": "笔记/深入理解Java虚拟机（第二版）/附录B“虚拟机字节码指令表”.md"
+    },
+    {
+      "basename": "Obsidian双链",
+      "path": "Obsidian使用手册/Obsidian使用技巧/Obsidian双链.md"
+    },
+    {
+      "basename": "链接样式",
+      "path": "Obsidian使用手册/temp/链接样式.md"
+    },
+    {
+      "basename": "04虚拟机性能监控与故障处理工具",
+      "path": "笔记/深入理解Java虚拟机（第二版）/04虚拟机性能监控与故障处理工具.md"
+    },
+    {
       "basename": "字节跳动面试官：一张图片占据的内存大小是如何计算",
       "path": "技术/Android/面试题/字节跳动面试官：一张图片占据的内存大小是如何计算.md"
     },
     {
       "basename": "2023-11-13,周一",
       "path": "01日记/2023-11-13,周一.md"
-    },
-    {
-      "basename": "04虚拟机性能监控与故障处理工具",
-      "path": "笔记/深入理解Java虚拟机（第二版）/04虚拟机性能监控与故障处理工具.md"
     },
     {
       "basename": "02自动内存管理机制",
@@ -183,22 +199,6 @@
     {
       "basename": "App启动速度优化",
       "path": "技术/Android/面试题/性能优化/App启动速度优化.md"
-    },
-    {
-      "basename": "App稳定性优化",
-      "path": "技术/Android/面试题/性能优化/App稳定性优化.md"
-    },
-    {
-      "basename": "内存优化",
-      "path": "技术/Android/性能优化/内存优化.md"
-    },
-    {
-      "basename": "00优化指南",
-      "path": "技术/Android/性能优化/00优化指南.md"
-    },
-    {
-      "basename": "2023-11-02,周四",
-      "path": "01日记/2023-11-02,周四.md"
     }
   ],
   "omittedPaths": [],
