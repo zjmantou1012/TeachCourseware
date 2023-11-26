@@ -282,3 +282,38 @@ JDK1.7之后发布。
 
 
 ![F68B0386-57BD-4D2A-B3CF-D6E20471581C_4_5005_c.jpeg](https://zjmantou-drawingbed.oss-cn-hangzhou.aliyuncs.com/picture/202311142353189.jpeg)
+
+# 字节码指令
+
+Java虚拟机的指令由一个字节长度的、代表着某种特定操作含义的数字（称为操作码，Opcode）以及跟随其后的零至多个代表此操作所需参数（称为操作数，Operands）而构成。 
+
+Java虚拟机操作码的长度为一个字节（即0～255），这意味着指令集的操作码总数不可能超过256条。 
+
+![字节码指令集.png](https://zjmantou-drawingbed.oss-cn-hangzhou.aliyuncs.com/picture/202311192135949.png)
+
+
+## 加载和存储指令
+
+加载和存储指令用于将数据在栈帧中的局部变量表和操作数栈之间来回传输：
+
+- 将一个局部变量加载到操作栈：`iload、iload_<n>、lload、lload_<n>、fload、fload_<n>、dload、dload_<n>、aload、aload_<n>。
+- ￼将一个数值从操作数栈存储到局部变量表：`istore、istore_<n>、lstore、lstore_<n>、fstore、fstore_<n>、dstore、dstore_<n>、astore、astore_<n>。 
+- 将一个常量加载到操作数栈：`bipush、sipush、ldc、ldc_w、ldc2_w、aconst_null、iconst_m1、iconst_<i>、lconst_<l>、fconst_<f>、dconst_<d>。
+- 扩充局部变量表的访问索引的指令：wide。
+
+## 运算指令
+
+运算或算术指令用于对两个操作数栈上的值进行某种特定运算，并把结果重新存入到操作栈顶。
+
+- 加法指令：iadd、ladd、fadd、dadd。
+- 减法指令：isub、lsub、fsub、dsub。
+- 乘法指令：imul、lmul、fmul、dmul。
+- 除法指令：idiv、ldiv、fdiv、ddiv。
+- 求余指令：irem、lrem、frem、drem。
+- 取反指令：ineg、lneg、fneg、dneg。
+- 位移指令：ishl、ishr、iushr、lshl、lshr、lushr。
+- 按位或指令：ior、lor。
+- 按位与指令：iand、land。
+- 按位异或指令：ixor、lxor。
+- 局部变量自增指令：iinc。
+- 比较指令：dcmpg、dcmpl、fcmpg、fcmpl、lcmp。

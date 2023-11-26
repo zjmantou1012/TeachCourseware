@@ -1,6 +1,13 @@
+https://blog.csdn.net/skdin/article/details/126593812
+
+[Android：IdleHandler的简单理解和使用](https://blog.csdn.net/JMW1407/article/details/129133416)
+
+
+
 Looper：
 
 创建好的looper会放在ThreadLocal中，以健值对的形式存储，key为当前线程
+
 
 插入消息：
 

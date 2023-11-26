@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "a3d3af8cec34faaf",
+        "id": "ace521580b6ddac9",
         "type": "tabs",
         "children": [
           {
-            "id": "c40949a57847e27a",
+            "id": "bcafbc04db01ad8b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "笔记/深入理解Java虚拟机（第二版）/06Class类文件的结构.md",
+                "file": "技术/Android/Android源码框架解析/绘制流程.md",
                 "mode": "source",
                 "source": false
               }
@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "idlehan",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -101,7 +101,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "笔记/深入理解Java虚拟机（第二版）/06Class类文件的结构.md",
+                "file": "技术/Android/Android源码框架解析/绘制流程.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -118,7 +118,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "笔记/深入理解Java虚拟机（第二版）/06Class类文件的结构.md",
+                "file": "技术/Android/Android源码框架解析/绘制流程.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -141,7 +141,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "笔记/深入理解Java虚拟机（第二版）/06Class类文件的结构.md"
+                "file": "技术/Android/Android源码框架解析/绘制流程.md"
               }
             }
           },
@@ -202,36 +202,36 @@
       "obsidian-memos:Memos": false
     }
   },
-  "active": "89077a8723661cff",
+  "active": "bcafbc04db01ad8b",
   "lastOpenFiles": [
-    "笔记/深入理解Java虚拟机（第二版）/附录B“虚拟机字节码指令表”.md",
-    "笔记/深入理解Java虚拟机（第二版）/06Class类文件的结构.md",
-    "Obsidian使用手册/Obsidian使用技巧/Obsidian双链.md",
-    "Obsidian使用手册/temp/链接样式.md",
-    "笔记/深入理解Java虚拟机（第二版）/04虚拟机性能监控与故障处理工具.md",
-    "技术/Android/面试题/字节跳动面试官：一张图片占据的内存大小是如何计算.md",
-    "未命名.canvas",
-    "01日记/2023-11-13,周一.md",
-    "笔记/深入理解Java虚拟机（第二版）/02自动内存管理机制.md",
-    "笔记/深入理解Java虚拟机（第二版）/03垃圾收集器与内存分配策略.md",
-    "技术/Android/面试题/Java集合.md",
+    "技术/Android/Android源码框架解析/Android事件分发机制.md",
+    "技术/Android/Android源码框架解析/绘制流程.md",
+    "技术/Android/面试题/天猫精灵面试准备.md",
     "技术/Android/面试题/00Android 面试题参考.md",
-    "技术/Android/性能优化/图片压缩方案.md",
-    "01日记/2023-11-06,面试记录——相芯.md",
-    "01日记/2023-10-25,SHEIN2面.md",
-    "01日记/2023-10-27,传化面试.md",
-    "技术/Android/Android源码框架解析/Synchronize原理.md",
-    "技术/Android/compose/compose绘制流程.md",
+    "技术/Android/面试题/性能优化/App启动速度优化.md",
     "技术/Android/面试题/00面试集锦汇总.md",
-    "技术/Android/compose",
-    "技术/Android/Gradle.md",
-    "技术/Android/Android 插件化.md",
-    "技术/Android/类加载机制.md",
+    "技术/Android/Android源码框架解析/Handler机制.md",
+    "技术/Android/Android源码框架解析/启动流程.md",
+    "技术/网络协议/蓝牙协议.md",
+    "技术/网络协议/蓝牙mesh基础知识.md",
+    "技术/网络协议/HTTP协议.md",
+    "技术/网络协议/MQTT协议.md",
+    "技术/网络协议/Socket.md",
+    "技术/网络协议/TCP与UDP.md",
+    "笔记/深入理解Java虚拟机（第二版）/08虚拟机字节码执行引擎.md",
+    "笔记/深入理解Java虚拟机（第二版）/07虚拟机类加载机制.md",
+    "笔记/深入理解Java虚拟机（第二版）/06Class类文件的结构.md",
+    "笔记/深入理解Java虚拟机（第二版）/04虚拟机性能监控与故障处理工具.md",
+    "笔记/深入理解Java虚拟机（第二版）/03垃圾收集器与内存分配策略.md",
+    "笔记/深入理解Java虚拟机（第二版）/02自动内存管理机制.md",
     "技术/Android/热修复技术.md",
-    "技术/Android/Android第三方框架解析/GreenDao源码分析.md",
-    "技术/Android/Android第三方框架解析/Dagger2源码分析.md",
+    "01日记/2023-11-13,周一.md",
     "01日记/2023-11-07,周二.md",
-    "技术/Android/Android第三方框架解析/ButterKnife源码分析.md",
+    "01日记/2023-11-06,面试记录——相芯.md",
+    "01日记/2023-11-02,周四.md",
+    "01日记/2023-11-03,周五.md",
+    "未命名.canvas",
+    "技术/Android/compose",
     "技术/Android/Android第三方框架解析",
     "技术/Android/面试题/性能优化",
     "笔记/深入理解Java虚拟机（第二版）",

@@ -201,7 +201,7 @@ StringBuffer：线程安全的
 1. 在抽象类中可以写非抽象的方法，从而避免在子类中重复书写他们，这样可以提高代码的复用性，这是抽象类的优势，接口中只能有抽象的方法。
 2. 多继承：一个类只能继承一个直接父类，这个父类可以是具体的类也可是抽象类，但是一个类可以实现多个接口。
 3. 抽象类可以有默认的方法实现，接口根本不存在方法的实现。
-4. -子类使用extends关键字来继承抽象类。如果子类不是抽象类的话，它需要提供抽象类中所有声明方法的实现。子类使用关键字implements来实现接口。它需要提供接口中所有声明方法的实现。
+4. 子类使用extends关键字来继承抽象类。如果子类不是抽象类的话，它需要提供抽象类中所有声明方法的实现。子类使用关键字implements来实现接口。它需要提供接口中所有声明方法的实现。
 5. 构造器：抽象类可以有构造器，接口不能有构造器。
 6. 和普通Java类的区别：除了你不能实例化抽象类之外，抽象类和普通Java类没有任何区别，接口是完全不同的类型。
 7. 访问修饰符:抽象方法可以有public、protected和default修饰符，接口方法默认修饰符是public。你不可以使用其它修饰符。
@@ -707,7 +707,8 @@ ART缺点：
 静态加载：
 System.loadLibrary
 动态加载：
-System.load
+- System.load；
+- 热修复的so替换，替换nativeLibraryPathElements，将so放在插入最前面
 
 
 ## so 的加载流程是怎样的，生命周期是怎样的？
@@ -893,7 +894,9 @@ A：inPurgeable：设置为True时，表示系统内存不足时可以被回收�
 
 ### 核心原理
 
-在一个Activity执行完onDestroy()之后，将它放入WeakReference中，然后将这个WeakReference类型的Activity对象与ReferenceQueque关联。这时再从ReferenceQueque中查看是否有该对象，如果没有，执行gc，再次查看，还是没有的话则判断发生内存泄露了。最后用HAHA这个开源库去分析dump之后的heap内存（主要就是创建一个HprofParser解析器去解析出对应的引用内存快照文件snapshot）。
+在一个Activity执行完onDestroy()之后，将它放入WeakReference中，然后将这个WeakReference类型的Activity对象与ReferenceQueue关联。这时再从ReferenceQueque中查看是否有该对象，如果没有，执行gc，再次查看，还是没有的话则判断发生内存泄露了。最后用HAHA这个开源库去分析dump之后的heap内存（主要就是创建一个HprofParser解析器去解析出对应的引用内存快照文件snapshot）。
+
+因为如果弱引用的对象被GC回收了，就会加入到ReferenceQueue里来，如果找不到，就代表泄漏
 
 ## BlockCanary原理：
 

@@ -58,3 +58,9 @@ tags:
 
 
 需要更全面更深入的理解请查看[深入探索Android启动速度优化](https://juejin.cn/post/6844904093786308622 "https://juejin.cn/post/6844904093786308622")
+
+IdleHandler
+
+[Android IdleHandler 详解](https://www.jianshu.com/p/4c2aa7b7d9b3)
+
+[Android：IdleHandler的简单理解和使用](https://blog.csdn.net/JMW1407/article/details/129133416)
