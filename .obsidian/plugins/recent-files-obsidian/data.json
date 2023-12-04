@@ -1,6 +1,14 @@
 {
   "recentFiles": [
     {
+      "basename": "临时笔记",
+      "path": "笔记/CPrimerPlus（第六版）/临时笔记.md"
+    },
+    {
+      "basename": "C的结构与C++的class的区别",
+      "path": "笔记/CPrimerPlus（第六版）/C的结构与C++的class的区别.md"
+    },
+    {
       "basename": "绘制流程",
       "path": "技术/Android/Android源码框架解析/绘制流程.md"
     },
@@ -191,14 +199,6 @@
     {
       "basename": "Dagger2源码分析",
       "path": "技术/Android/Android第三方框架解析/Dagger2源码分析.md"
-    },
-    {
-      "basename": "ButterKnife源码分析",
-      "path": "技术/Android/Android第三方框架解析/ButterKnife源码分析.md"
-    },
-    {
-      "basename": "LeakCanary原理分析",
-      "path": "技术/Android/Android第三方框架解析/LeakCanary原理分析.md"
     }
   ],
   "omittedPaths": [],

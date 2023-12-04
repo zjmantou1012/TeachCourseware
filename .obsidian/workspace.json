@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "ace521580b6ddac9",
+        "id": "91ae7a1815f5d17b",
         "type": "tabs",
         "children": [
           {
-            "id": "bcafbc04db01ad8b",
+            "id": "25bf9094b2b7198a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "技术/Android/Android源码框架解析/绘制流程.md",
+                "file": "笔记/CPrimerPlus（第六版）/临时笔记.md",
                 "mode": "source",
                 "source": false
               }
@@ -101,7 +101,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "技术/Android/Android源码框架解析/绘制流程.md",
+                "file": "笔记/CPrimerPlus（第六版）/临时笔记.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -118,7 +118,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "技术/Android/Android源码框架解析/绘制流程.md",
+                "file": "笔记/CPrimerPlus（第六版）/临时笔记.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -141,7 +141,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "技术/Android/Android源码框架解析/绘制流程.md"
+                "file": "笔记/CPrimerPlus（第六版）/临时笔记.md"
               }
             }
           },
@@ -202,10 +202,13 @@
       "obsidian-memos:Memos": false
     }
   },
-  "active": "bcafbc04db01ad8b",
+  "active": "25bf9094b2b7198a",
   "lastOpenFiles": [
-    "技术/Android/Android源码框架解析/Android事件分发机制.md",
+    "笔记/CPrimerPlus（第六版）/C的结构与C++的class的区别.md",
+    "笔记/CPrimerPlus（第六版）/临时笔记.md",
     "技术/Android/Android源码框架解析/绘制流程.md",
+    "笔记/CPrimerPlus（第六版）",
+    "技术/Android/Android源码框架解析/Android事件分发机制.md",
     "技术/Android/面试题/天猫精灵面试准备.md",
     "技术/Android/面试题/00Android 面试题参考.md",
     "技术/Android/面试题/性能优化/App启动速度优化.md",
@@ -228,8 +231,6 @@
     "01日记/2023-11-13,周一.md",
     "01日记/2023-11-07,周二.md",
     "01日记/2023-11-06,面试记录——相芯.md",
-    "01日记/2023-11-02,周四.md",
-    "01日记/2023-11-03,周五.md",
     "未命名.canvas",
     "技术/Android/compose",
     "技术/Android/Android第三方框架解析",
@@ -239,7 +240,6 @@
     "技术/Android/面试题",
     "技术/Android/性能优化",
     "技术/Android/Android源码框架解析",
-    "技术/Android/插件化",
-    "笔记/Android"
+    "技术/Android/插件化"
   ]
 }
