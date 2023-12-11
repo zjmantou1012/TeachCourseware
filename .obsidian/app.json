@@ -13,5 +13,6 @@
     "margin": "0",
     "downscalePercent": 57
   },
-  "showFrontmatter": true
+  "showFrontmatter": true,
+  "focusNewTab": true
 }

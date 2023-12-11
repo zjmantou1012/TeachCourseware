@@ -8,18 +8,43 @@
         "type": "tabs",
         "children": [
           {
-            "id": "25bf9094b2b7198a",
+            "id": "0b7dd6c252c592e0",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "笔记/CPrimerPlus（第六版）/临时笔记.md",
+                "file": "笔记/深入理解Java虚拟机（第二版）/08虚拟机字节码执行引擎.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "954d584171fa7087",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "笔记/深入理解Java虚拟机（第二版）/10编译器优化.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "af7f48590041bf00",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "笔记/深入理解Java虚拟机（第二版）/12Java内存模型与线程.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -101,7 +126,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "笔记/CPrimerPlus（第六版）/临时笔记.md",
+                "file": "笔记/深入理解Java虚拟机（第二版）/12Java内存模型与线程.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -118,7 +143,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "笔记/CPrimerPlus（第六版）/临时笔记.md",
+                "file": "笔记/深入理解Java虚拟机（第二版）/12Java内存模型与线程.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -141,7 +166,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "笔记/CPrimerPlus（第六版）/临时笔记.md"
+                "file": "笔记/深入理解Java虚拟机（第二版）/12Java内存模型与线程.md"
               }
             }
           },
@@ -150,14 +175,6 @@
             "type": "leaf",
             "state": {
               "type": "calendar",
-              "state": {}
-            }
-          },
-          {
-            "id": "6fdbbe10d23ba9d8",
-            "type": "leaf",
-            "state": {
-              "type": "mermaid-toolbar-view",
               "state": {}
             }
           },
@@ -196,16 +213,33 @@
       "command-palette:打开命令面板": false,
       "audio-recorder:开始/结束录音": false,
       "workspaces:管理工作区布局": false,
-      "obsidian-excalidraw-plugin:新建 Excalidraw 绘图": false,
-      "mermaid-tools:Open Mermaid Toolbar": false,
       "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "obsidian-excalidraw-plugin:新建绘图文件": false,
+      "mermaid-tools:Open Mermaid Toolbar": false,
       "obsidian-memos:Memos": false
     }
   },
-  "active": "25bf9094b2b7198a",
+  "active": "af7f48590041bf00",
   "lastOpenFiles": [
-    "笔记/CPrimerPlus（第六版）/C的结构与C++的class的区别.md",
+    "笔记/深入理解Java虚拟机（第二版）/11运行期优化.md",
+    "笔记/深入理解Java虚拟机（第二版）/12Java内存模型与线程.md",
+    "笔记/深入理解Java虚拟机（第二版）/10编译器优化.md",
+    "笔记/深入理解Java虚拟机（第二版）/08虚拟机字节码执行引擎.md",
+    "笔记/深入理解Java虚拟机（第二版）/04虚拟机性能监控与故障处理工具.md",
+    "笔记/深入理解Java虚拟机（第二版）/06Class类文件的结构.md",
+    "笔记/深入理解Java虚拟机（第二版）/02自动内存管理机制.md",
+    "Obsidian使用手册/MindMap.md",
+    "未命名",
+    "Excalidraw/Drawing 2023-12-11 14.32.36.excalidraw.md",
+    "Obsidian使用手册/temp/链接样式.md",
+    "Obsidian使用手册/temp/会议样式.md",
+    "Excalidraw",
+    "笔记/笔记规范.md",
+    "笔记/Cpp笔记.md",
+    "技术/Android/Android新版本功能.md",
+    "Obsidian使用手册/Obsidian使用技巧/Obsidian插件.md",
     "笔记/CPrimerPlus（第六版）/临时笔记.md",
+    "笔记/CPrimerPlus（第六版）/C的结构与C++的class的区别.md",
     "技术/Android/Android源码框架解析/绘制流程.md",
     "笔记/CPrimerPlus（第六版）",
     "技术/Android/Android源码框架解析/Android事件分发机制.md",
@@ -216,21 +250,6 @@
     "技术/Android/Android源码框架解析/Handler机制.md",
     "技术/Android/Android源码框架解析/启动流程.md",
     "技术/网络协议/蓝牙协议.md",
-    "技术/网络协议/蓝牙mesh基础知识.md",
-    "技术/网络协议/HTTP协议.md",
-    "技术/网络协议/MQTT协议.md",
-    "技术/网络协议/Socket.md",
-    "技术/网络协议/TCP与UDP.md",
-    "笔记/深入理解Java虚拟机（第二版）/08虚拟机字节码执行引擎.md",
-    "笔记/深入理解Java虚拟机（第二版）/07虚拟机类加载机制.md",
-    "笔记/深入理解Java虚拟机（第二版）/06Class类文件的结构.md",
-    "笔记/深入理解Java虚拟机（第二版）/04虚拟机性能监控与故障处理工具.md",
-    "笔记/深入理解Java虚拟机（第二版）/03垃圾收集器与内存分配策略.md",
-    "笔记/深入理解Java虚拟机（第二版）/02自动内存管理机制.md",
-    "技术/Android/热修复技术.md",
-    "01日记/2023-11-13,周一.md",
-    "01日记/2023-11-07,周二.md",
-    "01日记/2023-11-06,面试记录——相芯.md",
     "未命名.canvas",
     "技术/Android/compose",
     "技术/Android/Android第三方框架解析",
@@ -238,8 +257,6 @@
     "笔记/深入理解Java虚拟机（第二版）",
     "笔记",
     "技术/Android/面试题",
-    "技术/Android/性能优化",
-    "技术/Android/Android源码框架解析",
-    "技术/Android/插件化"
+    "技术/Android/性能优化"
   ]
 }

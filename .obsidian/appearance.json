@@ -1,8 +1,10 @@
 {
   "accentColor": "#47c27c",
-  "theme": "obsidian",
+  "theme": "moonstone",
   "cssTheme": "Minimal",
   "baseFontSize": 15,
   "translucency": true,
-  "interfaceFontFamily": "Apple Braille"
+  "interfaceFontFamily": "Apple Braille",
+  "showViewHeader": true,
+  "nativeMenus": true
 }
