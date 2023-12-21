@@ -14,5 +14,6 @@
     "downscalePercent": 57
   },
   "showFrontmatter": true,
-  "focusNewTab": true
+    "focusNewTab": true
+
 }

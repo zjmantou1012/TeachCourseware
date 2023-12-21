@@ -1,76 +1,36 @@
 {
   "recentFiles": [
     {
-      "basename": "08虚拟机字节码执行引擎",
-      "path": "笔记/深入理解Java虚拟机（第二版）/08虚拟机字节码执行引擎.md"
-    },
-    {
-      "basename": "基础设置",
-      "path": "Obsidian使用手册/基础设置.md"
-    },
-    {
-      "basename": "03垃圾收集器与内存分配策略",
-      "path": "笔记/深入理解Java虚拟机（第二版）/03垃圾收集器与内存分配策略.md"
-    },
-    {
       "basename": "AndroidX迁移笔记",
       "path": "技术/Android/AndroidX迁移笔记.md"
-    },
-    {
-      "basename": "笔记规范",
-      "path": "笔记/笔记规范.md"
-    },
-    {
-      "basename": "c笔记",
-      "path": "笔记/CPrimerPlus（第六版）/c笔记.md"
-    },
-    {
-      "basename": "02自动内存管理机制",
-      "path": "笔记/深入理解Java虚拟机（第二版）/02自动内存管理机制.md"
-    },
-    {
-      "basename": "12Java内存模型与线程",
-      "path": "笔记/深入理解Java虚拟机（第二版）/12Java内存模型与线程.md"
-    },
-    {
-      "basename": "11运行期优化",
-      "path": "笔记/深入理解Java虚拟机（第二版）/11运行期优化.md"
-    },
-    {
-      "basename": "10编译器优化",
-      "path": "笔记/深入理解Java虚拟机（第二版）/10编译器优化.md"
-    },
-    {
-      "basename": "04虚拟机性能监控与故障处理工具",
-      "path": "笔记/深入理解Java虚拟机（第二版）/04虚拟机性能监控与故障处理工具.md"
     },
     {
       "basename": "06Class类文件的结构",
       "path": "笔记/深入理解Java虚拟机（第二版）/06Class类文件的结构.md"
     },
     {
-      "basename": "MindMap",
-      "path": "Obsidian使用手册/MindMap.md"
+      "basename": "11运行期优化",
+      "path": "笔记/深入理解Java虚拟机（第二版）/11运行期优化.md"
     },
     {
-      "basename": "链接样式",
-      "path": "Obsidian使用手册/temp/链接样式.md"
+      "basename": "08虚拟机字节码执行引擎",
+      "path": "笔记/深入理解Java虚拟机（第二版）/08虚拟机字节码执行引擎.md"
     },
     {
-      "basename": "会议样式",
-      "path": "Obsidian使用手册/temp/会议样式.md"
+      "basename": "07虚拟机类加载机制",
+      "path": "笔记/深入理解Java虚拟机（第二版）/07虚拟机类加载机制.md"
+    },
+    {
+      "basename": "c笔记",
+      "path": "笔记/CPrimerPlus（第六版）/c笔记.md"
     },
     {
       "basename": "Cpp笔记",
       "path": "笔记/Cpp笔记.md"
     },
     {
-      "basename": "Android新版本功能",
-      "path": "技术/Android/Android新版本功能.md"
-    },
-    {
-      "basename": "Obsidian插件",
-      "path": "Obsidian使用手册/Obsidian使用技巧/Obsidian插件.md"
+      "basename": "笔记规范",
+      "path": "笔记/笔记规范.md"
     },
     {
       "basename": "临时笔记",
@@ -137,8 +97,16 @@
       "path": "技术/网络协议/TCP与UDP.md"
     },
     {
-      "basename": "07虚拟机类加载机制",
-      "path": "笔记/深入理解Java虚拟机（第二版）/07虚拟机类加载机制.md"
+      "basename": "04虚拟机性能监控与故障处理工具",
+      "path": "笔记/深入理解Java虚拟机（第二版）/04虚拟机性能监控与故障处理工具.md"
+    },
+    {
+      "basename": "03垃圾收集器与内存分配策略",
+      "path": "笔记/深入理解Java虚拟机（第二版）/03垃圾收集器与内存分配策略.md"
+    },
+    {
+      "basename": "02自动内存管理机制",
+      "path": "笔记/深入理解Java虚拟机（第二版）/02自动内存管理机制.md"
     },
     {
       "basename": "热修复技术",
@@ -199,6 +167,38 @@
     {
       "basename": "Java线程池",
       "path": "技术/Android/Android源码框架解析/Java线程池.md"
+    },
+    {
+      "basename": "Android mmap",
+      "path": "技术/Android/Android源码框架解析/Android mmap.md"
+    },
+    {
+      "basename": "Android IO读写",
+      "path": "技术/Android/Android源码框架解析/Android IO读写.md"
+    },
+    {
+      "basename": "类加载机制",
+      "path": "技术/Android/类加载机制.md"
+    },
+    {
+      "basename": "附录B“虚拟机字节码指令表”",
+      "path": "笔记/深入理解Java虚拟机（第二版）/附录B“虚拟机字节码指令表”.md"
+    },
+    {
+      "basename": "Obsidian双链",
+      "path": "Obsidian使用手册/Obsidian使用技巧/Obsidian双链.md"
+    },
+    {
+      "basename": "链接样式",
+      "path": "Obsidian使用手册/temp/链接样式.md"
+    },
+    {
+      "basename": "字节跳动面试官：一张图片占据的内存大小是如何计算",
+      "path": "技术/Android/面试题/字节跳动面试官：一张图片占据的内存大小是如何计算.md"
+    },
+    {
+      "basename": "Java集合",
+      "path": "技术/Android/面试题/Java集合.md"
     }
   ],
   "omittedPaths": [],

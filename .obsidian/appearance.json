@@ -4,7 +4,5 @@
   "cssTheme": "Minimal",
   "baseFontSize": 15,
   "translucency": true,
-  "interfaceFontFamily": "Apple Braille",
-  "showViewHeader": true,
-  "nativeMenus": true
+  "interfaceFontFamily": "Apple Braille"
 }

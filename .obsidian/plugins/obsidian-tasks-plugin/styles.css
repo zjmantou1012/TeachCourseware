@@ -83,17 +83,6 @@
     white-space: nowrap;
 }
 
-/* Hide tags that Obsidian recognises, if `hide tags` instruction was used. */
-.tasks-layout-hide-tags .task-description a.tag {
-    display: none;
-}
-
-/* Workaround for issue #2073: Enabling the plugin causes blockIds to be not hidden in reading view
-   https://github.com/obsidian-tasks-group/obsidian-tasks/issues/2073 */
-.task-list-item .task-block-link{
-    display: none;
-}
-
 .tasks-setting-important {
     color: red;
     font-weight: bold;
@@ -145,7 +134,7 @@
 
 .tasks-modal-priorities {
     display: grid;
-    grid-template-columns: 4em 8em 8em 8em;
+    grid-template-columns: 4em 5em 5em 7em 5em;
     grid-column-gap: 1.33em;
 }
 
@@ -157,9 +146,6 @@
 .tasks-modal-priorities label {
     border-radius: var(--input-radius);
     padding: 2px 3px;
-    grid-column: 1;
-    grid-row-start: 1;
-    grid-row-end: 7;
 }
 
 .tasks-modal-priorities input:focus + label {
@@ -167,11 +153,11 @@
     border-color: var(--background-modifier-border-focus);
 }
 
-.tasks-modal-priorities input:checked + label > span {
+.tasks-modal-priorities input:checked + label > span:first-child {
     font-weight: bold;
 }
 
-.tasks-modal-priorities input:not(:checked) + label > span:nth-child(4) {
+.tasks-modal-priorities input:not(:checked) + label > span:nth-child(2) {
     filter: grayscale(100%) opacity(60%);
 }
 
@@ -221,7 +207,7 @@
         margin-bottom: -10px;
     }
     .tasks-modal-priorities > label {
-        grid-row: 1 / span 7;
+        grid-row: 1 / span 2;
     }
     .tasks-modal-dates {
         grid-template-columns: 1fr;
@@ -245,7 +231,7 @@
         grid-template-columns: 4em auto;
     }
     .tasks-modal-priorities > label {
-        grid-row: 1 / span 7;
+        grid-row: 1 / span 4;
     }
 }
 
