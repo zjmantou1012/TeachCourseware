@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "groovy 迁移到KTS",
+      "path": "技术/Android/groovy 迁移到KTS.md"
+    },
+    {
       "basename": "AndroidX迁移笔记",
       "path": "技术/Android/AndroidX迁移笔记.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "字节跳动面试官：一张图片占据的内存大小是如何计算",
       "path": "技术/Android/面试题/字节跳动面试官：一张图片占据的内存大小是如何计算.md"
-    },
-    {
-      "basename": "Java集合",
-      "path": "技术/Android/面试题/Java集合.md"
     }
   ],
   "omittedPaths": [],
