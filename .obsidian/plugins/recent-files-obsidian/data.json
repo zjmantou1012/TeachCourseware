@@ -1,6 +1,30 @@
 {
   "recentFiles": [
     {
+      "basename": "2024-01-08,周一",
+      "path": "01日记/2024-01-08,周一.md"
+    },
+    {
+      "basename": "Cpp笔记",
+      "path": "笔记/Cpp笔记.md"
+    },
+    {
+      "basename": "笔记规范",
+      "path": "笔记/笔记规范.md"
+    },
+    {
+      "basename": "临时笔记",
+      "path": "笔记/深入理解Android：Java虚拟机ART/临时笔记.md"
+    },
+    {
+      "basename": "临时笔记",
+      "path": "笔记/CPrimerPlus（第六版）/临时笔记.md"
+    },
+    {
+      "basename": "02自动内存管理机制",
+      "path": "笔记/深入理解Java虚拟机（第二版）/02自动内存管理机制.md"
+    },
+    {
       "basename": "groovy 迁移到KTS",
       "path": "技术/Android/groovy 迁移到KTS.md"
     },
@@ -27,18 +51,6 @@
     {
       "basename": "c笔记",
       "path": "笔记/CPrimerPlus（第六版）/c笔记.md"
-    },
-    {
-      "basename": "Cpp笔记",
-      "path": "笔记/Cpp笔记.md"
-    },
-    {
-      "basename": "笔记规范",
-      "path": "笔记/笔记规范.md"
-    },
-    {
-      "basename": "临时笔记",
-      "path": "笔记/CPrimerPlus（第六版）/临时笔记.md"
     },
     {
       "basename": "C的结构与C++的class的区别",
@@ -107,10 +119,6 @@
     {
       "basename": "03垃圾收集器与内存分配策略",
       "path": "笔记/深入理解Java虚拟机（第二版）/03垃圾收集器与内存分配策略.md"
-    },
-    {
-      "basename": "02自动内存管理机制",
-      "path": "笔记/深入理解Java虚拟机（第二版）/02自动内存管理机制.md"
     },
     {
       "basename": "热修复技术",
@@ -191,14 +199,6 @@
     {
       "basename": "Obsidian双链",
       "path": "Obsidian使用手册/Obsidian使用技巧/Obsidian双链.md"
-    },
-    {
-      "basename": "链接样式",
-      "path": "Obsidian使用手册/temp/链接样式.md"
-    },
-    {
-      "basename": "字节跳动面试官：一张图片占据的内存大小是如何计算",
-      "path": "技术/Android/面试题/字节跳动面试官：一张图片占据的内存大小是如何计算.md"
     }
   ],
   "omittedPaths": [],

@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "技术/Android/groovy 迁移到KTS.md",
+                "file": "01日记/2024-01-08,周一.md",
                 "mode": "source",
                 "source": false
               }
@@ -101,7 +101,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "技术/Android/groovy 迁移到KTS.md",
+                "file": "01日记/2024-01-08,周一.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -118,7 +118,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "技术/Android/groovy 迁移到KTS.md",
+                "file": "01日记/2024-01-08,周一.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -141,7 +141,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "技术/Android/groovy 迁移到KTS.md"
+                "file": "01日记/2024-01-08,周一.md"
               }
             }
           },
@@ -175,7 +175,9 @@
             "state": {
               "type": "all-properties",
               "state": {
-                "sortOrder": "frequency"
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
               }
             }
           }
@@ -204,16 +206,20 @@
   },
   "active": "25bf9094b2b7198a",
   "lastOpenFiles": [
-    "技术/Android/AndroidX迁移笔记.md",
+    "笔记/Cpp笔记.md",
+    "01日记/2024-01-08,周一.md",
+    "笔记/笔记规范.md",
+    "笔记/深入理解Android：Java虚拟机ART/临时笔记.md",
+    "笔记/CPrimerPlus（第六版）/临时笔记.md",
+    "笔记/深入理解Android：Java虚拟机ART",
+    "笔记/深入理解Java虚拟机（第二版）/02自动内存管理机制.md",
     "技术/Android/groovy 迁移到KTS.md",
+    "技术/Android/AndroidX迁移笔记.md",
     "笔记/深入理解Java虚拟机（第二版）/06Class类文件的结构.md",
     "笔记/深入理解Java虚拟机（第二版）/11运行期优化.md",
     "笔记/深入理解Java虚拟机（第二版）/08虚拟机字节码执行引擎.md",
     "笔记/深入理解Java虚拟机（第二版）/07虚拟机类加载机制.md",
     "笔记/CPrimerPlus（第六版）/c笔记.md",
-    "笔记/Cpp笔记.md",
-    "笔记/笔记规范.md",
-    "笔记/CPrimerPlus（第六版）/临时笔记.md",
     "笔记/CPrimerPlus（第六版）/C的结构与C++的class的区别.md",
     "技术/Android/Android源码框架解析/绘制流程.md",
     "笔记/CPrimerPlus（第六版）",
@@ -228,9 +234,6 @@
     "技术/网络协议/蓝牙mesh基础知识.md",
     "技术/网络协议/HTTP协议.md",
     "技术/网络协议/MQTT协议.md",
-    "技术/网络协议/Socket.md",
-    "技术/网络协议/TCP与UDP.md",
-    "笔记/深入理解Java虚拟机（第二版）/04虚拟机性能监控与故障处理工具.md",
     "未命名.canvas",
     "技术/Android/compose",
     "技术/Android/Android第三方框架解析",
@@ -239,7 +242,6 @@
     "笔记",
     "技术/Android/面试题",
     "技术/Android/性能优化",
-    "技术/Android/Android源码框架解析",
-    "技术/Android/插件化"
+    "技术/Android/Android源码框架解析"
   ]
 }
