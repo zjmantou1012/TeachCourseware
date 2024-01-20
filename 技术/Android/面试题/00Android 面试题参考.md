@@ -45,9 +45,6 @@ volatile **修饰的变量在汇编指令中会有lock前缀的指令**，所以
 
 
 
-![[Map#ArrayMap]]
-
-
 # 序列化
 
 ![[序列化-Serializable和Parcelable]]
