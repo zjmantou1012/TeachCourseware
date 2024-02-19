@@ -1,12 +1,40 @@
 {
   "recentFiles": [
     {
-      "basename": "Android Hook",
-      "path": "技术/Android/Android Hook.md"
+      "basename": "2024-02-19,周一",
+      "path": "01日记/2024-02-19,周一.md"
+    },
+    {
+      "basename": "显示系统SurfaceFlinger",
+      "path": "技术/Android/Android源码框架解析/显示系统SurfaceFlinger.md"
+    },
+    {
+      "basename": "启动流程",
+      "path": "技术/Android/Android源码框架解析/启动流程.md"
+    },
+    {
+      "basename": "00Android 面试题参考",
+      "path": "技术/Android/面试题/00Android 面试题参考.md"
+    },
+    {
+      "basename": "ReenTrantLock原理",
+      "path": "技术/Android/Android源码框架解析/ReenTrantLock原理.md"
     },
     {
       "basename": "07虚拟机类加载机制",
       "path": "笔记/深入理解Java虚拟机（第二版）/07虚拟机类加载机制.md"
+    },
+    {
+      "basename": "协程",
+      "path": "技术/Android/kotlin/协程.md"
+    },
+    {
+      "basename": "00面试笔记",
+      "path": "技术/Android/面试题/00面试笔记.md"
+    },
+    {
+      "basename": "Android Hook",
+      "path": "技术/Android/Android Hook.md"
     },
     {
       "basename": "06Class类文件的结构",
@@ -29,20 +57,12 @@
       "path": "技术/Android/面试题/Java类加载机制.md"
     },
     {
-      "basename": "00Android 面试题参考",
-      "path": "技术/Android/面试题/00Android 面试题参考.md"
-    },
-    {
       "basename": "Android各大版本新特性",
       "path": "技术/Android/Android各大版本新特性.md"
     },
     {
       "basename": "APK打包与安装",
       "path": "技术/Android/APK打包与安装.md"
-    },
-    {
-      "basename": "ReenTrantLock原理",
-      "path": "技术/Android/Android源码框架解析/ReenTrantLock原理.md"
     },
     {
       "basename": "Synchronize原理",
@@ -117,10 +137,6 @@
       "path": "技术/Android/Android源码框架解析/Handler机制.md"
     },
     {
-      "basename": "启动流程",
-      "path": "技术/Android/Android源码框架解析/启动流程.md"
-    },
-    {
       "basename": "蓝牙协议",
       "path": "技术/网络协议/蓝牙协议.md"
     },
@@ -183,22 +199,6 @@
     {
       "basename": "2023-W34",
       "path": "01日记/周复盘/2023-W34.md"
-    },
-    {
-      "basename": "2023-W28",
-      "path": "01日记/周复盘/2023-W28.md"
-    },
-    {
-      "basename": "compose绘制流程",
-      "path": "技术/Android/compose/compose绘制流程.md"
-    },
-    {
-      "basename": "Http",
-      "path": "技术/Android/面试题/Http.md"
-    },
-    {
-      "basename": "Java线程池",
-      "path": "技术/Android/Android源码框架解析/Java线程池.md"
     }
   ],
   "omittedPaths": [],

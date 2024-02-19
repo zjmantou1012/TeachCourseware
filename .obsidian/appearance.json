@@ -4,5 +4,8 @@
   "cssTheme": "Minimal",
   "baseFontSize": 15,
   "translucency": true,
-  "interfaceFontFamily": "Apple Braille"
+  "interfaceFontFamily": "Apple Braille",
+  "enabledCssSnippets": [
+    "mermaid"
+  ]
 }

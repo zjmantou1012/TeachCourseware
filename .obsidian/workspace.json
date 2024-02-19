@@ -4,71 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "91ae7a1815f5d17b",
+        "id": "280bdee4e849050d",
         "type": "tabs",
         "children": [
           {
-            "id": "25bf9094b2b7198a",
+            "id": "5b7fbd11641881b1",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "技术/Android/面试题/00Android 面试题参考.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "d2df56698d507e7f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "笔记/深入理解Java虚拟机（第二版）/07虚拟机类加载机制.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "3e27dd8517ebae26",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "技术/Android/Android Hook.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "237dfa9083ec0b5a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "技术/Android/APK打包与安装.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "ed5e463b86f01701",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "技术/Android/Android源码框架解析/ReenTrantLock原理.md",
+                "file": "01日记/2024-02-19,周一.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -97,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "idlehan",
+                "query": "SufaceFlinger",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -130,7 +81,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -150,7 +102,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "技术/Android/Android Hook.md",
+                "file": "01日记/2024-02-19,周一.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -167,7 +119,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "技术/Android/Android Hook.md",
+                "file": "01日记/2024-02-19,周一.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -190,7 +142,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "技术/Android/Android Hook.md"
+                "file": "01日记/2024-02-19,周一.md"
               }
             }
           },
@@ -253,18 +205,25 @@
       "obsidian-memos:Memos": false
     }
   },
-  "active": "3e27dd8517ebae26",
+  "active": "5b7fbd11641881b1",
   "lastOpenFiles": [
+    "技术/Android/Android源码框架解析/显示系统SurfaceFlinger.md",
+    "01日记/2024-02-19,周一.md",
+    "技术/Android/Android源码框架解析/启动流程.md",
+    "技术/Android/面试题/00Android 面试题参考.md",
+    "技术/Android/Android源码框架解析/ReenTrantLock原理.md",
     "笔记/深入理解Java虚拟机（第二版）/07虚拟机类加载机制.md",
+    "技术/Android/kotlin/协程.md",
+    "技术/Android/面试题/00面试笔记.md",
+    "技术/Android/kotlin",
+    "技术/Android/Android Hook.md",
     "笔记/深入理解Java虚拟机（第二版）/06Class类文件的结构.md",
     "笔记/深入理解Java虚拟机（第二版）/04虚拟机性能监控与故障处理工具.md",
     "笔记/深入理解Java虚拟机（第二版）/03垃圾收集器与内存分配策略.md",
     "笔记/深入理解Java虚拟机（第二版）/02自动内存管理机制.md",
     "技术/Android/面试题/Java类加载机制.md",
-    "技术/Android/面试题/00Android 面试题参考.md",
     "技术/Android/Android各大版本新特性.md",
     "技术/Android/APK打包与安装.md",
-    "技术/Android/Android源码框架解析/ReenTrantLock原理.md",
     "技术/Android/Android源码框架解析/Synchronize原理.md",
     "01日记/2024-01-08,周一.md",
     "笔记/Cpp笔记.md",
@@ -276,13 +235,7 @@
     "技术/Android/AndroidX迁移笔记.md",
     "笔记/深入理解Java虚拟机（第二版）/11运行期优化.md",
     "笔记/深入理解Java虚拟机（第二版）/08虚拟机字节码执行引擎.md",
-    "笔记/CPrimerPlus（第六版）/c笔记.md",
-    "笔记/CPrimerPlus（第六版）/C的结构与C++的class的区别.md",
-    "技术/Android/Android源码框架解析/绘制流程.md",
     "笔记/CPrimerPlus（第六版）",
-    "技术/Android/Android源码框架解析/Android事件分发机制.md",
-    "技术/Android/面试题/天猫精灵面试准备.md",
-    "技术/Android/面试题/性能优化/App启动速度优化.md",
     "未命名.canvas",
     "技术/Android/compose",
     "技术/Android/Android第三方框架解析",
@@ -290,7 +243,6 @@
     "笔记/深入理解Java虚拟机（第二版）",
     "笔记",
     "技术/Android/面试题",
-    "技术/Android/性能优化",
-    "技术/Android/Android源码框架解析"
+    "技术/Android/性能优化"
   ]
 }
