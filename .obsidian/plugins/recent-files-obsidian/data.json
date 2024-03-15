@@ -1,20 +1,116 @@
 {
   "recentFiles": [
     {
+      "basename": "可能是最详细的Android图片压缩原理分析（二）—— 鲁班压缩算法解析",
+      "path": "资料/图片/可能是最详细的Android图片压缩原理分析（二）—— 鲁班压缩算法解析.md"
+    },
+    {
+      "basename": "Android 应用进程 ServiceManager 的实现",
+      "path": "资料/Android 应用进程 ServiceManager 的实现.md"
+    },
+    {
+      "basename": "可能是最详细的Android图片压缩原理分析（三）—— 底层哈夫曼压缩讲解",
+      "path": "资料/图片/可能是最详细的Android图片压缩原理分析（三）—— 底层哈夫曼压缩讲解.md"
+    },
+    {
+      "basename": "Android的MVI架构最佳实践(二)：View层封装和repeatOnLifecycle的使用",
+      "path": "资料/应用架构/Android的MVI架构最佳实践(二)：View层封装和repeatOnLifecycle的使用.md"
+    },
+    {
+      "basename": "Android的MVI架构最佳实践(三)：Compose封装",
+      "path": "资料/应用架构/Android的MVI架构最佳实践(三)：Compose封装.md"
+    },
+    {
+      "basename": "必知必会-Android 性能优化的方面方面都在这儿",
+      "path": "资料/性能优化/必知必会-Android 性能优化的方面方面都在这儿.md"
+    },
+    {
+      "basename": "Android的MVI架构最佳实践(四)：单元测试",
+      "path": "资料/应用架构/Android的MVI架构最佳实践(四)：单元测试.md"
+    },
+    {
+      "basename": "主流物联网协议选择：MQTT、CoAP 还是 LwM2M？",
+      "path": "资料/物联网/主流物联网协议选择：MQTT、CoAP 还是 LwM2M？.md"
+    },
+    {
+      "basename": "物联网学习笔记",
+      "path": "资料/物联网/物联网学习笔记.md"
+    },
+    {
+      "basename": "可能是最详细的Android图片压缩原理分析",
+      "path": "资料/图片/可能是最详细的Android图片压缩原理分析.md"
+    },
+    {
+      "basename": "Map",
+      "path": "技术/Android/Android源码框架解析/Map.md"
+    },
+    {
+      "basename": "2024-02-26,周一",
+      "path": "01日记/2024-02-26,周一.md"
+    },
+    {
       "basename": "2024-02-19,周一",
       "path": "01日记/2024-02-19,周一.md"
     },
     {
-      "basename": "显示系统SurfaceFlinger",
-      "path": "技术/Android/Android源码框架解析/显示系统SurfaceFlinger.md"
+      "basename": "HashMap1.8",
+      "path": "技术/Android/Android源码框架解析/HashMap1.8.md"
+    },
+    {
+      "basename": "个人简历-2024",
+      "path": "02简历/个人简历-2024.md"
+    },
+    {
+      "basename": "2024-03-05,周二",
+      "path": "01日记/2024-03-05,周二.md"
+    },
+    {
+      "basename": "00Android 面试题参考",
+      "path": "技术/Android/面试题/00Android 面试题参考.md"
+    },
+    {
+      "basename": "Java并发包基石——AQS",
+      "path": "技术/Android/Android源码框架解析/Java并发包基石——AQS.md"
+    },
+    {
+      "basename": "Synchronize原理",
+      "path": "技术/Android/Android源码框架解析/Synchronize原理.md"
+    },
+    {
+      "basename": "00面试笔记",
+      "path": "技术/Android/面试题/00面试笔记.md"
+    },
+    {
+      "basename": "App内存优化",
+      "path": "技术/Android/面试题/性能优化/App内存优化.md"
+    },
+    {
+      "basename": "App电量优化",
+      "path": "技术/Android/面试题/性能优化/App电量优化.md"
     },
     {
       "basename": "启动流程",
       "path": "技术/Android/Android源码框架解析/启动流程.md"
     },
     {
-      "basename": "00Android 面试题参考",
-      "path": "技术/Android/面试题/00Android 面试题参考.md"
+      "basename": "显示系统SurfaceFlinger",
+      "path": "技术/Android/Android源码框架解析/显示系统SurfaceFlinger.md"
+    },
+    {
+      "basename": "Android的MVI架构最佳实践(一)：Model和Intent封装",
+      "path": "资料/应用架构/Android的MVI架构最佳实践(一)：Model和Intent封装.md"
+    },
+    {
+      "basename": "Android的MVI架构最佳实践(五)：UI测试",
+      "path": "资料/应用架构/Android的MVI架构最佳实践(五)：UI测试.md"
+    },
+    {
+      "basename": "个人简历-0829",
+      "path": "02简历/个人简历-0829.md"
+    },
+    {
+      "basename": "ActivityManagerService",
+      "path": "技术/Android/Android源码框架解析/ActivityManagerService.md"
     },
     {
       "basename": "ReenTrantLock原理",
@@ -27,10 +123,6 @@
     {
       "basename": "协程",
       "path": "技术/Android/kotlin/协程.md"
-    },
-    {
-      "basename": "00面试笔记",
-      "path": "技术/Android/面试题/00面试笔记.md"
     },
     {
       "basename": "Android Hook",
@@ -63,10 +155,6 @@
     {
       "basename": "APK打包与安装",
       "path": "技术/Android/APK打包与安装.md"
-    },
-    {
-      "basename": "Synchronize原理",
-      "path": "技术/Android/Android源码框架解析/Synchronize原理.md"
     },
     {
       "basename": "2024-01-08,周一",
@@ -111,94 +199,6 @@
     {
       "basename": "C的结构与C++的class的区别",
       "path": "笔记/CPrimerPlus（第六版）/C的结构与C++的class的区别.md"
-    },
-    {
-      "basename": "绘制流程",
-      "path": "技术/Android/Android源码框架解析/绘制流程.md"
-    },
-    {
-      "basename": "Android事件分发机制",
-      "path": "技术/Android/Android源码框架解析/Android事件分发机制.md"
-    },
-    {
-      "basename": "天猫精灵面试准备",
-      "path": "技术/Android/面试题/天猫精灵面试准备.md"
-    },
-    {
-      "basename": "App启动速度优化",
-      "path": "技术/Android/面试题/性能优化/App启动速度优化.md"
-    },
-    {
-      "basename": "00面试集锦汇总",
-      "path": "技术/Android/面试题/00面试集锦汇总.md"
-    },
-    {
-      "basename": "Handler机制",
-      "path": "技术/Android/Android源码框架解析/Handler机制.md"
-    },
-    {
-      "basename": "蓝牙协议",
-      "path": "技术/网络协议/蓝牙协议.md"
-    },
-    {
-      "basename": "蓝牙mesh基础知识",
-      "path": "技术/网络协议/蓝牙mesh基础知识.md"
-    },
-    {
-      "basename": "HTTP协议",
-      "path": "技术/网络协议/HTTP协议.md"
-    },
-    {
-      "basename": "MQTT协议",
-      "path": "技术/网络协议/MQTT协议.md"
-    },
-    {
-      "basename": "Socket",
-      "path": "技术/网络协议/Socket.md"
-    },
-    {
-      "basename": "TCP与UDP",
-      "path": "技术/网络协议/TCP与UDP.md"
-    },
-    {
-      "basename": "热修复技术",
-      "path": "技术/Android/热修复技术.md"
-    },
-    {
-      "basename": "2023-11-06,面试记录——相芯",
-      "path": "01日记/2023-11-06,面试记录——相芯.md"
-    },
-    {
-      "basename": "2023-11-02,周四",
-      "path": "01日记/2023-11-02,周四.md"
-    },
-    {
-      "basename": "2023-10-31,周二",
-      "path": "01日记/2023-10-31,周二.md"
-    },
-    {
-      "basename": "2023-10-27,传化面试",
-      "path": "01日记/2023-10-27,传化面试.md"
-    },
-    {
-      "basename": "2023-10-25,SHEIN2面",
-      "path": "01日记/2023-10-25,SHEIN2面.md"
-    },
-    {
-      "basename": "2023-10-23,周一，SHEIN面试",
-      "path": "01日记/2023-10-23,周一，SHEIN面试.md"
-    },
-    {
-      "basename": "2023-09-05,周二",
-      "path": "01日记/2023-09-05,周二.md"
-    },
-    {
-      "basename": "2023-09-04,周一",
-      "path": "01日记/2023-09-04,周一.md"
-    },
-    {
-      "basename": "2023-W34",
-      "path": "01日记/周复盘/2023-W34.md"
     }
   ],
   "omittedPaths": [],
