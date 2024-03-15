@@ -11,11 +11,28 @@
             "id": "927831010de8782a",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "资料/性能优化/Android Systrace 01 基础知识 -- Systrace 简介.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "82d025dc74170563",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "资料/性能优化/Android Systrace 02 基础知识 -- 分析 Systrace 预备知识.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -44,7 +61,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:性能优化",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -77,7 +94,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -97,7 +115,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "资料/图片/可能是最详细的Android图片压缩原理分析（二）—— 鲁班压缩算法解析.md",
+                "file": "资料/性能优化/Android Systrace 02 基础知识 -- 分析 Systrace 预备知识.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +132,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "资料/图片/可能是最详细的Android图片压缩原理分析（二）—— 鲁班压缩算法解析.md",
+                "file": "资料/性能优化/Android Systrace 02 基础知识 -- 分析 Systrace 预备知识.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -137,7 +155,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "资料/图片/可能是最详细的Android图片压缩原理分析（二）—— 鲁班压缩算法解析.md"
+                "file": "资料/性能优化/Android Systrace 02 基础知识 -- 分析 Systrace 预备知识.md"
               }
             }
           },
@@ -200,8 +218,11 @@
       "obsidian-memos:Memos": false
     }
   },
-  "active": "89077a8723661cff",
+  "active": "82d025dc74170563",
   "lastOpenFiles": [
+    "资料/性能优化/Android Systrace 01 基础知识 -- Systrace 简介.md",
+    "资料/性能优化/Android Systrace 02 基础知识 -- 分析 Systrace 预备知识.md",
+    "资料/性能优化/必知必会-Android 性能优化的方面方面都在这儿.md",
     "资料/未命名",
     "资料/Android 应用进程 ServiceManager 的实现.md",
     "资料/图片/可能是最详细的Android图片压缩原理分析（二）—— 鲁班压缩算法解析.md",
@@ -214,7 +235,6 @@
     "资料/未命名.md",
     "资料/应用架构",
     "资料/应用架构/Android的MVI架构最佳实践(三)：Compose封装.md",
-    "资料/性能优化/必知必会-Android 性能优化的方面方面都在这儿.md",
     "资料/应用架构/Android的MVI架构最佳实践(四)：单元测试.md",
     "资料/物联网/主流物联网协议选择：MQTT、CoAP 还是 LwM2M？.md",
     "资料/物联网/物联网学习笔记.md",
@@ -231,13 +251,11 @@
     "技术/Android/面试题/性能优化/App内存优化.md",
     "技术/Android/面试题/性能优化/App电量优化.md",
     "技术/Android/Android源码框架解析/启动流程.md",
-    "技术/Android/Android源码框架解析/显示系统SurfaceFlinger.md",
     "技术/Android/kotlin",
     "笔记/深入理解Android：Java虚拟机ART",
     "笔记/CPrimerPlus（第六版）",
     "未命名.canvas",
     "技术/Android/compose",
-    "技术/Android/Android第三方框架解析",
-    "技术/Android/面试题/性能优化"
+    "技术/Android/Android第三方框架解析"
   ]
 }
