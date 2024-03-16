@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "资料/性能优化/Android Systrace 01 基础知识 -- Systrace 简介.md",
+                "file": "资料/性能优化/工具/Android Systrace 01 基础知识 -- Systrace 简介.md",
                 "mode": "source",
                 "source": false
               }
@@ -25,14 +25,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "资料/性能优化/Android Systrace 02 基础知识 -- 分析 Systrace 预备知识.md",
+                "file": "资料/性能优化/工具/Android Systrace 04 基础知识 - SystemServer 解读.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "7be6b6d136101bc6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "资料/性能优化/工具/Android Systrace 21 线程 CPU 运行状态分析技巧 - Sleep 和 Uninterruptible Sleep 篇.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -94,8 +106,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -115,7 +126,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "资料/性能优化/Android Systrace 02 基础知识 -- 分析 Systrace 预备知识.md",
+                "file": "资料/性能优化/工具/Android Systrace 21 线程 CPU 运行状态分析技巧 - Sleep 和 Uninterruptible Sleep 篇.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -132,7 +143,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "资料/性能优化/Android Systrace 02 基础知识 -- 分析 Systrace 预备知识.md",
+                "file": "资料/性能优化/工具/Android Systrace 21 线程 CPU 运行状态分析技巧 - Sleep 和 Uninterruptible Sleep 篇.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -155,7 +166,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "资料/性能优化/Android Systrace 02 基础知识 -- 分析 Systrace 预备知识.md"
+                "file": "资料/性能优化/工具/Android Systrace 21 线程 CPU 运行状态分析技巧 - Sleep 和 Uninterruptible Sleep 篇.md"
               }
             }
           },
@@ -196,7 +207,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -218,10 +229,30 @@
       "obsidian-memos:Memos": false
     }
   },
-  "active": "82d025dc74170563",
+  "active": "7be6b6d136101bc6",
   "lastOpenFiles": [
-    "资料/性能优化/Android Systrace 01 基础知识 -- Systrace 简介.md",
-    "资料/性能优化/Android Systrace 02 基础知识 -- 分析 Systrace 预备知识.md",
+    "资料/性能优化/工具/Android Systrace 20 线程 CPU 运行状态分析技巧 - Running 篇.md",
+    "资料/性能优化/工具/Android Systrace 21 线程 CPU 运行状态分析技巧 - Sleep 和 Uninterruptible Sleep 篇.md",
+    "资料/性能优化/工具/Android Systrace 19 线程 CPU 运行状态分析技巧 - Runnable 篇.md",
+    "资料/性能优化/工具/Android Systrace 18 响应速度实战 3 ：响应速度延伸知识.md",
+    "资料/性能优化/工具/Android Systrace 17 响应速度实战 2 ：响应速度实战分析-以启动速度为例.md",
+    "资料/性能优化/工具/Android Systrace 16 响应速度实战 1 ：了解响应速度原理.md",
+    "资料/性能优化/工具/Android Systrace 15 流畅性实战 3 ：卡顿分析过程中的一些疑问.md",
+    "资料/性能优化/工具/Android Systrace 14 流畅性实战 2 ：案例分析 - MIUI 桌面滑动卡顿分析.md",
+    "资料/性能优化/工具/Android Systrace 13 流畅性实战 1 ：了解卡顿原理.md",
+    "资料/性能优化/工具/Android Systrace 12 基础知识 - CPU Info 解读.md",
+    "资料/性能优化/工具/Android Systrace 11 基础知识 - Triple Buffer 解读.md",
+    "资料/性能优化/工具/Android Systrace 10 基础知识 - Binder 和锁竞争解读.md",
+    "资料/性能优化/工具/Android Systrace 09 基础知识 - MainThread 和 RenderThread 解读.md",
+    "资料/性能优化/工具/Android Systrace 08 基础知识 - Vsync-App ：基于 Choreographer 的渲染机制详解.md",
+    "资料/性能优化/工具/Android Systrace 07 基础知识 - Vsync 解读.md",
+    "资料/性能优化/工具/Android Systrace 06 基础知识 - Input 解读.md",
+    "资料/性能优化/工具/Android Systrace 05 基础知识 - SurfaceFlinger 解读.md",
+    "资料/性能优化/工具/Android Systrace 04 基础知识 - SystemServer 解读.md",
+    "资料/性能优化/工具/Android Systrace 01 基础知识 -- Systrace 简介.md",
+    "资料/性能优化/工具",
+    "资料/性能优化/工具/Android Systrace 03 基础知识 -- Why 60 fps ？.md",
+    "资料/性能优化/工具/Android Systrace 02 基础知识 -- 分析 Systrace 预备知识.md",
     "资料/性能优化/必知必会-Android 性能优化的方面方面都在这儿.md",
     "资料/未命名",
     "资料/Android 应用进程 ServiceManager 的实现.md",
@@ -231,31 +262,11 @@
     "资料/图片",
     "资料/物联网",
     "资料/性能优化",
-    "资料/物联网/物联网协议对比（HTTP、websocket、XMPP、COAP、MQTT和DDS协议）.md",
-    "资料/未命名.md",
     "资料/应用架构",
-    "资料/应用架构/Android的MVI架构最佳实践(三)：Compose封装.md",
-    "资料/应用架构/Android的MVI架构最佳实践(四)：单元测试.md",
-    "资料/物联网/主流物联网协议选择：MQTT、CoAP 还是 LwM2M？.md",
-    "资料/物联网/物联网学习笔记.md",
-    "资料/图片/可能是最详细的Android图片压缩原理分析.md",
-    "技术/Android/Android源码框架解析/Map.md",
-    "01日记/2024-02-26,周一.md",
-    "01日记/2024-02-19,周一.md",
-    "技术/Android/Android源码框架解析/HashMap1.8.md",
-    "01日记/2024-03-05,周二.md",
-    "技术/Android/面试题/00Android 面试题参考.md",
-    "技术/Android/Android源码框架解析/Java并发包基石——AQS.md",
-    "技术/Android/Android源码框架解析/Synchronize原理.md",
-    "技术/Android/面试题/00面试笔记.md",
-    "技术/Android/面试题/性能优化/App内存优化.md",
-    "技术/Android/面试题/性能优化/App电量优化.md",
-    "技术/Android/Android源码框架解析/启动流程.md",
     "技术/Android/kotlin",
     "笔记/深入理解Android：Java虚拟机ART",
     "笔记/CPrimerPlus（第六版）",
     "未命名.canvas",
-    "技术/Android/compose",
-    "技术/Android/Android第三方框架解析"
+    "技术/Android/compose"
   ]
 }

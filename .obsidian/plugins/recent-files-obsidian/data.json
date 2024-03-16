@@ -1,12 +1,88 @@
 {
   "recentFiles": [
     {
-      "basename": "Android Systrace 02 基础知识 -- 分析 Systrace 预备知识",
-      "path": "资料/性能优化/Android Systrace 02 基础知识 -- 分析 Systrace 预备知识.md"
+      "basename": "Android Systrace 21 线程 CPU 运行状态分析技巧 - Sleep 和 Uninterruptible Sleep 篇",
+      "path": "资料/性能优化/工具/Android Systrace 21 线程 CPU 运行状态分析技巧 - Sleep 和 Uninterruptible Sleep 篇.md"
+    },
+    {
+      "basename": "Android Systrace 20 线程 CPU 运行状态分析技巧 - Running 篇",
+      "path": "资料/性能优化/工具/Android Systrace 20 线程 CPU 运行状态分析技巧 - Running 篇.md"
+    },
+    {
+      "basename": "Android Systrace 19 线程 CPU 运行状态分析技巧 - Runnable 篇",
+      "path": "资料/性能优化/工具/Android Systrace 19 线程 CPU 运行状态分析技巧 - Runnable 篇.md"
+    },
+    {
+      "basename": "Android Systrace 18 响应速度实战 3 ：响应速度延伸知识",
+      "path": "资料/性能优化/工具/Android Systrace 18 响应速度实战 3 ：响应速度延伸知识.md"
+    },
+    {
+      "basename": "Android Systrace 17 响应速度实战 2 ：响应速度实战分析-以启动速度为例",
+      "path": "资料/性能优化/工具/Android Systrace 17 响应速度实战 2 ：响应速度实战分析-以启动速度为例.md"
+    },
+    {
+      "basename": "Android Systrace 16 响应速度实战 1 ：了解响应速度原理",
+      "path": "资料/性能优化/工具/Android Systrace 16 响应速度实战 1 ：了解响应速度原理.md"
+    },
+    {
+      "basename": "Android Systrace 15 流畅性实战 3 ：卡顿分析过程中的一些疑问",
+      "path": "资料/性能优化/工具/Android Systrace 15 流畅性实战 3 ：卡顿分析过程中的一些疑问.md"
+    },
+    {
+      "basename": "Android Systrace 14 流畅性实战 2 ：案例分析 - MIUI 桌面滑动卡顿分析",
+      "path": "资料/性能优化/工具/Android Systrace 14 流畅性实战 2 ：案例分析 - MIUI 桌面滑动卡顿分析.md"
+    },
+    {
+      "basename": "Android Systrace 13 流畅性实战 1 ：了解卡顿原理",
+      "path": "资料/性能优化/工具/Android Systrace 13 流畅性实战 1 ：了解卡顿原理.md"
+    },
+    {
+      "basename": "Android Systrace 12 基础知识 - CPU Info 解读",
+      "path": "资料/性能优化/工具/Android Systrace 12 基础知识 - CPU Info 解读.md"
+    },
+    {
+      "basename": "Android Systrace 11 基础知识 - Triple Buffer 解读",
+      "path": "资料/性能优化/工具/Android Systrace 11 基础知识 - Triple Buffer 解读.md"
+    },
+    {
+      "basename": "Android Systrace 10 基础知识 - Binder 和锁竞争解读",
+      "path": "资料/性能优化/工具/Android Systrace 10 基础知识 - Binder 和锁竞争解读.md"
+    },
+    {
+      "basename": "Android Systrace 09 基础知识 - MainThread 和 RenderThread 解读",
+      "path": "资料/性能优化/工具/Android Systrace 09 基础知识 - MainThread 和 RenderThread 解读.md"
+    },
+    {
+      "basename": "Android Systrace 08 基础知识 - Vsync-App ：基于 Choreographer 的渲染机制详解",
+      "path": "资料/性能优化/工具/Android Systrace 08 基础知识 - Vsync-App ：基于 Choreographer 的渲染机制详解.md"
+    },
+    {
+      "basename": "Android Systrace 07 基础知识 - Vsync 解读",
+      "path": "资料/性能优化/工具/Android Systrace 07 基础知识 - Vsync 解读.md"
+    },
+    {
+      "basename": "Android Systrace 06 基础知识 - Input 解读",
+      "path": "资料/性能优化/工具/Android Systrace 06 基础知识 - Input 解读.md"
+    },
+    {
+      "basename": "Android Systrace 05 基础知识 - SurfaceFlinger 解读",
+      "path": "资料/性能优化/工具/Android Systrace 05 基础知识 - SurfaceFlinger 解读.md"
+    },
+    {
+      "basename": "Android Systrace 04 基础知识 - SystemServer 解读",
+      "path": "资料/性能优化/工具/Android Systrace 04 基础知识 - SystemServer 解读.md"
     },
     {
       "basename": "Android Systrace 01 基础知识 -- Systrace 简介",
-      "path": "资料/性能优化/Android Systrace 01 基础知识 -- Systrace 简介.md"
+      "path": "资料/性能优化/工具/Android Systrace 01 基础知识 -- Systrace 简介.md"
+    },
+    {
+      "basename": "Android Systrace 03 基础知识 -- Why 60 fps ？",
+      "path": "资料/性能优化/工具/Android Systrace 03 基础知识 -- Why 60 fps ？.md"
+    },
+    {
+      "basename": "Android Systrace 02 基础知识 -- 分析 Systrace 预备知识",
+      "path": "资料/性能优化/工具/Android Systrace 02 基础知识 -- 分析 Systrace 预备知识.md"
     },
     {
       "basename": "必知必会-Android 性能优化的方面方面都在这儿",
@@ -123,82 +199,6 @@
     {
       "basename": "ReenTrantLock原理",
       "path": "技术/Android/Android源码框架解析/ReenTrantLock原理.md"
-    },
-    {
-      "basename": "07虚拟机类加载机制",
-      "path": "笔记/深入理解Java虚拟机（第二版）/07虚拟机类加载机制.md"
-    },
-    {
-      "basename": "协程",
-      "path": "技术/Android/kotlin/协程.md"
-    },
-    {
-      "basename": "Android Hook",
-      "path": "技术/Android/Android Hook.md"
-    },
-    {
-      "basename": "06Class类文件的结构",
-      "path": "笔记/深入理解Java虚拟机（第二版）/06Class类文件的结构.md"
-    },
-    {
-      "basename": "04虚拟机性能监控与故障处理工具",
-      "path": "笔记/深入理解Java虚拟机（第二版）/04虚拟机性能监控与故障处理工具.md"
-    },
-    {
-      "basename": "03垃圾收集器与内存分配策略",
-      "path": "笔记/深入理解Java虚拟机（第二版）/03垃圾收集器与内存分配策略.md"
-    },
-    {
-      "basename": "02自动内存管理机制",
-      "path": "笔记/深入理解Java虚拟机（第二版）/02自动内存管理机制.md"
-    },
-    {
-      "basename": "Java类加载机制",
-      "path": "技术/Android/面试题/Java类加载机制.md"
-    },
-    {
-      "basename": "Android各大版本新特性",
-      "path": "技术/Android/Android各大版本新特性.md"
-    },
-    {
-      "basename": "APK打包与安装",
-      "path": "技术/Android/APK打包与安装.md"
-    },
-    {
-      "basename": "2024-01-08,周一",
-      "path": "01日记/2024-01-08,周一.md"
-    },
-    {
-      "basename": "Cpp笔记",
-      "path": "笔记/Cpp笔记.md"
-    },
-    {
-      "basename": "笔记规范",
-      "path": "笔记/笔记规范.md"
-    },
-    {
-      "basename": "临时笔记",
-      "path": "笔记/深入理解Android：Java虚拟机ART/临时笔记.md"
-    },
-    {
-      "basename": "临时笔记",
-      "path": "笔记/CPrimerPlus（第六版）/临时笔记.md"
-    },
-    {
-      "basename": "groovy 迁移到KTS",
-      "path": "技术/Android/groovy 迁移到KTS.md"
-    },
-    {
-      "basename": "AndroidX迁移笔记",
-      "path": "技术/Android/AndroidX迁移笔记.md"
-    },
-    {
-      "basename": "11运行期优化",
-      "path": "笔记/深入理解Java虚拟机（第二版）/11运行期优化.md"
-    },
-    {
-      "basename": "08虚拟机字节码执行引擎",
-      "path": "笔记/深入理解Java虚拟机（第二版）/08虚拟机字节码执行引擎.md"
     }
   ],
   "omittedPaths": [],
