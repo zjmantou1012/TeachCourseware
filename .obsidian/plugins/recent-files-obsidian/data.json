@@ -1,6 +1,46 @@
 {
   "recentFiles": [
     {
+      "basename": "Android 一些重要知识点解析整理",
+      "path": "技术/Android/Android源码框架解析/Android 一些重要知识点解析整理.md"
+    },
+    {
+      "basename": "启动流程",
+      "path": "技术/Android/Android源码框架解析/启动流程.md"
+    },
+    {
+      "basename": "可能是最详细的Android图片压缩原理分析",
+      "path": "资料/图片/可能是最详细的Android图片压缩原理分析.md"
+    },
+    {
+      "basename": "Material3主题控件",
+      "path": "教学课件/Compose/Material3主题控件.md"
+    },
+    {
+      "basename": "Compose与View的互操作性",
+      "path": "教学课件/Compose/Compose与View的互操作性.md"
+    },
+    {
+      "basename": "Android Systrace 04 基础知识 - SystemServer 解读",
+      "path": "资料/性能优化/工具/Android Systrace 04 基础知识 - SystemServer 解读.md"
+    },
+    {
+      "basename": "00Android 面试题参考",
+      "path": "技术/Android/面试题/00Android 面试题参考.md"
+    },
+    {
+      "basename": "2024-03-18,周一",
+      "path": "01日记/2024-03-18,周一.md"
+    },
+    {
+      "basename": "必知必会-Android 性能优化的方面方面都在这儿",
+      "path": "资料/性能优化/必知必会-Android 性能优化的方面方面都在这儿.md"
+    },
+    {
+      "basename": "HandlerThread",
+      "path": "技术/Android/HandlerThread.md"
+    },
+    {
       "basename": "Android Systrace 21 线程 CPU 运行状态分析技巧 - Sleep 和 Uninterruptible Sleep 篇",
       "path": "资料/性能优化/工具/Android Systrace 21 线程 CPU 运行状态分析技巧 - Sleep 和 Uninterruptible Sleep 篇.md"
     },
@@ -69,10 +109,6 @@
       "path": "资料/性能优化/工具/Android Systrace 05 基础知识 - SurfaceFlinger 解读.md"
     },
     {
-      "basename": "Android Systrace 04 基础知识 - SystemServer 解读",
-      "path": "资料/性能优化/工具/Android Systrace 04 基础知识 - SystemServer 解读.md"
-    },
-    {
       "basename": "Android Systrace 01 基础知识 -- Systrace 简介",
       "path": "资料/性能优化/工具/Android Systrace 01 基础知识 -- Systrace 简介.md"
     },
@@ -83,10 +119,6 @@
     {
       "basename": "Android Systrace 02 基础知识 -- 分析 Systrace 预备知识",
       "path": "资料/性能优化/工具/Android Systrace 02 基础知识 -- 分析 Systrace 预备知识.md"
-    },
-    {
-      "basename": "必知必会-Android 性能优化的方面方面都在这儿",
-      "path": "资料/性能优化/必知必会-Android 性能优化的方面方面都在这儿.md"
     },
     {
       "basename": "可能是最详细的Android图片压缩原理分析（二）—— 鲁班压缩算法解析",
@@ -121,10 +153,6 @@
       "path": "资料/物联网/物联网学习笔记.md"
     },
     {
-      "basename": "可能是最详细的Android图片压缩原理分析",
-      "path": "资料/图片/可能是最详细的Android图片压缩原理分析.md"
-    },
-    {
       "basename": "Map",
       "path": "技术/Android/Android源码框架解析/Map.md"
     },
@@ -149,10 +177,6 @@
       "path": "01日记/2024-03-05,周二.md"
     },
     {
-      "basename": "00Android 面试题参考",
-      "path": "技术/Android/面试题/00Android 面试题参考.md"
-    },
-    {
       "basename": "Java并发包基石——AQS",
       "path": "技术/Android/Android源码框架解析/Java并发包基石——AQS.md"
     },
@@ -173,32 +197,8 @@
       "path": "技术/Android/面试题/性能优化/App电量优化.md"
     },
     {
-      "basename": "启动流程",
-      "path": "技术/Android/Android源码框架解析/启动流程.md"
-    },
-    {
       "basename": "显示系统SurfaceFlinger",
       "path": "技术/Android/Android源码框架解析/显示系统SurfaceFlinger.md"
-    },
-    {
-      "basename": "Android的MVI架构最佳实践(一)：Model和Intent封装",
-      "path": "资料/应用架构/Android的MVI架构最佳实践(一)：Model和Intent封装.md"
-    },
-    {
-      "basename": "Android的MVI架构最佳实践(五)：UI测试",
-      "path": "资料/应用架构/Android的MVI架构最佳实践(五)：UI测试.md"
-    },
-    {
-      "basename": "个人简历-0829",
-      "path": "02简历/个人简历-0829.md"
-    },
-    {
-      "basename": "ActivityManagerService",
-      "path": "技术/Android/Android源码框架解析/ActivityManagerService.md"
-    },
-    {
-      "basename": "ReenTrantLock原理",
-      "path": "技术/Android/Android源码框架解析/ReenTrantLock原理.md"
     }
   ],
   "omittedPaths": [],

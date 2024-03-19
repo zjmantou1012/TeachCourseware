@@ -15,3 +15,9 @@ tags:
 3. 在一些应用程序代码中，例如在`DownloadManager`中，`HandlerThread`被用于创建后台线程来处理文件下载任务。在下载过程中，`HandlerThread`用于处理下载任务的消息和回调。
 
 需要注意的是，这些只是使用`HandlerThread`的一些示例，并不是所有的代码中都直接使用了`HandlerThread`。实际上，Android框架和应用程序代码中使用了许多不同的机制来处理线程和任务，其中许多机制可能间接地使用了`HandlerThread`。
+
+## ServiceThread
+
+ServiceThread 继承自 HandlerThread ，下面介绍的几个工作线程都是继承自 ServiceThread ，分别实现不同的功能，根据线程功能不同，其线程优先级也不同：UIThread、IoThread、DisplayThread、AnimationThread、FgThread、SurfaceAnimationThread
+
+每个 Thread 都有自己的 Looper 、Thread 和 MessageQueue，互相不会影响。Android 系统根据功能，会使用不同的 Thread 来完成。
