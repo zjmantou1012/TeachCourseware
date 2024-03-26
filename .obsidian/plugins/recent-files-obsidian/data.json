@@ -1,6 +1,34 @@
 {
   "recentFiles": [
     {
+      "basename": "面试题库",
+      "path": "技术/Android/面试题/面试题库.md"
+    },
+    {
+      "basename": "Map",
+      "path": "技术/Android/Android源码框架解析/Map.md"
+    },
+    {
+      "basename": "00Android 面试题参考",
+      "path": "技术/Android/面试题/00Android 面试题参考.md"
+    },
+    {
+      "basename": "00面试集锦汇总",
+      "path": "技术/Android/面试题/00面试集锦汇总.md"
+    },
+    {
+      "basename": "00面试笔记",
+      "path": "技术/Android/面试题/00面试笔记.md"
+    },
+    {
+      "basename": "2024-03-19,周二",
+      "path": "01日记/2024-03-19,周二.md"
+    },
+    {
+      "basename": "ActivityManagerService",
+      "path": "技术/Android/Android源码框架解析/ActivityManagerService.md"
+    },
+    {
       "basename": "Android 一些重要知识点解析整理",
       "path": "技术/Android/Android源码框架解析/Android 一些重要知识点解析整理.md"
     },
@@ -23,10 +51,6 @@
     {
       "basename": "Android Systrace 04 基础知识 - SystemServer 解读",
       "path": "资料/性能优化/工具/Android Systrace 04 基础知识 - SystemServer 解读.md"
-    },
-    {
-      "basename": "00Android 面试题参考",
-      "path": "技术/Android/面试题/00Android 面试题参考.md"
     },
     {
       "basename": "2024-03-18,周一",
@@ -153,10 +177,6 @@
       "path": "资料/物联网/物联网学习笔记.md"
     },
     {
-      "basename": "Map",
-      "path": "技术/Android/Android源码框架解析/Map.md"
-    },
-    {
       "basename": "2024-02-26,周一",
       "path": "01日记/2024-02-26,周一.md"
     },
@@ -179,26 +199,6 @@
     {
       "basename": "Java并发包基石——AQS",
       "path": "技术/Android/Android源码框架解析/Java并发包基石——AQS.md"
-    },
-    {
-      "basename": "Synchronize原理",
-      "path": "技术/Android/Android源码框架解析/Synchronize原理.md"
-    },
-    {
-      "basename": "00面试笔记",
-      "path": "技术/Android/面试题/00面试笔记.md"
-    },
-    {
-      "basename": "App内存优化",
-      "path": "技术/Android/面试题/性能优化/App内存优化.md"
-    },
-    {
-      "basename": "App电量优化",
-      "path": "技术/Android/面试题/性能优化/App电量优化.md"
-    },
-    {
-      "basename": "显示系统SurfaceFlinger",
-      "path": "技术/Android/Android源码框架解析/显示系统SurfaceFlinger.md"
     }
   ],
   "omittedPaths": [],

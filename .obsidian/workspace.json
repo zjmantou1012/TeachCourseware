@@ -13,7 +13,19 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "技术/Android/Android源码框架解析/Android 一些重要知识点解析整理.md",
+                "file": "技术/Android/面试题/面试题库.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "b80e5ccbcf21ce99",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "技术/Android/Android源码框架解析/Map.md",
                 "mode": "source",
                 "source": false
               }
@@ -48,7 +60,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "handlerthread",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -101,7 +113,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "技术/Android/Android源码框架解析/Android 一些重要知识点解析整理.md",
+                "file": "技术/Android/面试题/面试题库.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -118,7 +130,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "技术/Android/Android源码框架解析/Android 一些重要知识点解析整理.md",
+                "file": "技术/Android/面试题/面试题库.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -141,7 +153,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "技术/Android/Android源码框架解析/Android 一些重要知识点解析整理.md"
+                "file": "技术/Android/面试题/面试题库.md"
               }
             }
           },
@@ -182,7 +194,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -206,12 +218,19 @@
   },
   "active": "6f75ef9733267668",
   "lastOpenFiles": [
+    "技术/Android/Android源码框架解析/Map.md",
+    "技术/Android/面试题/面试题库.md",
+    "技术/Android/面试题/00Android 面试题参考.md",
+    "技术/Android/面试题/00面试集锦汇总.md",
+    "技术/Android/面试题/00面试笔记.md",
+    "01日记/2024-03-19,周二.md",
+    "技术/Android/Android源码框架解析/ActivityManagerService.md",
+    "技术/Android/Android源码框架解析/Android 一些重要知识点解析整理.md",
     "技术/Android/Android源码框架解析/启动流程.md",
     "资料/图片/可能是最详细的Android图片压缩原理分析.md",
     "教学课件/Compose/Material3主题控件.md",
     "教学课件/Compose/Compose与View的互操作性.md",
     "资料/性能优化/工具/Android Systrace 04 基础知识 - SystemServer 解读.md",
-    "技术/Android/面试题/00Android 面试题参考.md",
     "01日记/2024-03-18,周一.md",
     "资料/性能优化/必知必会-Android 性能优化的方面方面都在这儿.md",
     "技术/Android/HandlerThread.md",
@@ -225,13 +244,6 @@
     "资料/性能优化/工具/Android Systrace 14 流畅性实战 2 ：案例分析 - MIUI 桌面滑动卡顿分析.md",
     "资料/性能优化/工具/Android Systrace 13 流畅性实战 1 ：了解卡顿原理.md",
     "资料/性能优化/工具/Android Systrace 12 基础知识 - CPU Info 解读.md",
-    "资料/性能优化/工具/Android Systrace 11 基础知识 - Triple Buffer 解读.md",
-    "资料/性能优化/工具/Android Systrace 10 基础知识 - Binder 和锁竞争解读.md",
-    "资料/性能优化/工具/Android Systrace 09 基础知识 - MainThread 和 RenderThread 解读.md",
-    "资料/性能优化/工具/Android Systrace 08 基础知识 - Vsync-App ：基于 Choreographer 的渲染机制详解.md",
-    "资料/性能优化/工具/Android Systrace 07 基础知识 - Vsync 解读.md",
-    "资料/性能优化/工具/Android Systrace 06 基础知识 - Input 解读.md",
-    "资料/性能优化/工具/Android Systrace 05 基础知识 - SurfaceFlinger 解读.md",
     "资料/性能优化/工具",
     "资料/未命名",
     "资料/图片",
