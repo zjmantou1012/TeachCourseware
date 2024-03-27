@@ -4,28 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "750f80405f7ef69a",
+        "id": "b98d383939ce9396",
         "type": "tabs",
         "children": [
           {
-            "id": "6f75ef9733267668",
+            "id": "d53b13bdb8c16e89",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
                 "file": "技术/Android/面试题/面试题库.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "b80e5ccbcf21ce99",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "技术/Android/Android源码框架解析/Map.md",
                 "mode": "source",
                 "source": false
               }
@@ -216,9 +204,12 @@
       "obsidian-memos:Memos": false
     }
   },
-  "active": "6f75ef9733267668",
+  "active": "d53b13bdb8c16e89",
   "lastOpenFiles": [
+    "技术/Android/面试题/天猫精灵面试准备.md",
     "技术/Android/Android源码框架解析/Map.md",
+    "02简历/个人简历-2024.md",
+    "02简历/个人简历-0829.md",
     "技术/Android/面试题/面试题库.md",
     "技术/Android/面试题/00Android 面试题参考.md",
     "技术/Android/面试题/00面试集锦汇总.md",
@@ -241,9 +232,6 @@
     "资料/性能优化/工具/Android Systrace 17 响应速度实战 2 ：响应速度实战分析-以启动速度为例.md",
     "资料/性能优化/工具/Android Systrace 16 响应速度实战 1 ：了解响应速度原理.md",
     "资料/性能优化/工具/Android Systrace 15 流畅性实战 3 ：卡顿分析过程中的一些疑问.md",
-    "资料/性能优化/工具/Android Systrace 14 流畅性实战 2 ：案例分析 - MIUI 桌面滑动卡顿分析.md",
-    "资料/性能优化/工具/Android Systrace 13 流畅性实战 1 ：了解卡顿原理.md",
-    "资料/性能优化/工具/Android Systrace 12 基础知识 - CPU Info 解读.md",
     "资料/性能优化/工具",
     "资料/未命名",
     "资料/图片",

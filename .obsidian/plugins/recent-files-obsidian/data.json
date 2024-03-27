@@ -5,8 +5,20 @@
       "path": "技术/Android/面试题/面试题库.md"
     },
     {
+      "basename": "天猫精灵面试准备",
+      "path": "技术/Android/面试题/天猫精灵面试准备.md"
+    },
+    {
       "basename": "Map",
       "path": "技术/Android/Android源码框架解析/Map.md"
+    },
+    {
+      "basename": "个人简历-2024",
+      "path": "02简历/个人简历-2024.md"
+    },
+    {
+      "basename": "个人简历-0829",
+      "path": "02简历/个人简历-0829.md"
     },
     {
       "basename": "00Android 面试题参考",
@@ -187,18 +199,6 @@
     {
       "basename": "HashMap1.8",
       "path": "技术/Android/Android源码框架解析/HashMap1.8.md"
-    },
-    {
-      "basename": "个人简历-2024",
-      "path": "02简历/个人简历-2024.md"
-    },
-    {
-      "basename": "2024-03-05,周二",
-      "path": "01日记/2024-03-05,周二.md"
-    },
-    {
-      "basename": "Java并发包基石——AQS",
-      "path": "技术/Android/Android源码框架解析/Java并发包基石——AQS.md"
     }
   ],
   "omittedPaths": [],
