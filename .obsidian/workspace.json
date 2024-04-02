@@ -11,8 +11,12 @@
             "id": "f676b2e930d49d70",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "资料/应用架构/用Kotlin Flow解决Android开发中的痛点问题.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -97,6 +101,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "资料/应用架构/用Kotlin Flow解决Android开发中的痛点问题.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,6 +118,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "资料/应用架构/用Kotlin Flow解决Android开发中的痛点问题.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -134,7 +140,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "资料/应用架构/用Kotlin Flow解决Android开发中的痛点问题.md"
+              }
             }
           },
           {
@@ -198,6 +206,13 @@
   },
   "active": "f676b2e930d49d70",
   "lastOpenFiles": [
+    "资料/应用架构/Android MVI 架构学习.md",
+    "资料/应用架构/用Kotlin Flow解决Android开发中的痛点问题.md",
+    "资料/应用架构/Android的MVI架构最佳实践(二)：View层封装和repeatOnLifecycle的使用.md",
+    "资料/应用架构/Android的MVI架构最佳实践(一)：Model和Intent封装.md",
+    "资料/应用架构/Android的MVI架构最佳实践(五)：UI测试.md",
+    "资料/应用架构/Android的MVI架构最佳实践(四)：单元测试.md",
+    "资料/应用架构/Android的MVI架构最佳实践(三)：Compose封装.md",
     "资料/懂了！时间复杂度O(1)，O(logn) ，O(n)，O(nlogn)..._数据结构_Ayue、_InfoQ写作社区.md",
     "技术/Android/面试题/面试题库.md",
     "技术/Android/面试题/天猫精灵面试准备.md",
@@ -217,13 +232,6 @@
     "资料/性能优化/工具/Android Systrace 04 基础知识 - SystemServer 解读.md",
     "01日记/2024-03-18,周一.md",
     "资料/性能优化/必知必会-Android 性能优化的方面方面都在这儿.md",
-    "技术/Android/HandlerThread.md",
-    "资料/性能优化/工具/Android Systrace 21 线程 CPU 运行状态分析技巧 - Sleep 和 Uninterruptible Sleep 篇.md",
-    "资料/性能优化/工具/Android Systrace 20 线程 CPU 运行状态分析技巧 - Running 篇.md",
-    "资料/性能优化/工具/Android Systrace 19 线程 CPU 运行状态分析技巧 - Runnable 篇.md",
-    "资料/性能优化/工具/Android Systrace 18 响应速度实战 3 ：响应速度延伸知识.md",
-    "资料/性能优化/工具/Android Systrace 17 响应速度实战 2 ：响应速度实战分析-以启动速度为例.md",
-    "资料/性能优化/工具/Android Systrace 16 响应速度实战 1 ：了解响应速度原理.md",
     "资料/性能优化/工具",
     "资料/未命名",
     "资料/图片",

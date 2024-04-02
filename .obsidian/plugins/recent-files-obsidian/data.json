@@ -1,6 +1,34 @@
 {
   "recentFiles": [
     {
+      "basename": "用Kotlin Flow解决Android开发中的痛点问题",
+      "path": "资料/应用架构/用Kotlin Flow解决Android开发中的痛点问题.md"
+    },
+    {
+      "basename": "Android MVI 架构学习",
+      "path": "资料/应用架构/Android MVI 架构学习.md"
+    },
+    {
+      "basename": "Android的MVI架构最佳实践(二)：View层封装和repeatOnLifecycle的使用",
+      "path": "资料/应用架构/Android的MVI架构最佳实践(二)：View层封装和repeatOnLifecycle的使用.md"
+    },
+    {
+      "basename": "Android的MVI架构最佳实践(一)：Model和Intent封装",
+      "path": "资料/应用架构/Android的MVI架构最佳实践(一)：Model和Intent封装.md"
+    },
+    {
+      "basename": "Android的MVI架构最佳实践(五)：UI测试",
+      "path": "资料/应用架构/Android的MVI架构最佳实践(五)：UI测试.md"
+    },
+    {
+      "basename": "Android的MVI架构最佳实践(四)：单元测试",
+      "path": "资料/应用架构/Android的MVI架构最佳实践(四)：单元测试.md"
+    },
+    {
+      "basename": "Android的MVI架构最佳实践(三)：Compose封装",
+      "path": "资料/应用架构/Android的MVI架构最佳实践(三)：Compose封装.md"
+    },
+    {
       "basename": "懂了！时间复杂度O(1)，O(logn) ，O(n)，O(nlogn)..._数据结构_Ayue、_InfoQ写作社区",
       "path": "资料/懂了！时间复杂度O(1)，O(logn) ，O(n)，O(nlogn)..._数据结构_Ayue、_InfoQ写作社区.md"
     },
@@ -171,34 +199,6 @@
     {
       "basename": "可能是最详细的Android图片压缩原理分析（三）—— 底层哈夫曼压缩讲解",
       "path": "资料/图片/可能是最详细的Android图片压缩原理分析（三）—— 底层哈夫曼压缩讲解.md"
-    },
-    {
-      "basename": "Android的MVI架构最佳实践(二)：View层封装和repeatOnLifecycle的使用",
-      "path": "资料/应用架构/Android的MVI架构最佳实践(二)：View层封装和repeatOnLifecycle的使用.md"
-    },
-    {
-      "basename": "Android的MVI架构最佳实践(三)：Compose封装",
-      "path": "资料/应用架构/Android的MVI架构最佳实践(三)：Compose封装.md"
-    },
-    {
-      "basename": "Android的MVI架构最佳实践(四)：单元测试",
-      "path": "资料/应用架构/Android的MVI架构最佳实践(四)：单元测试.md"
-    },
-    {
-      "basename": "主流物联网协议选择：MQTT、CoAP 还是 LwM2M？",
-      "path": "资料/物联网/主流物联网协议选择：MQTT、CoAP 还是 LwM2M？.md"
-    },
-    {
-      "basename": "物联网学习笔记",
-      "path": "资料/物联网/物联网学习笔记.md"
-    },
-    {
-      "basename": "2024-02-26,周一",
-      "path": "01日记/2024-02-26,周一.md"
-    },
-    {
-      "basename": "2024-02-19,周一",
-      "path": "01日记/2024-02-19,周一.md"
     }
   ],
   "omittedPaths": [],
