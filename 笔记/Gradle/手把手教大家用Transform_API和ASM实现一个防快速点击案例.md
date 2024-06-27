@@ -5,6 +5,7 @@ time: 2024-06-27 周四
 tags:
   - Gradle
   - Android
+  - 字节码插桩
 ---
 
 ## 0. 前言
@@ -311,6 +312,7 @@ mWaitableExecutor.waitForTasksWithQuickFail(true)
 到这里Transform基本的API也将介绍完了,原理(系统有一些列Transform用于在class转dex的过程中的处理逻辑,我们也可以自定义Transform参与其中,这个Transform最终其实是在一个Task里面执行的.)的话也知晓了个大概,接下来我们看看如何利用ASM修改字节码实现炫酷的功能吧.
 
 ## 2. ASM
+#ASM 
 
 ### 2.1 介绍
 
