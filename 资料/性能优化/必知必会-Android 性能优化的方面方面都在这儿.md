@@ -25,9 +25,7 @@ tags:
 
 所以本文从共性的角度来看，主要介绍的就是针对以上5个方面的检测工具以及调优方式了。
 
-_1_
-
-App启动速度优化
+# 1App启动速度优化
 
 对于App启动速度优化，一般情况下我们会利用主题去防止出现白屏；针对启动速度慢，需要尽可能减少Application的onCreate中所要做的事情，比如一些不重要的SDK延迟或者异步加载；多进程情况下一定要可以在onCreate中去区分进程做一些初始化工作；部分将要使用到的类异步加载；还有针对multidex专门做优化的（当然这个随着5.0以上的设备越来越多，影响倒是没有那么大了）。
 
@@ -85,9 +83,7 @@ StrictMode比较简单，就不描述了，hugo是Jake大神的一个开源库�
 
 - [https://github.com/JakeWharton/hugo](https://github.com/JakeWharton/hugo "https://github.com/JakeWharton/hugo")
 
-_2_
-
-UI流畅度优化
+# 2UI流畅度优化
 
 谈到UI流畅度，一般就是不要在主进程去做耗时的操作，提升UI的绘制速度（减少View的布局层级，避免过渡绘制等）...TraceView、Lint、Hugo、StrictMode等...
 
@@ -131,9 +127,7 @@ UI流畅度优化
 - [https://github.com/friendlyrobotnyc/TinyDancer](https://github.com/friendlyrobotnyc/TinyDancer "https://github.com/friendlyrobotnyc/TinyDancer") [方式2]
     
 
-_3_
-
-内存优化
+# 3内存优化
 
 内存优化那么主要就是去消除应用中的内存泄露、避免内存抖动；常用工具就是AS自带的内存检测，可以很好的发现内存抖动；leakcanary可以非常方便的帮助我们发现内存泄露；MAT可以做更多的内存分析。
 
@@ -184,9 +178,7 @@ _3_
 
 - [手把手教你在Android Studio 3.0上分析内存泄漏](http://mp.weixin.qq.com/s?__biz=MzAxMTI4MTkwNQ==&mid=2650824544&idx=1&sn=2fc3cc16806bd1ddd9902ccef2cd12f5&chksm=80b78bfeb7c002e822314661aa0df8e8d7981fb2ff3bc362c129bbf2952a87ff59a6213b821c&scene=21#wechat_redirect "http://mp.weixin.qq.com/s?__biz=MzAxMTI4MTkwNQ==&mid=2650824544&idx=1&sn=2fc3cc16806bd1ddd9902ccef2cd12f5&chksm=80b78bfeb7c002e822314661aa0df8e8d7981fb2ff3bc362c129bbf2952a87ff59a6213b821c&scene=21#wechat_redirect")
 
-_4_
-
-apk瘦身
+# 4apk瘦身
 
 关于Apk瘦身，主要由以下几个方式：
 
@@ -240,9 +232,7 @@ apk瘦身
 - [Android IconFont全攻略](http://mp.weixin.qq.com/s?__biz=MzAxMTI4MTkwNQ==&mid=2650821086&idx=1&sn=080bc2cfaa04947b974bf6273bbd7259&chksm=80b78540b7c00c56fd15fb8027b4d2730523c32c2099970cc49f9ddc03d235c907dc59e1695c&scene=21#wechat_redirect "http://mp.weixin.qq.com/s?__biz=MzAxMTI4MTkwNQ==&mid=2650821086&idx=1&sn=080bc2cfaa04947b974bf6273bbd7259&chksm=80b78540b7c00c56fd15fb8027b4d2730523c32c2099970cc49f9ddc03d235c907dc59e1695c&scene=21#wechat_redirect")
     
 
-_5_
-
-电量优化
+# 5电量优化
 
 电量优化说实在的关注度较低，一般情况就是合理的使用一些传感器、谨慎的使用Wake Lock、减少后台的不要的操作等...检测可以利用battery-historian
 
