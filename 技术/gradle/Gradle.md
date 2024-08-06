@@ -142,3 +142,5 @@ Gradle的生命周期包括三个阶段：初始化、配置和执行。
 
 [Android 官方Gradle项目](https://github.com/android/gradle-recipes?tab=readme-ov-file)
 
+[ASM插桩：手把手带你实战 AGP 7.x ASM 字节码插桩](https://xie.infoq.cn/article/46ccb9380c6e876e84b204ecc) 
+
