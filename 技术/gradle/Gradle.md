@@ -140,3 +140,5 @@ Gradle的生命周期包括三个阶段：初始化、配置和执行。
 
 [Google I/O 中提到的提高 Android studio 的编译速度的几个建议](https://juejin.cn/post/6844903481917046791)
 
+[Android 官方Gradle项目](https://github.com/android/gradle-recipes?tab=readme-ov-file)
+
