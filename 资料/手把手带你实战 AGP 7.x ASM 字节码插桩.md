@@ -394,4 +394,8 @@ Github：[HJHL/AsmTourism: ASM tourism on Android (github.com)](https://xie.info
     
 - ASM 官网：[https://asm.ow2.io/](https://asm.ow2.io/ "https://asm.ow2.io/")
     
-- Java 方法签名：[https://docs.oracle.com/en/java/javase/18/docs/specs/jni/types.html#type-signatures](https://docs.oracle.com/en/java/javase/18/docs/specs/jni/types.html#type-signatures "https://docs.oracle.com/en/java/javase/18/docs/specs/jni/types.html#type-signatures")
+- Java 方法签名：[https://docs.oracle.com/en/java/javase/18/docs/specs/jni/types.html#type-signatures](https://docs.oracle.com/en/java/javase/18/docs/specs/jni/types.html#type-signatures "https://docs.oracle.com/en/java/javase/18/docs/specs/jni/types.html#type-signatures") 
+
+# 原文链接 
+
+[手把手带你实战 AGP 7.x ASM 字节码插桩](https://xie.infoq.cn/article/46ccb9380c6e876e84b204ecc) 
