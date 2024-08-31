@@ -1231,7 +1231,6 @@ SurfaceView是在一个新起的单独线程中可以重新绘制画面，而vie
 非UI线程是可以刷新UI的，前提是它要拥有自己的ViewRoot,即更新UI的线程和创建ViewRoot的线程是同一个，或者在执行checkThread()前更新UI。
 
 ## 单元测试有没有做过，说说熟悉的单元测试框架？
-
 首先，Android测试主要分为三个方面：
 
 - 单元测试（Junit4、Mockito、PowerMockito、Robolectric）
