@@ -116,3 +116,9 @@ Paging3
 		实现presentNewList方法对比差
 		调用DifferCallback通知Adapter更新
 ```
+
+
+# 源码分析帖子
+
+[Jetpack 源码分析(六) - Paging3源码分析(下)](https://juejin.cn/post/6918401807400534030#heading-5)
+
