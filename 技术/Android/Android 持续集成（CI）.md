@@ -4,8 +4,8 @@ title: Android 持续集成（CI）
 time: 2024-08-27 周二
 tags:
   - Android
-  - CI/CD
   - 单元测试
+  - CICD
 ---
 # 官方文档 
 
@@ -72,4 +72,6 @@ tags:
 # [CI功能](https://developer.android.com/training/testing/continuous-integration/features?hl=zh-cn) 
 
 
+
+[[用 GitLab CI 进行持续集成]] 
 
