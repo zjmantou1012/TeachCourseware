@@ -308,7 +308,7 @@ import dalvik.system.PathClassLoader;
         // 加载 apk 文件  
         loadApk();  
     }  
-    private void loadApk() {  
+private void loadApk() {  
         // 插件包的绝对路径 ,  /data/data/< package name >/files/        String apkPath = mBase.getFilesDir().getAbsolutePath() + "plugin.apk";  
         // 加载插件包后产生的缓存文件路径  
         // /data/data/< package name >/app_plugin_cache/  
