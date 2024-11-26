@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "性能优化",
+      "path": "03知识目录/性能优化.md"
+    },
+    {
       "basename": "00-gradle-recipes笔记",
       "path": "笔记/Gradle/00-gradle-recipes笔记.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "Gradle笔记",
       "path": "03知识目录/Gradle笔记.md"
-    },
-    {
-      "basename": "性能优化",
-      "path": "03知识目录/性能优化.md"
     }
   ],
   "omittedPaths": [],
