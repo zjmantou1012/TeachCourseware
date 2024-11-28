@@ -66,5 +66,19 @@ gradle版本：8.2
 
 通过`ScopedArtifactsOperation.toAppend()`  在指定Scope中添加文件。 
 
+### getMultipleArtifact 
 
+对MULTIDEX_KEEP_PROGUARD输入的文件进行操作 
+
+### getSingleArtifact  
+
+对每个变体操作，本示例使用SingleArtifact.BUNDLE，检查是否有appbundle的.aab文件 
+
+### appendToMultipleArtifact 
+
+创建文件添加到MutipleArtifact， 本节演示将文件添加到NATIVE_DEBUG_METADATA目录下。 
+
+### extendingAgp 
+
+第三方插件扩展Android DSL块 （待阅读）
 

@@ -1,12 +1,16 @@
 {
   "recentFiles": [
     {
-      "basename": "性能优化",
-      "path": "03知识目录/性能优化.md"
-    },
-    {
       "basename": "00-gradle-recipes笔记",
       "path": "笔记/Gradle/00-gradle-recipes笔记.md"
+    },
+    {
+      "basename": "相关示例",
+      "path": "技术/Android/单元测试/相关示例.md"
+    },
+    {
+      "basename": "Benchmark",
+      "path": "技术/Android/单元测试/Benchmark.md"
     },
     {
       "basename": "Espresso",
@@ -14,15 +18,27 @@
     },
     {
       "basename": "单元测试",
-      "path": "03知识目录/单元测试.md"
+      "path": "技术/Android/单元测试/单元测试.md"
     },
     {
-      "basename": "相关示例",
-      "path": "技术/Android/单元测试/相关示例.md"
+      "basename": "测试相关配置和工具",
+      "path": "技术/Android/单元测试/测试相关配置和工具.md"
+    },
+    {
+      "basename": "测试不同屏幕尺寸",
+      "path": "技术/Android/单元测试/测试不同屏幕尺寸.md"
+    },
+    {
+      "basename": "单元测试",
+      "path": "03知识目录/单元测试.md"
     },
     {
       "basename": "来到 2024，你手上的 Android 项目有单元测试吗？",
       "path": "资料/来到 2024，你手上的 Android 项目有单元测试吗？.md"
+    },
+    {
+      "basename": "性能优化",
+      "path": "03知识目录/性能优化.md"
     },
     {
       "basename": "Android 插件化",
@@ -39,14 +55,6 @@
     {
       "basename": "Android Hook",
       "path": "技术/Android/Android Hook.md"
-    },
-    {
-      "basename": "单元测试",
-      "path": "技术/Android/单元测试/单元测试.md"
-    },
-    {
-      "basename": "测试相关配置和工具",
-      "path": "技术/Android/单元测试/测试相关配置和工具.md"
     },
     {
       "basename": "9.完善Makefile",
@@ -177,20 +185,12 @@
       "path": "技术/gradle/Gradle.md"
     },
     {
-      "basename": "测试不同屏幕尺寸",
-      "path": "技术/Android/单元测试/测试不同屏幕尺寸.md"
-    },
-    {
       "basename": "2024-03-19,周二",
       "path": "01日记/2024-03-19,周二.md"
     },
     {
       "basename": "RAM和ROM的区别",
       "path": "技术/RAM和ROM的区别.md"
-    },
-    {
-      "basename": "Benchmark",
-      "path": "技术/Android/单元测试/Benchmark.md"
     },
     {
       "basename": "一文全面了解Android单元测试",

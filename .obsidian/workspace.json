@@ -8,17 +8,17 @@
         "type": "tabs",
         "children": [
           {
-            "id": "bc48645f998e1ac4",
+            "id": "0315c7113ebc8e24",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "03知识目录/性能优化.md",
+                "file": "笔记/Gradle/00-gradle-recipes笔记.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "性能优化"
+              "title": "00-gradle-recipes笔记"
             }
           }
         ]
@@ -160,10 +160,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "03知识目录/性能优化.md"
+                "file": "笔记/Gradle/00-gradle-recipes笔记.md"
               },
               "icon": "lucide-list",
-              "title": "性能优化 的大纲"
+              "title": "00-gradle-recipes笔记 的大纲"
             }
           },
           {
@@ -233,19 +233,22 @@
       "obsidian-memos:Memos": false
     }
   },
-  "active": "91e6af7cb69e2047",
+  "active": "0315c7113ebc8e24",
   "lastOpenFiles": [
-    "笔记/Gradle/00-gradle-recipes笔记.md",
-    "技术/Android/单元测试/Espresso.md",
-    "03知识目录/单元测试.md",
     "技术/Android/单元测试/相关示例.md",
+    "技术/Android/单元测试/Benchmark.md",
+    "技术/Android/单元测试/Espresso.md",
+    "技术/Android/单元测试/单元测试.md",
+    "技术/Android/单元测试/测试相关配置和工具.md",
+    "技术/Android/单元测试/测试不同屏幕尺寸.md",
+    "03知识目录/单元测试.md",
     "资料/来到 2024，你手上的 Android 项目有单元测试吗？.md",
+    "03知识目录/性能优化.md",
+    "笔记/Gradle/00-gradle-recipes笔记.md",
     "技术/Android/Android 插件化.md",
     "技术/Android/面试题/00Android 面试题参考.md",
     "技术/Android/热修复技术.md",
     "技术/Android/Android Hook.md",
-    "技术/Android/单元测试/单元测试.md",
-    "技术/Android/单元测试/测试相关配置和工具.md",
     "技术/makefile/廖雪峰教程/9.完善Makefile.md",
     "技术/makefile/廖雪峰教程/8.自动生成依赖.md",
     "技术/makefile/廖雪峰教程/7.使用模式规则.md",
@@ -260,9 +263,6 @@
     "技术/makefile",
     "技术/Android/Android 持续集成（CI）.md",
     "技术/Android/性能优化/00优化指南.md",
-    "资料/性能优化/必知必会-Android 性能优化的方面方面都在这儿.md",
-    "资料/性能优化/工具/Android Systrace 01 基础知识 -- Systrace 简介.md",
-    "资料/图片/可能是最详细的Android图片压缩原理分析.md",
     "技术/Android/单元测试/未命名",
     "技术/Android/单元测试",
     "03知识目录",
