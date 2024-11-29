@@ -8,7 +8,17 @@ tags:
 ---
 [github demo](https://github.com/android/gradle-recipes)
 
-gradle版本：8.2 
+gradle版本：8.2  
+
+# 基本概念 
+
+## variant 
+
+变体 gradle构建的变体 
+
+## artifacts 
+
+通过其提供的api可以访问Variant对象上产生的artifact（工件），artifact是有AGP在构建过程中产生的临时或最终文件或目录。
 
 # Theme 
 
@@ -36,7 +46,7 @@ gradle版本：8.2
 
 给manifest文件中的manifestPlaceholders赋值。 
 
-## Arifact API
+## Artifact API 
 
 ### addMultipleArtifact 
 
@@ -78,7 +88,32 @@ gradle版本：8.2
 
 创建文件添加到MutipleArtifact， 本节演示将文件添加到NATIVE_DEBUG_METADATA目录下。 
 
+## DSL 
 ### extendingAgp 
 
 第三方插件扩展Android DSL块 （待阅读）
+
+### addBuildTypeUsingDslFinalize 
+
+在执行build之后，创建variants之前，扩展自定义的DSL。该示例通过对finalizeDsl添加一个自定义的buildType。 
+
+## Dependency Resolution 依赖解析 
+
+### variantDependencySubstitutionTest 
+
+使用variant API 访问某个特定variant（比如buildType为release的variant）的编译和运行配置，替换其依赖关系。 
+
+## Source 
+
+[[#Assets#addGeneratedSourceFolder]]
+
+### addCustomSourceType 
+
+将新的source file添加到新建的source type中，可以被自定义的Variant API毁掉插件和任务使用。 
+
+该示例中使用了SourceDirectories.Flat.addStaticSourceDirectory 和 addGeneratedSourceDirectory 分别创建了srcDIr和generated目录。 
+
+
+[[#Assets#legacyTaskBridging]]
+
 
