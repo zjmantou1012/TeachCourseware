@@ -1,6 +1,18 @@
 {
   "recentFiles": [
     {
+      "basename": "掌握这17张图，掌握RecyclerView中的“黑科技”预加载",
+      "path": "资料/掌握这17张图，掌握RecyclerView中的“黑科技”预加载.md"
+    },
+    {
+      "basename": "2024年移动端技术探索",
+      "path": "资料/2024年移动端技术探索.md"
+    },
+    {
+      "basename": "2024-12-02,周一",
+      "path": "01日记/2024-12-02,周一.md"
+    },
+    {
       "basename": "00-gradle-recipes笔记",
       "path": "笔记/Gradle/00-gradle-recipes笔记.md"
     },
@@ -187,18 +199,6 @@
     {
       "basename": "2024-03-19,周二",
       "path": "01日记/2024-03-19,周二.md"
-    },
-    {
-      "basename": "RAM和ROM的区别",
-      "path": "技术/RAM和ROM的区别.md"
-    },
-    {
-      "basename": "一文全面了解Android单元测试",
-      "path": "技术/Android/一文全面了解Android单元测试.md"
-    },
-    {
-      "basename": "Gradle笔记",
-      "path": "03知识目录/Gradle笔记.md"
     }
   ],
   "omittedPaths": [],
