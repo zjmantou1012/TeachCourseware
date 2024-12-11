@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "C++Primer",
+      "path": "笔记/C++Primer.md"
+    },
+    {
       "basename": "单元测试",
       "path": "03知识目录/单元测试.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "03. Implementing Gradle plugins实现Gradle插件",
       "path": "技术/gradle/7.6/06. Developing Gradle Plugin/03. Implementing Gradle plugins实现Gradle插件.md"
-    },
-    {
-      "basename": "Gradle",
-      "path": "技术/gradle/Gradle.md"
     }
   ],
   "omittedPaths": [],
