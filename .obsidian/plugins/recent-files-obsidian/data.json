@@ -1,6 +1,30 @@
 {
   "recentFiles": [
     {
+      "basename": "单元测试",
+      "path": "03知识目录/单元测试.md"
+    },
+    {
+      "basename": "相关示例",
+      "path": "技术/Android/单元测试/相关示例.md"
+    },
+    {
+      "basename": "来到 2024，你手上的 Android 项目有单元测试吗？",
+      "path": "资料/来到 2024，你手上的 Android 项目有单元测试吗？.md"
+    },
+    {
+      "basename": "一文全面了解Android单元测试",
+      "path": "技术/Android/一文全面了解Android单元测试.md"
+    },
+    {
+      "basename": "Espresso",
+      "path": "技术/Android/单元测试/Espresso.md"
+    },
+    {
+      "basename": "单元测试",
+      "path": "技术/Android/单元测试/单元测试.md"
+    },
+    {
       "basename": "掌握这17张图，掌握RecyclerView中的“黑科技”预加载",
       "path": "资料/掌握这17张图，掌握RecyclerView中的“黑科技”预加载.md"
     },
@@ -17,20 +41,8 @@
       "path": "笔记/Gradle/00-gradle-recipes笔记.md"
     },
     {
-      "basename": "相关示例",
-      "path": "技术/Android/单元测试/相关示例.md"
-    },
-    {
       "basename": "Benchmark",
       "path": "技术/Android/单元测试/Benchmark.md"
-    },
-    {
-      "basename": "Espresso",
-      "path": "技术/Android/单元测试/Espresso.md"
-    },
-    {
-      "basename": "单元测试",
-      "path": "技术/Android/单元测试/单元测试.md"
     },
     {
       "basename": "测试相关配置和工具",
@@ -39,14 +51,6 @@
     {
       "basename": "测试不同屏幕尺寸",
       "path": "技术/Android/单元测试/测试不同屏幕尺寸.md"
-    },
-    {
-      "basename": "单元测试",
-      "path": "03知识目录/单元测试.md"
-    },
-    {
-      "basename": "来到 2024，你手上的 Android 项目有单元测试吗？",
-      "path": "资料/来到 2024，你手上的 Android 项目有单元测试吗？.md"
     },
     {
       "basename": "性能优化",
@@ -195,10 +199,6 @@
     {
       "basename": "Gradle",
       "path": "技术/gradle/Gradle.md"
-    },
-    {
-      "basename": "2024-03-19,周二",
-      "path": "01日记/2024-03-19,周二.md"
     }
   ],
   "omittedPaths": [],

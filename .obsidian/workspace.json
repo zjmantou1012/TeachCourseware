@@ -8,17 +8,59 @@
         "type": "tabs",
         "children": [
           {
+            "id": "99ed8f24a0bb97fe",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "03知识目录/单元测试.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "单元测试"
+            }
+          },
+          {
+            "id": "d0dbfa8335971b43",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "技术/Android/单元测试/相关示例.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "相关示例"
+            }
+          },
+          {
+            "id": "231d05f08a7468b3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "技术/Android/单元测试/Espresso.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Espresso"
+            }
+          },
+          {
             "id": "0315c7113ebc8e24",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "资料/掌握这17张图，掌握RecyclerView中的“黑科技”预加载.md",
+                "file": "技术/Android/一文全面了解Android单元测试.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "掌握这17张图，掌握RecyclerView中的“黑科技”预加载"
+              "title": "一文全面了解Android单元测试"
             }
           }
         ]
@@ -93,7 +135,8 @@
               "title": "书签"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -159,10 +202,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "01日记/2024-12-02,周一.md"
+                "file": "03知识目录/单元测试.md"
               },
               "icon": "lucide-list",
-              "title": "2024-12-02,周一 的大纲"
+              "title": "单元测试 的大纲"
             }
           },
           {
@@ -210,7 +253,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -232,20 +275,21 @@
       "obsidian-memos:Memos": false
     }
   },
-  "active": "0315c7113ebc8e24",
+  "active": "91e6af7cb69e2047",
   "lastOpenFiles": [
-    "资料/2024年移动端技术探索.md",
-    "资料/掌握这17张图，掌握RecyclerView中的“黑科技”预加载.md",
-    "01日记/2024-12-02,周一.md",
-    "笔记/Gradle/00-gradle-recipes笔记.md",
     "技术/Android/单元测试/相关示例.md",
-    "技术/Android/单元测试/Benchmark.md",
-    "技术/Android/单元测试/Espresso.md",
-    "技术/Android/单元测试/单元测试.md",
-    "技术/Android/单元测试/测试相关配置和工具.md",
-    "技术/Android/单元测试/测试不同屏幕尺寸.md",
     "03知识目录/单元测试.md",
     "资料/来到 2024，你手上的 Android 项目有单元测试吗？.md",
+    "技术/Android/一文全面了解Android单元测试.md",
+    "技术/Android/单元测试/Espresso.md",
+    "技术/Android/单元测试/单元测试.md",
+    "资料/掌握这17张图，掌握RecyclerView中的“黑科技”预加载.md",
+    "资料/2024年移动端技术探索.md",
+    "01日记/2024-12-02,周一.md",
+    "笔记/Gradle/00-gradle-recipes笔记.md",
+    "技术/Android/单元测试/Benchmark.md",
+    "技术/Android/单元测试/测试相关配置和工具.md",
+    "技术/Android/单元测试/测试不同屏幕尺寸.md",
     "03知识目录/性能优化.md",
     "技术/Android/Android 插件化.md",
     "技术/Android/面试题/00Android 面试题参考.md",
@@ -259,7 +303,6 @@
     "技术/makefile/廖雪峰教程/4.编译C程序.md",
     "技术/makefile/廖雪峰教程/3.Makefile基础.md",
     "技术/makefile/廖雪峰教程/2.安装make.md",
-    "技术/makefile/廖雪峰教程/1.简介.md",
     "技术/makefile/廖雪峰教程",
     "技术/makefile",
     "技术/Android/单元测试/未命名",
