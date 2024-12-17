@@ -1,12 +1,16 @@
 {
   "recentFiles": [
     {
-      "basename": "基本用法",
-      "path": "技术/Android/单元测试/基本用法.md"
+      "basename": "内存优化",
+      "path": "技术/Android/性能优化/内存优化.md"
     },
     {
       "basename": "相关示例",
       "path": "技术/Android/单元测试/相关示例.md"
+    },
+    {
+      "basename": "基本用法",
+      "path": "技术/Android/单元测试/基本用法.md"
     },
     {
       "basename": "单元测试",
@@ -191,14 +195,6 @@
     {
       "basename": "Producing and Consuming Variants of Libraries生成和使用库的变体",
       "path": "技术/gradle/7.6/Producing and Consuming Variants of Libraries生成和使用库的变体.md"
-    },
-    {
-      "basename": "增量构建属性类型注解",
-      "path": "技术/gradle/7.6/增量构建属性类型注解.md"
-    },
-    {
-      "basename": "02. Designing Plugins 设计插件",
-      "path": "技术/gradle/7.6/06. Developing Gradle Plugin/02. Designing Plugins 设计插件.md"
     }
   ],
   "omittedPaths": [],
