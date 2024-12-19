@@ -1,12 +1,20 @@
 {
   "recentFiles": [
     {
-      "basename": "内存优化",
-      "path": "技术/Android/性能优化/内存优化.md"
+      "basename": "Java Type",
+      "path": "资料/Java Type.md"
+    },
+    {
+      "basename": "一文全面了解Android单元测试",
+      "path": "技术/Android/一文全面了解Android单元测试.md"
     },
     {
       "basename": "相关示例",
       "path": "技术/Android/单元测试/相关示例.md"
+    },
+    {
+      "basename": "内存优化",
+      "path": "技术/Android/性能优化/内存优化.md"
     },
     {
       "basename": "基本用法",
@@ -23,10 +31,6 @@
     {
       "basename": "来到 2024，你手上的 Android 项目有单元测试吗？",
       "path": "资料/来到 2024，你手上的 Android 项目有单元测试吗？.md"
-    },
-    {
-      "basename": "一文全面了解Android单元测试",
-      "path": "技术/Android/一文全面了解Android单元测试.md"
     },
     {
       "basename": "Espresso",
