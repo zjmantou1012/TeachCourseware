@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "资料/Java Type.md",
+                "file": "技术/Android/面试题/00Android 面试题参考.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Java Type"
+              "title": "00Android 面试题参考"
             }
           },
           {
@@ -188,10 +188,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "01日记/2024-12-17,周二.md"
+                "file": "技术/Android/面试题/00Android 面试题参考.md"
               },
               "icon": "lucide-list",
-              "title": "2024-12-17,周二 的大纲"
+              "title": "00Android 面试题参考 的大纲"
             }
           },
           {
@@ -239,7 +239,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -263,8 +263,10 @@
   },
   "active": "91e6af7cb69e2047",
   "lastOpenFiles": [
-    "技术/Android/一文全面了解Android单元测试.md",
+    "技术/Android/面试题/00面试笔记.md",
+    "技术/Android/面试题/00面试集锦汇总.md",
     "资料/Java Type.md",
+    "技术/Android/一文全面了解Android单元测试.md",
     "技术/Android/单元测试/相关示例.md",
     "技术/Android/性能优化/内存优化.md",
     "01日记/2024-12-17,周二.md",
@@ -287,8 +289,6 @@
     "技术/Android/面试题/00Android 面试题参考.md",
     "技术/Android/热修复技术.md",
     "技术/Android/Android Hook.md",
-    "技术/makefile/廖雪峰教程/9.完善Makefile.md",
-    "技术/makefile/廖雪峰教程/8.自动生成依赖.md",
     "技术/makefile/廖雪峰教程",
     "技术/makefile",
     "技术/Android/单元测试/未命名",

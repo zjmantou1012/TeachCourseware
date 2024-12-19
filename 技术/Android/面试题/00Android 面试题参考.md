@@ -43,6 +43,9 @@ volatile **修饰的变量在汇编指令中会有lock前缀的指令**，所以
 
 ![[Map#ArrayMap]]
 
+## Type类型 
+
+![[Java Type#总结]]
 
 
 # 序列化

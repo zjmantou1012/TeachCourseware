@@ -1,6 +1,18 @@
 {
   "recentFiles": [
     {
+      "basename": "00Android 面试题参考",
+      "path": "技术/Android/面试题/00Android 面试题参考.md"
+    },
+    {
+      "basename": "00面试笔记",
+      "path": "技术/Android/面试题/00面试笔记.md"
+    },
+    {
+      "basename": "00面试集锦汇总",
+      "path": "技术/Android/面试题/00面试集锦汇总.md"
+    },
+    {
       "basename": "Java Type",
       "path": "资料/Java Type.md"
     },
@@ -75,10 +87,6 @@
     {
       "basename": "Android 插件化",
       "path": "技术/Android/Android 插件化.md"
-    },
-    {
-      "basename": "00Android 面试题参考",
-      "path": "技术/Android/面试题/00Android 面试题参考.md"
     },
     {
       "basename": "热修复技术",
@@ -191,14 +199,6 @@
     {
       "basename": "03. Structuring Software Products构建软件产品",
       "path": "技术/gradle/7.6/03. Structuring Software Products构建软件产品.md"
-    },
-    {
-      "basename": "04.Authoring Sustainable Builds编写可持续构建",
-      "path": "技术/gradle/7.6/04.Authoring Sustainable Builds编写可持续构建.md"
-    },
-    {
-      "basename": "Producing and Consuming Variants of Libraries生成和使用库的变体",
-      "path": "技术/gradle/7.6/Producing and Consuming Variants of Libraries生成和使用库的变体.md"
     }
   ],
   "omittedPaths": [],

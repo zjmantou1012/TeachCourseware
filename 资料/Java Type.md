@@ -232,3 +232,7 @@ WildcardType
 ![](https://upload-images.jianshu.io/upload_images/5621908-fd3cb71089452e2f.png)
 
 以上，就是对Java-Type体系中相关对象的介绍；
+
+# 总结 
+
+![image.png](https://zjmantou-drawingbed.oss-cn-hangzhou.aliyuncs.com/picture/202412191500782.png)
