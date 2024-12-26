@@ -12,6 +12,11 @@ tags:
 
 主要用来进行Android的界面测试 
 
+# 比较好的Blog 
+
+- [Android 自动化测试 Espresso篇：简介&基础使用](https://blog.csdn.net/mq2553299/article/details/74067002) 
+- [全副武装！AndroidUI自动化测试在RxImagePicker中的实践历程](https://blog.csdn.net/mq2553299/article/details/81294514) 
+
 # 软件包
 
 - `espresso-core` - 包含核心和基本的 `View` 匹配器、操作和 断言。请参阅 [基本信息](https://developer.android.com/training/testing/espresso/basics?hl=zh-cn) 和[食谱](https://developer.android.com/training/testing/espresso/recipes?hl=zh-cn)。
