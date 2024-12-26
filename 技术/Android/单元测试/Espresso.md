@@ -16,6 +16,7 @@ tags:
 
 - [Android 自动化测试 Espresso篇：简介&基础使用](https://blog.csdn.net/mq2553299/article/details/74067002) 
 - [全副武装！AndroidUI自动化测试在RxImagePicker中的实践历程](https://blog.csdn.net/mq2553299/article/details/81294514) 
+- [Android 自动化测试 Espresso篇：异步代码测试](https://blog.csdn.net/mq2553299/article/details/74490718) 
 
 # 软件包
 
