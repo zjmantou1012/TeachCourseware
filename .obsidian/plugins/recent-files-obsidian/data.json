@@ -1,6 +1,14 @@
 {
   "recentFiles": [
     {
+      "basename": "Appium2测试框架",
+      "path": "技术/Android/单元测试/Appium2测试框架.md"
+    },
+    {
+      "basename": "基本用法",
+      "path": "技术/Android/单元测试/基本用法.md"
+    },
+    {
       "basename": "Espresso",
       "path": "技术/Android/单元测试/Espresso.md"
     },
@@ -31,10 +39,6 @@
     {
       "basename": "内存优化",
       "path": "技术/Android/性能优化/内存优化.md"
-    },
-    {
-      "basename": "基本用法",
-      "path": "技术/Android/单元测试/基本用法.md"
     },
     {
       "basename": "单元测试",
@@ -195,10 +199,6 @@
     {
       "basename": "02.Structuring Individual Builds构建个人构建",
       "path": "技术/gradle/7.6/02.Structuring Individual Builds构建个人构建.md"
-    },
-    {
-      "basename": "03. Structuring Software Products构建软件产品",
-      "path": "技术/gradle/7.6/03. Structuring Software Products构建软件产品.md"
     }
   ],
   "omittedPaths": [],

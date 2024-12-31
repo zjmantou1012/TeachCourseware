@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "技术/Android/单元测试/Espresso.md",
+                "file": "技术/Android/单元测试/Appium2测试框架.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Espresso"
+              "title": "Appium2测试框架"
             }
           },
           {
@@ -122,8 +122,7 @@
               "title": "书签"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "horizontal",
@@ -189,10 +188,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "技术/Android/单元测试/Espresso.md"
+                "file": "技术/Android/单元测试/Appium2测试框架.md"
               },
               "icon": "lucide-list",
-              "title": "Espresso 的大纲"
+              "title": "Appium2测试框架 的大纲"
             }
           },
           {
@@ -264,6 +263,9 @@
   },
   "active": "231d05f08a7468b3",
   "lastOpenFiles": [
+    "技术/Android/单元测试/基本用法.md",
+    "技术/Android/单元测试/Appium2测试框架.md",
+    "技术/Android/单元测试/Espresso.md",
     "技术/Android/面试题/00Android 面试题参考.md",
     "技术/Android/面试题/00面试笔记.md",
     "技术/Android/面试题/00面试集锦汇总.md",
@@ -272,12 +274,9 @@
     "技术/Android/单元测试/相关示例.md",
     "技术/Android/性能优化/内存优化.md",
     "01日记/2024-12-17,周二.md",
-    "技术/Android/单元测试/基本用法.md",
-    "技术/Android/单元测试/未命名.md",
     "03知识目录/单元测试.md",
     "笔记/C++Primer.md",
     "资料/来到 2024，你手上的 Android 项目有单元测试吗？.md",
-    "技术/Android/单元测试/Espresso.md",
     "技术/Android/单元测试/单元测试.md",
     "资料/掌握这17张图，掌握RecyclerView中的“黑科技”预加载.md",
     "资料/2024年移动端技术探索.md",
