@@ -1,6 +1,22 @@
 {
   "recentFiles": [
     {
+      "basename": "Mac终端快捷键",
+      "path": "操作手册/Mac终端快捷键.md"
+    },
+    {
+      "basename": "mac终端代理",
+      "path": "常用命令/mac终端代理.md"
+    },
+    {
+      "basename": "Dumpsys meminfo",
+      "path": "常用命令/Dumpsys meminfo.md"
+    },
+    {
+      "basename": "adb常用命令笔记",
+      "path": "常用命令/adb常用命令笔记.md"
+    },
+    {
       "basename": "Appium2测试框架",
       "path": "技术/Android/单元测试/Appium2测试框架.md"
     },
@@ -183,22 +199,6 @@
     {
       "basename": "手把手带你实战 AGP 7.x ASM 字节码插桩",
       "path": "笔记/Gradle/手把手带你实战 AGP 7.x ASM 字节码插桩.md"
-    },
-    {
-      "basename": "手把手教大家用Transform_API和ASM实现一个防快速点击案例",
-      "path": "笔记/Gradle/手把手教大家用Transform_API和ASM实现一个防快速点击案例.md"
-    },
-    {
-      "basename": "手把手带你实战 AGP 7.x ASM 字节码插桩",
-      "path": "资料/手把手带你实战 AGP 7.x ASM 字节码插桩.md"
-    },
-    {
-      "basename": "01. Gradle 7.6 基础知识",
-      "path": "技术/gradle/7.6/01. Gradle 7.6 基础知识.md"
-    },
-    {
-      "basename": "02.Structuring Individual Builds构建个人构建",
-      "path": "技术/gradle/7.6/02.Structuring Individual Builds构建个人构建.md"
     }
   ],
   "omittedPaths": [],
