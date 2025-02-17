@@ -26,3 +26,11 @@ Option-D（选中将 Option 键用作 Meta 键后可用）
 ## 删除到行的结尾 
 
 Control-K
+
+## 将插入点移到行的开头
+
+Control - A
+
+## 将插入点移到行的结尾
+
+Control - E
