@@ -27,6 +27,8 @@ Option-D（选中将 Option 键用作 Meta 键后可用）
 
 Control-K
 
+# 移动
+
 ## 将插入点移到行的开头
 
 Control - A
@@ -34,3 +36,11 @@ Control - A
 ## 将插入点移到行的结尾
 
 Control - E
+
+## 向前移动一个单词
+
+Option-右箭头键
+
+## 向后移动一个单词
+
+Option-左箭头键
