@@ -1,4 +1,13 @@
-makefile命令
+---
+author: zjmantou
+title: Cpp笔记
+time: 2025-02-27 Thu
+tags:
+  - 笔记
+  - cpp
+---
+# makefile命令
+
 ![image.png](https://zjmantou-drawingbed.oss-cn-hangzhou.aliyuncs.com/picture/202312081034274.png)
 
 # 指针与引用的区别
@@ -23,3 +32,91 @@ makefile命令
 1. auto类型说明符用编译器计算变量的初始值来推断其类型，而decltype虽然也让编译器分析表达式并得到它的类型，但是不实际计算表达式的值。
 2. 编译器推断出来的auto类型有时候和初始值的类型并不完全一样，编译器会适当地改变结果类型使其更符合初始化规则。例如，auto一般会忽略掉顶层const，而把底层const保留下来。与之相反，decltype会保留变量的顶层const。
 3. 与auto不同，decltype的结果类型与表达式形式密切相关，如果变量名加上了一对括号，则得到的类型与不加括号时会有不同。如果decltype使用的是一个不加括号的变量，则得到的结果就是该变量的类型；如果给变量加上了一层或多层括号，则编译器将推断得到引用类型。
+
+# Lambda表达式
+
+## 基础
+
+基本语法：
+
+[捕获列表]（参数列表）mutable(可选) 异常属性 -> 返回类型 {
+	//函数体
+}
+
+捕获列表：参数的一种类型，起到传递函数体外部变量；
+### 1.值捕获
+
+被捕获的变量在Lambada表达式创建的时就拷贝了。 
+
+### 2.引用捕获
+
+保存的是引用，值会发生变化
+
+### 3.隐式捕获
+
+- []：空捕获列表
+- [name1,name2,...]：捕获一系列变量
+- [&]：引用捕获，从函数体内的使用确定引用捕获列表
+- [=]：值捕获，从函数体内的使用确定值捕获列表
+### 4.表达式捕获
+
+C++14允许捕获的成员用任意的表达式进行初始化，这就允许了右值的捕获，被声明的捕获变量类型会根据表达式进行判断；
+
+```cpp
+#include <iostream>
+#include <memory> // std::make_unique
+#include <utility> // std::move
+
+void lambda_expression_capture() {
+auto important = std::make_unique<int>(1);
+auto add = [v1 = 1, v2 = std::move(important)](int x, int y) -> int {
+return x+y+v1+(*v2);
+};
+std::cout << add(3,4) << std::endl;
+}
+```
+
+## 泛型Lambda
+
+C++14开始，Lambda函数的形式参数可以使用auto：
+
+```cpp
+aoto add = [](auto x, auto y) {
+	return x + y;
+};
+add(1,2);
+add(1.1,2.2);
+```
+
+# 函数对象包装器
+
+## std::function
+
+可调用实体的类型安全的包裹，可以更加方便的将函数、函数指针作为对象处理。
+
+## std::bind 和 std::placeholder
+
+绑定函数调用的参数。 
+
+有时候可能并不一定能够一次性获得调用某个函数的全部参数；
+
+std::placeholder提供占位
+
+```cpp
+
+int foo3(int a, int b, int c) {
+
+return 0;
+
+}
+
+int main() {
+	//将参数1，2绑定到函数foo3上
+    //但使用 std::placeholders::_1 来对第一个参数进行占位
+    auto bindFoo = std::bind(foo3, std::placeholders::_1, 1, 2);
+    //这时调用bindFoo时，只需要提供第一个参数即可
+    bindFoo(1);
+}
+
+	
+```

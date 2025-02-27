@@ -4,6 +4,7 @@ title: MacOs HomeBrew好用软件
 time: 2024-06-25 周二
 tags:
   - HomeBrew
+  - 笔记
 ---
 ## macOS Homebrew 好用的库推荐 (中文)
 
