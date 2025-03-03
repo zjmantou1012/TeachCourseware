@@ -280,3 +280,40 @@ for(int i = 0; i != tuple_len(new_tuple); ++i)
     // 运行期索引
     std::cout << tuple_index(new_tuple, i) << std::endl;
 ```
+
+# 智能指针
+
+头文件`<memory>`
+
+## 1. std::share_ptr
+
+- std::make_shared：创造一个共享指针
+- get()：获取原始指针
+- reset()：减少一个引用计数
+- use_count()：查看引用计数
+
+## 2. std::unique_ptr
+
+手动实现一个make_unique创建独占指针
+```cpp
+template<typename T, typename ...Args>
+std::unique_ptr<T> make_unique( Args&& ...args ) {
+  return std::unique_ptr<T>( new T( std::forward<Args>(args)... ) );
+}
+```
+
+- 不可复制，可以通过std::move转移给其他独占指针
+
+## 3. std::weak_ptr
+
+为了解决共享指针的循环引用而造成的内存泄漏； 
+
+不会引起引用增加；
+
+# 正则表达式
+
+- std::regex
+- std::regex_match
+- std::smatch
+
+
