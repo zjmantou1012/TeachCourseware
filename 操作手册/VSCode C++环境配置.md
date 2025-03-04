@@ -20,6 +20,11 @@ tags:
 
 [VSCode + Clangd + XMake](https://zhuanlan.zhihu.com/p/398790625)
 
+
+# Boost
+[mac vscode 使用boost](https://blog.csdn.net/m0_46471347/article/details/128610493)
+
+
 # C++11以上语法支持
 
 [VsCode 配置C++11](https://blog.csdn.net/bitcarmanlee/article/details/124422105) 
@@ -29,4 +34,3 @@ tags:
 C/C++ Clang Command Adapter -> 设置 Clang:Cxxflags -> -std=c++11
 
 ![配置示例](https://i-blog.csdnimg.cn/blog_migrate/a996a797b14154198d9186595847661f.png#pic_center) 
-
