@@ -22,6 +22,8 @@ tags:
 
 
 # Boost
+
+[Mac下vscode配置boost include路径](https://blog.csdn.net/donaldsy/article/details/117680839)
 [mac vscode 使用boost](https://blog.csdn.net/m0_46471347/article/details/128610493)
 
 
