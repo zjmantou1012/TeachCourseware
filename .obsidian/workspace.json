@@ -4,49 +4,35 @@
     "type": "split",
     "children": [
       {
-        "id": "4a96ea7158c68061",
+        "id": "d63012bff783d0c3",
         "type": "tabs",
         "children": [
           {
-            "id": "4dd62290ffad4845",
+            "id": "49928616d6d8c31a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "技术/Android/面试题/00Android 面试题参考.md",
+                "file": "技术/鸿蒙/状态管理.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "00Android 面试题参考"
+              "title": "状态管理"
             }
           },
           {
-            "id": "231d05f08a7468b3",
+            "id": "4e9c0f7963f0ff4b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "操作手册/Mac终端快捷键.md",
+                "file": "技术/鸿蒙/图钉卡片样式.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Mac终端快捷键"
-            }
-          },
-          {
-            "id": "0315c7113ebc8e24",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "技术/Android/一文全面了解Android单元测试.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "一文全面了解Android单元测试"
+              "title": "图钉卡片样式"
             }
           }
         ],
@@ -69,7 +55,8 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical"
+                "sortOrder": "alphabetical",
+                "autoReveal": true
               },
               "icon": "lucide-folder-closed",
               "title": "文件列表"
@@ -81,7 +68,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "xmake",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -122,8 +109,7 @@
               "title": "书签"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "horizontal",
@@ -189,10 +175,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "操作手册/Mac终端快捷键.md"
+                "file": "技术/鸿蒙/图钉卡片样式.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Mac终端快捷键 的大纲"
+              "title": "图钉卡片样式 的大纲"
             }
           },
           {
@@ -228,16 +217,6 @@
               "icon": "lucide-archive",
               "title": "添加笔记属性"
             }
-          },
-          {
-            "id": "235b45019e08edf4",
-            "type": "leaf",
-            "state": {
-              "type": "mermaid-toolbar-view",
-              "state": {},
-              "icon": "trident-custom",
-              "title": "Mermaid Toolbar"
-            }
           }
         ],
         "currentTab": 3
@@ -248,7 +227,6 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "obsidian-excalidraw-plugin:新建 Excalidraw 绘图": false,
       "switcher:打开快速切换": false,
       "graph:查看关系图谱": false,
       "canvas:新建白板": false,
@@ -259,47 +237,49 @@
       "workspaces:管理工作区布局": false,
       "mermaid-tools:Open Mermaid Toolbar": false,
       "table-editor-obsidian:Advanced Tables Toolbar": false,
-      "obsidian-memos:Memos": false
+      "obsidian-excalidraw-plugin:新建绘图文件": false,
+      "obsidian-kanban:创建新看板": false,
+      "obsidian-memos:Thino": false
     }
   },
-  "active": "91e6af7cb69e2047",
+  "active": "4e9c0f7963f0ff4b",
   "lastOpenFiles": [
-    "常用命令/mac终端代理.md",
-    "操作手册/Mac终端快捷键.md",
-    "操作手册",
-    "常用命令/Dumpsys meminfo.md",
-    "常用命令/adb常用命令笔记.md",
-    "技术/Android/单元测试/Appium2测试框架.md",
+    "技术/鸿蒙/状态管理.md",
+    "技术/鸿蒙/图钉卡片样式.md",
+    "blog",
     "技术/Android/单元测试/基本用法.md",
-    "技术/Android/单元测试/Espresso.md",
-    "技术/Android/面试题/00Android 面试题参考.md",
-    "技术/Android/面试题/00面试笔记.md",
-    "技术/Android/面试题/00面试集锦汇总.md",
-    "资料/Java Type.md",
-    "技术/Android/一文全面了解Android单元测试.md",
-    "技术/Android/单元测试/相关示例.md",
-    "技术/Android/性能优化/内存优化.md",
-    "01日记/2024-12-17,周二.md",
-    "03知识目录/单元测试.md",
-    "笔记/C++Primer.md",
-    "资料/来到 2024，你手上的 Android 项目有单元测试吗？.md",
     "技术/Android/单元测试/单元测试.md",
-    "资料/掌握这17张图，掌握RecyclerView中的“黑科技”预加载.md",
-    "资料/2024年移动端技术探索.md",
-    "01日记/2024-12-02,周一.md",
-    "笔记/Gradle/00-gradle-recipes笔记.md",
-    "技术/Android/单元测试/Benchmark.md",
-    "技术/Android/单元测试/测试相关配置和工具.md",
-    "技术/Android/单元测试/测试不同屏幕尺寸.md",
+    "技术/Android/单元测试/相关示例.md",
+    "03知识目录/单元测试.md",
+    "笔记/现代Cpp规范/07-thread.md",
+    "操作手册/VSCode C++环境配置.md",
+    "操作手册/Mac终端快捷键.md",
+    "笔记/Cpp笔记.md",
+    "笔记/现代Cpp规范/toc.md",
+    "笔记/现代Cpp规范/appendix3.md",
+    "笔记/现代Cpp规范/appendix2.md",
+    "笔记/现代Cpp规范/appendix1.md",
+    "笔记/现代Cpp规范/10-cpp20.md",
+    "笔记/现代Cpp规范/09-others.md",
+    "笔记/现代Cpp规范/08-filesystem.md",
+    "笔记/现代Cpp规范/06-regex.md",
+    "笔记/现代Cpp规范/05-pointers.md",
+    "笔记/现代Cpp规范/04-containers.md",
+    "笔记/现代Cpp规范/03-runtime.md",
+    "笔记/现代Cpp规范/02-usability.md",
+    "笔记/现代Cpp规范/01-intro.md",
+    "笔记/现代Cpp规范/00-preface.md",
+    "笔记/现代Cpp规范",
+    "技术/鸿蒙/ArkUI框架.md",
+    "技术/C与C++/C语言基础.md",
+    "笔记/项目",
+    "技术/鸿蒙",
+    "操作手册",
     "技术/makefile/廖雪峰教程",
     "技术/makefile",
     "技术/Android/单元测试/未命名",
     "技术/Android/单元测试",
     "03知识目录",
-    "常用命令",
-    "技术/gradle/7.6/07.其他开发Gradle主题",
-    "技术/gradle/7.6/06. Developing Gradle Plugin",
-    "技术/gradle/7.6/05.Developing Gradle Task",
     "未命名.canvas"
   ]
 }

@@ -4222,7 +4222,7 @@ var DEFAULT_SETTINGS = {
   topicPosition: SectionPosition.APPEND,
   topicOpenOnWrite: false,
   markdownSettings: {
-    h1: "#",
+    h1: "##",
     h2: "##",
     h3: "###",
     h4: "####",
@@ -4730,6 +4730,13 @@ var Utility = class {
   static parseDomainFromUrl(Url) {
     return parseDomain(fromUrl(Url)).hostname.toString();
   }
+  static cleanHeading(heading) {
+    let cleanHeading = heading;
+    if (heading.startsWith("#") && heading[1] == " ") {
+      cleanHeading = heading.substring(2);
+    }
+    return cleanHeading;
+  }
 };
 
 // src/periodicnotes/filewriter.ts
@@ -4801,6 +4808,7 @@ var FileWriter = class {
   getEndAndBeginningOfHeading(file, heading) {
     const cache = this.app.metadataCache.getFileCache(file);
     Utility.assertNotNull(cache);
+    heading = Utility.cleanHeading(heading);
     try {
       const cachedHeadings = cache.headings;
       Utility.assertNotNull(cachedHeadings);
@@ -7574,7 +7582,8 @@ function create_fragment(ctx) {
         dispose = [
           action_destroyer(popperRef_action = ctx[4].call(null, input)),
           listen(input, "input", ctx[19]),
-          listen(input, "input", ctx[10])
+          listen(input, "input", ctx[10]),
+          listen(input, "focusin", ctx[10])
         ];
         mounted = true;
       }
@@ -7668,13 +7677,15 @@ function instance($$self, $$props, $$invalidate) {
   };
   const filterFiles = () => {
     let storageArr = [];
-    if (initialValue) {
-      dataProvider().forEach((file) => {
+    dataProvider().forEach((file) => {
+      if (initialValue) {
         if (file.path.toLowerCase().startsWith(initialValue.toLowerCase())) {
           storageArr = [...storageArr, file.path];
         }
-      });
-    }
+      } else {
+        storageArr = [...storageArr, file.path];
+      }
+    });
     $$invalidate(3, templateOptions = storageArr);
   };
   function keydown_handler_1(event) {
@@ -7869,8 +7880,8 @@ function create_if_block2(ctx) {
       div4 = element("div");
       div2 = element("div");
       div2.innerHTML = `<div class="setting-item-name">Daily Note Header</div> 
-					<div class="setting-item-description">What header should highlight data be prepended under in your daily
-						note?</div>`;
+					<div class="setting-item-description">What header should highlight data be prepended/appended under in the
+						daily note?</div>`;
       t3 = space();
       div3 = element("div");
       input = element("input");
@@ -7878,8 +7889,8 @@ function create_if_block2(ctx) {
       div9 = element("div");
       div7 = element("div");
       div7.innerHTML = `<div class="setting-item-name">Daily Note Position</div> 
-					<div class="setting-item-description">Would you like to prepend clippings to the top of the section or
-						append them to the bottom of the section?</div>`;
+					<div class="setting-item-description">Prepend clippings to the top of the section or append them to the
+						bottom of the section?</div>`;
       t8 = space();
       div8 = element("div");
       select0 = element("select");
@@ -7891,7 +7902,7 @@ function create_if_block2(ctx) {
       div14 = element("div");
       div12 = element("div");
       div12.innerHTML = `<div class="setting-item-name">Open Note After Adding Clipping?</div> 
-					<div class="setting-item-description">Would you like to open the daily note after adding the clipping?</div>`;
+					<div class="setting-item-description">Open the daily note after adding the clipping?</div>`;
       t15 = space();
       div13 = element("div");
       select1 = element("select");
@@ -8211,8 +8222,8 @@ function create_if_block3(ctx) {
       div4 = element("div");
       div2 = element("div");
       div2.innerHTML = `<div class="setting-item-name">Weekly Note Header</div> 
-					<div class="setting-item-description">What header should highlight data be prepended/appended under in
-						your weekly note?</div>`;
+					<div class="setting-item-description">What header should highlight data be prepended/appended under in the
+						weekly note?</div>`;
       t3 = space();
       div3 = element("div");
       input = element("input");
@@ -8220,8 +8231,8 @@ function create_if_block3(ctx) {
       div9 = element("div");
       div7 = element("div");
       div7.innerHTML = `<div class="setting-item-name">Weekly Note Position</div> 
-					<div class="setting-item-description">Would you like to prepend clippings to the top of the section or
-						append them to the bottom of the section?</div>`;
+					<div class="setting-item-description">Prepend clippings to the top of the section or append them to the
+						bottom of the section?</div>`;
       t8 = space();
       div8 = element("div");
       select0 = element("select");
@@ -8233,7 +8244,7 @@ function create_if_block3(ctx) {
       div14 = element("div");
       div12 = element("div");
       div12.innerHTML = `<div class="setting-item-name">Open Note After Adding Clipping?</div> 
-					<div class="setting-item-description">Would you like to open the weekly note after adding the clipping?</div>`;
+					<div class="setting-item-description">Open the weekly note after adding the clipping?</div>`;
       t15 = space();
       div13 = element("div");
       select1 = element("select");
@@ -8536,7 +8547,7 @@ function create_fragment4(ctx) {
       div4 = element("div");
       div2 = element("div");
       div2.innerHTML = `<div class="setting-item-name">Tags</div> 
-			<div class="setting-item-description">What tags would you like added to the captured highlights?</div>`;
+			<div class="setting-item-description">Tags to add to captured highlights?</div>`;
       t5 = space();
       div3 = element("div");
       input0 = element("input");
@@ -8544,8 +8555,8 @@ function create_fragment4(ctx) {
       div10 = element("div");
       div8 = element("div");
       div8.innerHTML = `<div class="setting-item-name">Time Format</div> 
-			<div class="setting-item-description"><div>Format you would like to use for the {{ time }}
-					template in clippings. See</div> 
+			<div class="setting-item-description"><div>Format to use for the {{ time }} template in
+					clippings. See</div> 
 				<a href="https://momentjs.com/docs/#/displaying/format/">format reference</a></div>`;
       t12 = space();
       div9 = element("div");
@@ -8554,8 +8565,8 @@ function create_fragment4(ctx) {
       div16 = element("div");
       div14 = element("div");
       div14.innerHTML = `<div class="setting-item-name">Date Format</div> 
-			<div class="setting-item-description"><div>Format you would like to use for the {{ date }}
-					template in clippings. See</div> 
+			<div class="setting-item-description"><div>Format to use for the {{ date }} template in
+					clippings. See</div> 
 				<a href="https://momentjs.com/docs/#/displaying/format/">format reference</a></div>`;
       t19 = space();
       div15 = element("div");
@@ -9231,7 +9242,7 @@ function create_fragment8(ctx) {
       div4 = element("div");
       div2 = element("div");
       div2.innerHTML = `<div class="setting-item-name">Topic Note Position</div> 
-			<div class="setting-item-description">Would you like to prepend clippings or append them to the bottom?</div>`;
+			<div class="setting-item-description">Prepend clippings or append them to the bottom?</div>`;
       t3 = space();
       div3 = element("div");
       select0 = element("select");
@@ -9243,7 +9254,7 @@ function create_fragment8(ctx) {
       div9 = element("div");
       div7 = element("div");
       div7.innerHTML = `<div class="setting-item-name">Open Note After Adding Clipping?</div> 
-			<div class="setting-item-description">Would you like to open the note after adding the clipping?</div>`;
+			<div class="setting-item-description">Open the note after adding the clipping?</div>`;
       t10 = space();
       div8 = element("div");
       select1 = element("select");
@@ -9437,7 +9448,7 @@ var BookmarketlGenerator = class {
     this.captureComments = captureComments;
   }
   generateBookmarklet() {
-    return `javascript:(function()%7B(()%3D%3E%7B%22use%20strict%22%3Bvar%20e%2Cn%2Ct%3D%7B36%3A(e%2Cn%2Ct)%3D%3E%7Bfunction%20r(e%2Cn)%7Breturn%20Array(n%2B1).join(e)%7Dt.r(n)%2Ct.d(n%2C%7Bdefault%3A()%3D%3EL%7D)%3Bvar%20i%3D%5B%22ADDRESS%22%2C%22ARTICLE%22%2C%22ASIDE%22%2C%22AUDIO%22%2C%22BLOCKQUOTE%22%2C%22BODY%22%2C%22CANVAS%22%2C%22CENTER%22%2C%22DD%22%2C%22DIR%22%2C%22DIV%22%2C%22DL%22%2C%22DT%22%2C%22FIELDSET%22%2C%22FIGCAPTION%22%2C%22FIGURE%22%2C%22FOOTER%22%2C%22FORM%22%2C%22FRAMESET%22%2C%22H1%22%2C%22H2%22%2C%22H3%22%2C%22H4%22%2C%22H5%22%2C%22H6%22%2C%22HEADER%22%2C%22HGROUP%22%2C%22HR%22%2C%22HTML%22%2C%22ISINDEX%22%2C%22LI%22%2C%22MAIN%22%2C%22MENU%22%2C%22NAV%22%2C%22NOFRAMES%22%2C%22NOSCRIPT%22%2C%22OL%22%2C%22OUTPUT%22%2C%22P%22%2C%22PRE%22%2C%22SECTION%22%2C%22TABLE%22%2C%22TBODY%22%2C%22TD%22%2C%22TFOOT%22%2C%22TH%22%2C%22THEAD%22%2C%22TR%22%2C%22UL%22%5D%3Bfunction%20o(e)%7Breturn%20c(e%2Ci)%7Dvar%20a%3D%5B%22AREA%22%2C%22BASE%22%2C%22BR%22%2C%22COL%22%2C%22COMMAND%22%2C%22EMBED%22%2C%22HR%22%2C%22IMG%22%2C%22INPUT%22%2C%22KEYGEN%22%2C%22LINK%22%2C%22META%22%2C%22PARAM%22%2C%22SOURCE%22%2C%22TRACK%22%2C%22WBR%22%5D%3Bfunction%20l(e)%7Breturn%20c(e%2Ca)%7Dvar%20d%3D%5B%22A%22%2C%22TABLE%22%2C%22THEAD%22%2C%22TBODY%22%2C%22TFOOT%22%2C%22TH%22%2C%22TD%22%2C%22IFRAME%22%2C%22SCRIPT%22%2C%22AUDIO%22%2C%22VIDEO%22%5D%3Bfunction%20c(e%2Cn)%7Breturn%20n.indexOf(e.nodeName)%3E%3D0%7Dfunction%20u(e%2Cn)%7Breturn%20e.getElementsByTagName%26%26n.some((function(n)%7Breturn%20e.getElementsByTagName(n).length%7D))%7Dvar%20s%3D%7B%7D%3Bfunction%20p(e)%7Breturn%20e%3Fe.replace(%2F(%5Cn%2B%5Cs*)%2B%2Fg%2C%22%5Cn%22)%3A%22%22%7Dfunction%20f(e)%7Bfor(var%20n%20in%20this.options%3De%2Cthis._keep%3D%5B%5D%2Cthis._remove%3D%5B%5D%2Cthis.blankRule%3D%7Breplacement%3Ae.blankReplacement%7D%2Cthis.keepReplacement%3De.keepReplacement%2Cthis.defaultRule%3D%7Breplacement%3Ae.defaultReplacement%7D%2Cthis.array%3D%5B%5D%2Ce.rules)this.array.push(e.rules%5Bn%5D)%7Dfunction%20m(e%2Cn%2Ct)%7Bfor(var%20r%3D0%3Br%3Ce.length%3Br%2B%2B)%7Bvar%20i%3De%5Br%5D%3Bif(h(i%2Cn%2Ct))return%20i%7D%7Dfunction%20h(e%2Cn%2Ct)%7Bvar%20r%3De.filter%3Bif(%22string%22%3D%3Dtypeof%20r)%7Bif(r%3D%3D%3Dn.nodeName.toLowerCase())return!0%7Delse%20if(Array.isArray(r))%7Bif(r.indexOf(n.nodeName.toLowerCase())%3E-1)return!0%7Delse%7Bif(%22function%22!%3Dtypeof%20r)throw%20new%20TypeError(%22%60filter%60%20needs%20to%20be%20a%20string%2C%20array%2C%20or%20function%22)%3Bif(r.call(e%2Cn%2Ct))return!0%7D%7Dfunction%20g(e)%7Bvar%20n%3De.nextSibling%7C%7Ce.parentNode%3Breturn%20e.parentNode.removeChild(e)%2Cn%7Dfunction%20b(e%2Cn%2Ct)%7Breturn%20e%26%26e.parentNode%3D%3D%3Dn%7C%7Ct(n)%3Fn.nextSibling%7C%7Cn.parentNode%3An.firstChild%7C%7Cn.nextSibling%7C%7Cn.parentNode%7Ds.paragraph%3D%7Bfilter%3A%22p%22%2Creplacement%3Afunction(e)%7Breturn%22%5Cn%5Cn%22%2Be%2B%22%5Cn%5Cn%22%7D%7D%2Cs.lineBreak%3D%7Bfilter%3A%22br%22%2Creplacement%3Afunction(e%2Cn%2Ct)%7Breturn%20t.br%2B%22%5Cn%22%7D%7D%2Cs.heading%3D%7Bfilter%3A%5B%22h1%22%2C%22h2%22%2C%22h3%22%2C%22h4%22%2C%22h5%22%2C%22h6%22%5D%2Creplacement%3Afunction(e%2Cn%2Ct)%7Bvar%20i%3DNumber(n.nodeName.charAt(1))%3Breturn%22setext%22%3D%3D%3Dt.headingStyle%26%26i%3C3%3F%22%5Cn%5Cn%22%2Be%2B%22%5Cn%22%2Br(1%3D%3D%3Di%3F%22%3D%22%3A%22-%22%2Ce.length)%2B%22%5Cn%5Cn%22%3A%22%5Cn%5Cn%22%2Br(%22%23%22%2Ci)%2B%22%20%22%2Be%2B%22%5Cn%5Cn%22%7D%7D%2Cs.blockquote%3D%7Bfilter%3A%22blockquote%22%2Creplacement%3Afunction(e)%7Breturn%22%5Cn%5Cn%22%2B(e%3D(e%3De.replace(%2F%5E%5Cn%2B%7C%5Cn%2B%24%2Fg%2C%22%22)).replace(%2F%5E%2Fgm%2C%22%3E%20%22))%2B%22%5Cn%5Cn%22%7D%7D%2Cs.list%3D%7Bfilter%3A%5B%22ul%22%2C%22ol%22%5D%2Creplacement%3Afunction(e%2Cn)%7Bvar%20t%3Dn.parentNode%3Breturn%22LI%22%3D%3D%3Dt.nodeName%26%26t.lastElementChild%3D%3D%3Dn%3F%22%5Cn%22%2Be%3A%22%5Cn%5Cn%22%2Be%2B%22%5Cn%5Cn%22%7D%7D%2Cs.listItem%3D%7Bfilter%3A%22li%22%2Creplacement%3Afunction(e%2Cn%2Ct)%7Be%3De.replace(%2F%5E%5Cn%2B%2F%2C%22%22).replace(%2F%5Cn%2B%24%2F%2C%22%5Cn%22).replace(%2F%5Cn%2Fgm%2C%22%5Cn%20%20%20%20%22)%3Bvar%20r%3Dt.bulletListMarker%2B%22%20%20%20%22%2Ci%3Dn.parentNode%3Bif(%22OL%22%3D%3D%3Di.nodeName)%7Bvar%20o%3Di.getAttribute(%22start%22)%2Ca%3DArray.prototype.indexOf.call(i.children%2Cn)%3Br%3D(o%3FNumber(o)%2Ba%3Aa%2B1)%2B%22.%20%20%22%7Dreturn%20r%2Be%2B(n.nextSibling%26%26!%2F%5Cn%24%2F.test(e)%3F%22%5Cn%22%3A%22%22)%7D%7D%2Cs.indentedCodeBlock%3D%7Bfilter%3Afunction(e%2Cn)%7Breturn%22indented%22%3D%3D%3Dn.codeBlockStyle%26%26%22PRE%22%3D%3D%3De.nodeName%26%26e.firstChild%26%26%22CODE%22%3D%3D%3De.firstChild.nodeName%7D%2Creplacement%3Afunction(e%2Cn%2Ct)%7Breturn%22%5Cn%5Cn%20%20%20%20%22%2Bn.firstChild.textContent.replace(%2F%5Cn%2Fg%2C%22%5Cn%20%20%20%20%22)%2B%22%5Cn%5Cn%22%7D%7D%2Cs.fencedCodeBlock%3D%7Bfilter%3Afunction(e%2Cn)%7Breturn%22fenced%22%3D%3D%3Dn.codeBlockStyle%26%26%22PRE%22%3D%3D%3De.nodeName%26%26e.firstChild%26%26%22CODE%22%3D%3D%3De.firstChild.nodeName%7D%2Creplacement%3Afunction(e%2Cn%2Ct)%7Bfor(var%20i%2Co%3D((n.firstChild.getAttribute(%22class%22)%7C%7C%22%22).match(%2Flanguage-(%5CS%2B)%2F)%7C%7C%5Bnull%2C%22%22%5D)%5B1%5D%2Ca%3Dn.firstChild.textContent%2Cl%3Dt.fence.charAt(0)%2Cd%3D3%2Cc%3Dnew%20RegExp(%22%5E%22%2Bl%2B%22%7B3%2C%7D%22%2C%22gm%22)%3Bi%3Dc.exec(a)%3B)i%5B0%5D.length%3E%3Dd%26%26(d%3Di%5B0%5D.length%2B1)%3Bvar%20u%3Dr(l%2Cd)%3Breturn%22%5Cn%5Cn%22%2Bu%2Bo%2B%22%5Cn%22%2Ba.replace(%2F%5Cn%24%2F%2C%22%22)%2B%22%5Cn%22%2Bu%2B%22%5Cn%5Cn%22%7D%7D%2Cs.horizontalRule%3D%7Bfilter%3A%22hr%22%2Creplacement%3Afunction(e%2Cn%2Ct)%7Breturn%22%5Cn%5Cn%22%2Bt.hr%2B%22%5Cn%5Cn%22%7D%7D%2Cs.inlineLink%3D%7Bfilter%3Afunction(e%2Cn)%7Breturn%22inlined%22%3D%3D%3Dn.linkStyle%26%26%22A%22%3D%3D%3De.nodeName%26%26e.getAttribute(%22href%22)%7D%2Creplacement%3Afunction(e%2Cn)%7Bvar%20t%3Dn.getAttribute(%22href%22)%2Cr%3Dp(n.getAttribute(%22title%22))%3Breturn%20r%26%26(r%3D'%20%22'%2Br%2B'%22')%2C%22%5B%22%2Be%2B%22%5D(%22%2Bt%2Br%2B%22)%22%7D%7D%2Cs.referenceLink%3D%7Bfilter%3Afunction(e%2Cn)%7Breturn%22referenced%22%3D%3D%3Dn.linkStyle%26%26%22A%22%3D%3D%3De.nodeName%26%26e.getAttribute(%22href%22)%7D%2Creplacement%3Afunction(e%2Cn%2Ct)%7Bvar%20r%2Ci%2Co%3Dn.getAttribute(%22href%22)%2Ca%3Dp(n.getAttribute(%22title%22))%3Bswitch(a%26%26(a%3D'%20%22'%2Ba%2B'%22')%2Ct.linkReferenceStyle)%7Bcase%22collapsed%22%3Ar%3D%22%5B%22%2Be%2B%22%5D%5B%5D%22%2Ci%3D%22%5B%22%2Be%2B%22%5D%3A%20%22%2Bo%2Ba%3Bbreak%3Bcase%22shortcut%22%3Ar%3D%22%5B%22%2Be%2B%22%5D%22%2Ci%3D%22%5B%22%2Be%2B%22%5D%3A%20%22%2Bo%2Ba%3Bbreak%3Bdefault%3Avar%20l%3Dthis.references.length%2B1%3Br%3D%22%5B%22%2Be%2B%22%5D%5B%22%2Bl%2B%22%5D%22%2Ci%3D%22%5B%22%2Bl%2B%22%5D%3A%20%22%2Bo%2Ba%7Dreturn%20this.references.push(i)%2Cr%7D%2Creferences%3A%5B%5D%2Cappend%3Afunction(e)%7Bvar%20n%3D%22%22%3Breturn%20this.references.length%26%26(n%3D%22%5Cn%5Cn%22%2Bthis.references.join(%22%5Cn%22)%2B%22%5Cn%5Cn%22%2Cthis.references%3D%5B%5D)%2Cn%7D%7D%2Cs.emphasis%3D%7Bfilter%3A%5B%22em%22%2C%22i%22%5D%2Creplacement%3Afunction(e%2Cn%2Ct)%7Breturn%20e.trim()%3Ft.emDelimiter%2Be%2Bt.emDelimiter%3A%22%22%7D%7D%2Cs.strong%3D%7Bfilter%3A%5B%22strong%22%2C%22b%22%5D%2Creplacement%3Afunction(e%2Cn%2Ct)%7Breturn%20e.trim()%3Ft.strongDelimiter%2Be%2Bt.strongDelimiter%3A%22%22%7D%7D%2Cs.code%3D%7Bfilter%3Afunction(e)%7Bvar%20n%3De.previousSibling%7C%7Ce.nextSibling%2Ct%3D%22PRE%22%3D%3D%3De.parentNode.nodeName%26%26!n%3Breturn%22CODE%22%3D%3D%3De.nodeName%26%26!t%7D%2Creplacement%3Afunction(e)%7Bif(!e)return%22%22%3Be%3De.replace(%2F%5Cr%3F%5Cn%7C%5Cr%2Fg%2C%22%20%22)%3Bfor(var%20n%3D%2F%5E%60%7C%5E%20.*%3F%5B%5E%20%5D.*%20%24%7C%60%24%2F.test(e)%3F%22%20%22%3A%22%22%2Ct%3D%22%60%22%2Cr%3De.match(%2F%60%2B%2Fgm)%7C%7C%5B%5D%3B-1!%3D%3Dr.indexOf(t)%3B)t%2B%3D%22%60%22%3Breturn%20t%2Bn%2Be%2Bn%2Bt%7D%7D%2Cs.image%3D%7Bfilter%3A%22img%22%2Creplacement%3Afunction(e%2Cn)%7Bvar%20t%3Dp(n.getAttribute(%22alt%22))%2Cr%3Dn.getAttribute(%22src%22)%7C%7C%22%22%2Ci%3Dp(n.getAttribute(%22title%22))%3Breturn%20r%3F%22!%5B%22%2Bt%2B%22%5D(%22%2Br%2B(i%3F'%20%22'%2Bi%2B'%22'%3A%22%22)%2B%22)%22%3A%22%22%7D%7D%2Cf.prototype%3D%7Badd%3Afunction(e%2Cn)%7Bthis.array.unshift(n)%7D%2Ckeep%3Afunction(e)%7Bthis._keep.unshift(%7Bfilter%3Ae%2Creplacement%3Athis.keepReplacement%7D)%7D%2Cremove%3Afunction(e)%7Bthis._remove.unshift(%7Bfilter%3Ae%2Creplacement%3Afunction()%7Breturn%22%22%7D%7D)%7D%2CforNode%3Afunction(e)%7Breturn%20e.isBlank%3Fthis.blankRule%3A(n%3Dm(this.array%2Ce%2Cthis.options))%7C%7C(n%3Dm(this._keep%2Ce%2Cthis.options))%7C%7C(n%3Dm(this._remove%2Ce%2Cthis.options))%3Fn%3Athis.defaultRule%3Bvar%20n%7D%2CforEach%3Afunction(e)%7Bfor(var%20n%3D0%3Bn%3Cthis.array.length%3Bn%2B%2B)e(this.array%5Bn%5D%2Cn)%7D%7D%3Bvar%20v%2Cy%2CC%3D%22undefined%22!%3Dtypeof%20window%3Fwindow%3A%7B%7D%2CN%3Dfunction()%7Bvar%20e%3DC.DOMParser%2Cn%3D!1%3Btry%7B(new%20e).parseFromString(%22%22%2C%22text%2Fhtml%22)%26%26(n%3D!0)%7Dcatch(e)%7B%7Dreturn%20n%7D()%3FC.DOMParser%3A(v%3Dfunction()%7B%7D%2Cfunction()%7Bvar%20e%3D!1%3Btry%7Bdocument.implementation.createHTMLDocument(%22%22).open()%7Dcatch(n)%7Bwindow.ActiveXObject%26%26(e%3D!0)%7Dreturn%20e%7D()%3Fv.prototype.parseFromString%3Dfunction(e)%7Bvar%20n%3Dnew%20window.ActiveXObject(%22htmlfile%22)%3Breturn%20n.designMode%3D%22on%22%2Cn.open()%2Cn.write(e)%2Cn.close()%2Cn%7D%3Av.prototype.parseFromString%3Dfunction(e)%7Bvar%20n%3Ddocument.implementation.createHTMLDocument(%22%22)%3Breturn%20n.open()%2Cn.write(e)%2Cn.close()%2Cn%7D%2Cv)%3Bfunction%20T(e%2Cn)%7Bvar%20t%3Breturn%20function(e)%7Bvar%20n%3De.element%2Ct%3De.isBlock%2Cr%3De.isVoid%2Ci%3De.isPre%7C%7Cfunction(e)%7Breturn%22PRE%22%3D%3D%3De.nodeName%7D%3Bif(n.firstChild%26%26!i(n))%7Bfor(var%20o%3Dnull%2Ca%3D!1%2Cl%3Dnull%2Cd%3Db(l%2Cn%2Ci)%3Bd!%3D%3Dn%3B)%7Bif(3%3D%3D%3Dd.nodeType%7C%7C4%3D%3D%3Dd.nodeType)%7Bvar%20c%3Dd.data.replace(%2F%5B%20%5Cr%5Cn%5Ct%5D%2B%2Fg%2C%22%20%22)%3Bif(o%26%26!%2F%20%24%2F.test(o.data)%7C%7Ca%7C%7C%22%20%22!%3D%3Dc%5B0%5D%7C%7C(c%3Dc.substr(1))%2C!c)%7Bd%3Dg(d)%3Bcontinue%7Dd.data%3Dc%2Co%3Dd%7Delse%7Bif(1!%3D%3Dd.nodeType)%7Bd%3Dg(d)%3Bcontinue%7Dt(d)%7C%7C%22BR%22%3D%3D%3Dd.nodeName%3F(o%26%26(o.data%3Do.data.replace(%2F%20%24%2F%2C%22%22))%2Co%3Dnull%2Ca%3D!1)%3Ar(d)%7C%7Ci(d)%3F(o%3Dnull%2Ca%3D!0)%3Ao%26%26(a%3D!1)%7Dvar%20u%3Db(l%2Cd%2Ci)%3Bl%3Dd%2Cd%3Du%7Do%26%26(o.data%3Do.data.replace(%2F%20%24%2F%2C%22%22)%2Co.data%7C%7Cg(o))%7D%7D(%7Belement%3At%3D%22string%22%3D%3Dtypeof%20e%3F(y%3Dy%7C%7Cnew%20N).parseFromString('%3Cx-turndown%20id%3D%22turndown-root%22%3E'%2Be%2B%22%3C%2Fx-turndown%3E%22%2C%22text%2Fhtml%22).getElementById(%22turndown-root%22)%3Ae.cloneNode(!0)%2CisBlock%3Ao%2CisVoid%3Al%2CisPre%3An.preformattedCode%3FA%3Anull%7D)%2Ct%7Dfunction%20A(e)%7Breturn%22PRE%22%3D%3D%3De.nodeName%7C%7C%22CODE%22%3D%3D%3De.nodeName%7Dfunction%20E(e%2Cn)%7Breturn%20e.isBlock%3Do(e)%2Ce.isCode%3D%22CODE%22%3D%3D%3De.nodeName%7C%7Ce.parentNode.isCode%2Ce.isBlank%3Dfunction(e)%7Breturn!l(e)%26%26!function(e)%7Breturn%20c(e%2Cd)%7D(e)%26%26%2F%5E%5Cs*%24%2Fi.test(e.textContent)%26%26!function(e)%7Breturn%20u(e%2Ca)%7D(e)%26%26!function(e)%7Breturn%20u(e%2Cd)%7D(e)%7D(e)%2Ce.flankingWhitespace%3Dfunction(e%2Cn)%7Bif(e.isBlock%7C%7Cn.preformattedCode%26%26e.isCode)return%7Bleading%3A%22%22%2Ctrailing%3A%22%22%7D%3Bvar%20t%2Cr%3D%7Bleading%3A(t%3De.textContent.match(%2F%5E((%5B%20%5Ct%5Cr%5Cn%5D*)(%5Cs*))%5B%5Cs%5CS%5D*%3F((%5Cs*%3F)(%5B%20%5Ct%5Cr%5Cn%5D*))%24%2F))%5B1%5D%2CleadingAscii%3At%5B2%5D%2CleadingNonAscii%3At%5B3%5D%2Ctrailing%3At%5B4%5D%2CtrailingNonAscii%3At%5B5%5D%2CtrailingAscii%3At%5B6%5D%7D%3Breturn%20r.leadingAscii%26%26w(%22left%22%2Ce%2Cn)%26%26(r.leading%3Dr.leadingNonAscii)%2Cr.trailingAscii%26%26w(%22right%22%2Ce%2Cn)%26%26(r.trailing%3Dr.trailingNonAscii)%2C%7Bleading%3Ar.leading%2Ctrailing%3Ar.trailing%7D%7D(e%2Cn)%2Ce%7Dfunction%20w(e%2Cn%2Ct)%7Bvar%20r%2Ci%2Ca%3Breturn%22left%22%3D%3D%3De%3F(r%3Dn.previousSibling%2Ci%3D%2F%20%24%2F)%3A(r%3Dn.nextSibling%2Ci%3D%2F%5E%20%2F)%2Cr%26%26(3%3D%3D%3Dr.nodeType%3Fa%3Di.test(r.nodeValue)%3At.preformattedCode%26%26%22CODE%22%3D%3D%3Dr.nodeName%3Fa%3D!1%3A1!%3D%3Dr.nodeType%7C%7Co(r)%7C%7C(a%3Di.test(r.textContent)))%2Ca%7Dvar%20R%3DArray.prototype.reduce%2CS%3D%5B%5B%2F%5C%5C%2Fg%2C%22%5C%5C%5C%5C%22%5D%2C%5B%2F%5C*%2Fg%2C%22%5C%5C*%22%5D%2C%5B%2F%5E-%2Fg%2C%22%5C%5C-%22%5D%2C%5B%2F%5E%5C%2B%20%2Fg%2C%22%5C%5C%2B%20%22%5D%2C%5B%2F%5E(%3D%2B)%2Fg%2C%22%5C%5C%241%22%5D%2C%5B%2F%5E(%23%7B1%2C6%7D)%20%2Fg%2C%22%5C%5C%241%20%22%5D%2C%5B%2F%60%2Fg%2C%22%5C%5C%60%22%5D%2C%5B%2F%5E~~~%2Fg%2C%22%5C%5C~~~%22%5D%2C%5B%2F%5C%5B%2Fg%2C%22%5C%5C%5B%22%5D%2C%5B%2F%5C%5D%2Fg%2C%22%5C%5C%5D%22%5D%2C%5B%2F%5E%3E%2Fg%2C%22%5C%5C%3E%22%5D%2C%5B%2F_%2Fg%2C%22%5C%5C_%22%5D%2C%5B%2F%5E(%5Cd%2B)%5C.%20%2Fg%2C%22%241%5C%5C.%20%22%5D%5D%3Bfunction%20k(e)%7Bif(!(this%20instanceof%20k))return%20new%20k(e)%3Bvar%20n%3D%7Brules%3As%2CheadingStyle%3A%22setext%22%2Chr%3A%22*%20*%20*%22%2CbulletListMarker%3A%22*%22%2CcodeBlockStyle%3A%22indented%22%2Cfence%3A%22%60%60%60%22%2CemDelimiter%3A%22_%22%2CstrongDelimiter%3A%22**%22%2ClinkStyle%3A%22inlined%22%2ClinkReferenceStyle%3A%22full%22%2Cbr%3A%22%20%20%22%2CpreformattedCode%3A!1%2CblankReplacement%3Afunction(e%2Cn)%7Breturn%20n.isBlock%3F%22%5Cn%5Cn%22%3A%22%22%7D%2CkeepReplacement%3Afunction(e%2Cn)%7Breturn%20n.isBlock%3F%22%5Cn%5Cn%22%2Bn.outerHTML%2B%22%5Cn%5Cn%22%3An.outerHTML%7D%2CdefaultReplacement%3Afunction(e%2Cn)%7Breturn%20n.isBlock%3F%22%5Cn%5Cn%22%2Be%2B%22%5Cn%5Cn%22%3Ae%7D%7D%3Bthis.options%3Dfunction(e)%7Bfor(var%20n%3D1%3Bn%3Carguments.length%3Bn%2B%2B)%7Bvar%20t%3Darguments%5Bn%5D%3Bfor(var%20r%20in%20t)t.hasOwnProperty(r)%26%26(e%5Br%5D%3Dt%5Br%5D)%7Dreturn%20e%7D(%7B%7D%2Cn%2Ce)%2Cthis.rules%3Dnew%20f(this.options)%7Dfunction%20x(e)%7Bvar%20n%3Dthis%3Breturn%20R.call(e.childNodes%2C(function(e%2Ct)%7Bvar%20r%3D%22%22%3Breturn%203%3D%3D%3D(t%3Dnew%20E(t%2Cn.options)).nodeType%3Fr%3Dt.isCode%3Ft.nodeValue%3An.escape(t.nodeValue)%3A1%3D%3D%3Dt.nodeType%26%26(r%3DB.call(n%2Ct))%2CD(e%2Cr)%7D)%2C%22%22)%7Dfunction%20O(e)%7Bvar%20n%3Dthis%3Breturn%20this.rules.forEach((function(t)%7B%22function%22%3D%3Dtypeof%20t.append%26%26(e%3DD(e%2Ct.append(n.options)))%7D))%2Ce.replace(%2F%5E%5B%5Ct%5Cr%5Cn%5D%2B%2F%2C%22%22).replace(%2F%5B%5Ct%5Cr%5Cn%5Cs%5D%2B%24%2F%2C%22%22)%7Dfunction%20B(e)%7Bvar%20n%3Dthis.rules.forNode(e)%2Ct%3Dx.call(this%2Ce)%2Cr%3De.flankingWhitespace%3Breturn(r.leading%7C%7Cr.trailing)%26%26(t%3Dt.trim())%2Cr.leading%2Bn.replacement(t%2Ce%2Cthis.options)%2Br.trailing%7Dfunction%20D(e%2Cn)%7Bvar%20t%3Dfunction(e)%7Bfor(var%20n%3De.length%3Bn%3E0%26%26%22%5Cn%22%3D%3D%3De%5Bn-1%5D%3B)n--%3Breturn%20e.substring(0%2Cn)%7D(e)%2Cr%3Dn.replace(%2F%5E%5Cn*%2F%2C%22%22)%2Ci%3DMath.max(e.length-t.length%2Cn.length-r.length)%3Breturn%20t%2B%22%5Cn%5Cn%22.substring(0%2Ci)%2Br%7Dk.prototype%3D%7Bturndown%3Afunction(e)%7Bif(!function(e)%7Breturn%20null!%3De%26%26(%22string%22%3D%3Dtypeof%20e%7C%7Ce.nodeType%26%26(1%3D%3D%3De.nodeType%7C%7C9%3D%3D%3De.nodeType%7C%7C11%3D%3D%3De.nodeType))%7D(e))throw%20new%20TypeError(e%2B%22%20is%20not%20a%20string%2C%20or%20an%20element%2Fdocument%2Ffragment%20node.%22)%3Bif(%22%22%3D%3D%3De)return%22%22%3Bvar%20n%3Dx.call(this%2Cnew%20T(e%2Cthis.options))%3Breturn%20O.call(this%2Cn)%7D%2Cuse%3Afunction(e)%7Bif(Array.isArray(e))for(var%20n%3D0%3Bn%3Ce.length%3Bn%2B%2B)this.use(e%5Bn%5D)%3Belse%7Bif(%22function%22!%3Dtypeof%20e)throw%20new%20TypeError(%22plugin%20must%20be%20a%20Function%20or%20an%20Array%20of%20Functions%22)%3Be(this)%7Dreturn%20this%7D%2CaddRule%3Afunction(e%2Cn)%7Breturn%20this.rules.add(e%2Cn)%2Cthis%7D%2Ckeep%3Afunction(e)%7Breturn%20this.rules.keep(e)%2Cthis%7D%2Cremove%3Afunction(e)%7Breturn%20this.rules.remove(e)%2Cthis%7D%2Cescape%3Afunction(e)%7Breturn%20S.reduce((function(e%2Cn)%7Breturn%20e.replace(n%5B0%5D%2Cn%5B1%5D)%7D)%2Ce)%7D%7D%3Bconst%20L%3Dk%7D%2C402%3A(e%2Cn)%3D%3E%7Bn.__esModule%3D!0%2Cn.MarkdownTables%3Dvoid%200%3Bvar%20t%3Dfunction()%7Bfunction%20e()%7B%7Dreturn%20e.tableShouldBeSkipped%3Dfunction(n)%7Breturn!n%7C%7C!n.rows%7C%7C1%3D%3D%3Dn.rows.length%26%26n.rows%5B0%5D.childNodes.length%3C%3D1%7C%7C!!e.nodeContainsTable(n)%7D%2Ce.isHeadingRow%3Dfunction(n)%7Bvar%20t%3Dn.parentNode%2Cr%3D!1%3Breturn%20t%26%26(%22THEAD%22%3D%3D%3Dt.nodeName%3Fr%3D!0%3At.firstChild!%3D%3Dn%3Fr%3D!1%3A(%22TABLE%22%3D%3D%3Dt.nodeName%7C%7Ce.isFirstTbody(t))%26%26(r%3DArray.prototype.every.call(n.childNodes%2C(function(e)%7Breturn%22TH%22%3D%3D%3De.nodeName%7D))))%2Cr%7D%2Ce.isFirstTbody%3Dfunction(e)%7Bvar%20n%3De.previousSibling%2Ct%3D!1%3Breturn%20n%26%26(t%3D!(%22TBODY%22!%3D%3De.nodeName%7C%7Cn%26%26(%22THEAD%22!%3D%3Dn.nodeName%7C%7C!n.textContent%7C%7C!%2F%5E%5Cs*%24%2Fi.test(n.textContent))))%2Ct%7D%2Ce.cell%3Dfunction(n%2Ct%2Cr)%7Bvoid%200%3D%3D%3Dt%26%26(t%3Dnull)%2Cvoid%200%3D%3D%3Dr%26%26(r%3Dnull)%2Cnull%3D%3D%3Dr%26%26null!%3Dt%26%26t.parentNode%26%26(r%3DArray.prototype.indexOf.call(t.parentNode.childNodes%2Ct))%3Bvar%20i%3D%22%20%22%3B0%3D%3D%3Dr%26%26(i%3D%22%7C%20%22)%3Bvar%20o%3Dn.trim().replace(%2F%5Cn%5Cr%2Fg%2C%22%3Cbr%3E%22).replace(%2F%5Cn%2Fg%2C%22%3Cbr%3E%22)%3Bfor(o%3Do.replace(%2F%5C%7C%2B%2Fg%2C%22%5C%5C%7C%22)%3Bo.length%3C3%3B)o%2B%3D%22%20%22%3Breturn%20t%26%26(o%3De.handleColSpan(o%2Ct%2C%22%20%22))%2Ci%2Bo%2B%22%20%7C%22%7D%2Ce.nodeContainsTable%3Dfunction(n)%7Bif(!n.childNodes)return!1%3Bfor(var%20t%3D0%3Bt%3Cn.childNodes.length%3Bt%2B%2B)%7Bvar%20r%3Dn.childNodes%5Bt%5D%3Bif(%22TABLE%22%3D%3D%3Dr.nodeName)return!0%3Bif(e.nodeContainsTable(r))return!0%7Dreturn!1%7D%2Ce.nodeParentTable%3Dfunction(e)%7Bvar%20n%3De.parentNode%3Bif(n)for(%3Bn%26%26%22TABLE%22!%3D%3Dn.nodeName%3B)n%3Dn.parentNode%3Breturn%20n%7D%2Ce.handleColSpan%3Dfunction(e%2Cn%2Ct)%7Bfor(var%20r%3Dn.getAttribute(%22colspan%22)%7C%7C1%2Ci%3D1%3Bi%3Cr%3Bi%2B%2B)e%2B%3D%22%20%7C%20%22%2Bt.repeat(3)%3Breturn%20e%7D%2Ce.tableColCount%3Dfunction(e)%7Bvar%20n%3D0%3Bif(e%26%26e.rows)for(var%20t%3D0%3Bt%3Ce.rows.length%3Bt%2B%2B)%7Bvar%20r%3De.rows%5Bt%5D.childNodes.length%3Br%3En%26%26(n%3Dr)%7Dreturn%20n%7D%2Ce%7D()%2Cr%3Dfunction()%7Bfunction%20e()%7B%7Dreturn%20e.prototype.tables%3Dfunction(e)%7Be.keep((function(e)%7Bvar%20n%3D!1%3Breturn%20e.nodeName%26%26(n%3D%22TABLE%22%3D%3D%3De.nodeName)%2Cn%7D))%3Bvar%20n%2Cr%3D%7BtableCell%3A%7Bfilter%3A%5B%22th%22%2C%22td%22%5D%2Creplacement%3Afunction(e%2Cn)%7Breturn%20t.tableShouldBeSkipped(t.nodeParentTable(n))%3Fe%3At.cell(e%2Cn)%7D%7D%2CtableRow%3A%7Bfilter%3A%22tr%22%2Creplacement%3Afunction(e%2Cn)%7Bvar%20r%3Dt.nodeParentTable(n)%3Bif(t.tableShouldBeSkipped(r))return%20e%3Bvar%20i%3D%22%22%2Co%3D%7Bleft%3A%22%3A--%22%2Cright%3A%22--%3A%22%2Ccenter%3A%22%3A-%3A%22%7D%3Bif(t.isHeadingRow(n))for(var%20a%3Dt.tableColCount(r)%2Cl%3D0%3Bl%3Ca%3Bl%2B%2B)%7Bvar%20d%3Da%3E%3Dn.childNodes.length%3Fnull%3An.childNodes%5Bl%5D%2Cc%3D%22---%22%2Cu%3Dd%3F(d.getAttribute(%22align%22)%7C%7C%22%22).toLowerCase()%3A%22%22%3Bu%26%26(c%3Do%5Bu%5D%7C%7Cc)%2Ci%2B%3Dd%3Ft.cell(c%2Cn.childNodes%5Bl%5D)%3At.cell(c%2Cnull%2Cl)%7Dreturn%22%5Cn%22%2Be%2B(i%3F%22%5Cn%22%2Bi%3A%22%22)%7D%7D%2Ctable%3A%7Bfilter%3Afunction(e)%7Breturn%22TABLE%22%3D%3D%3De.nodeName%7D%2Creplacement%3Afunction(e%2Cn)%7Bif(t.tableShouldBeSkipped(n))return%20e%3Bvar%20r%3D(e%3De.replace(%2F%5Cn%2B%2Fg%2C%22%5Cn%22)).trim().split(%22%5Cn%22)%3Br.length%3E%3D2%26%26(r%3Dr%5B1%5D)%3Bvar%20i%3D0%3D%3D%3Dr.indexOf(%22%7C%20---%22)%2Co%3Dt.tableColCount(n)%2Ca%3D%22%22%3Breturn%20o%26%26!i%26%26(a%3D%22%7C%22%2B%22%20%20%20%20%20%7C%22.repeat(o)%2B%22%5Cn%7C%22%2B%22%20---%20%7C%22.repeat(o))%2C%22%5Cn%5Cn%22%2Ba%2Be%2B%22%5Cn%5Cn%22%7D%7D%2CtableSection%3A%7Bfilter%3A%5B%22thead%22%2C%22tbody%22%2C%22tfoot%22%5D%2Creplacement%3Afunction(e)%7Breturn%20e%7D%7D%7D%3Bfor(n%20in%20r)e.addRule(n%2Cr%5Bn%5D)%7D%2Ce%7D()%3Bn.MarkdownTables%3Dr%7D%7D%2Cr%3D%7B%7D%3Bfunction%20i(e)%7Bvar%20n%3Dr%5Be%5D%3Bif(void%200!%3D%3Dn)return%20n.exports%3Bvar%20o%3Dr%5Be%5D%3D%7Bexports%3A%7B%7D%7D%3Breturn%20t%5Be%5D(o%2Co.exports%2Ci)%2Co.exports%7Di.d%3D(e%2Cn)%3D%3E%7Bfor(var%20t%20in%20n)i.o(n%2Ct)%26%26!i.o(e%2Ct)%26%26Object.defineProperty(e%2Ct%2C%7Benumerable%3A!0%2Cget%3An%5Bt%5D%7D)%7D%2Ci.o%3D(e%2Cn)%3D%3EObject.prototype.hasOwnProperty.call(e%2Cn)%2Ci.r%3De%3D%3E%7B%22undefined%22!%3Dtypeof%20Symbol%26%26Symbol.toStringTag%26%26Object.defineProperty(e%2CSymbol.toStringTag%2C%7Bvalue%3A%22Module%22%7D)%2CObject.defineProperty(e%2C%22__esModule%22%2C%7Bvalue%3A!0%7D)%7D%2Ce%3Di(36)%2Cn%3Di(402)%2Cfunction(t%2Cr%2Ci%2Co)%7Bvar%20a%3DencodeURIComponent(%22${this.vaultName}%22)%2Cl%3DencodeURIComponent(%22${this.notePath}%22)%2Cd%3DencodeURIComponent(%22${this.captureComments}%22)%2Cc%3D%22%22%2Cu%3Dnew%20e.default(%7BheadingStyle%3A%22atx%22%2Chr%3A%22---%22%2CbulletListMarker%3A%22-%22%2CcodeBlockStyle%3A%22fenced%22%2CemDelimiter%3A%22*%22%7D)%2Cs%3Dnew%20n.MarkdownTables%3Bu.use(s.tables)%2Cu.addRule(%22heading_1_update%22%2C%7Bfilter%3A%5B%22h1%22%5D%2Creplacement%3Afunction(e)%7Breturn%22%22.concat(i.h1%2C%22%20%22).concat(e)%7D%7D)%2Cu.addRule(%22heading_2_update%22%2C%7Bfilter%3A%5B%22h2%22%5D%2Creplacement%3Afunction(e)%7Breturn%22%22.concat(i.h2%2C%22%20%22).concat(e)%7D%7D)%2Cu.addRule(%22heading_3_update%22%2C%7Bfilter%3A%5B%22h3%22%5D%2Creplacement%3Afunction(e)%7Breturn%22%22.concat(i.h3%2C%22%20%22).concat(e)%7D%7D)%2Cu.addRule(%22heading_4_update%22%2C%7Bfilter%3A%5B%22h4%22%5D%2Creplacement%3Afunction(e)%7Breturn%22%22.concat(i.h4%2C%22%20%22).concat(e)%7D%7D)%2Cu.addRule(%22heading_5_update%22%2C%7Bfilter%3A%5B%22h5%22%5D%2Creplacement%3Afunction(e)%7Breturn%22%22.concat(i.h5%2C%22%20%22).concat(e)%7D%7D)%2Cu.addRule(%22heading_6_update%22%2C%7Bfilter%3A%5B%22h6%22%5D%2Creplacement%3Afunction(e)%7Breturn%22%22.concat(i.h6%2C%22%20%22).concat(e)%7D%7D)%3Bvar%20p%3Du.turndown(function()%7Bvar%20e%3D%22%22%3Bif(void%200!%3D%3Dwindow.getSelection)%7Bvar%20n%3Dwindow.getSelection()%3Bif(n%26%26n.rangeCount)%7Bfor(var%20t%3Ddocument.createElement(%22div%22)%2Cr%3D0%2Ci%3Dn.rangeCount%3Br%3Ci%3B%2B%2Br)t.appendChild(n.getRangeAt(r).cloneContents())%3Be%3Dt.innerHTML%7D%7Dreturn%20e%7D())%3Bfunction%20f()%7Bvar%20e%3Ddocument.getElementsByClassName(%22obsidian-clipper-modal-overlay%22)%5B0%5D%3Bif(e)%7Bvar%20n%3Ddocument.getElementById(%22obsidian-clipper-comment%22)%3Bc%3Dn.value%2Cn.value%3D%22%22%2Ce.style.display%3D%22none%22%7Dvar%20t%3Ddocument.URL%2Cr%3Ddocument.title%2Ci%3D%22obsidian%3A%2F%2Fobsidian-clipper%3Fvault%3D%22.concat(a%2C%22%26notePath%3D%22).concat(l%2C%22%26url%3D%22).concat(encodeURIComponent(t)%2C%22%26format%3Dmd%26title%3D%22).concat(encodeURIComponent(r)%2C%22%26highlightdata%3D%22).concat(encodeURIComponent(p)%2C%22%26comments%3D%22).concat(encodeURIComponent(c))%3B-1!%3D%3Dnavigator.userAgent.indexOf(%22Chrome%22)%26%26-1!%3D%3Dnavigator.userAgent.indexOf(%22Windows%22)%26%26i.length%3E%3D2e3%26%26alert(%22Chrome%20on%20Windows%20doesn't%20allow%20a%20highlight%20this%20large.%20%22.concat(i.length%2C%22%20characters%20have%20been%20selected%20and%20it%20must%20be%20less%20than%202000%22))%2Cfunction(e)%7Breturn-1!%3D%3Dnavigator.userAgent.indexOf(%22Chrome%22)%26%26-1!%3D%3Dnavigator.userAgent.indexOf(%22Windows%22)%26%26e.length%3E%3D2e3%26%26(alert(%22Chrome%20on%20Windows%20doesn't%20allow%20a%20highlight%20this%20large.%5Cn%20%22.concat(e.length%2C%22%20characters%20have%20been%20selected%20and%20it%20must%20be%20less%20than%202000.%20%5Cn%5Cn%20Firefox%20on%20Windows%20doesn't%20seem%20to%20have%20this%20same%20problem.%22))%2C!0)%7D(i)%7C%7C(document.location.href%3Di)%7D%22true%22%3D%3D%3Dd%3Ffunction()%7Bvar%20e%2Cn%3Ddocument.getElementsByClassName(%22obsidian-clipper-modal-overlay%22)%5B0%5D%3Bif(n)n.style.display%3D%22block%22%3Belse%7Bvar%20t%3Ddocument.createElement(%22style%22)%2Cr%3Ddocument.createTextNode(%22%5Cn.obsidian-clipper-modal%20%7B%5Cn%5Ctz-index%3A%2010000%3B%5Cn%5Ctposition%3A%20fixed%3B%5Cn%5Cttop%3A%2050%25%3B%5Cn%5Ctleft%3A%2050%25%3B%5Cn%5Cttransform%3A%20translate(-50%25%2C%20-50%25)%3B%5Cn%5Ctdisplay%3A%20flex%3B%5Cn%20%20flex-direction%3A%20column%3B%5Cn%20%20gap%3A%200.4rem%3B%5Cn%20%20width%3A%20450px%3B%5Cn%20%20padding%3A%201.3rem%3B%5Cn%20%20background-color%3A%20white%3B%5Cn%20%20border%3A%201px%20solid%20%23ddd%3B%5Cn%20%20border-radius%3A%2015px%3B%5Cn%7D%5Cn.obsidian-clipper-modal%20.flex%20%7B%5Cn%20%20display%3A%20flex%3B%5Cn%20%20align-items%3A%20center%3B%5Cn%20%20justify-content%3A%20space-between%3B%5Cn%7D%5Cn%5Cn.obsidian-clipper-modal%20input%20%7B%5Cn%20%20padding%3A%200.7rem%201rem%3B%5Cn%20%20border%3A%201px%20solid%20%23ddd%3B%5Cn%20%20border-radius%3A%205px%3B%5Cn%20%20font-size%3A%200.9em%3B%5Cn%7D%5Cn%5Cn.obsidian-clipper-modal%20p%20%7B%5Cn%20%20font-size%3A%200.9rem%3B%5Cn%20%20color%3A%20%23777%3B%5Cn%20%20margin%3A%200.4rem%200%200.2rem%3B%5Cn%7D%5Cn%5Cn.obsidian-clipper-modal%20label%20%7B%5Cndisplay%3A%20block%3B%20%5Cnmargin-bottom%3A%200.5rem%3B%20%5Cncolor%3A%20%23111827%3B%20%5Cnfont-size%3A%200.875rem%3B%5Cnline-height%3A%201.25rem%3B%20%5Cnfont-weight%3A%20500%3B%5Cn%7D%5Cn%5Cn.obsidian-clipper-modal%20textarea%20%7B%5Cn%5Ctdisplay%3A%20block%3B%20!important%3B%20%5Cn%5Ctpadding%3A%200.625rem%20!important%3B%20%5Cn%5Ctbackground-color%3A%20%23F9FAFB%20!important%3B%20%5Cn%5Ctcolor%3A%20%23111827%20!important%3B%20%5Cn%5Ctfont-size%3A%200.875rem%20!important%3B%20%5Cn%5Ctline-height%3A%201.25rem%20!important%3B%20%5Cn%20%5Ctwidth%3A%20100%25%20!important%3B%20%5Cn%5Ctborder-radius%3A%200.5rem%20!important%3B%20%5Cn%5Ctborder-width%3A%201px%20!important%3B%20%5Cn%5Ctborder-color%3A%20%23D1D5DB%20!important%3B%20%5Cn%7D%5Cn%5Cn.obsidian-clipper-modal%20button%20%7B%5Cn%5Ctpadding-top%3A%200.625rem%20!important%3B%5Cnpadding-bottom%3A%200.625rem%20!important%3B%5Cnpadding-left%3A%201.25rem%20!important%3B%5Cnpadding-right%3A%201.25rem%20!important%3B%5Cnmargin-right%3A%200.5rem%20!important%3B%5Cnmargin-bottom%3A%200.5rem%20!important%3B%5Cnbackground-color%3A%20%231F2937%20!important%3B%5Cncolor%3A%20%23ffffff%20!important%3B%5Cnfont-size%3A%200.875rem%20!important%3B%5Cnline-height%3A%201.25rem%20!important%3B%5Cnfont-weight%3A%20500%20!important%3B%5Cnborder-radius%3A%200.5rem%20!important%3B%5Cn%7D%5Cn%5Cn.obsidian-clipper-modal-overlay%20%7B%5Cn%20%20background%3A%20rgba(0%2C%200%2C%200%2C%200.6)%3B%5Cn%20%20position%3A%20fixed%3B%5Cn%20%20top%3A%200%3B%5Cn%20%20left%3A%200%3B%5Cn%20%20right%3A%200%3B%5Cn%20%20bottom%3A%200%3B%5Cn%20%20z-index%3A%209999%3B%5Cn%7D%5Cn%5Cn%22)%3Bt.appendChild(r)%2Cdocument.getElementsByTagName(%22head%22)%5B0%5D.appendChild(t)%3Bvar%20i%3Ddocument.createElement(%22div%22)%2Co%3Ddocument.createElement(%22div%22)%3Bo.innerHTML%3D'%5Cn%5Ct%5Ct%3Cdiv%3E%5Cn%5Ct%5Ct%5Ct%3Clabel%3EObsidian%20Clipper%3C%2Flabel%3E%5Cn%5Ct%5Ct%5Ct%3Ctextarea%20id%3D%22obsidian-clipper-comment%22%20rows%3D%226%22%5Ctplaceholder%3D%22Add%20your%20thoughts...%22%3E%3C%2Ftextarea%3E%5Cn%5Ct%5Ct%3C%2Fdiv%3E'%3Bvar%20a%3Ddocument.createElement(%22button%22)%3Ba.appendChild(document.createTextNode(%22Submit%22))%2Ca.addEventListener(%22click%22%2Cf%2C!1)%2Co.appendChild(a)%2Co.classList.add(%22obsidian-clipper-modal%22)%2Ci.classList.add(%22obsidian-clipper-modal-overlay%22)%2Ci.appendChild(o)%2Cdocument.body.appendChild(i)%2Cnull%3D%3D%3D(e%3Ddocument.getElementById(%22obsidian-clipper-comment%22))%7C%7Cvoid%200%3D%3D%3De%7C%7Ce.focus()%7D%7D()%3Af()%7D(0%2C0%2C%7Bh1%3A%22${this.markdownSettings.h1}%22%2Ch2%3A%22${this.markdownSettings.h2}%22%2Ch3%3A%22${this.markdownSettings.h3}%22%2Ch4%3A%22${this.markdownSettings.h4}%22%2Ch5%3A%22${this.markdownSettings.h5}%22%2Ch6%3A%22${this.markdownSettings.h6}%22%7D)%7D)()%3B%7D)()`;
+    return `javascript:(function()%7B(()%3D%3E%7B%22use%20strict%22%3Bvar%20e%2Cn%2Ct%3D%7B36%3A(e%2Cn%2Ct)%3D%3E%7Bfunction%20r(e%2Cn)%7Breturn%20Array(n%2B1).join(e)%7Dt.r(n)%2Ct.d(n%2C%7Bdefault%3A()%3D%3EL%7D)%3Bvar%20i%3D%5B%22ADDRESS%22%2C%22ARTICLE%22%2C%22ASIDE%22%2C%22AUDIO%22%2C%22BLOCKQUOTE%22%2C%22BODY%22%2C%22CANVAS%22%2C%22CENTER%22%2C%22DD%22%2C%22DIR%22%2C%22DIV%22%2C%22DL%22%2C%22DT%22%2C%22FIELDSET%22%2C%22FIGCAPTION%22%2C%22FIGURE%22%2C%22FOOTER%22%2C%22FORM%22%2C%22FRAMESET%22%2C%22H1%22%2C%22H2%22%2C%22H3%22%2C%22H4%22%2C%22H5%22%2C%22H6%22%2C%22HEADER%22%2C%22HGROUP%22%2C%22HR%22%2C%22HTML%22%2C%22ISINDEX%22%2C%22LI%22%2C%22MAIN%22%2C%22MENU%22%2C%22NAV%22%2C%22NOFRAMES%22%2C%22NOSCRIPT%22%2C%22OL%22%2C%22OUTPUT%22%2C%22P%22%2C%22PRE%22%2C%22SECTION%22%2C%22TABLE%22%2C%22TBODY%22%2C%22TD%22%2C%22TFOOT%22%2C%22TH%22%2C%22THEAD%22%2C%22TR%22%2C%22UL%22%5D%3Bfunction%20o(e)%7Breturn%20c(e%2Ci)%7Dvar%20a%3D%5B%22AREA%22%2C%22BASE%22%2C%22BR%22%2C%22COL%22%2C%22COMMAND%22%2C%22EMBED%22%2C%22HR%22%2C%22IMG%22%2C%22INPUT%22%2C%22KEYGEN%22%2C%22LINK%22%2C%22META%22%2C%22PARAM%22%2C%22SOURCE%22%2C%22TRACK%22%2C%22WBR%22%5D%3Bfunction%20l(e)%7Breturn%20c(e%2Ca)%7Dvar%20d%3D%5B%22A%22%2C%22TABLE%22%2C%22THEAD%22%2C%22TBODY%22%2C%22TFOOT%22%2C%22TH%22%2C%22TD%22%2C%22IFRAME%22%2C%22SCRIPT%22%2C%22AUDIO%22%2C%22VIDEO%22%5D%3Bfunction%20c(e%2Cn)%7Breturn%20n.indexOf(e.nodeName)%3E%3D0%7Dfunction%20u(e%2Cn)%7Breturn%20e.getElementsByTagName%26%26n.some((function(n)%7Breturn%20e.getElementsByTagName(n).length%7D))%7Dvar%20s%3D%7B%7D%3Bfunction%20p(e)%7Breturn%20e%3Fe.replace(%2F(%5Cn%2B%5Cs*)%2B%2Fg%2C%22%5Cn%22)%3A%22%22%7Dfunction%20f(e)%7Bfor(var%20n%20in%20this.options%3De%2Cthis._keep%3D%5B%5D%2Cthis._remove%3D%5B%5D%2Cthis.blankRule%3D%7Breplacement%3Ae.blankReplacement%7D%2Cthis.keepReplacement%3De.keepReplacement%2Cthis.defaultRule%3D%7Breplacement%3Ae.defaultReplacement%7D%2Cthis.array%3D%5B%5D%2Ce.rules)this.array.push(e.rules%5Bn%5D)%7Dfunction%20m(e%2Cn%2Ct)%7Bfor(var%20r%3D0%3Br%3Ce.length%3Br%2B%2B)%7Bvar%20i%3De%5Br%5D%3Bif(h(i%2Cn%2Ct))return%20i%7D%7Dfunction%20h(e%2Cn%2Ct)%7Bvar%20r%3De.filter%3Bif(%22string%22%3D%3Dtypeof%20r)%7Bif(r%3D%3D%3Dn.nodeName.toLowerCase())return!0%7Delse%20if(Array.isArray(r))%7Bif(r.indexOf(n.nodeName.toLowerCase())%3E-1)return!0%7Delse%7Bif(%22function%22!%3Dtypeof%20r)throw%20new%20TypeError(%22%60filter%60%20needs%20to%20be%20a%20string%2C%20array%2C%20or%20function%22)%3Bif(r.call(e%2Cn%2Ct))return!0%7D%7Dfunction%20g(e)%7Bvar%20n%3De.nextSibling%7C%7Ce.parentNode%3Breturn%20e.parentNode.removeChild(e)%2Cn%7Dfunction%20b(e%2Cn%2Ct)%7Breturn%20e%26%26e.parentNode%3D%3D%3Dn%7C%7Ct(n)%3Fn.nextSibling%7C%7Cn.parentNode%3An.firstChild%7C%7Cn.nextSibling%7C%7Cn.parentNode%7Ds.paragraph%3D%7Bfilter%3A%22p%22%2Creplacement%3Afunction(e)%7Breturn%22%5Cn%5Cn%22%2Be%2B%22%5Cn%5Cn%22%7D%7D%2Cs.lineBreak%3D%7Bfilter%3A%22br%22%2Creplacement%3Afunction(e%2Cn%2Ct)%7Breturn%20t.br%2B%22%5Cn%22%7D%7D%2Cs.heading%3D%7Bfilter%3A%5B%22h1%22%2C%22h2%22%2C%22h3%22%2C%22h4%22%2C%22h5%22%2C%22h6%22%5D%2Creplacement%3Afunction(e%2Cn%2Ct)%7Bvar%20i%3DNumber(n.nodeName.charAt(1))%3Breturn%22setext%22%3D%3D%3Dt.headingStyle%26%26i%3C3%3F%22%5Cn%5Cn%22%2Be%2B%22%5Cn%22%2Br(1%3D%3D%3Di%3F%22%3D%22%3A%22-%22%2Ce.length)%2B%22%5Cn%5Cn%22%3A%22%5Cn%5Cn%22%2Br(%22%23%22%2Ci)%2B%22%20%22%2Be%2B%22%5Cn%5Cn%22%7D%7D%2Cs.blockquote%3D%7Bfilter%3A%22blockquote%22%2Creplacement%3Afunction(e)%7Breturn%22%5Cn%5Cn%22%2B(e%3D(e%3De.replace(%2F%5E%5Cn%2B%7C%5Cn%2B%24%2Fg%2C%22%22)).replace(%2F%5E%2Fgm%2C%22%3E%20%22))%2B%22%5Cn%5Cn%22%7D%7D%2Cs.list%3D%7Bfilter%3A%5B%22ul%22%2C%22ol%22%5D%2Creplacement%3Afunction(e%2Cn)%7Bvar%20t%3Dn.parentNode%3Breturn%22LI%22%3D%3D%3Dt.nodeName%26%26t.lastElementChild%3D%3D%3Dn%3F%22%5Cn%22%2Be%3A%22%5Cn%5Cn%22%2Be%2B%22%5Cn%5Cn%22%7D%7D%2Cs.listItem%3D%7Bfilter%3A%22li%22%2Creplacement%3Afunction(e%2Cn%2Ct)%7Be%3De.replace(%2F%5E%5Cn%2B%2F%2C%22%22).replace(%2F%5Cn%2B%24%2F%2C%22%5Cn%22).replace(%2F%5Cn%2Fgm%2C%22%5Cn%20%20%20%20%22)%3Bvar%20r%3Dt.bulletListMarker%2B%22%20%20%20%22%2Ci%3Dn.parentNode%3Bif(%22OL%22%3D%3D%3Di.nodeName)%7Bvar%20o%3Di.getAttribute(%22start%22)%2Ca%3DArray.prototype.indexOf.call(i.children%2Cn)%3Br%3D(o%3FNumber(o)%2Ba%3Aa%2B1)%2B%22.%20%20%22%7Dreturn%20r%2Be%2B(n.nextSibling%26%26!%2F%5Cn%24%2F.test(e)%3F%22%5Cn%22%3A%22%22)%7D%7D%2Cs.indentedCodeBlock%3D%7Bfilter%3Afunction(e%2Cn)%7Breturn%22indented%22%3D%3D%3Dn.codeBlockStyle%26%26%22PRE%22%3D%3D%3De.nodeName%26%26e.firstChild%26%26%22CODE%22%3D%3D%3De.firstChild.nodeName%7D%2Creplacement%3Afunction(e%2Cn%2Ct)%7Breturn%22%5Cn%5Cn%20%20%20%20%22%2Bn.firstChild.textContent.replace(%2F%5Cn%2Fg%2C%22%5Cn%20%20%20%20%22)%2B%22%5Cn%5Cn%22%7D%7D%2Cs.fencedCodeBlock%3D%7Bfilter%3Afunction(e%2Cn)%7Breturn%22fenced%22%3D%3D%3Dn.codeBlockStyle%26%26%22PRE%22%3D%3D%3De.nodeName%26%26e.firstChild%26%26%22CODE%22%3D%3D%3De.firstChild.nodeName%7D%2Creplacement%3Afunction(e%2Cn%2Ct)%7Bfor(var%20i%2Co%3D((n.firstChild.getAttribute(%22class%22)%7C%7C%22%22).match(%2Flanguage-(%5CS%2B)%2F)%7C%7C%5Bnull%2C%22%22%5D)%5B1%5D%2Ca%3Dn.firstChild.textContent%2Cl%3Dt.fence.charAt(0)%2Cd%3D3%2Cc%3Dnew%20RegExp(%22%5E%22%2Bl%2B%22%7B3%2C%7D%22%2C%22gm%22)%3Bi%3Dc.exec(a)%3B)i%5B0%5D.length%3E%3Dd%26%26(d%3Di%5B0%5D.length%2B1)%3Bvar%20u%3Dr(l%2Cd)%3Breturn%22%5Cn%5Cn%22%2Bu%2Bo%2B%22%5Cn%22%2Ba.replace(%2F%5Cn%24%2F%2C%22%22)%2B%22%5Cn%22%2Bu%2B%22%5Cn%5Cn%22%7D%7D%2Cs.horizontalRule%3D%7Bfilter%3A%22hr%22%2Creplacement%3Afunction(e%2Cn%2Ct)%7Breturn%22%5Cn%5Cn%22%2Bt.hr%2B%22%5Cn%5Cn%22%7D%7D%2Cs.inlineLink%3D%7Bfilter%3Afunction(e%2Cn)%7Breturn%22inlined%22%3D%3D%3Dn.linkStyle%26%26%22A%22%3D%3D%3De.nodeName%26%26e.getAttribute(%22href%22)%7D%2Creplacement%3Afunction(e%2Cn)%7Bvar%20t%3Dn.getAttribute(%22href%22)%2Cr%3Dp(n.getAttribute(%22title%22))%3Breturn%20r%26%26(r%3D'%20%22'%2Br%2B'%22')%2C%22%5B%22%2Be%2B%22%5D(%22%2Bt%2Br%2B%22)%22%7D%7D%2Cs.referenceLink%3D%7Bfilter%3Afunction(e%2Cn)%7Breturn%22referenced%22%3D%3D%3Dn.linkStyle%26%26%22A%22%3D%3D%3De.nodeName%26%26e.getAttribute(%22href%22)%7D%2Creplacement%3Afunction(e%2Cn%2Ct)%7Bvar%20r%2Ci%2Co%3Dn.getAttribute(%22href%22)%2Ca%3Dp(n.getAttribute(%22title%22))%3Bswitch(a%26%26(a%3D'%20%22'%2Ba%2B'%22')%2Ct.linkReferenceStyle)%7Bcase%22collapsed%22%3Ar%3D%22%5B%22%2Be%2B%22%5D%5B%5D%22%2Ci%3D%22%5B%22%2Be%2B%22%5D%3A%20%22%2Bo%2Ba%3Bbreak%3Bcase%22shortcut%22%3Ar%3D%22%5B%22%2Be%2B%22%5D%22%2Ci%3D%22%5B%22%2Be%2B%22%5D%3A%20%22%2Bo%2Ba%3Bbreak%3Bdefault%3Avar%20l%3Dthis.references.length%2B1%3Br%3D%22%5B%22%2Be%2B%22%5D%5B%22%2Bl%2B%22%5D%22%2Ci%3D%22%5B%22%2Bl%2B%22%5D%3A%20%22%2Bo%2Ba%7Dreturn%20this.references.push(i)%2Cr%7D%2Creferences%3A%5B%5D%2Cappend%3Afunction(e)%7Bvar%20n%3D%22%22%3Breturn%20this.references.length%26%26(n%3D%22%5Cn%5Cn%22%2Bthis.references.join(%22%5Cn%22)%2B%22%5Cn%5Cn%22%2Cthis.references%3D%5B%5D)%2Cn%7D%7D%2Cs.emphasis%3D%7Bfilter%3A%5B%22em%22%2C%22i%22%5D%2Creplacement%3Afunction(e%2Cn%2Ct)%7Breturn%20e.trim()%3Ft.emDelimiter%2Be%2Bt.emDelimiter%3A%22%22%7D%7D%2Cs.strong%3D%7Bfilter%3A%5B%22strong%22%2C%22b%22%5D%2Creplacement%3Afunction(e%2Cn%2Ct)%7Breturn%20e.trim()%3Ft.strongDelimiter%2Be%2Bt.strongDelimiter%3A%22%22%7D%7D%2Cs.code%3D%7Bfilter%3Afunction(e)%7Bvar%20n%3De.previousSibling%7C%7Ce.nextSibling%2Ct%3D%22PRE%22%3D%3D%3De.parentNode.nodeName%26%26!n%3Breturn%22CODE%22%3D%3D%3De.nodeName%26%26!t%7D%2Creplacement%3Afunction(e)%7Bif(!e)return%22%22%3Be%3De.replace(%2F%5Cr%3F%5Cn%7C%5Cr%2Fg%2C%22%20%22)%3Bfor(var%20n%3D%2F%5E%60%7C%5E%20.*%3F%5B%5E%20%5D.*%20%24%7C%60%24%2F.test(e)%3F%22%20%22%3A%22%22%2Ct%3D%22%60%22%2Cr%3De.match(%2F%60%2B%2Fgm)%7C%7C%5B%5D%3B-1!%3D%3Dr.indexOf(t)%3B)t%2B%3D%22%60%22%3Breturn%20t%2Bn%2Be%2Bn%2Bt%7D%7D%2Cs.image%3D%7Bfilter%3A%22img%22%2Creplacement%3Afunction(e%2Cn)%7Bvar%20t%3Dp(n.getAttribute(%22alt%22))%2Cr%3Dn.getAttribute(%22src%22)%7C%7C%22%22%2Ci%3Dp(n.getAttribute(%22title%22))%3Breturn%20r%3F%22!%5B%22%2Bt%2B%22%5D(%22%2Br%2B(i%3F'%20%22'%2Bi%2B'%22'%3A%22%22)%2B%22)%22%3A%22%22%7D%7D%2Cf.prototype%3D%7Badd%3Afunction(e%2Cn)%7Bthis.array.unshift(n)%7D%2Ckeep%3Afunction(e)%7Bthis._keep.unshift(%7Bfilter%3Ae%2Creplacement%3Athis.keepReplacement%7D)%7D%2Cremove%3Afunction(e)%7Bthis._remove.unshift(%7Bfilter%3Ae%2Creplacement%3Afunction()%7Breturn%22%22%7D%7D)%7D%2CforNode%3Afunction(e)%7Breturn%20e.isBlank%3Fthis.blankRule%3A(n%3Dm(this.array%2Ce%2Cthis.options))%7C%7C(n%3Dm(this._keep%2Ce%2Cthis.options))%7C%7C(n%3Dm(this._remove%2Ce%2Cthis.options))%3Fn%3Athis.defaultRule%3Bvar%20n%7D%2CforEach%3Afunction(e)%7Bfor(var%20n%3D0%3Bn%3Cthis.array.length%3Bn%2B%2B)e(this.array%5Bn%5D%2Cn)%7D%7D%3Bvar%20v%2Cy%2CC%3D%22undefined%22!%3Dtypeof%20window%3Fwindow%3A%7B%7D%2CN%3Dfunction()%7Bvar%20e%3DC.DOMParser%2Cn%3D!1%3Btry%7B(new%20e).parseFromString(%22%22%2C%22text%2Fhtml%22)%26%26(n%3D!0)%7Dcatch(e)%7B%7Dreturn%20n%7D()%3FC.DOMParser%3A(v%3Dfunction()%7B%7D%2Cfunction()%7Bvar%20e%3D!1%3Btry%7Bdocument.implementation.createHTMLDocument(%22%22).open()%7Dcatch(n)%7Bwindow.ActiveXObject%26%26(e%3D!0)%7Dreturn%20e%7D()%3Fv.prototype.parseFromString%3Dfunction(e)%7Bvar%20n%3Dnew%20window.ActiveXObject(%22htmlfile%22)%3Breturn%20n.designMode%3D%22on%22%2Cn.open()%2Cn.write(e)%2Cn.close()%2Cn%7D%3Av.prototype.parseFromString%3Dfunction(e)%7Bvar%20n%3Ddocument.implementation.createHTMLDocument(%22%22)%3Breturn%20n.open()%2Cn.write(e)%2Cn.close()%2Cn%7D%2Cv)%3Bfunction%20T(e%2Cn)%7Bvar%20t%3Breturn%20function(e)%7Bvar%20n%3De.element%2Ct%3De.isBlock%2Cr%3De.isVoid%2Ci%3De.isPre%7C%7Cfunction(e)%7Breturn%22PRE%22%3D%3D%3De.nodeName%7D%3Bif(n.firstChild%26%26!i(n))%7Bfor(var%20o%3Dnull%2Ca%3D!1%2Cl%3Dnull%2Cd%3Db(l%2Cn%2Ci)%3Bd!%3D%3Dn%3B)%7Bif(3%3D%3D%3Dd.nodeType%7C%7C4%3D%3D%3Dd.nodeType)%7Bvar%20c%3Dd.data.replace(%2F%5B%20%5Cr%5Cn%5Ct%5D%2B%2Fg%2C%22%20%22)%3Bif(o%26%26!%2F%20%24%2F.test(o.data)%7C%7Ca%7C%7C%22%20%22!%3D%3Dc%5B0%5D%7C%7C(c%3Dc.substr(1))%2C!c)%7Bd%3Dg(d)%3Bcontinue%7Dd.data%3Dc%2Co%3Dd%7Delse%7Bif(1!%3D%3Dd.nodeType)%7Bd%3Dg(d)%3Bcontinue%7Dt(d)%7C%7C%22BR%22%3D%3D%3Dd.nodeName%3F(o%26%26(o.data%3Do.data.replace(%2F%20%24%2F%2C%22%22))%2Co%3Dnull%2Ca%3D!1)%3Ar(d)%7C%7Ci(d)%3F(o%3Dnull%2Ca%3D!0)%3Ao%26%26(a%3D!1)%7Dvar%20u%3Db(l%2Cd%2Ci)%3Bl%3Dd%2Cd%3Du%7Do%26%26(o.data%3Do.data.replace(%2F%20%24%2F%2C%22%22)%2Co.data%7C%7Cg(o))%7D%7D(%7Belement%3At%3D%22string%22%3D%3Dtypeof%20e%3F(y%3Dy%7C%7Cnew%20N).parseFromString('%3Cx-turndown%20id%3D%22turndown-root%22%3E'%2Be%2B%22%3C%2Fx-turndown%3E%22%2C%22text%2Fhtml%22).getElementById(%22turndown-root%22)%3Ae.cloneNode(!0)%2CisBlock%3Ao%2CisVoid%3Al%2CisPre%3An.preformattedCode%3FA%3Anull%7D)%2Ct%7Dfunction%20A(e)%7Breturn%22PRE%22%3D%3D%3De.nodeName%7C%7C%22CODE%22%3D%3D%3De.nodeName%7Dfunction%20w(e%2Cn)%7Breturn%20e.isBlock%3Do(e)%2Ce.isCode%3D%22CODE%22%3D%3D%3De.nodeName%7C%7Ce.parentNode.isCode%2Ce.isBlank%3Dfunction(e)%7Breturn!l(e)%26%26!function(e)%7Breturn%20c(e%2Cd)%7D(e)%26%26%2F%5E%5Cs*%24%2Fi.test(e.textContent)%26%26!function(e)%7Breturn%20u(e%2Ca)%7D(e)%26%26!function(e)%7Breturn%20u(e%2Cd)%7D(e)%7D(e)%2Ce.flankingWhitespace%3Dfunction(e%2Cn)%7Bif(e.isBlock%7C%7Cn.preformattedCode%26%26e.isCode)return%7Bleading%3A%22%22%2Ctrailing%3A%22%22%7D%3Bvar%20t%2Cr%3D%7Bleading%3A(t%3De.textContent.match(%2F%5E((%5B%20%5Ct%5Cr%5Cn%5D*)(%5Cs*))%5B%5Cs%5CS%5D*%3F((%5Cs*%3F)(%5B%20%5Ct%5Cr%5Cn%5D*))%24%2F))%5B1%5D%2CleadingAscii%3At%5B2%5D%2CleadingNonAscii%3At%5B3%5D%2Ctrailing%3At%5B4%5D%2CtrailingNonAscii%3At%5B5%5D%2CtrailingAscii%3At%5B6%5D%7D%3Breturn%20r.leadingAscii%26%26E(%22left%22%2Ce%2Cn)%26%26(r.leading%3Dr.leadingNonAscii)%2Cr.trailingAscii%26%26E(%22right%22%2Ce%2Cn)%26%26(r.trailing%3Dr.trailingNonAscii)%2C%7Bleading%3Ar.leading%2Ctrailing%3Ar.trailing%7D%7D(e%2Cn)%2Ce%7Dfunction%20E(e%2Cn%2Ct)%7Bvar%20r%2Ci%2Ca%3Breturn%22left%22%3D%3D%3De%3F(r%3Dn.previousSibling%2Ci%3D%2F%20%24%2F)%3A(r%3Dn.nextSibling%2Ci%3D%2F%5E%20%2F)%2Cr%26%26(3%3D%3D%3Dr.nodeType%3Fa%3Di.test(r.nodeValue)%3At.preformattedCode%26%26%22CODE%22%3D%3D%3Dr.nodeName%3Fa%3D!1%3A1!%3D%3Dr.nodeType%7C%7Co(r)%7C%7C(a%3Di.test(r.textContent)))%2Ca%7Dvar%20R%3DArray.prototype.reduce%2CS%3D%5B%5B%2F%5C%5C%2Fg%2C%22%5C%5C%5C%5C%22%5D%2C%5B%2F%5C*%2Fg%2C%22%5C%5C*%22%5D%2C%5B%2F%5E-%2Fg%2C%22%5C%5C-%22%5D%2C%5B%2F%5E%5C%2B%20%2Fg%2C%22%5C%5C%2B%20%22%5D%2C%5B%2F%5E(%3D%2B)%2Fg%2C%22%5C%5C%241%22%5D%2C%5B%2F%5E(%23%7B1%2C6%7D)%20%2Fg%2C%22%5C%5C%241%20%22%5D%2C%5B%2F%60%2Fg%2C%22%5C%5C%60%22%5D%2C%5B%2F%5E~~~%2Fg%2C%22%5C%5C~~~%22%5D%2C%5B%2F%5C%5B%2Fg%2C%22%5C%5C%5B%22%5D%2C%5B%2F%5C%5D%2Fg%2C%22%5C%5C%5D%22%5D%2C%5B%2F%5E%3E%2Fg%2C%22%5C%5C%3E%22%5D%2C%5B%2F_%2Fg%2C%22%5C%5C_%22%5D%2C%5B%2F%5E(%5Cd%2B)%5C.%20%2Fg%2C%22%241%5C%5C.%20%22%5D%5D%3Bfunction%20k(e)%7Bif(!(this%20instanceof%20k))return%20new%20k(e)%3Bvar%20n%3D%7Brules%3As%2CheadingStyle%3A%22setext%22%2Chr%3A%22*%20*%20*%22%2CbulletListMarker%3A%22*%22%2CcodeBlockStyle%3A%22indented%22%2Cfence%3A%22%60%60%60%22%2CemDelimiter%3A%22_%22%2CstrongDelimiter%3A%22**%22%2ClinkStyle%3A%22inlined%22%2ClinkReferenceStyle%3A%22full%22%2Cbr%3A%22%20%20%22%2CpreformattedCode%3A!1%2CblankReplacement%3Afunction(e%2Cn)%7Breturn%20n.isBlock%3F%22%5Cn%5Cn%22%3A%22%22%7D%2CkeepReplacement%3Afunction(e%2Cn)%7Breturn%20n.isBlock%3F%22%5Cn%5Cn%22%2Bn.outerHTML%2B%22%5Cn%5Cn%22%3An.outerHTML%7D%2CdefaultReplacement%3Afunction(e%2Cn)%7Breturn%20n.isBlock%3F%22%5Cn%5Cn%22%2Be%2B%22%5Cn%5Cn%22%3Ae%7D%7D%3Bthis.options%3Dfunction(e)%7Bfor(var%20n%3D1%3Bn%3Carguments.length%3Bn%2B%2B)%7Bvar%20t%3Darguments%5Bn%5D%3Bfor(var%20r%20in%20t)t.hasOwnProperty(r)%26%26(e%5Br%5D%3Dt%5Br%5D)%7Dreturn%20e%7D(%7B%7D%2Cn%2Ce)%2Cthis.rules%3Dnew%20f(this.options)%7Dfunction%20x(e)%7Bvar%20n%3Dthis%3Breturn%20R.call(e.childNodes%2C(function(e%2Ct)%7Bvar%20r%3D%22%22%3Breturn%203%3D%3D%3D(t%3Dnew%20w(t%2Cn.options)).nodeType%3Fr%3Dt.isCode%3Ft.nodeValue%3An.escape(t.nodeValue)%3A1%3D%3D%3Dt.nodeType%26%26(r%3DB.call(n%2Ct))%2CD(e%2Cr)%7D)%2C%22%22)%7Dfunction%20O(e)%7Bvar%20n%3Dthis%3Breturn%20this.rules.forEach((function(t)%7B%22function%22%3D%3Dtypeof%20t.append%26%26(e%3DD(e%2Ct.append(n.options)))%7D))%2Ce.replace(%2F%5E%5B%5Ct%5Cr%5Cn%5D%2B%2F%2C%22%22).replace(%2F%5B%5Ct%5Cr%5Cn%5Cs%5D%2B%24%2F%2C%22%22)%7Dfunction%20B(e)%7Bvar%20n%3Dthis.rules.forNode(e)%2Ct%3Dx.call(this%2Ce)%2Cr%3De.flankingWhitespace%3Breturn(r.leading%7C%7Cr.trailing)%26%26(t%3Dt.trim())%2Cr.leading%2Bn.replacement(t%2Ce%2Cthis.options)%2Br.trailing%7Dfunction%20D(e%2Cn)%7Bvar%20t%3Dfunction(e)%7Bfor(var%20n%3De.length%3Bn%3E0%26%26%22%5Cn%22%3D%3D%3De%5Bn-1%5D%3B)n--%3Breturn%20e.substring(0%2Cn)%7D(e)%2Cr%3Dn.replace(%2F%5E%5Cn*%2F%2C%22%22)%2Ci%3DMath.max(e.length-t.length%2Cn.length-r.length)%3Breturn%20t%2B%22%5Cn%5Cn%22.substring(0%2Ci)%2Br%7Dk.prototype%3D%7Bturndown%3Afunction(e)%7Bif(!function(e)%7Breturn%20null!%3De%26%26(%22string%22%3D%3Dtypeof%20e%7C%7Ce.nodeType%26%26(1%3D%3D%3De.nodeType%7C%7C9%3D%3D%3De.nodeType%7C%7C11%3D%3D%3De.nodeType))%7D(e))throw%20new%20TypeError(e%2B%22%20is%20not%20a%20string%2C%20or%20an%20element%2Fdocument%2Ffragment%20node.%22)%3Bif(%22%22%3D%3D%3De)return%22%22%3Bvar%20n%3Dx.call(this%2Cnew%20T(e%2Cthis.options))%3Breturn%20O.call(this%2Cn)%7D%2Cuse%3Afunction(e)%7Bif(Array.isArray(e))for(var%20n%3D0%3Bn%3Ce.length%3Bn%2B%2B)this.use(e%5Bn%5D)%3Belse%7Bif(%22function%22!%3Dtypeof%20e)throw%20new%20TypeError(%22plugin%20must%20be%20a%20Function%20or%20an%20Array%20of%20Functions%22)%3Be(this)%7Dreturn%20this%7D%2CaddRule%3Afunction(e%2Cn)%7Breturn%20this.rules.add(e%2Cn)%2Cthis%7D%2Ckeep%3Afunction(e)%7Breturn%20this.rules.keep(e)%2Cthis%7D%2Cremove%3Afunction(e)%7Breturn%20this.rules.remove(e)%2Cthis%7D%2Cescape%3Afunction(e)%7Breturn%20S.reduce((function(e%2Cn)%7Breturn%20e.replace(n%5B0%5D%2Cn%5B1%5D)%7D)%2Ce)%7D%7D%3Bconst%20L%3Dk%7D%2C402%3A(e%2Cn)%3D%3E%7Bn.__esModule%3D!0%2Cn.MarkdownTables%3Dvoid%200%3Bvar%20t%3Dfunction()%7Bfunction%20e()%7B%7Dreturn%20e.tableShouldBeSkipped%3Dfunction(n)%7Breturn!n%7C%7C!n.rows%7C%7C1%3D%3D%3Dn.rows.length%26%26n.rows%5B0%5D.childNodes.length%3C%3D1%7C%7C!!e.nodeContainsTable(n)%7D%2Ce.isHeadingRow%3Dfunction(n)%7Bvar%20t%3Dn.parentNode%2Cr%3D!1%3Breturn%20t%26%26(%22THEAD%22%3D%3D%3Dt.nodeName%3Fr%3D!0%3At.firstChild!%3D%3Dn%3Fr%3D!1%3A(%22TABLE%22%3D%3D%3Dt.nodeName%7C%7Ce.isFirstTbody(t))%26%26(r%3DArray.prototype.every.call(n.childNodes%2C(function(e)%7Breturn%22TH%22%3D%3D%3De.nodeName%7D))))%2Cr%7D%2Ce.isFirstTbody%3Dfunction(e)%7Bvar%20n%3De.previousSibling%2Ct%3D!1%3Breturn%20n%26%26(t%3D!(%22TBODY%22!%3D%3De.nodeName%7C%7Cn%26%26(%22THEAD%22!%3D%3Dn.nodeName%7C%7C!n.textContent%7C%7C!%2F%5E%5Cs*%24%2Fi.test(n.textContent))))%2Ct%7D%2Ce.cell%3Dfunction(n%2Ct%2Cr)%7Bvoid%200%3D%3D%3Dt%26%26(t%3Dnull)%2Cvoid%200%3D%3D%3Dr%26%26(r%3Dnull)%2Cnull%3D%3D%3Dr%26%26null!%3Dt%26%26t.parentNode%26%26(r%3DArray.prototype.indexOf.call(t.parentNode.childNodes%2Ct))%3Bvar%20i%3D%22%20%22%3B0%3D%3D%3Dr%26%26(i%3D%22%7C%20%22)%3Bvar%20o%3Dn.trim().replace(%2F%5Cn%5Cr%2Fg%2C%22%3Cbr%3E%22).replace(%2F%5Cn%2Fg%2C%22%3Cbr%3E%22)%3Bfor(o%3Do.replace(%2F%5C%7C%2B%2Fg%2C%22%5C%5C%7C%22)%3Bo.length%3C3%3B)o%2B%3D%22%20%22%3Breturn%20t%26%26(o%3De.handleColSpan(o%2Ct%2C%22%20%22))%2Ci%2Bo%2B%22%20%7C%22%7D%2Ce.nodeContainsTable%3Dfunction(n)%7Bif(!n.childNodes)return!1%3Bfor(var%20t%3D0%3Bt%3Cn.childNodes.length%3Bt%2B%2B)%7Bvar%20r%3Dn.childNodes%5Bt%5D%3Bif(%22TABLE%22%3D%3D%3Dr.nodeName)return!0%3Bif(e.nodeContainsTable(r))return!0%7Dreturn!1%7D%2Ce.nodeParentTable%3Dfunction(e)%7Bvar%20n%3De.parentNode%3Bif(n)for(%3Bn%26%26%22TABLE%22!%3D%3Dn.nodeName%3B)n%3Dn.parentNode%3Breturn%20n%7D%2Ce.handleColSpan%3Dfunction(e%2Cn%2Ct)%7Bfor(var%20r%3Dn.getAttribute(%22colspan%22)%7C%7C%221%22%2Ci%3D1%3Bi%3CparseInt(r%2C10)%3Bi%2B%2B)e%2B%3D%22%20%7C%20%22%2Bt.repeat(3)%3Breturn%20e%7D%2Ce.tableColCount%3Dfunction(e)%7Bvar%20n%3D0%3Bif(e%26%26e.rows)for(var%20t%3D0%3Bt%3Ce.rows.length%3Bt%2B%2B)%7Bvar%20r%3De.rows%5Bt%5D.childNodes.length%3Br%3En%26%26(n%3Dr)%7Dreturn%20n%7D%2Ce%7D()%2Cr%3Dfunction()%7Bfunction%20e()%7B%7Dreturn%20e.prototype.tables%3Dfunction(e)%7Be.keep((function(e)%7Bvar%20n%3D!1%3Breturn%20e.nodeName%26%26(n%3D%22TABLE%22%3D%3D%3De.nodeName)%2Cn%7D))%3Bvar%20n%2Cr%3D%7BtableCell%3A%7Bfilter%3A%5B%22th%22%2C%22td%22%5D%2Creplacement%3Afunction(e%2Cn)%7Breturn%20t.tableShouldBeSkipped(t.nodeParentTable(n))%3Fe%3At.cell(e%2Cn)%7D%7D%2CtableRow%3A%7Bfilter%3A%22tr%22%2Creplacement%3Afunction(e%2Cn)%7Bvar%20r%3Dt.nodeParentTable(n)%3Bif(t.tableShouldBeSkipped(r))return%20e%3Bvar%20i%3D%22%22%2Co%3D%7Bleft%3A%22%3A--%22%2Cright%3A%22--%3A%22%2Ccenter%3A%22%3A-%3A%22%7D%3Bif(t.isHeadingRow(n))for(var%20a%3Dt.tableColCount(r)%2Cl%3D0%3Bl%3Ca%3Bl%2B%2B)%7Bvar%20d%3Da%3E%3Dn.childNodes.length%3Fnull%3An.childNodes%5Bl%5D%2Cc%3D%22---%22%2Cu%3Dd%3F(d.getAttribute(%22align%22)%7C%7C%22%22).toLowerCase()%3A%22%22%3Bu%26%26(c%3Do%5Bu%5D%7C%7Cc)%2Ci%2B%3Dd%3Ft.cell(c%2Cn.childNodes%5Bl%5D)%3At.cell(c%2Cnull%2Cl)%7Dreturn%22%5Cn%22%2Be%2B(i%3F%22%5Cn%22%2Bi%3A%22%22)%7D%7D%2Ctable%3A%7Bfilter%3Afunction(e)%7Breturn%22TABLE%22%3D%3D%3De.nodeName%7D%2Creplacement%3Afunction(e%2Cn)%7Bif(t.tableShouldBeSkipped(n))return%20e%3Bvar%20r%3D(e%3De.replace(%2F%5Cn%2B%2Fg%2C%22%5Cn%22)).trim().split(%22%5Cn%22)%3Br.length%3E%3D2%26%26(r%3Dr%5B1%5D)%3Bvar%20i%3D0%3D%3D%3Dr.indexOf(%22%7C%20---%22)%2Co%3Dt.tableColCount(n)%2Ca%3D%22%22%3Breturn%20o%26%26!i%26%26(a%3D%22%7C%22%2B%22%20%20%20%20%20%7C%22.repeat(o)%2B%22%5Cn%7C%22%2B%22%20---%20%7C%22.repeat(o))%2C%22%5Cn%5Cn%22%2Ba%2Be%2B%22%5Cn%5Cn%22%7D%7D%2CtableSection%3A%7Bfilter%3A%5B%22thead%22%2C%22tbody%22%2C%22tfoot%22%5D%2Creplacement%3Afunction(e)%7Breturn%20e%7D%7D%7D%3Bfor(n%20in%20r)e.addRule(n%2Cr%5Bn%5D)%7D%2Ce%7D()%3Bn.MarkdownTables%3Dr%7D%7D%2Cr%3D%7B%7D%3Bfunction%20i(e)%7Bvar%20n%3Dr%5Be%5D%3Bif(void%200!%3D%3Dn)return%20n.exports%3Bvar%20o%3Dr%5Be%5D%3D%7Bexports%3A%7B%7D%7D%3Breturn%20t%5Be%5D(o%2Co.exports%2Ci)%2Co.exports%7Di.d%3D(e%2Cn)%3D%3E%7Bfor(var%20t%20in%20n)i.o(n%2Ct)%26%26!i.o(e%2Ct)%26%26Object.defineProperty(e%2Ct%2C%7Benumerable%3A!0%2Cget%3An%5Bt%5D%7D)%7D%2Ci.o%3D(e%2Cn)%3D%3EObject.prototype.hasOwnProperty.call(e%2Cn)%2Ci.r%3De%3D%3E%7B%22undefined%22!%3Dtypeof%20Symbol%26%26Symbol.toStringTag%26%26Object.defineProperty(e%2CSymbol.toStringTag%2C%7Bvalue%3A%22Module%22%7D)%2CObject.defineProperty(e%2C%22__esModule%22%2C%7Bvalue%3A!0%7D)%7D%2Ce%3Di(36)%2Cn%3Di(402)%2Cfunction(t%2Cr%2Ci%2Co)%7Bvar%20a%3DencodeURIComponent(%22${this.vaultName}%22)%2Cl%3DencodeURIComponent(%22${this.notePath}%22)%2Cd%3DencodeURIComponent(%22${this.captureComments}%22)%2Cc%3D%22%22%2Cu%3Dnew%20e.default(%7BheadingStyle%3A%22atx%22%2Chr%3A%22---%22%2CbulletListMarker%3A%22-%22%2CcodeBlockStyle%3A%22fenced%22%2CemDelimiter%3A%22*%22%7D)%2Cs%3Dnew%20n.MarkdownTables%3Bu.use(s.tables)%2Cu.addRule(%22heading_1_update%22%2C%7Bfilter%3A%5B%22h1%22%5D%2Creplacement%3Afunction(e)%7Breturn%22%22.concat(i.h1%2C%22%20%22).concat(e)%7D%7D)%2Cu.addRule(%22heading_2_update%22%2C%7Bfilter%3A%5B%22h2%22%5D%2Creplacement%3Afunction(e)%7Breturn%22%22.concat(i.h2%2C%22%20%22).concat(e)%7D%7D)%2Cu.addRule(%22heading_3_update%22%2C%7Bfilter%3A%5B%22h3%22%5D%2Creplacement%3Afunction(e)%7Breturn%22%22.concat(i.h3%2C%22%20%22).concat(e)%7D%7D)%2Cu.addRule(%22heading_4_update%22%2C%7Bfilter%3A%5B%22h4%22%5D%2Creplacement%3Afunction(e)%7Breturn%22%22.concat(i.h4%2C%22%20%22).concat(e)%7D%7D)%2Cu.addRule(%22heading_5_update%22%2C%7Bfilter%3A%5B%22h5%22%5D%2Creplacement%3Afunction(e)%7Breturn%22%22.concat(i.h5%2C%22%20%22).concat(e)%7D%7D)%2Cu.addRule(%22heading_6_update%22%2C%7Bfilter%3A%5B%22h6%22%5D%2Creplacement%3Afunction(e)%7Breturn%22%22.concat(i.h6%2C%22%20%22).concat(e)%7D%7D)%2Cu.addRule(%22fix_relative_links%22%2C%7Bfilter%3A%5B%22a%22%5D%2Creplacement%3Afunction(e%2Cn)%7Bvar%20t%3Dn.href%3Breturn%20t.includes(%22%3A%2F%2F%22)%7C%7C(t%3Dwindow.location.protocol%2B%22%2F%2F%22%2Bwindow.location.host%2Bt)%2C%22%5B%22.concat(e%2C%22%5D(%22).concat(t%2C%22)%22)%7D%7D)%3Bvar%20p%3Du.turndown(function()%7Bvar%20e%3D%22%22%3Bif(void%200!%3D%3Dwindow.getSelection)%7Bvar%20n%3Dwindow.getSelection()%3Bif(n%26%26n.rangeCount)%7Bfor(var%20t%3Ddocument.createElement(%22div%22)%2Cr%3D0%2Ci%3Dn.rangeCount%3Br%3Ci%3B%2B%2Br)t.appendChild(n.getRangeAt(r).cloneContents())%3Be%3Dt.innerHTML%7D%7Dreturn%20e%7D())%3Bfunction%20f()%7Bvar%20e%3Ddocument.getElementsByClassName(%22obsidian-clipper-modal-overlay%22)%5B0%5D%3Bif(e)%7Bvar%20n%3Ddocument.getElementById(%22obsidian-clipper-comment%22)%3Bc%3Dn.value%2Cn.value%3D%22%22%2Ce.style.display%3D%22none%22%7Dvar%20t%3Ddocument.URL%2Cr%3Ddocument.title%2Ci%3D%22obsidian%3A%2F%2Fobsidian-clipper%3Fvault%3D%22.concat(a%2C%22%26notePath%3D%22).concat(l%2C%22%26url%3D%22).concat(encodeURIComponent(t)%2C%22%26format%3Dmd%26title%3D%22).concat(encodeURIComponent(r)%2C%22%26highlightdata%3D%22).concat(encodeURIComponent(p)%2C%22%26comments%3D%22).concat(encodeURIComponent(c))%3B-1!%3D%3Dnavigator.userAgent.indexOf(%22Chrome%22)%26%26-1!%3D%3Dnavigator.userAgent.indexOf(%22Windows%22)%26%26i.length%3E%3D2e3%26%26alert(%22Chrome%20on%20Windows%20doesn't%20allow%20a%20highlight%20this%20large.%20%22.concat(i.length%2C%22%20characters%20have%20been%20selected%20and%20it%20must%20be%20less%20than%202000%22))%2Cfunction(e)%7Breturn-1!%3D%3Dnavigator.userAgent.indexOf(%22Chrome%22)%26%26-1!%3D%3Dnavigator.userAgent.indexOf(%22Windows%22)%26%26e.length%3E%3D2e3%26%26(alert(%22Chrome%20on%20Windows%20doesn't%20allow%20a%20highlight%20this%20large.%5Cn%20%22.concat(e.length%2C%22%20characters%20have%20been%20selected%20and%20it%20must%20be%20less%20than%202000.%20%5Cn%5Cn%20Firefox%20on%20Windows%20doesn't%20seem%20to%20have%20this%20same%20problem.%22))%2C!0)%7D(i)%7C%7C(document.location.href%3Di)%7D%22true%22%3D%3D%3Dd%3Ffunction()%7Bvar%20e%2Cn%3Ddocument.getElementsByClassName(%22obsidian-clipper-modal-overlay%22)%5B0%5D%3Bif(n)n.style.display%3D%22block%22%3Belse%7Bvar%20t%3Ddocument.createElement(%22style%22)%2Cr%3Ddocument.createTextNode(%22%5Cn.obsidian-clipper-modal%20%7B%5Cn%5Ctz-index%3A%2010000%3B%5Cn%5Ctposition%3A%20fixed%3B%5Cn%5Cttop%3A%2050%25%3B%5Cn%5Ctleft%3A%2050%25%3B%5Cn%5Cttransform%3A%20translate(-50%25%2C%20-50%25)%3B%5Cn%5Ctdisplay%3A%20flex%3B%5Cn%20%20flex-direction%3A%20column%3B%5Cn%20%20gap%3A%200.4rem%3B%5Cn%20%20width%3A%20450px%3B%5Cn%20%20padding%3A%201.3rem%3B%5Cn%20%20background-color%3A%20white%3B%5Cn%20%20border%3A%201px%20solid%20%23ddd%3B%5Cn%20%20border-radius%3A%2015px%3B%5Cn%7D%5Cn.obsidian-clipper-modal%20.flex%20%7B%5Cn%20%20display%3A%20flex%3B%5Cn%20%20align-items%3A%20center%3B%5Cn%20%20justify-content%3A%20space-between%3B%5Cn%7D%5Cn%5Cn.obsidian-clipper-modal%20input%20%7B%5Cn%20%20padding%3A%200.7rem%201rem%3B%5Cn%20%20border%3A%201px%20solid%20%23ddd%3B%5Cn%20%20border-radius%3A%205px%3B%5Cn%20%20font-size%3A%200.9em%3B%5Cn%7D%5Cn%5Cn.obsidian-clipper-modal%20p%20%7B%5Cn%20%20font-size%3A%200.9rem%3B%5Cn%20%20color%3A%20%23777%3B%5Cn%20%20margin%3A%200.4rem%200%200.2rem%3B%5Cn%7D%5Cn%5Cn.obsidian-clipper-modal%20label%20%7B%5Cndisplay%3A%20block%3B%20%5Cnmargin-bottom%3A%200.5rem%3B%20%5Cncolor%3A%20%23111827%3B%20%5Cnfont-size%3A%200.875rem%3B%5Cnline-height%3A%201.25rem%3B%20%5Cnfont-weight%3A%20500%3B%5Cn%7D%5Cn%5Cn.obsidian-clipper-modal%20textarea%20%7B%5Cn%5Ctdisplay%3A%20block%3B%20!important%3B%20%5Cn%5Ctpadding%3A%200.625rem%20!important%3B%20%5Cn%5Ctbackground-color%3A%20%23F9FAFB%20!important%3B%20%5Cn%5Ctcolor%3A%20%23111827%20!important%3B%20%5Cn%5Ctfont-size%3A%200.875rem%20!important%3B%20%5Cn%5Ctline-height%3A%201.25rem%20!important%3B%20%5Cn%20%5Ctwidth%3A%20100%25%20!important%3B%20%5Cn%5Ctborder-radius%3A%200.5rem%20!important%3B%20%5Cn%5Ctborder-width%3A%201px%20!important%3B%20%5Cn%5Ctborder-color%3A%20%23D1D5DB%20!important%3B%20%5Cn%7D%5Cn%5Cn.obsidian-clipper-modal%20button%20%7B%5Cn%5Ctpadding-top%3A%200.625rem%20!important%3B%5Cnpadding-bottom%3A%200.625rem%20!important%3B%5Cnpadding-left%3A%201.25rem%20!important%3B%5Cnpadding-right%3A%201.25rem%20!important%3B%5Cnmargin-right%3A%200.5rem%20!important%3B%5Cnmargin-bottom%3A%200.5rem%20!important%3B%5Cnbackground-color%3A%20%231F2937%20!important%3B%5Cncolor%3A%20%23ffffff%20!important%3B%5Cnfont-size%3A%200.875rem%20!important%3B%5Cnline-height%3A%201.25rem%20!important%3B%5Cnfont-weight%3A%20500%20!important%3B%5Cnborder-radius%3A%200.5rem%20!important%3B%5Cn%7D%5Cn%5Cn.obsidian-clipper-modal-overlay%20%7B%5Cn%20%20background%3A%20rgba(0%2C%200%2C%200%2C%200.6)%3B%5Cn%20%20position%3A%20fixed%3B%5Cn%20%20top%3A%200%3B%5Cn%20%20left%3A%200%3B%5Cn%20%20right%3A%200%3B%5Cn%20%20bottom%3A%200%3B%5Cn%20%20z-index%3A%209999%3B%5Cn%7D%5Cn%5Cn%22)%3Bt.appendChild(r)%2Cdocument.getElementsByTagName(%22head%22)%5B0%5D.appendChild(t)%3Bvar%20i%3Ddocument.createElement(%22div%22)%2Co%3Ddocument.createElement(%22div%22)%3Bo.innerHTML%3D'%5Cn%5Ct%5Ct%3Cdiv%3E%5Cn%5Ct%5Ct%5Ct%3Clabel%3EObsidian%20Clipper%3C%2Flabel%3E%5Cn%5Ct%5Ct%5Ct%3Ctextarea%20id%3D%22obsidian-clipper-comment%22%20rows%3D%226%22%5Ctplaceholder%3D%22Add%20your%20thoughts...%22%3E%3C%2Ftextarea%3E%5Cn%5Ct%5Ct%3C%2Fdiv%3E'%3Bvar%20a%3Ddocument.createElement(%22button%22)%3Ba.appendChild(document.createTextNode(%22Submit%22))%2Ca.addEventListener(%22click%22%2Cf%2C!1)%2Co.appendChild(a)%2Co.classList.add(%22obsidian-clipper-modal%22)%2Ci.classList.add(%22obsidian-clipper-modal-overlay%22)%2Ci.appendChild(o)%2Cdocument.body.appendChild(i)%2Cnull%3D%3D%3D(e%3Ddocument.getElementById(%22obsidian-clipper-comment%22))%7C%7Cvoid%200%3D%3D%3De%7C%7Ce.focus()%7D%7D()%3Af()%7D(0%2C0%2C%7Bh1%3A%22${this.markdownSettings.h1}%22%2Ch2%3A%22${this.markdownSettings.h2}%22%2Ch3%3A%22${this.markdownSettings.h3}%22%2Ch4%3A%22${this.markdownSettings.h4}%22%2Ch5%3A%22${this.markdownSettings.h5}%22%2Ch6%3A%22${this.markdownSettings.h6}%22%7D)%7D)()%3B%7D)()`;
   }
 };
 
@@ -9687,7 +9698,7 @@ function create_fragment12(ctx) {
   let t0;
   let extensionsettingsgroup;
   let t1;
-  let div33;
+  let div28;
   let h10;
   let t3;
   let t4;
@@ -9722,12 +9733,6 @@ function create_fragment12(ctx) {
   let t30;
   let div26;
   let input4;
-  let t31;
-  let div32;
-  let div30;
-  let t35;
-  let div31;
-  let input5;
   let current;
   let mounted;
   let dispose;
@@ -9751,7 +9756,7 @@ function create_fragment12(ctx) {
       t0 = space();
       create_component(extensionsettingsgroup.$$.fragment);
       t1 = space();
-      div33 = element("div");
+      div28 = element("div");
       h10 = element("h1");
       h10.textContent = "Bookmarklet Settings";
       t3 = space();
@@ -9763,51 +9768,43 @@ function create_fragment12(ctx) {
       t6 = space();
       div7 = element("div");
       div5 = element("div");
-      div5.innerHTML = `<div class="setting-item-name">H1</div> 
-			<div class="setting-item-description">What should replace H1 elements found in the highlight data?</div>`;
+      div5.innerHTML = `<div class="setting-item-name">H2</div> 
+			<div class="setting-item-description">What should replace H2 elements found in the highlight data?</div>`;
       t10 = space();
       div6 = element("div");
       input0 = element("input");
       t11 = space();
       div12 = element("div");
       div10 = element("div");
-      div10.innerHTML = `<div class="setting-item-name">H2</div> 
-			<div class="setting-item-description">What should replace H2 elements found in the highlight data?</div>`;
+      div10.innerHTML = `<div class="setting-item-name">H3</div> 
+			<div class="setting-item-description">What should replace H3 elements found in the highlight data?</div>`;
       t15 = space();
       div11 = element("div");
       input1 = element("input");
       t16 = space();
       div17 = element("div");
       div15 = element("div");
-      div15.innerHTML = `<div class="setting-item-name">H3</div> 
-			<div class="setting-item-description">What should replace H3 elements found in the highlight data?</div>`;
+      div15.innerHTML = `<div class="setting-item-name">H4</div> 
+			<div class="setting-item-description">What should replace H4 elements found in the highlight data?</div>`;
       t20 = space();
       div16 = element("div");
       input2 = element("input");
       t21 = space();
       div22 = element("div");
       div20 = element("div");
-      div20.innerHTML = `<div class="setting-item-name">H4</div> 
-			<div class="setting-item-description">What should replace H4 elements found in the highlight data?</div>`;
+      div20.innerHTML = `<div class="setting-item-name">H5</div> 
+			<div class="setting-item-description">What should replace H5 elements found in the highlight data?</div>`;
       t25 = space();
       div21 = element("div");
       input3 = element("input");
       t26 = space();
       div27 = element("div");
       div25 = element("div");
-      div25.innerHTML = `<div class="setting-item-name">H5</div> 
-			<div class="setting-item-description">What should replace H5 elements found in the highlight data?</div>`;
+      div25.innerHTML = `<div class="setting-item-name">H6</div> 
+			<div class="setting-item-description">What should replace H6 elements found in the highlight data?</div>`;
       t30 = space();
       div26 = element("div");
       input4 = element("input");
-      t31 = space();
-      div32 = element("div");
-      div30 = element("div");
-      div30.innerHTML = `<div class="setting-item-name">H6</div> 
-			<div class="setting-item-description">What should replace H6 elements found in the highlight data?</div>`;
-      t35 = space();
-      div31 = element("div");
-      input5 = element("input");
       attr(div0, "class", "clp_section_margin");
       attr(div2, "class", "setting-item");
       attr(div5, "class", "setting-item-info");
@@ -9840,13 +9837,7 @@ function create_fragment12(ctx) {
       attr(input4, "placeholder", "");
       attr(div26, "class", "setting-item-control");
       attr(div27, "class", "setting-item");
-      attr(div30, "class", "setting-item-info");
-      attr(input5, "type", "text");
-      attr(input5, "spellcheck", "false");
-      attr(input5, "placeholder", "");
-      attr(div31, "class", "setting-item-control");
-      attr(div32, "class", "setting-item");
-      attr(div33, "class", "clp_section_margin");
+      attr(div28, "class", "clp_section_margin");
     },
     m(target, anchor) {
       insert(target, div0, anchor);
@@ -9854,55 +9845,48 @@ function create_fragment12(ctx) {
       append(div0, t0);
       mount_component(extensionsettingsgroup, div0, null);
       insert(target, t1, anchor);
-      insert(target, div33, anchor);
-      append(div33, h10);
-      append(div33, t3);
+      insert(target, div28, anchor);
+      append(div28, h10);
+      append(div28, t3);
       if (if_block)
-        if_block.m(div33, null);
-      append(div33, t4);
-      append(div33, div2);
-      append(div33, t6);
-      append(div33, div7);
+        if_block.m(div28, null);
+      append(div28, t4);
+      append(div28, div2);
+      append(div28, t6);
+      append(div28, div7);
       append(div7, div5);
       append(div7, t10);
       append(div7, div6);
       append(div6, input0);
-      set_input_value(input0, ctx[1].markdownSettings.h1);
-      append(div33, t11);
-      append(div33, div12);
+      set_input_value(input0, ctx[1].markdownSettings.h2);
+      append(div28, t11);
+      append(div28, div12);
       append(div12, div10);
       append(div12, t15);
       append(div12, div11);
       append(div11, input1);
-      set_input_value(input1, ctx[1].markdownSettings.h2);
-      append(div33, t16);
-      append(div33, div17);
+      set_input_value(input1, ctx[1].markdownSettings.h3);
+      append(div28, t16);
+      append(div28, div17);
       append(div17, div15);
       append(div17, t20);
       append(div17, div16);
       append(div16, input2);
-      set_input_value(input2, ctx[1].markdownSettings.h3);
-      append(div33, t21);
-      append(div33, div22);
+      set_input_value(input2, ctx[1].markdownSettings.h4);
+      append(div28, t21);
+      append(div28, div22);
       append(div22, div20);
       append(div22, t25);
       append(div22, div21);
       append(div21, input3);
-      set_input_value(input3, ctx[1].markdownSettings.h4);
-      append(div33, t26);
-      append(div33, div27);
+      set_input_value(input3, ctx[1].markdownSettings.h5);
+      append(div28, t26);
+      append(div28, div27);
       append(div27, div25);
       append(div27, t30);
       append(div27, div26);
       append(div26, input4);
-      set_input_value(input4, ctx[1].markdownSettings.h5);
-      append(div33, t31);
-      append(div33, div32);
-      append(div32, div30);
-      append(div32, t35);
-      append(div32, div31);
-      append(div31, input5);
-      set_input_value(input5, ctx[1].markdownSettings.h6);
+      set_input_value(input4, ctx[1].markdownSettings.h6);
       current = true;
       if (!mounted) {
         dispose = [
@@ -9910,8 +9894,7 @@ function create_fragment12(ctx) {
           listen(input1, "input", ctx[8]),
           listen(input2, "input", ctx[9]),
           listen(input3, "input", ctx[10]),
-          listen(input4, "input", ctx[11]),
-          listen(input5, "input", ctx[12])
+          listen(input4, "input", ctx[11])
         ];
         mounted = true;
       }
@@ -9931,29 +9914,26 @@ function create_fragment12(ctx) {
         } else {
           if_block = create_if_block5(ctx2);
           if_block.c();
-          if_block.m(div33, t4);
+          if_block.m(div28, t4);
         }
       } else if (if_block) {
         if_block.d(1);
         if_block = null;
       }
-      if (dirty & 2 && input0.value !== ctx2[1].markdownSettings.h1) {
-        set_input_value(input0, ctx2[1].markdownSettings.h1);
+      if (dirty & 2 && input0.value !== ctx2[1].markdownSettings.h2) {
+        set_input_value(input0, ctx2[1].markdownSettings.h2);
       }
-      if (dirty & 2 && input1.value !== ctx2[1].markdownSettings.h2) {
-        set_input_value(input1, ctx2[1].markdownSettings.h2);
+      if (dirty & 2 && input1.value !== ctx2[1].markdownSettings.h3) {
+        set_input_value(input1, ctx2[1].markdownSettings.h3);
       }
-      if (dirty & 2 && input2.value !== ctx2[1].markdownSettings.h3) {
-        set_input_value(input2, ctx2[1].markdownSettings.h3);
+      if (dirty & 2 && input2.value !== ctx2[1].markdownSettings.h4) {
+        set_input_value(input2, ctx2[1].markdownSettings.h4);
       }
-      if (dirty & 2 && input3.value !== ctx2[1].markdownSettings.h4) {
-        set_input_value(input3, ctx2[1].markdownSettings.h4);
+      if (dirty & 2 && input3.value !== ctx2[1].markdownSettings.h5) {
+        set_input_value(input3, ctx2[1].markdownSettings.h5);
       }
-      if (dirty & 2 && input4.value !== ctx2[1].markdownSettings.h5) {
-        set_input_value(input4, ctx2[1].markdownSettings.h5);
-      }
-      if (dirty & 2 && input5.value !== ctx2[1].markdownSettings.h6) {
-        set_input_value(input5, ctx2[1].markdownSettings.h6);
+      if (dirty & 2 && input4.value !== ctx2[1].markdownSettings.h6) {
+        set_input_value(input4, ctx2[1].markdownSettings.h6);
       }
     },
     i(local) {
@@ -9976,7 +9956,7 @@ function create_fragment12(ctx) {
       if (detaching)
         detach(t1);
       if (detaching)
-        detach(div33);
+        detach(div28);
       if (if_block)
         if_block.d();
       mounted = false;
@@ -10003,26 +9983,22 @@ function instance12($$self, $$props, $$invalidate) {
     settings.set($settings);
   }
   function input0_input_handler() {
-    $settings.markdownSettings.h1 = this.value;
-    settings.set($settings);
-  }
-  function input1_input_handler() {
     $settings.markdownSettings.h2 = this.value;
     settings.set($settings);
   }
-  function input2_input_handler() {
+  function input1_input_handler() {
     $settings.markdownSettings.h3 = this.value;
     settings.set($settings);
   }
-  function input3_input_handler() {
+  function input2_input_handler() {
     $settings.markdownSettings.h4 = this.value;
     settings.set($settings);
   }
-  function input4_input_handler() {
+  function input3_input_handler() {
     $settings.markdownSettings.h5 = this.value;
     settings.set($settings);
   }
-  function input5_input_handler() {
+  function input4_input_handler() {
     $settings.markdownSettings.h6 = this.value;
     settings.set($settings);
   }
@@ -10044,8 +10020,7 @@ function instance12($$self, $$props, $$invalidate) {
     input1_input_handler,
     input2_input_handler,
     input3_input_handler,
-    input4_input_handler,
-    input5_input_handler
+    input4_input_handler
   ];
 }
 var LinksSettingsGroup = class extends SvelteComponent {
@@ -10138,31 +10113,31 @@ function create_if_block6(ctx) {
   };
 }
 function create_fragment13(ctx) {
-  let div3;
+  let div5;
   let h10;
   let t1;
+  let div4;
   let div2;
-  let div0;
-  let t3;
-  let div1;
+  let t5;
+  let div3;
   let label0;
   let input0;
-  let t4;
-  let t5;
-  let div11;
-  let h12;
+  let t6;
   let t7;
-  let div6;
-  let div4;
+  let div13;
+  let h11;
   let t9;
-  let div5;
+  let div8;
+  let div6;
+  let t11;
+  let div7;
   let label1;
   let input1;
-  let t10;
+  let t12;
+  let div12;
   let div10;
-  let div8;
-  let t14;
-  let div9;
+  let t16;
+  let div11;
   let label2;
   let input2;
   let mounted;
@@ -10170,96 +10145,99 @@ function create_fragment13(ctx) {
   let if_block = ctx[0].advanced && create_if_block6(ctx);
   return {
     c() {
-      div3 = element("div");
+      div5 = element("div");
       h10 = element("h1");
       h10.textContent = "Advanced Settings";
       t1 = space();
+      div4 = element("div");
       div2 = element("div");
-      div0 = element("div");
-      div0.innerHTML = `<h1 class="setting-item-name">Advanced Usage</h1>`;
-      t3 = space();
-      div1 = element("div");
+      div2.innerHTML = `<div class="setting-item-name">Store Clippings Per Domain</div> 
+			<div class="setting-item-description">Creates a note per top-level domain and stores all clippings from that
+				domain within it. It will add an embedded document link in your Daily
+				Note.</div>`;
+      t5 = space();
+      div3 = element("div");
       label0 = element("label");
       input0 = element("input");
-      t4 = space();
+      t6 = space();
       if (if_block)
         if_block.c();
-      t5 = space();
-      div11 = element("div");
-      h12 = element("h1");
-      h12.textContent = "Experimental Settings";
       t7 = space();
-      div6 = element("div");
-      div4 = element("div");
-      div4.innerHTML = `<h1 class="setting-item-name">Support Canvas</h1>`;
+      div13 = element("div");
+      h11 = element("h1");
+      h11.textContent = "Experimental Settings";
       t9 = space();
-      div5 = element("div");
+      div8 = element("div");
+      div6 = element("div");
+      div6.innerHTML = `<h1 class="setting-item-name">Support Canvas</h1>`;
+      t11 = space();
+      div7 = element("div");
       label1 = element("label");
       input1 = element("input");
-      t10 = space();
+      t12 = space();
+      div12 = element("div");
       div10 = element("div");
-      div8 = element("div");
-      div8.innerHTML = `<h1 class="setting-item-name">Comment Support in Browser</h1> 
+      div10.innerHTML = `<h1 class="setting-item-name">Comment Support in Browser</h1> 
 			<div class="setting-item-description">After enabling this option, you must go to the &#39;Browser&#39; tab, update
 				your settings to turn on the &#39;Capture Comment in Browser&#39; setting and
 				reinstall the bookmarklet.</div>`;
-      t14 = space();
-      div9 = element("div");
+      t16 = space();
+      div11 = element("div");
       label2 = element("label");
       input2 = element("input");
-      attr(div0, "class", "setting-item-info");
+      attr(div2, "class", "setting-item-info");
       attr(input0, "type", "checkbox");
       attr(label0, "class", "checkbox-container");
       toggle_class(label0, "is-enabled", ctx[0].advanced);
-      attr(div1, "class", "setting-item-control");
-      attr(div2, "class", "setting-item mod-toggle");
-      attr(div3, "class", "clp_section_margin");
-      attr(div4, "class", "setting-item-info");
+      attr(div3, "class", "setting-item-control");
+      attr(div4, "class", "setting-item mod-toggle");
+      attr(div5, "class", "clp_section_margin");
+      attr(div6, "class", "setting-item-info");
       attr(input1, "type", "checkbox");
       attr(label1, "class", "checkbox-container");
       toggle_class(label1, "is-enabled", ctx[0].experimentalCanvas);
-      attr(div5, "class", "setting-item-control");
-      attr(div6, "class", "setting-item mod-toggle");
-      attr(div8, "class", "setting-item-info");
+      attr(div7, "class", "setting-item-control");
+      attr(div8, "class", "setting-item mod-toggle");
+      attr(div10, "class", "setting-item-info");
       attr(input2, "type", "checkbox");
       attr(label2, "class", "checkbox-container");
       toggle_class(label2, "is-enabled", ctx[0].experimentalBookmarkletComment);
-      attr(div9, "class", "setting-item-control");
-      attr(div10, "class", "setting-item mod-toggle");
-      set_style(div10, "border-top", "none", 1);
-      attr(div11, "class", "clp_section_margin");
+      attr(div11, "class", "setting-item-control");
+      attr(div12, "class", "setting-item mod-toggle");
+      set_style(div12, "border-top", "none", 1);
+      attr(div13, "class", "clp_section_margin");
     },
     m(target, anchor) {
-      insert(target, div3, anchor);
-      append(div3, h10);
-      append(div3, t1);
-      append(div3, div2);
-      append(div2, div0);
-      append(div2, t3);
-      append(div2, div1);
-      append(div1, label0);
+      insert(target, div5, anchor);
+      append(div5, h10);
+      append(div5, t1);
+      append(div5, div4);
+      append(div4, div2);
+      append(div4, t5);
+      append(div4, div3);
+      append(div3, label0);
       append(label0, input0);
       input0.checked = ctx[0].advanced;
-      append(div3, t4);
+      append(div5, t6);
       if (if_block)
-        if_block.m(div3, null);
-      insert(target, t5, anchor);
-      insert(target, div11, anchor);
-      append(div11, h12);
-      append(div11, t7);
-      append(div11, div6);
-      append(div6, div4);
-      append(div6, t9);
-      append(div6, div5);
-      append(div5, label1);
+        if_block.m(div5, null);
+      insert(target, t7, anchor);
+      insert(target, div13, anchor);
+      append(div13, h11);
+      append(div13, t9);
+      append(div13, div8);
+      append(div8, div6);
+      append(div8, t11);
+      append(div8, div7);
+      append(div7, label1);
       append(label1, input1);
       input1.checked = ctx[0].experimentalCanvas;
-      append(div11, t10);
-      append(div11, div10);
-      append(div10, div8);
-      append(div10, t14);
-      append(div10, div9);
-      append(div9, label2);
+      append(div13, t12);
+      append(div13, div12);
+      append(div12, div10);
+      append(div12, t16);
+      append(div12, div11);
+      append(div11, label2);
       append(label2, input2);
       input2.checked = ctx[0].experimentalBookmarkletComment;
       if (!mounted) {
@@ -10288,7 +10266,7 @@ function create_fragment13(ctx) {
           if_block = create_if_block6(ctx2);
           if_block.c();
           transition_in(if_block, 1);
-          if_block.m(div3, null);
+          if_block.m(div5, null);
         }
       } else if (if_block) {
         group_outros();
@@ -10318,13 +10296,13 @@ function create_fragment13(ctx) {
     },
     d(detaching) {
       if (detaching)
-        detach(div3);
+        detach(div5);
       if (if_block)
         if_block.d();
       if (detaching)
-        detach(t5);
+        detach(t7);
       if (detaching)
-        detach(div11);
+        detach(div13);
       mounted = false;
       run_all(dispose);
     }
@@ -10389,7 +10367,7 @@ function create_calloutLink_slot(ctx) {
   return {
     c() {
       span1 = element("span");
-      span1.innerHTML = `<a href="https://github.com/jgchristopher/obsidian-clipper#obsidian-clipper" class="whitespace-nowrap font-medium text-blue-700 hover:text-blue-600">Details
+      span1.innerHTML = `<a href="https://docs.obsidianclipper.com" class="whitespace-nowrap font-medium text-blue-700 hover:text-blue-600">Details
 			<span aria-hidden="true">\u2192</span></a>`;
       attr(span1, "slot", "calloutLink");
     },
@@ -10467,7 +10445,7 @@ function create_fragment14(ctx) {
     }
   };
 }
-var noticeText = "Check out the new Chrome-based browser Extension on the Browser setting tab! That is also where you will find the Bookmarklet link for your vault.";
+var noticeText = "Lost on how to get started? Check out the new documentation website";
 function instance14($$self, $$props, $$invalidate) {
   let { app } = $$props;
   const vaultName = app.vault.getName();
@@ -10969,3 +10947,5 @@ var SettingTab = class extends import_obsidian7.PluginSettingTab {
     this.view.$destroy();
   }
 };
+
+/* nosourcemap */

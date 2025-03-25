@@ -1,8 +1,168 @@
 {
   "recentFiles": [
     {
+      "basename": "图钉卡片样式",
+      "path": "技术/鸿蒙/图钉卡片样式.md"
+    },
+    {
+      "basename": "状态管理",
+      "path": "技术/鸿蒙/状态管理.md"
+    },
+    {
+      "basename": "基本用法",
+      "path": "技术/Android/单元测试/基本用法.md"
+    },
+    {
+      "basename": "单元测试",
+      "path": "技术/Android/单元测试/单元测试.md"
+    },
+    {
+      "basename": "相关示例",
+      "path": "技术/Android/单元测试/相关示例.md"
+    },
+    {
+      "basename": "单元测试",
+      "path": "03知识目录/单元测试.md"
+    },
+    {
+      "basename": "07-thread",
+      "path": "笔记/现代Cpp规范/07-thread.md"
+    },
+    {
+      "basename": "VSCode C++环境配置",
+      "path": "操作手册/VSCode C++环境配置.md"
+    },
+    {
       "basename": "Mac终端快捷键",
       "path": "操作手册/Mac终端快捷键.md"
+    },
+    {
+      "basename": "Cpp笔记",
+      "path": "笔记/Cpp笔记.md"
+    },
+    {
+      "basename": "toc",
+      "path": "笔记/现代Cpp规范/toc.md"
+    },
+    {
+      "basename": "appendix3",
+      "path": "笔记/现代Cpp规范/appendix3.md"
+    },
+    {
+      "basename": "appendix2",
+      "path": "笔记/现代Cpp规范/appendix2.md"
+    },
+    {
+      "basename": "appendix1",
+      "path": "笔记/现代Cpp规范/appendix1.md"
+    },
+    {
+      "basename": "10-cpp20",
+      "path": "笔记/现代Cpp规范/10-cpp20.md"
+    },
+    {
+      "basename": "09-others",
+      "path": "笔记/现代Cpp规范/09-others.md"
+    },
+    {
+      "basename": "08-filesystem",
+      "path": "笔记/现代Cpp规范/08-filesystem.md"
+    },
+    {
+      "basename": "06-regex",
+      "path": "笔记/现代Cpp规范/06-regex.md"
+    },
+    {
+      "basename": "05-pointers",
+      "path": "笔记/现代Cpp规范/05-pointers.md"
+    },
+    {
+      "basename": "04-containers",
+      "path": "笔记/现代Cpp规范/04-containers.md"
+    },
+    {
+      "basename": "03-runtime",
+      "path": "笔记/现代Cpp规范/03-runtime.md"
+    },
+    {
+      "basename": "02-usability",
+      "path": "笔记/现代Cpp规范/02-usability.md"
+    },
+    {
+      "basename": "01-intro",
+      "path": "笔记/现代Cpp规范/01-intro.md"
+    },
+    {
+      "basename": "00-preface",
+      "path": "笔记/现代Cpp规范/00-preface.md"
+    },
+    {
+      "basename": "ArkUI框架",
+      "path": "技术/鸿蒙/ArkUI框架.md"
+    },
+    {
+      "basename": "C语言基础",
+      "path": "技术/C与C++/C语言基础.md"
+    },
+    {
+      "basename": "CPrimerPlus（第6版）",
+      "path": "技术/C与C++/CPrimerPlus/CPrimerPlus（第6版）.md"
+    },
+    {
+      "basename": "习题",
+      "path": "技术/C与C++/CPrimerPlus/习题.md"
+    },
+    {
+      "basename": "Cpp笔记2",
+      "path": "笔记/Cpp笔记2.md"
+    },
+    {
+      "basename": "ArkTS语言",
+      "path": "技术/鸿蒙/ArkTS语言.md"
+    },
+    {
+      "basename": "Now in Android项目笔记",
+      "path": "笔记/项目/Now in Android项目笔记.md"
+    },
+    {
+      "basename": "笔记规范",
+      "path": "笔记/笔记规范.md"
+    },
+    {
+      "basename": "GC",
+      "path": "技术/鸿蒙/GC.md"
+    },
+    {
+      "basename": "Background Tasks Kit（后台任务开发服务）",
+      "path": "技术/鸿蒙/Background Tasks Kit（后台任务开发服务）.md"
+    },
+    {
+      "basename": "ArkTS模块化",
+      "path": "技术/鸿蒙/ArkTS模块化.md"
+    },
+    {
+      "basename": "鸿蒙笔记",
+      "path": "技术/鸿蒙/鸿蒙笔记.md"
+    },
+    {
+      "basename": "鸿蒙",
+      "path": "03知识目录/鸿蒙.md"
+    },
+    {
+      "basename": "ArkTS编译工具链",
+      "path": "技术/鸿蒙/ArkTS编译工具链.md"
+    },
+    {
+      "basename": "ArkData",
+      "path": "技术/鸿蒙/ArkData.md"
+    },
+    {
+      "basename": "面试",
+      "path": "03知识目录/面试.md"
+    },
+    {
+      "basename": "并发",
+      "path": "技术/鸿蒙/并发.md"
     },
     {
       "basename": "mac终端代理",
@@ -19,10 +179,6 @@
     {
       "basename": "Appium2测试框架",
       "path": "技术/Android/单元测试/Appium2测试框架.md"
-    },
-    {
-      "basename": "基本用法",
-      "path": "技术/Android/单元测试/基本用法.md"
     },
     {
       "basename": "Espresso",
@@ -43,165 +199,12 @@
     {
       "basename": "Java Type",
       "path": "资料/Java Type.md"
-    },
-    {
-      "basename": "一文全面了解Android单元测试",
-      "path": "技术/Android/一文全面了解Android单元测试.md"
-    },
-    {
-      "basename": "相关示例",
-      "path": "技术/Android/单元测试/相关示例.md"
-    },
-    {
-      "basename": "内存优化",
-      "path": "技术/Android/性能优化/内存优化.md"
-    },
-    {
-      "basename": "单元测试",
-      "path": "03知识目录/单元测试.md"
-    },
-    {
-      "basename": "C++Primer",
-      "path": "笔记/C++Primer.md"
-    },
-    {
-      "basename": "来到 2024，你手上的 Android 项目有单元测试吗？",
-      "path": "资料/来到 2024，你手上的 Android 项目有单元测试吗？.md"
-    },
-    {
-      "basename": "单元测试",
-      "path": "技术/Android/单元测试/单元测试.md"
-    },
-    {
-      "basename": "掌握这17张图，掌握RecyclerView中的“黑科技”预加载",
-      "path": "资料/掌握这17张图，掌握RecyclerView中的“黑科技”预加载.md"
-    },
-    {
-      "basename": "2024年移动端技术探索",
-      "path": "资料/2024年移动端技术探索.md"
-    },
-    {
-      "basename": "2024-12-02,周一",
-      "path": "01日记/2024-12-02,周一.md"
-    },
-    {
-      "basename": "00-gradle-recipes笔记",
-      "path": "笔记/Gradle/00-gradle-recipes笔记.md"
-    },
-    {
-      "basename": "Benchmark",
-      "path": "技术/Android/单元测试/Benchmark.md"
-    },
-    {
-      "basename": "测试相关配置和工具",
-      "path": "技术/Android/单元测试/测试相关配置和工具.md"
-    },
-    {
-      "basename": "测试不同屏幕尺寸",
-      "path": "技术/Android/单元测试/测试不同屏幕尺寸.md"
-    },
-    {
-      "basename": "性能优化",
-      "path": "03知识目录/性能优化.md"
-    },
-    {
-      "basename": "Android 插件化",
-      "path": "技术/Android/Android 插件化.md"
-    },
-    {
-      "basename": "热修复技术",
-      "path": "技术/Android/热修复技术.md"
-    },
-    {
-      "basename": "Android Hook",
-      "path": "技术/Android/Android Hook.md"
-    },
-    {
-      "basename": "9.完善Makefile",
-      "path": "技术/makefile/廖雪峰教程/9.完善Makefile.md"
-    },
-    {
-      "basename": "8.自动生成依赖",
-      "path": "技术/makefile/廖雪峰教程/8.自动生成依赖.md"
-    },
-    {
-      "basename": "7.使用模式规则",
-      "path": "技术/makefile/廖雪峰教程/7.使用模式规则.md"
-    },
-    {
-      "basename": "6.使用变量",
-      "path": "技术/makefile/廖雪峰教程/6.使用变量.md"
-    },
-    {
-      "basename": "5.使用隐式规则",
-      "path": "技术/makefile/廖雪峰教程/5.使用隐式规则.md"
-    },
-    {
-      "basename": "4.编译C程序",
-      "path": "技术/makefile/廖雪峰教程/4.编译C程序.md"
-    },
-    {
-      "basename": "3.Makefile基础",
-      "path": "技术/makefile/廖雪峰教程/3.Makefile基础.md"
-    },
-    {
-      "basename": "2.安装make",
-      "path": "技术/makefile/廖雪峰教程/2.安装make.md"
-    },
-    {
-      "basename": "1.简介",
-      "path": "技术/makefile/廖雪峰教程/1.简介.md"
-    },
-    {
-      "basename": "用 GitLab CI 进行持续集成",
-      "path": "资料/用 GitLab CI 进行持续集成.md"
-    },
-    {
-      "basename": "Android 持续集成（CI）",
-      "path": "技术/Android/Android 持续集成（CI）.md"
-    },
-    {
-      "basename": "00优化指南",
-      "path": "技术/Android/性能优化/00优化指南.md"
-    },
-    {
-      "basename": "必知必会-Android 性能优化的方面方面都在这儿",
-      "path": "资料/性能优化/必知必会-Android 性能优化的方面方面都在这儿.md"
-    },
-    {
-      "basename": "Android Systrace 01 基础知识 -- Systrace 简介",
-      "path": "资料/性能优化/工具/Android Systrace 01 基础知识 -- Systrace 简介.md"
-    },
-    {
-      "basename": "可能是最详细的Android图片压缩原理分析",
-      "path": "资料/图片/可能是最详细的Android图片压缩原理分析.md"
-    },
-    {
-      "basename": "Paging3",
-      "path": "技术/Android/Android源码框架解析/Paging3.md"
-    },
-    {
-      "basename": "Constraintlayout 新特性：Barrier、Group、Layer、Flow、ImageFilterView等",
-      "path": "资料/Constraintlayout 新特性：Barrier、Group、Layer、Flow、ImageFilterView等.md"
-    },
-    {
-      "basename": "测试相关配置",
-      "path": "技术/Android/单元测试/测试相关配置.md"
-    },
-    {
-      "basename": "Android ASM字节码插桩",
-      "path": "技术/Android/Android ASM字节码插桩.md"
-    },
-    {
-      "basename": "Android必备：ASM字节码操作",
-      "path": "资料/Android必备：ASM字节码操作.md"
-    },
-    {
-      "basename": "手把手带你实战 AGP 7.x ASM 字节码插桩",
-      "path": "笔记/Gradle/手把手带你实战 AGP 7.x ASM 字节码插桩.md"
     }
   ],
   "omittedPaths": [],
+  "omittedTags": [],
+  "updateOn": "file-open",
+  "omitBookmarks": false,
   "maxLength": null,
   "openType": "tab"
 }
