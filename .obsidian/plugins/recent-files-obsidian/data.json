@@ -1,8 +1,12 @@
 {
   "recentFiles": [
     {
+      "basename": "SVG命令大全",
+      "path": "笔记/SVG命令大全.md"
+    },
+    {
       "basename": "图钉卡片样式",
-      "path": "技术/鸿蒙/图钉卡片样式.md"
+      "path": "blog/图钉卡片样式.md"
     },
     {
       "basename": "状态管理",
@@ -195,10 +199,6 @@
     {
       "basename": "00面试集锦汇总",
       "path": "技术/Android/面试题/00面试集锦汇总.md"
-    },
-    {
-      "basename": "Java Type",
-      "path": "资料/Java Type.md"
     }
   ],
   "omittedPaths": [],
