@@ -13,30 +13,15 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "技术/鸿蒙/状态管理.md",
+                "file": "技术/Android/面试题/0工作经验/掌大.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "状态管理"
-            }
-          },
-          {
-            "id": "4e9c0f7963f0ff4b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "笔记/SVG命令大全.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "SVG命令大全"
+              "title": "掌大"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -68,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "xmake",
+                "query": "工作经验",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -175,13 +160,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "笔记/SVG命令大全.md",
+                "file": "技术/Android/面试题/0工作经验/掌大.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "SVG命令大全 的大纲"
+              "title": "掌大 的大纲"
             }
           },
           {
@@ -242,36 +227,37 @@
       "obsidian-memos:Thino": false
     }
   },
-  "active": "a249affd2aff050e",
+  "active": "49928616d6d8c31a",
   "lastOpenFiles": [
-    "blog/图钉卡片样式.md",
+    "03知识目录/面试.md",
+    "技术/Android/面试题/0工作经验/掌大.md",
+    "技术/Android/面试题/0工作经验",
+    "02简历/大纲.md",
+    "技术/Android/面试题/字节跳动面试官：一张图片占据的内存大小是如何计算.md",
+    "技术/Android/面试题/天猫精灵面试准备.md",
     "笔记/SVG命令大全.md",
+    "笔记/项目/Now in Android项目笔记.md",
     "技术/鸿蒙/状态管理.md",
+    "操作手册/Mac终端快捷键.md",
+    "操作手册/VSCode C++环境配置.md",
+    "技术/鸿蒙/鸿蒙笔记.md",
+    "技术/鸿蒙/ArkData.md",
+    "技术/鸿蒙/ArkTS编译工具链.md",
+    "技术/鸿蒙/ArkTS模块化.md",
+    "技术/鸿蒙/ArkTS语言.md",
+    "技术/鸿蒙/Background Tasks Kit（后台任务开发服务）.md",
+    "技术/鸿蒙/ArkUI框架.md",
+    "03知识目录/鸿蒙.md",
+    "笔记/未命名.md",
+    "blog/图钉卡片样式.md",
     "blog",
     "技术/Android/单元测试/基本用法.md",
     "技术/Android/单元测试/单元测试.md",
     "技术/Android/单元测试/相关示例.md",
     "03知识目录/单元测试.md",
     "笔记/现代Cpp规范/07-thread.md",
-    "操作手册/VSCode C++环境配置.md",
-    "操作手册/Mac终端快捷键.md",
     "笔记/Cpp笔记.md",
-    "笔记/现代Cpp规范/toc.md",
-    "笔记/现代Cpp规范/appendix3.md",
-    "笔记/现代Cpp规范/appendix2.md",
-    "笔记/现代Cpp规范/appendix1.md",
-    "笔记/现代Cpp规范/10-cpp20.md",
-    "笔记/现代Cpp规范/09-others.md",
-    "笔记/现代Cpp规范/08-filesystem.md",
-    "笔记/现代Cpp规范/06-regex.md",
-    "笔记/现代Cpp规范/05-pointers.md",
-    "笔记/现代Cpp规范/04-containers.md",
-    "笔记/现代Cpp规范/03-runtime.md",
-    "笔记/现代Cpp规范/02-usability.md",
-    "笔记/现代Cpp规范/01-intro.md",
-    "笔记/现代Cpp规范/00-preface.md",
     "笔记/现代Cpp规范",
-    "技术/鸿蒙/ArkUI框架.md",
     "笔记/项目",
     "技术/鸿蒙",
     "操作手册",
@@ -279,7 +265,6 @@
     "技术/makefile",
     "技术/Android/单元测试/未命名",
     "技术/Android/单元测试",
-    "03知识目录",
     "未命名.canvas"
   ]
 }

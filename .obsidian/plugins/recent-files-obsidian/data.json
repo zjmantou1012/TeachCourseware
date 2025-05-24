@@ -1,16 +1,80 @@
 {
   "recentFiles": [
     {
+      "basename": "掌大",
+      "path": "技术/Android/面试题/0工作经验/掌大.md"
+    },
+    {
+      "basename": "面试",
+      "path": "03知识目录/面试.md"
+    },
+    {
+      "basename": "大纲",
+      "path": "02简历/大纲.md"
+    },
+    {
+      "basename": "字节跳动面试官：一张图片占据的内存大小是如何计算",
+      "path": "技术/Android/面试题/字节跳动面试官：一张图片占据的内存大小是如何计算.md"
+    },
+    {
+      "basename": "天猫精灵面试准备",
+      "path": "技术/Android/面试题/天猫精灵面试准备.md"
+    },
+    {
       "basename": "SVG命令大全",
       "path": "笔记/SVG命令大全.md"
     },
     {
-      "basename": "图钉卡片样式",
-      "path": "blog/图钉卡片样式.md"
+      "basename": "Now in Android项目笔记",
+      "path": "笔记/项目/Now in Android项目笔记.md"
     },
     {
       "basename": "状态管理",
       "path": "技术/鸿蒙/状态管理.md"
+    },
+    {
+      "basename": "Mac终端快捷键",
+      "path": "操作手册/Mac终端快捷键.md"
+    },
+    {
+      "basename": "VSCode C++环境配置",
+      "path": "操作手册/VSCode C++环境配置.md"
+    },
+    {
+      "basename": "鸿蒙笔记",
+      "path": "技术/鸿蒙/鸿蒙笔记.md"
+    },
+    {
+      "basename": "ArkData",
+      "path": "技术/鸿蒙/ArkData.md"
+    },
+    {
+      "basename": "ArkTS编译工具链",
+      "path": "技术/鸿蒙/ArkTS编译工具链.md"
+    },
+    {
+      "basename": "ArkTS模块化",
+      "path": "技术/鸿蒙/ArkTS模块化.md"
+    },
+    {
+      "basename": "ArkTS语言",
+      "path": "技术/鸿蒙/ArkTS语言.md"
+    },
+    {
+      "basename": "Background Tasks Kit（后台任务开发服务）",
+      "path": "技术/鸿蒙/Background Tasks Kit（后台任务开发服务）.md"
+    },
+    {
+      "basename": "ArkUI框架",
+      "path": "技术/鸿蒙/ArkUI框架.md"
+    },
+    {
+      "basename": "鸿蒙",
+      "path": "03知识目录/鸿蒙.md"
+    },
+    {
+      "basename": "图钉卡片样式",
+      "path": "blog/图钉卡片样式.md"
     },
     {
       "basename": "基本用法",
@@ -31,14 +95,6 @@
     {
       "basename": "07-thread",
       "path": "笔记/现代Cpp规范/07-thread.md"
-    },
-    {
-      "basename": "VSCode C++环境配置",
-      "path": "操作手册/VSCode C++环境配置.md"
-    },
-    {
-      "basename": "Mac终端快捷键",
-      "path": "操作手册/Mac终端快捷键.md"
     },
     {
       "basename": "Cpp笔记",
@@ -101,10 +157,6 @@
       "path": "笔记/现代Cpp规范/00-preface.md"
     },
     {
-      "basename": "ArkUI框架",
-      "path": "技术/鸿蒙/ArkUI框架.md"
-    },
-    {
       "basename": "C语言基础",
       "path": "技术/C与C++/C语言基础.md"
     },
@@ -121,48 +173,12 @@
       "path": "笔记/Cpp笔记2.md"
     },
     {
-      "basename": "ArkTS语言",
-      "path": "技术/鸿蒙/ArkTS语言.md"
-    },
-    {
-      "basename": "Now in Android项目笔记",
-      "path": "笔记/项目/Now in Android项目笔记.md"
-    },
-    {
       "basename": "笔记规范",
       "path": "笔记/笔记规范.md"
     },
     {
       "basename": "GC",
       "path": "技术/鸿蒙/GC.md"
-    },
-    {
-      "basename": "Background Tasks Kit（后台任务开发服务）",
-      "path": "技术/鸿蒙/Background Tasks Kit（后台任务开发服务）.md"
-    },
-    {
-      "basename": "ArkTS模块化",
-      "path": "技术/鸿蒙/ArkTS模块化.md"
-    },
-    {
-      "basename": "鸿蒙笔记",
-      "path": "技术/鸿蒙/鸿蒙笔记.md"
-    },
-    {
-      "basename": "鸿蒙",
-      "path": "03知识目录/鸿蒙.md"
-    },
-    {
-      "basename": "ArkTS编译工具链",
-      "path": "技术/鸿蒙/ArkTS编译工具链.md"
-    },
-    {
-      "basename": "ArkData",
-      "path": "技术/鸿蒙/ArkData.md"
-    },
-    {
-      "basename": "面试",
-      "path": "03知识目录/面试.md"
     },
     {
       "basename": "并发",
@@ -183,22 +199,6 @@
     {
       "basename": "Appium2测试框架",
       "path": "技术/Android/单元测试/Appium2测试框架.md"
-    },
-    {
-      "basename": "Espresso",
-      "path": "技术/Android/单元测试/Espresso.md"
-    },
-    {
-      "basename": "00Android 面试题参考",
-      "path": "技术/Android/面试题/00Android 面试题参考.md"
-    },
-    {
-      "basename": "00面试笔记",
-      "path": "技术/Android/面试题/00面试笔记.md"
-    },
-    {
-      "basename": "00面试集锦汇总",
-      "path": "技术/Android/面试题/00面试集锦汇总.md"
     }
   ],
   "omittedPaths": [],
