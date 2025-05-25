@@ -9,6 +9,42 @@
       "path": "03知识目录/面试.md"
     },
     {
+      "basename": "2024-12-02,周一",
+      "path": "01日记/2024-12-02,周一.md"
+    },
+    {
+      "basename": "2024-03-19,周二",
+      "path": "01日记/2024-03-19,周二.md"
+    },
+    {
+      "basename": "2024-03-18,周一",
+      "path": "01日记/2024-03-18,周一.md"
+    },
+    {
+      "basename": "2024-03-05,周二",
+      "path": "01日记/2024-03-05,周二.md"
+    },
+    {
+      "basename": "2024-02-26,周一",
+      "path": "01日记/2024-02-26,周一.md"
+    },
+    {
+      "basename": "2024-02-19,周一",
+      "path": "01日记/2024-02-19,周一.md"
+    },
+    {
+      "basename": "个人简历-2025",
+      "path": "02简历/个人简历-2025.md"
+    },
+    {
+      "basename": "个人简历-0829",
+      "path": "02简历/个人简历-0829.md"
+    },
+    {
+      "basename": "个人简历-2024",
+      "path": "02简历/个人简历-2024.md"
+    },
+    {
       "basename": "大纲",
       "path": "02简历/大纲.md"
     },
@@ -163,42 +199,6 @@
     {
       "basename": "CPrimerPlus（第6版）",
       "path": "技术/C与C++/CPrimerPlus/CPrimerPlus（第6版）.md"
-    },
-    {
-      "basename": "习题",
-      "path": "技术/C与C++/CPrimerPlus/习题.md"
-    },
-    {
-      "basename": "Cpp笔记2",
-      "path": "笔记/Cpp笔记2.md"
-    },
-    {
-      "basename": "笔记规范",
-      "path": "笔记/笔记规范.md"
-    },
-    {
-      "basename": "GC",
-      "path": "技术/鸿蒙/GC.md"
-    },
-    {
-      "basename": "并发",
-      "path": "技术/鸿蒙/并发.md"
-    },
-    {
-      "basename": "mac终端代理",
-      "path": "常用命令/mac终端代理.md"
-    },
-    {
-      "basename": "Dumpsys meminfo",
-      "path": "常用命令/Dumpsys meminfo.md"
-    },
-    {
-      "basename": "adb常用命令笔记",
-      "path": "常用命令/adb常用命令笔记.md"
-    },
-    {
-      "basename": "Appium2测试框架",
-      "path": "技术/Android/单元测试/Appium2测试框架.md"
     }
   ],
   "omittedPaths": [],
