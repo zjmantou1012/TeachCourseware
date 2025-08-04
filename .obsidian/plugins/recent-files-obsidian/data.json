@@ -1,6 +1,70 @@
 {
   "recentFiles": [
     {
+      "basename": "线性代数及其应用",
+      "path": "笔记/数学/线性代数及其应用.md"
+    },
+    {
+      "basename": "Gradle-学习笔记",
+      "path": "笔记/Gradle/Gradle-学习笔记.md"
+    },
+    {
+      "basename": "手把手教大家用Transform_API和ASM实现一个防快速点击案例",
+      "path": "笔记/Gradle/手把手教大家用Transform_API和ASM实现一个防快速点击案例.md"
+    },
+    {
+      "basename": "Gradle系列(四)_Gradle插件",
+      "path": "笔记/Gradle/Gradle系列(四)_Gradle插件.md"
+    },
+    {
+      "basename": "Gradle系列(三)_Gradle配置构建和渠道包",
+      "path": "笔记/Gradle/Gradle系列(三)_Gradle配置构建和渠道包.md"
+    },
+    {
+      "basename": "Gradle系列(二)_Gradle执行顺序和task",
+      "path": "笔记/Gradle/Gradle系列(二)_Gradle执行顺序和task.md"
+    },
+    {
+      "basename": "Gradle系列_插件练习-动态移除权限",
+      "path": "笔记/Gradle/Gradle系列_插件练习-动态移除权限.md"
+    },
+    {
+      "basename": "Gradle笔记",
+      "path": "03知识目录/Gradle笔记.md"
+    },
+    {
+      "basename": "Gradle",
+      "path": "技术/gradle/Gradle.md"
+    },
+    {
+      "basename": "Producing and Consuming Variants of Libraries生成和使用库的变体",
+      "path": "技术/gradle/7.6/Producing and Consuming Variants of Libraries生成和使用库的变体.md"
+    },
+    {
+      "basename": "Android 持续集成（CI）",
+      "path": "技术/Android/Android 持续集成（CI）.md"
+    },
+    {
+      "basename": "Android 插件化",
+      "path": "技术/Android/Android 插件化.md"
+    },
+    {
+      "basename": "一文全面了解Android单元测试",
+      "path": "技术/Android/一文全面了解Android单元测试.md"
+    },
+    {
+      "basename": "设备导入HTTPS证书（不抓取HTTPS数据可跳过此步骤）",
+      "path": "技术/Android/设备导入HTTPS证书（不抓取HTTPS数据可跳过此步骤）.md"
+    },
+    {
+      "basename": "类加载机制",
+      "path": "技术/Android/类加载机制.md"
+    },
+    {
+      "basename": "多渠道打包上传maven仓库",
+      "path": "技术/Android/多渠道打包上传maven仓库.md"
+    },
+    {
       "basename": "掌大",
       "path": "技术/Android/面试题/0工作经验/掌大.md"
     },
@@ -135,70 +199,6 @@
     {
       "basename": "Cpp笔记",
       "path": "笔记/Cpp笔记.md"
-    },
-    {
-      "basename": "toc",
-      "path": "笔记/现代Cpp规范/toc.md"
-    },
-    {
-      "basename": "appendix3",
-      "path": "笔记/现代Cpp规范/appendix3.md"
-    },
-    {
-      "basename": "appendix2",
-      "path": "笔记/现代Cpp规范/appendix2.md"
-    },
-    {
-      "basename": "appendix1",
-      "path": "笔记/现代Cpp规范/appendix1.md"
-    },
-    {
-      "basename": "10-cpp20",
-      "path": "笔记/现代Cpp规范/10-cpp20.md"
-    },
-    {
-      "basename": "09-others",
-      "path": "笔记/现代Cpp规范/09-others.md"
-    },
-    {
-      "basename": "08-filesystem",
-      "path": "笔记/现代Cpp规范/08-filesystem.md"
-    },
-    {
-      "basename": "06-regex",
-      "path": "笔记/现代Cpp规范/06-regex.md"
-    },
-    {
-      "basename": "05-pointers",
-      "path": "笔记/现代Cpp规范/05-pointers.md"
-    },
-    {
-      "basename": "04-containers",
-      "path": "笔记/现代Cpp规范/04-containers.md"
-    },
-    {
-      "basename": "03-runtime",
-      "path": "笔记/现代Cpp规范/03-runtime.md"
-    },
-    {
-      "basename": "02-usability",
-      "path": "笔记/现代Cpp规范/02-usability.md"
-    },
-    {
-      "basename": "01-intro",
-      "path": "笔记/现代Cpp规范/01-intro.md"
-    },
-    {
-      "basename": "00-preface",
-      "path": "笔记/现代Cpp规范/00-preface.md"
-    },
-    {
-      "basename": "C语言基础",
-      "path": "技术/C与C++/C语言基础.md"
-    },
-    {
-      "basename": "CPrimerPlus（第6版）",
-      "path": "技术/C与C++/CPrimerPlus/CPrimerPlus（第6版）.md"
     }
   ],
   "omittedPaths": [],

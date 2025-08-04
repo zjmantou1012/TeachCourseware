@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "d63012bff783d0c3",
+        "id": "267090f427f0e5d9",
         "type": "tabs",
         "children": [
           {
-            "id": "49928616d6d8c31a",
+            "id": "ec5188f0db36dee8",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "技术/Android/面试题/0工作经验/掌大.md",
+                "file": "笔记/数学/线性代数及其应用.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "掌大"
+              "title": "线性代数及其应用"
             }
           }
         ]
@@ -44,7 +44,7 @@
                 "autoReveal": true
               },
               "icon": "lucide-folder-closed",
-              "title": "Files"
+              "title": "文件列表"
             }
           },
           {
@@ -71,7 +71,7 @@
               "type": "starred",
               "state": {},
               "icon": "lucide-file",
-              "title": "Plugin no longer active"
+              "title": "插件不再活动"
             }
           },
           {
@@ -160,13 +160,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "技术/Android/面试题/0工作经验/掌大.md",
+                "file": "笔记/数学/线性代数及其应用.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 掌大"
+              "title": "线性代数及其应用 的大纲"
             }
           },
           {
@@ -212,50 +212,51 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Open quick switcher": false,
-      "graph:Open graph view": false,
-      "canvas:Create new canvas": false,
-      "daily-notes:Open today's daily note": false,
-      "templates:Insert template": false,
-      "command-palette:Open command palette": false,
-      "audio-recorder:Start/stop recording": false,
-      "workspaces:Manage workspace layouts": false,
-      "obsidian-excalidraw-plugin:New drawing": false,
-      "obsidian-kanban:Create new board": false,
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false,
+      "audio-recorder:开始/结束录音": false,
+      "workspaces:管理工作区布局": false,
+      "obsidian-excalidraw-plugin:新建绘图文件": false,
+      "obsidian-kanban:创建新看板": false,
       "mermaid-tools:Open Mermaid Toolbar": false,
       "table-editor-obsidian:Advanced Tables Toolbar": false,
       "obsidian-memos:Thino": false
     }
   },
-  "active": "49928616d6d8c31a",
+  "active": "ec5188f0db36dee8",
   "lastOpenFiles": [
+    "笔记/Gradle/Gradle-学习笔记.md",
+    "笔记/数学/线性代数及其应用.md",
+    "笔记/数学",
+    "笔记/Gradle/手把手教大家用Transform_API和ASM实现一个防快速点击案例.md",
+    "笔记/Gradle/Gradle系列(四)_Gradle插件.md",
+    "笔记/Gradle/Gradle系列(三)_Gradle配置构建和渠道包.md",
+    "笔记/Gradle/Gradle系列(二)_Gradle执行顺序和task.md",
+    "笔记/Gradle/Gradle系列_插件练习-动态移除权限.md",
+    "03知识目录/Gradle笔记.md",
+    "技术/gradle/Gradle.md",
+    "技术/gradle/7.6/Producing and Consuming Variants of Libraries生成和使用库的变体.md",
+    "技术/Android/Android 持续集成（CI）.md",
+    "技术/Android/Android 插件化.md",
+    "技术/Android/一文全面了解Android单元测试.md",
+    "技术/Android/设备导入HTTPS证书（不抓取HTTPS数据可跳过此步骤）.md",
+    "技术/Android/类加载机制.md",
+    "技术/Android/多渠道打包上传maven仓库.md",
+    "技术/Android/面试题/0工作经验/掌大.md",
     "01日记/2024-03-18,周一.md",
     "01日记/2024-12-02,周一.md",
     "01日记/2024-03-19,周二.md",
-    "技术/Android/面试题/0工作经验/掌大.md",
     "03知识目录/面试.md",
     "01日记/2024-03-05,周二.md",
     "01日记/2024-02-26,周一.md",
     "01日记/2024-02-19,周一.md",
     "02简历/个人简历-2025.md",
     "02简历/个人简历-0829.md",
-    "02简历/个人简历-2024.md",
     "技术/Android/面试题/0工作经验",
-    "02简历/大纲.md",
-    "技术/Android/面试题/字节跳动面试官：一张图片占据的内存大小是如何计算.md",
-    "技术/Android/面试题/天猫精灵面试准备.md",
-    "笔记/SVG命令大全.md",
-    "笔记/项目/Now in Android项目笔记.md",
-    "技术/鸿蒙/状态管理.md",
-    "操作手册/Mac终端快捷键.md",
-    "操作手册/VSCode C++环境配置.md",
-    "技术/鸿蒙/鸿蒙笔记.md",
-    "技术/鸿蒙/ArkData.md",
-    "技术/鸿蒙/ArkTS编译工具链.md",
-    "技术/鸿蒙/ArkTS模块化.md",
-    "技术/鸿蒙/ArkTS语言.md",
-    "技术/鸿蒙/Background Tasks Kit（后台任务开发服务）.md",
-    "技术/鸿蒙/ArkUI框架.md",
     "blog",
     "笔记/现代Cpp规范",
     "笔记/项目",
@@ -264,7 +265,6 @@
     "技术/makefile/廖雪峰教程",
     "技术/makefile",
     "技术/Android/单元测试/未命名",
-    "技术/Android/单元测试",
     "未命名.canvas"
   ]
 }

@@ -6,6 +6,7 @@
   "translucency": true,
   "interfaceFontFamily": "Apple Braille",
   "enabledCssSnippets": [
-    "mermaid"
+    "mermaid",
+    "math-size"
   ]
 }
