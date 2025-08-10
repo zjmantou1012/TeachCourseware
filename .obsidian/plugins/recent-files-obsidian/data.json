@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "线性代数及其应用习题",
+      "path": "笔记/数学/线性代数及其应用习题.md"
+    },
+    {
       "basename": "线性代数及其应用",
       "path": "笔记/数学/线性代数及其应用.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "07-thread",
       "path": "笔记/现代Cpp规范/07-thread.md"
-    },
-    {
-      "basename": "Cpp笔记",
-      "path": "笔记/Cpp笔记.md"
     }
   ],
   "omittedPaths": [],
