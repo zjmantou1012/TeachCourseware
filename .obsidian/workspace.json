@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "笔记/数学/线性代数及其应用.md",
+                "file": "笔记/数学/线性代数及其应用/02 矩阵.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "线性代数及其应用"
+              "title": "02 矩阵"
             }
           }
         ]
@@ -160,13 +160,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "笔记/数学/线性代数及其应用.md",
+                "file": "笔记/数学/线性代数及其应用/02 矩阵.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "线性代数及其应用 的大纲"
+              "title": "02 矩阵 的大纲"
             }
           },
           {
@@ -229,8 +229,11 @@
   },
   "active": "6d57db0ad70dc3a6",
   "lastOpenFiles": [
-    "笔记/数学/线性代数及其应用习题.md",
+    "笔记/数学/线性代数及其应用/01 行列式.md",
+    "笔记/数学/线性代数及其应用/线性代数及其应用习题.md",
     "笔记/数学/线性代数及其应用.md",
+    "笔记/数学/线性代数及其应用/02 矩阵.md",
+    "笔记/数学/线性代数及其应用",
     "笔记/Gradle/Gradle-学习笔记.md",
     "笔记/数学",
     "笔记/Gradle/手把手教大家用Transform_API和ASM实现一个防快速点击案例.md",
@@ -254,8 +257,6 @@
     "03知识目录/面试.md",
     "01日记/2024-03-05,周二.md",
     "01日记/2024-02-26,周一.md",
-    "01日记/2024-02-19,周一.md",
-    "02简历/个人简历-2025.md",
     "技术/Android/面试题/0工作经验",
     "blog",
     "笔记/现代Cpp规范",
@@ -264,7 +265,6 @@
     "操作手册",
     "技术/makefile/廖雪峰教程",
     "技术/makefile",
-    "技术/Android/单元测试/未命名",
     "未命名.canvas"
   ]
 }

@@ -1,12 +1,16 @@
 {
   "recentFiles": [
     {
-      "basename": "线性代数及其应用",
-      "path": "笔记/数学/线性代数及其应用.md"
+      "basename": "02 矩阵",
+      "path": "笔记/数学/线性代数及其应用/02 矩阵.md"
+    },
+    {
+      "basename": "01 行列式",
+      "path": "笔记/数学/线性代数及其应用/01 行列式.md"
     },
     {
       "basename": "线性代数及其应用习题",
-      "path": "笔记/数学/线性代数及其应用习题.md"
+      "path": "笔记/数学/线性代数及其应用/线性代数及其应用习题.md"
     },
     {
       "basename": "Gradle-学习笔记",
@@ -191,14 +195,6 @@
     {
       "basename": "相关示例",
       "path": "技术/Android/单元测试/相关示例.md"
-    },
-    {
-      "basename": "单元测试",
-      "path": "03知识目录/单元测试.md"
-    },
-    {
-      "basename": "07-thread",
-      "path": "笔记/现代Cpp规范/07-thread.md"
     }
   ],
   "omittedPaths": [],
